@@ -6,13 +6,30 @@
 
 	<!-- bower:css -->
 	<!-- endbower -->
+
+	<!-- Base tag, for html5mode -->
+    <!-- <base href="/"> -->
 </head>
-<body>
+<body ng-app="klimaatneutraal">
 	<h1>Hello world!</h1>
 
+	<div class="content">
+		<!-- MAGIC -->
+        <ui-view></ui-view>
+    </div>
+	
 	<!-- bower:js -->
 	<script src="bower_components/angular/angular.js"></script>
 	<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 	<!-- endbower -->
+	
+	<!-- Setup -->
+	<script src="js/app.module.js"></script>
+    <script src="js/app.config.js"></script>
+    <script src="js/app.router.js"></script>
+    
+    <script src="js/components/start/startGameController.js"></script>
+    <script src="js/components/tutorial/startTutorialController.js"></script>
+
 </body>
 </html>
