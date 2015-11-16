@@ -35,6 +35,15 @@ angular.module('klimaatneutraal')
                         controller: 'startTutorialController'
                     }
                 }
+            })
+            .state('endGame', {
+                url: '/end',
+                views: {
+                    '': {
+                        templateUrl: 'js/components/end/end.html',
+                        controller: 'endGameController'
+                    }
+                }
             });
 
         }

@@ -10,6 +10,7 @@ angular.module('klimaatneutraal.controllers')
 
             var init = function() {
                 console.log('startGameController loaded');
+                //send to service mail
             };
 
             init();
