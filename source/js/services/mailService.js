@@ -1,4 +1,4 @@
-app.service("mailService", function(){
+angular.module('klimaatneutraal.services').service("mailService", function(){
     //hier komt Mandrill API call
 
     this.sendRapport = function(send){
