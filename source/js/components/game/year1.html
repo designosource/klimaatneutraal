@@ -1,148 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Jaar1_1</title>
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/ui.css">
-	<style>
-	#jaar1_1{
-		height: 100%;
-		width: 100%;
-/*		background-color: green;*/
-		background-image: url('img/jaar1_1/bg_jaar1_1.svg');
-		background-size: 100%;
-		background-repeat: no-repeat;
-		background-position: bottom;
-	}
-	#huis_links_wb{
-		display: block; position: absolute;
-		top: 38%;
-		width: 25%;
-	}
-	.interact:hover, #molenpaal:hover; {
-		opacity: 0.8;
-	}
-	#skater{
-		display: block;
-		position: absolute;
-		height: 30%;
-		z-index: 2;
-		left: 5%;
-		right: 90%;
-		top: 66%;
-		-webkit-animation: skater_moves 2s infinite ;
-  		-moz-animation:    skater_moves 2s infinite ;
-  		-o-animation:      skater_moves 2s infinite ;
-  		animation:         skater_moves 2s infinite ;
-	}
-	@-webkit-keyframes skater_moves {
-	  	0%   { left: 5%; }
-	  	50%   { left: 30%; }
-	  	100% { left: 5%; }
-	  	0%		{ -webkit-transform: scaleX(1); }  	
-	  	50%		{ -webkit-transform: scaleX(1); }
-	  	60%		{ -webkit-transform: scaleX(-1); }
-	  	100%	{ -webkit-transform: scaleX(-1); }
-	}
-	#benen{
-		position: absolute; display: block;
-		width: 7%;
-		left: 41%;
-		top: 72%;
-	}
-	#molenpaal{
-		position: absolute;display: block;
-		width: 10%;left:50%;top:30%;
-	}
-	#molenpaal_l{
-		z-index: 1;
-		position: absolute;display: block;
-		width: 8%;left:57.3%;top:30%;
-	}
-	#wiek{
-		position: absolute;display: block;
-		width: 10%;left:50.8%;top:20.2%;
-		-webkit-animation: wiek 10s linear infinite ;
-  		-moz-animation:    wiek 10s linear infinite ;
-  		-o-animation:      wiek 10s linear infinite ;
-  		animation:         wiek 10s linear infinite ;
-	}
-	@-webkit-keyframes wiek {
-	  	0%		{ -webkit-transform: rotate(0deg); }  	
-	  	100%	{ -webkit-transform: rotate(360deg); }
-	}
-	#wiek_l{
-		position: absolute;display: block;
-		width: 8%;left:58%;top:20.2%;
-		-webkit-animation: wiek_l 10s linear infinite ;
-  		-moz-animation:    wiek_l 10s linear infinite ;
-  		-o-animation:      wiek_l 10s linear infinite ;
-  		animation:         wiek_l 10s linear infinite ;
-	}
-	@-webkit-keyframes wiek_l {
-	  	0%		{ -webkit-transform: rotate(40deg); }  	
-	  	100%	{ -webkit-transform: rotate(380deg); }
-	}
-	#huis_rechts{
-		position: absolute;display: block;
-		width: 30%;right: 1%;top: 31%;
-	}
+<section class="year year1">
+	<a id="huis_links_wb" class="interact" href="#"><img src="img/jaar1_1/huis_links_wb.svg" alt=""></a>
 
+	<img id="skater" src="img/jaar1_1/skater.svg" alt="">
 
-	</style>
-</head>
-<body>
-<div class="main_wrap">
-<!-- UI -->
-	<section id="ui">
-		<div id="ui_money">
-			<div id="ui_money_innerwrap">
-				<img class="ui_money_1" src="img/ui/money_no.svg" alt="">
-				<img class="ui_money_2" src="img/ui/money_no.svg" alt="">
-				<img class="ui_money_3" src="img/ui/money_no.svg" alt="">
-				<img class="ui_money_4" src="img/ui/money_no.svg" alt="">
-				<img class="ui_money_4" src="img/ui/money_no.svg" alt="">
-			</div>
-		</div>
-		<div id="ui_eco_public">
-			<div id="ui_eco">
-				<img id="eco_legend" src="img/ui/leaf.svg" alt="">
-				<div id="ui_eco_health_legend">
-					<div id="ui_eco_health"></div>
-				</div>
-			</div>
-			<div id="ui_public">
-				<img id="public_legend" src="img/ui/public.svg" alt="">
-				<div id="ui_public_health_legend">
-					<div id="ui_public_health"></div>
-				</div>
-			</div>
-		</div>
-		<a href="#" id="ui_menu">
-			<img id="menu_btn" src="img/ui/menu_btn.svg" alt="">
-		</a>	
-	</section>
+	<a id="buskotje" href="#"><img src="img/jaar1_1/buskotje_zonder_benen.svg" alt=""></a>
 
-<!-- JAAR 1 1 -->
-	<section id="jaar1_1">
-		<a id="huis_links_wb" class="interact" href="#"><img src="img/jaar1_1/huis_links_wb.svg" alt=""></a>
+	<img id="benen" src="img/jaar1_1/legs.gif" alt=""></a>
 
-		<img id="skater" src="img/jaar1_1/skater.svg" alt="">
+	<img id="molenpaal" src="img/jaar1_1/molenpaal.svg" alt="">
+	<img id="wiek" src="img/jaar1_1/wiek.svg" alt="">
 
-		<a id="buskotje" href="#"><img src="img/jaar1_1/buskotje_zonder_benen.svg" alt=""></a>
+	<img id="molenpaal_l" src="img/jaar1_1/molenpaal_l.svg" alt="">
+	<img id="wiek_l" src="img/jaar1_1/wiek_l.svg" alt="">
 
-		<img id="benen" src="img/jaar1_1/legs.gif" alt=""></a>
-
-		<img id="molenpaal" src="img/jaar1_1/molenpaal.svg" alt="">
-		<img id="wiek" src="img/jaar1_1/wiek.svg" alt="">
-
-		<img id="molenpaal_l" src="img/jaar1_1/molenpaal_l.svg" alt="">
-		<img id="wiek_l" src="img/jaar1_1/wiek_l.svg" alt="">
-
-		<img id="huis_rechts" src="img/jaar1_1/huis_rechts.svg" alt="">
-		
-	</section>
-</div><!-- main wrap end -->
-</body>
-</html>
+	<img id="huis_rechts" src="img/jaar1_1/huis_rechts.svg" alt="">
+	
+</section>

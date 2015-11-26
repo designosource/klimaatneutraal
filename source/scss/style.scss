@@ -1,4 +1,11 @@
-
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
 
 @import "components/_main.scss"; 
+@import "components/_header.scss"; 
 @import "components/_game.scss"; 

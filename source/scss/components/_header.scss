@@ -1,0 +1,86 @@
+.game-header {
+	height: 17%;
+	
+	.money {
+		background-color: #767676;
+		height: 100%;
+
+		ul {
+			margin: 0;
+			padding: 14% 5%;
+			box-sizing: border-box;
+			height: 100%;
+			@extend .clearfix;
+			li {
+				box-sizing: border-box;
+				padding: 0 6% 0 0;
+				display: block;
+				width: 20%;
+				float: left;
+
+				img {
+					max-width: 100%;
+					max-height: 100%;
+					width: auto;
+					height: auto;
+				}
+			}
+		}
+	}
+
+	.score {
+		
+		background-color: #e5e5e4;
+		height: 100%;
+		padding-top: 1%;
+		
+		.icon-wrapper{
+			width: 7%;
+			float: left;
+			.icon {
+				max-width: 50%;
+				display: block;
+				margin: 0 auto;
+			}
+		}
+
+		.score-bar {
+			height: 20px;
+			background-color: #6dab5b;
+			width: 93%;
+    		float: left;
+
+    		.score-inner {
+    			width: 60%;
+    			height: 100%;	
+    			background-color: #03573b;
+    		}
+		}
+
+		.score-eco {
+			.score-bar {
+				margin-top: 6px;
+			}
+		}
+
+		.score-wrapper {
+			@extend .clearfix;
+			padding: 5px;
+		}
+	}
+
+	.menu-wrapper {
+		height: 100%;
+		background-color: #bbbdc0;
+		padding: 2.5%;
+
+		.menu {
+			display: block;
+			height: 100%;
+			background-image: url('../img/ui/menu_btn.svg');
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+	}
+	
+}
