@@ -45,8 +45,14 @@ angular.module('klimaatneutraal')
                     }
                 }
             })
-            .state('year1', {
-                url: '/year/1',
+
+            .state('game', {
+                url: '/game',
+                templateUrl: 'js/components/game/index.html'
+            })
+
+            .state('game.year', {
+                url: '/year/{year}',
                 views: {
                     '': {
                         templateUrl: 'js/components/game/year1.html',
