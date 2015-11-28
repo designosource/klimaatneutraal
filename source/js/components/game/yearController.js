@@ -1,19 +1,17 @@
 angular.module('klimaatneutraal.controllers')
     .controller('yearController', [
-        '$rootScope',
         '$scope',
-        '$state',
-        '$controller',
-        '$http',
-        'mailService',
+        '$stateParams',
         '$uibModal',
+        'mailService',
 
-        function($rootScope, $scope, $state, $controller, $http, mailService, $uibModal) {
+        function($scope, $stateParams, $uibModal, mailService) {
             
             var init = function() {
                 console.log('year1Controller loaded');
                 console.log(mailService);
 
+                $scope.year = $stateParams.year;
             };
 
             var openComponent = function(component) {
@@ -24,10 +22,10 @@ angular.module('klimaatneutraal.controllers')
                         'house Missie 2',
                         'house Missie 3',
                     ],
-                    'windTurbine': [
-                        'windTurbine Missie 1',
-                        'windTurbine Missie 2',
-                        'windTurbine Missie 3',
+                    'busstop': [
+                        'busstop Missie 1',
+                        'busstop Missie 2',
+                        'busstop Missie 3',
                     ]
                 }
 

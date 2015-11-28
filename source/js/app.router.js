@@ -60,7 +60,7 @@ angular.module('klimaatneutraal')
                 url: '/year/{year}',
                 views: {
                     '': {
-                        templateUrl: 'js/components/game/year1.html',
+                        templateUrl: 'js/components/game/year.html',
                         controller: 'yearController'
                     }
                 }
