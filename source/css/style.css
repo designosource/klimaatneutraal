@@ -107,26 +107,27 @@ body {
   width: 60%;
   height: 100%;
   background-color: #03573b;
+  transition: width 1s ease-out;
 }
 
-/* line 61, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_header.scss */
+/* line 63, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_header.scss */
 .game-header .score .score-eco .score-bar {
   margin-top: 6px;
 }
 
-/* line 66, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_header.scss */
+/* line 68, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_header.scss */
 .game-header .score .score-wrapper {
   padding: 5px;
 }
 
-/* line 72, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_header.scss */
+/* line 74, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_header.scss */
 .game-header .menu-wrapper {
   height: 100%;
   background-color: #bbbdc0;
   padding: 2.5%;
 }
 
-/* line 77, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_header.scss */
+/* line 79, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_header.scss */
 .game-header .menu-wrapper .menu {
   display: block;
   height: 100%;

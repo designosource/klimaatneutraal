@@ -1,11 +1,12 @@
 angular.module('klimaatneutraal.controllers')
     .controller('yearController', [
+        '$rootScope',
         '$scope',
         '$stateParams',
         '$uibModal',
         'mailService',
 
-        function($scope, $stateParams, $uibModal, mailService) {
+        function($rootScope, $scope, $stateParams, $uibModal, mailService) {
             
             var init = function() {
                 console.log('year1Controller loaded');
@@ -15,6 +16,8 @@ angular.module('klimaatneutraal.controllers')
             };
 
             var openComponent = function(component) {
+
+                $rootScope.game.score.eco = 80;
 
                 var missions = {
                     'house': [

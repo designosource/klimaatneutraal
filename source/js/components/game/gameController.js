@@ -1,12 +1,21 @@
 angular.module('klimaatneutraal.controllers')
     .controller('gameController', [
+        '$rootScope',
         '$scope',
         '$uibModal',
 
-        function($scope, $uibModal) {
+        function($rootScope, $scope, $uibModal) {
 
             var init = function() {
                 console.log('gameController');
+
+                $rootScope.game = {
+                	'money': {},
+                	'score': {
+                		'public': '50',
+                		'eco': '50'
+                	}
+                }
 
             };
 
