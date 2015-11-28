@@ -47,8 +47,13 @@ angular.module('klimaatneutraal')
             })
 
             .state('game', {
-                url: '/game',
-                templateUrl: 'js/components/game/index.html'
+                url: '/game', 
+                views: {
+                    '': {
+                        templateUrl: 'js/components/game/game.html',
+                        controller: 'gameController'
+                    }
+                }
             })
 
             .state('game.year', {
@@ -56,7 +61,7 @@ angular.module('klimaatneutraal')
                 views: {
                     '': {
                         templateUrl: 'js/components/game/year1.html',
-                        controller: 'year1Controller'
+                        controller: 'yearController'
                     }
                 }
             });
