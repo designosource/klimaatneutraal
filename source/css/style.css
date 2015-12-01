@@ -165,7 +165,44 @@ body {
 
 /* line 12, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_game.scss */
 .year.year2 {
-  background-image: url("../img/jaar1_1/bg_jaar1_1.svg");
+  background-image: url("../img/year2/bg.svg");
+}
+
+/* line 15, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_game.scss */
+.year.year2 .biker {
+  display: block;
+  position: absolute;
+  height: 20%;
+  z-index: 2;
+  left: 5%;
+  right: 90%;
+  top: 75%;
+}
+
+/* line 25, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_game.scss */
+.year.year2 .house1 {
+  display: block;
+  position: absolute;
+  top: 38%;
+  width: 25%;
+}
+
+/* line 32, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_game.scss */
+.year.year2 .house2 {
+  position: absolute;
+  display: block;
+  width: 40%;
+  right: 27%;
+  top: 31%;
+}
+
+/* line 40, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_game.scss */
+.year.year2 .cars {
+  position: absolute;
+  display: block;
+  width: 16%;
+  right: 7%;
+  top: 61%;
 }
 
 /* line 1, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_startScreen.scss */

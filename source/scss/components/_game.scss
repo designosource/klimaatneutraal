@@ -10,6 +10,39 @@
 	}
 
 	&.year2 {
-		background-image: url('../img/jaar1_1/bg_jaar1_1.svg');
+		background-image: url('../img/year2/bg.svg');
+
+		.biker {
+			 display: block;
+			position: absolute;
+			height: 20%;
+			z-index: 2;
+			left: 5%;
+			right: 90%;
+			top: 75%;
+		}
+
+		.house1 {
+			display: block;
+			position: absolute;
+			top: 38%;
+			width: 25%;
+		}
+
+		.house2 {
+			position: absolute;
+			display: block;
+			width: 40%;
+			right: 27%;
+			top: 31%;
+		}
+
+		.cars {
+			position: absolute;
+		    display: block;
+		    width: 16%;
+		    right: 7%;
+		    top: 61%;
+		}
 	}
 }
