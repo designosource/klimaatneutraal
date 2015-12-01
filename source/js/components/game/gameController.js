@@ -10,10 +10,10 @@ angular.module('klimaatneutraal.controllers')
                 console.log('gameController');
 
                 $rootScope.game = {
-                	'money': {},
+                	'money': 50,
                 	'score': {
-                		'public': '50',
-                		'eco': '50'
+                		'public': 50,
+                		'eco': 50
                 	}
                 }
 

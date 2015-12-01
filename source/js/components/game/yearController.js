@@ -18,8 +18,6 @@ angular.module('klimaatneutraal.controllers')
 
             var openComponent = function(component) {
 
-                $rootScope.game.score.eco = 80;
-
                 var missions = {
                     'house': {
                         'title': 'Warmte behoud',
@@ -68,9 +66,15 @@ angular.module('klimaatneutraal.controllers')
                 });
 
                 menuModal.result.then(function(option) {
-                    console.log('approve');
-                    console.log(option);
-                    $state.go('game.year', {'year':2})
+
+                    var factor = 2;
+
+                    $rootScope.game.score.eco += (option.eco * factor);
+                    $rootScope.game.score.public += (option.public * factor);
+                    $rootScope.game.money += (option.money * factor);
+
+                    $state.go('game.year', {'year': parseInt($scope.year) + 1})
+
                 }, function () {
                     console.log('dismiss');
                 });
