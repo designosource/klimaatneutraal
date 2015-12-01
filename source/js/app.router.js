@@ -56,6 +56,23 @@ angular.module('klimaatneutraal')
                 }
             })
 
+            .state("game.menu", {
+                url: "/menu",
+                onEnter: ['$stateParams', '$state', '$modal', function($stateParams, $state, $modal) {
+                    $modal.open({
+                        templateUrl: "js/components/modals/menuModal.html",
+                        resolve: {
+                            item: function() {
+                                return ['test', '1234'];
+                            }
+                        },
+                        controller: 'menuController'
+                    }).result.finally(function() {
+                        $state.go('^');
+                    });
+                }]
+            })
+
             .state('game.year', {
                 url: '/year/{year}',
                 views: {

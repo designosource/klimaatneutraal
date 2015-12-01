@@ -17,6 +17,7 @@ angular.module('klimaatneutraal.controllers', ['klimaatneutraal.services']);
 angular.module('klimaatneutraal', [
     'ui.router',
     'ui.bootstrap',
+    'angular-loading-bar',  
 
     'klimaatneutraal.filters',
     'klimaatneutraal.directives',
