@@ -1,4 +1,5 @@
-/* line 2, stdin */
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+/* line 4, stdin */
 .clearfix:after, .game-header .money ul:after, .game-header .score .score-wrapper:after {
   content: "";
   display: table;
@@ -6,12 +7,19 @@
 }
 
 /* line 1, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_main.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 5, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_main.scss */
 body {
   background-color: #767676;
   color: #FFF;
+  font-size: 14px;
+  font-size: 1.4rem;
 }
 
-/* line 6, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_main.scss */
+/* line 12, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_main.scss */
 .ratio-wrapper {
   width: 100vw;
   height: 56.25vw;
@@ -33,12 +41,12 @@ body {
   background-image: url("../img/ui/bg_canvas_default.svg");
 }
 
-/* line 23, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_main.scss */
+/* line 29, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_main.scss */
 .ratio-wrapper .content {
   height: 83%;
 }
 
-/* line 28, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_main.scss */
+/* line 34, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_main.scss */
 .clickable {
   cursor: pointer;
 }
@@ -158,6 +166,41 @@ body {
 /* line 12, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_game.scss */
 .year.year2 {
   background-image: url("../img/jaar1_1/bg_jaar1_1.svg");
+}
+
+/* line 1, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_startScreen.scss */
+.start-game {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url("../img/start-game-bg.svg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* line 11, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_startScreen.scss */
+.start-game .content-wrapper {
+  margin: 0 auto;
+  margin-top: 20%;
+  width: 50%;
+  padding: 25px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.46);
+  text-align: center;
+}
+
+/* line 21, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_startScreen.scss */
+.start-game .content-wrapper h1 {
+  margin: 0 0 25px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 57px;
+  font-size: 5.7rem;
+}
+
+/* line 28, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_startScreen.scss */
+.start-game .content-wrapper .btn {
+  width: 25%;
 }
 
 /* line 1, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_animations.scss */
@@ -433,6 +476,66 @@ body {
 }
 
 /* line 1, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_modals.scss */
+.modal-content {
+  border-radius: 0;
+}
+
+/* line 4, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_modals.scss */
+.modal-content .modal-body {
+  padding: 25px;
+}
+
+/* line 9, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_modals.scss */
 .menu {
   color: #000;
+}
+
+/* line 13, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_modals.scss */
+.mission {
+  color: #000;
+}
+
+/* line 16, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_modals.scss */
+.mission h2 {
+  margin: 0;
+}
+
+/* line 20, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_modals.scss */
+.mission .options {
+  list-style-type: none;
+  padding: 0;
+  margin: 5px 0;
+}
+
+/* line 25, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_modals.scss */
+.mission .options li {
+  padding-bottom: 15px;
+}
+
+/* line 31, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_modals.scss */
+.mission .option ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* line 35, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_modals.scss */
+.mission .option ul li {
+  text-align: center;
+}
+
+/* line 38, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_modals.scss */
+.mission .option ul li ul li {
+  display: inline-block;
+  padding: 0 5px;
+  line-height: 35px;
+}
+
+/* line 43, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_modals.scss */
+.mission .option ul li ul li img {
+  height: 35px;
+}
+
+/* line 51, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_modals.scss */
+.mission .option .action-wrapper {
+  text-align: center;
 }
