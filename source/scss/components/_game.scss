@@ -52,23 +52,6 @@
 			right: 13%;
 			top: 30%;
 			height: 100%;
-
-
-			.wind-turbine-bottom {
-				position: absolute;
-				display: block;
-				top: 6%;
-				right: 9%;
-			}
-
-			.wind-turbine-top {
-				position: absolute;
-				display: block;
-				-webkit-animation: wiek 10s linear infinite ;
-					-moz-animation:    wiek 10s linear infinite ;
-					-o-animation:      wiek 10s linear infinite ;
-					animation:         wiek 10s linear infinite ;
-			}
 		}
 	}
 
@@ -98,6 +81,62 @@
 			width: 98%;
 			top: 61%;
 			left: 2%;
+		}
+	}
+
+	&.year4 {
+		background-image: url('../img/year4/bg.svg');
+
+		.bus {
+			display: block;
+			position: absolute;
+			height: 20%;
+			z-index: 2;
+			left: -5%;
+			top: 78%;
+		}
+
+		.house {
+			display: block;
+			position: absolute;
+			top: 40%;
+			width: 48%;
+			right: 48%;
+		}
+
+		.light-saber {
+			position: absolute;
+			display: block;
+			width: 98%;
+			top: 61%;
+			left: 2%;
+		}
+
+		.wind-turbine-1 {
+			position: absolute;
+		    display: block;
+		    width: 7%;
+		    right: 71%;
+		    top: 29%;
+		    height: 100%;
+		}
+
+		.wind-turbine-2 {
+			position: absolute;
+		    display: block;
+		    width: 7%;
+		    right: 63%;
+		    top: 33%;
+		    height: 100%;
+		}
+
+		.wind-turbine-3 {
+		    position: absolute;
+		    display: block;
+		    width: 7%;
+		    right: 46%;
+		    top: 30%;
+		    height: 100%;
 		}
 	}
 }
