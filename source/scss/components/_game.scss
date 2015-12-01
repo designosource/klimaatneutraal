@@ -45,4 +45,33 @@
 		    top: 61%;
 		}
 	}
+
+	&.year3 {
+		background-image: url('../img/year3/bg.svg');
+
+		.biker {
+			display: block;
+		    position: absolute;
+		    height: 20%;
+		    z-index: 2;
+		    right: 6%;
+		    top: 75%;
+		}
+
+		.house {
+			display: block;
+		    position: absolute;
+		    top: 23%;
+		    width: 54%;
+		    right: 11%;	
+    	}
+
+		.light-saber {
+			position: absolute;
+		    display: block;
+		    width: 98%;
+		    top: 61%;
+		    left: 2%;
+		}
+	}
 }
