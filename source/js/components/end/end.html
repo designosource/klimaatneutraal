@@ -1,6 +1,12 @@
 <h2>Proficiat! U hebt het spel voltooid</h2>
 <p>Benieuwd naar je scoren? Vul hier je e-mail in je rapport zal via mail verstuurd worden</p>
-<form role="form">
-<input type="email" name="email" id="email">
-<button ng-click="sendEmail(Rapport)">Sign Me Up!</button>
-</form>
+<section ng-controller="endGameController as contact">
+  <form name="contactForm" id="contactForm" ng-submit="contactForm.$valid && sendTheMail()" novalidate>
+    Name: <input type="text" id="userName" required><br>
+    Email: <input type="email" id="userEmail" required><br>
+    Subject: <input type="text" id="userSubject" required><br>
+    Message: <textarea type="text" id="userMessage" required>
+    </textarea><br>
+    <input type="submit" value="Submit" id="SubmitBtn">
+  </form>
+</section>
