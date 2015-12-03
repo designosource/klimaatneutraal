@@ -8,6 +8,14 @@
 
 	&.year1 {
 		background-image: url('../img/jaar1_1/bg_jaar1_1.svg');
+
+		.house2 {
+			position: absolute;
+		    display: block;
+		    width: 24%;
+		    right: 1%;
+		    top: 25%;
+		}
 	}
 
 	&.year2 {
