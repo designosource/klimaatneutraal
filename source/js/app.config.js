@@ -1,7 +1,8 @@
-angular.module('klimaatneutraal')
-    .config([
+angular.module('klimaatneutraal').config([
+    'cfpLoadingBarProvider',
 
-        function() {
+    function(cfpLoadingBarProvider) {
+    	cfpLoadingBarProvider.includeSpinner = false;
+    }
 
-        }
-    ]);
+]);
