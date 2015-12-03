@@ -36,6 +36,17 @@ angular.module('klimaatneutraal')
                     }
                 }
             })
+
+            .state('character', {
+                url: '/character',
+                views: {
+                    '': {
+                        templateUrl: 'js/components/character/character.html',
+                        controller: 'characterController'
+                    }
+                }
+            })
+
             .state('endGame', {
                 url: '/end',
                 views: {

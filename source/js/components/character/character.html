@@ -1,0 +1,41 @@
+<section class="character">
+	<div class="header">
+		<h1>Ontwerp jouw karakter</h1>
+	</div>
+
+	<div class="character-preview">
+		{{character | json }}
+		<img class="current-character" src="img/character_selection/preview.svg" alt="">
+		
+	</div>
+
+	<div class="character-param">
+		<h2>Geslacht</h2>
+
+		<div class="sex">
+			<img ng-click="changeSex('1')" src="img/character_selection/male.svg" alt="" class="male">
+			<img ng-click="changeSex('2')" src="img/character_selection/female.svg" alt="" class="female">
+		</div>
+
+		<h2>Leeftijdsgroep</h2>
+		<div class="age">
+			<img ng-click="changeAge('1')" src="img/character_selection/1.svg" alt="" class="age_1">
+			<img ng-click="changeAge('2')" src="img/character_selection/2.svg" alt="" class="age_2">
+			<img ng-click="changeAge('3')" src="img/character_selection/3.svg" alt="" class="age_3">
+			
+		</div>
+
+		<h2>Extra</h2>
+		<div class="skin">
+			<div ng-click="changeSkin('1')" class="skin1"></div>
+			<div ng-click="changeSkin('2')" class="skin2"></div>
+		</div>	
+		
+		<div class="character-bottom">
+			<a href="#" class="char-back">Terug</a>
+			<a href="#" class="char-continue">Ga Verder</a>
+		</div>
+	</div>
+
+</section>
+
