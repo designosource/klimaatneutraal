@@ -156,19 +156,20 @@ body {
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: bottom;
+  background-size: cover;
 }
 
-/* line 8, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_game.scss */
+/* line 9, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_game.scss */
 .year.year1 {
   background-image: url("../img/jaar1_1/bg_jaar1_1.svg");
 }
 
-/* line 12, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_game.scss */
+/* line 13, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_game.scss */
 .year.year2 {
   background-image: url("../img/year2/bg.svg");
 }
 
-/* line 15, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_game.scss */
+/* line 16, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_game.scss */
 .year.year2 .biker {
   display: block;
   position: absolute;
@@ -179,7 +180,7 @@ body {
   top: 75%;
 }
 
-/* line 25, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_game.scss */
+/* line 26, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_game.scss */
 .year.year2 .house1 {
   display: block;
   position: absolute;
@@ -187,7 +188,7 @@ body {
   width: 25%;
 }
 
-/* line 32, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_game.scss */
+/* line 33, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_game.scss */
 .year.year2 .house2 {
   position: absolute;
   display: block;
@@ -196,7 +197,7 @@ body {
   top: 31%;
 }
 
-/* line 40, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_game.scss */
+/* line 41, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_game.scss */
 .year.year2 .cars {
   position: absolute;
   display: block;
@@ -205,7 +206,7 @@ body {
   top: 61%;
 }
 
-/* line 48, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_game.scss */
+/* line 49, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_game.scss */
 .year.year2 .wind-turbine {
   position: absolute;
   display: block;
@@ -215,28 +216,12 @@ body {
   height: 100%;
 }
 
-/* line 57, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_game.scss */
-.year.year2 .wind-turbine .wind-turbine-bottom {
-  position: absolute;
-  display: block;
-  top: 6%;
-  right: 9%;
-}
-
-/* line 64, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_game.scss */
-.year.year2 .wind-turbine .wind-turbine-top {
-  position: absolute;
-  display: block;
-  -webkit-animation: wiek 10s linear infinite;
-  animation: wiek 10s linear infinite;
-}
-
-/* line 75, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_game.scss */
+/* line 59, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_game.scss */
 .year.year3 {
   background-image: url("../img/year3/bg.svg");
 }
 
-/* line 78, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_game.scss */
+/* line 62, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_game.scss */
 .year.year3 .biker {
   display: block;
   position: absolute;
@@ -246,7 +231,7 @@ body {
   top: 75%;
 }
 
-/* line 87, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_game.scss */
+/* line 71, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_game.scss */
 .year.year3 .house {
   display: block;
   position: absolute;
@@ -255,13 +240,187 @@ body {
   right: 11%;
 }
 
-/* line 95, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_game.scss */
+/* line 79, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_game.scss */
 .year.year3 .light-saber {
   position: absolute;
   display: block;
   width: 98%;
   top: 61%;
   left: 2%;
+}
+
+/* line 88, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_game.scss */
+.year.year4 {
+  background-image: url("../img/year4/bg.svg");
+}
+
+/* line 91, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_game.scss */
+.year.year4 .bus {
+  display: block;
+  position: absolute;
+  height: 20%;
+  z-index: 2;
+  left: -5%;
+  top: 78%;
+}
+
+/* line 100, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_game.scss */
+.year.year4 .house {
+  display: block;
+  position: absolute;
+  top: 40%;
+  width: 48%;
+  right: 48%;
+}
+
+/* line 108, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_game.scss */
+.year.year4 .light-saber {
+  position: absolute;
+  display: block;
+  width: 98%;
+  top: 61%;
+  left: 2%;
+}
+
+/* line 116, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_game.scss */
+.year.year4 .wind-turbine-1 {
+  position: absolute;
+  display: block;
+  width: 7%;
+  right: 71%;
+  top: 29%;
+  height: 100%;
+}
+
+/* line 125, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_game.scss */
+.year.year4 .wind-turbine-2 {
+  position: absolute;
+  display: block;
+  width: 7%;
+  right: 63%;
+  top: 33%;
+  height: 100%;
+}
+
+/* line 134, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_game.scss */
+.year.year4 .wind-turbine-3 {
+  position: absolute;
+  display: block;
+  width: 7%;
+  right: 46%;
+  top: 30%;
+  height: 100%;
+}
+
+/* line 144, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_game.scss */
+.year.year5 {
+  background-image: url("../img/year5/bg.svg");
+}
+
+/* line 147, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_game.scss */
+.year.year5 .woman {
+  display: block;
+  position: absolute;
+  height: 32%;
+  z-index: 2;
+  left: 9%;
+  top: 60%;
+  -webkit-animation: skater_moves 2s infinite;
+  animation: skater_moves 2s infinite;
+}
+
+/* line 161, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_game.scss */
+.year.year5 .house {
+  position: absolute;
+  display: block;
+  width: 38%;
+  right: 19%;
+  top: 30%;
+}
+
+/* line 169, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_game.scss */
+.year.year5 .light-saber1 {
+  position: absolute;
+  display: block;
+  width: 6%;
+  top: 49%;
+  left: 5%;
+}
+
+/* line 177, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_game.scss */
+.year.year5 .light-saber2 {
+  position: absolute;
+  display: block;
+  width: 10%;
+  top: 61%;
+  left: 22%;
+}
+
+/* line 185, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_game.scss */
+.year.year5 .light-saber3 {
+  position: absolute;
+  display: block;
+  width: 10%;
+  top: 61%;
+  left: 76%;
+}
+
+/* line 193, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_game.scss */
+.year.year5 .light-saber4 {
+  position: absolute;
+  display: block;
+  width: 6%;
+  top: 49%;
+  left: 85%;
+}
+
+/* line 201, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_game.scss */
+.year.year5 .wind-turbine-1 {
+  position: absolute;
+  display: block;
+  width: 7%;
+  right: 71%;
+  top: 29%;
+  height: 100%;
+}
+
+/* line 210, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_game.scss */
+.year.year5 .wind-turbine-2 {
+  position: absolute;
+  display: block;
+  width: 7%;
+  right: 63%;
+  top: 33%;
+  height: 100%;
+}
+
+/* line 219, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_game.scss */
+.year.year5 .wind-turbine-3 {
+  position: absolute;
+  display: block;
+  width: 7%;
+  right: 46%;
+  top: 30%;
+  height: 100%;
+}
+
+/* line 228, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_game.scss */
+.year.year5 .busstop {
+  position: absolute;
+  display: block;
+  width: 11%;
+  top: 60%;
+  right: 49%;
+  width: 10%;
+}
+
+/* line 236, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_game.scss */
+.year.year5 .busstop .busstop-legs {
+  position: absolute;
+  display: block;
+  width: 61%;
+  top: 69%;
+  right: 29%;
 }
 
 /* line 1, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_startScreen.scss */
@@ -308,11 +467,27 @@ body {
 }
 
 /* line 8, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_animations.scss */
+.wind-turbine-bottom {
+  position: absolute;
+  display: block;
+  top: 6%;
+  right: 9%;
+}
+
+/* line 15, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_animations.scss */
+.wind-turbine-top {
+  position: absolute;
+  display: block;
+  -webkit-animation: wiek 10s linear infinite;
+  animation: wiek 10s linear infinite;
+}
+
+/* line 25, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_animations.scss */
 .interact:hover, #molenpaal:hover {
   opacity: 0.8;
 }
 
-/* line 11, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_animations.scss */
+/* line 28, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_animations.scss */
 #skater {
   display: block;
   position: absolute;
@@ -349,7 +524,7 @@ body {
   }
 }
 
-/* line 33, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_animations.scss */
+/* line 50, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_animations.scss */
 #benen {
   position: absolute;
   display: block;
@@ -358,46 +533,46 @@ body {
   top: 72%;
 }
 
-/* line 39, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_animations.scss */
+/* line 56, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_animations.scss */
 #molenpaal {
   position: absolute;
   display: block;
   width: 10%;
   left: 50%;
   top: 30%;
-}
-
-/* line 43, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_animations.scss */
-#molenpaal_l {
-  z-index: 1;
-  position: absolute;
-  display: block;
-  width: 8%;
-  left: 57.3%;
-  top: 30%;
-}
-
-/* line 48, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_animations.scss */
-#wiek {
-  position: absolute;
-  display: block;
-  width: 10%;
-  left: 50.8%;
-  top: 20.2%;
-  -webkit-animation: wiek 10s linear infinite;
-  animation: wiek 10s linear infinite;
-}
-
-@-webkit-keyframes wiek {
-  0% {
-    -webkit-transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
 }
 
 /* line 60, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_animations.scss */
+#molenpaal_l {
+  z-index: 1;
+  position: absolute;
+  display: block;
+  width: 8%;
+  left: 57.3%;
+  top: 30%;
+}
+
+/* line 65, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_animations.scss */
+#wiek {
+  position: absolute;
+  display: block;
+  width: 10%;
+  left: 50.8%;
+  top: 20.2%;
+  -webkit-animation: wiek 10s linear infinite;
+  animation: wiek 10s linear infinite;
+}
+
+@-webkit-keyframes wiek {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+/* line 77, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_animations.scss */
 #wiek_l {
   position: absolute;
   display: block;
@@ -417,7 +592,7 @@ body {
   }
 }
 
-/* line 72, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_animations.scss */
+/* line 89, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_animations.scss */
 #huis_rechts {
   position: absolute;
   display: block;
@@ -426,12 +601,12 @@ body {
   top: 31%;
 }
 
-/* line 80, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_animations.scss */
+/* line 97, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_animations.scss */
 .interact:hover, #molenpaal:hover {
   opacity: 0.8;
 }
 
-/* line 84, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_animations.scss */
+/* line 101, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_animations.scss */
 #skater {
   display: block;
   position: absolute;
@@ -468,7 +643,7 @@ body {
   }
 }
 
-/* line 108, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_animations.scss */
+/* line 125, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_animations.scss */
 #benen {
   position: absolute;
   display: block;
@@ -477,7 +652,7 @@ body {
   top: 72%;
 }
 
-/* line 115, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_animations.scss */
+/* line 132, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_animations.scss */
 #molenpaal {
   position: absolute;
   display: block;
@@ -486,7 +661,7 @@ body {
   top: 30%;
 }
 
-/* line 120, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_animations.scss */
+/* line 137, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_animations.scss */
 #molenpaal_l {
   z-index: 1;
   position: absolute;
@@ -496,7 +671,7 @@ body {
   top: 30%;
 }
 
-/* line 126, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_animations.scss */
+/* line 143, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_animations.scss */
 #wiek {
   position: absolute;
   display: block;
@@ -516,7 +691,7 @@ body {
   }
 }
 
-/* line 140, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_animations.scss */
+/* line 157, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_animations.scss */
 #wiek_l {
   position: absolute;
   display: block;
@@ -536,7 +711,7 @@ body {
   }
 }
 
-/* line 154, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_animations.scss */
+/* line 171, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_animations.scss */
 #huis_rechts {
   position: absolute;
   display: block;
@@ -545,7 +720,7 @@ body {
   top: 31%;
 }
 
-/* line 159, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_animations.scss */
+/* line 176, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_animations.scss */
 #huis_links_wb {
   display: block;
   position: absolute;
@@ -553,7 +728,7 @@ body {
   width: 25%;
 }
 
-/* line 165, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_animations.scss */
+/* line 182, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_animations.scss */
 #buskotje {
   position: absolute;
   display: block;
@@ -562,7 +737,7 @@ body {
   left: 40%;
 }
 
-/* line 172, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_animations.scss */
+/* line 189, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_animations.scss */
 #buskotje:before {
   position: absolute;
   display: block;
