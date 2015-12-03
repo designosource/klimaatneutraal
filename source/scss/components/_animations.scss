@@ -5,6 +5,23 @@
 	width: 25%;
 }
 
+.wind-turbine-bottom {
+	position: absolute;
+	display: block;
+	top: 6%;
+	right: 9%;
+}
+
+.wind-turbine-top {
+	position: absolute;
+	display: block;
+	-webkit-animation: wiek 10s linear infinite ;
+		-moz-animation:    wiek 10s linear infinite ;
+		-o-animation:      wiek 10s linear infinite ;
+		animation:         wiek 10s linear infinite ;
+}
+
+
 .interact:hover, #molenpaal:hover {
 	opacity: 0.8;
 }

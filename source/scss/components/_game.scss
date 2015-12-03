@@ -4,9 +4,18 @@
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: bottom;
+	background-size: cover;
 
 	&.year1 {
 		background-image: url('../img/jaar1_1/bg_jaar1_1.svg');
+
+		.house2 {
+			position: absolute;
+		    display: block;
+		    width: 24%;
+		    right: 1%;
+		    top: 25%;
+		}
 	}
 
 	&.year2 {
@@ -52,23 +61,6 @@
 			right: 13%;
 			top: 30%;
 			height: 100%;
-
-
-			.wind-turbine-bottom {
-				position: absolute;
-				display: block;
-				top: 6%;
-				right: 9%;
-			}
-
-			.wind-turbine-top {
-				position: absolute;
-				display: block;
-				-webkit-animation: wiek 10s linear infinite ;
-					-moz-animation:    wiek 10s linear infinite ;
-					-o-animation:      wiek 10s linear infinite ;
-					animation:         wiek 10s linear infinite ;
-			}
 		}
 	}
 
@@ -100,8 +92,218 @@
 			left: 2%;
 		}
 	}
-    
-    &.year6 {
-		background-image: url('../img/jaar3_2/bg_jaar3_2.svg');
+
+	&.year4 {
+		background-image: url('../img/year4/bg.svg');
+
+		.bus {
+			display: block;
+			position: absolute;
+			height: 20%;
+			z-index: 2;
+			left: -5%;
+			top: 78%;
+		}
+
+		.house {
+			display: block;
+			position: absolute;
+			top: 40%;
+			width: 48%;
+			right: 48%;
+		}
+
+		.light-saber {
+			position: absolute;
+			display: block;
+			width: 98%;
+			top: 61%;
+			left: 2%;
+		}
+
+		.wind-turbine-1 {
+			position: absolute;
+		    display: block;
+		    width: 7%;
+		    right: 71%;
+		    top: 29%;
+		    height: 100%;
+		}
+
+		.wind-turbine-2 {
+			position: absolute;
+		    display: block;
+		    width: 7%;
+		    right: 63%;
+		    top: 33%;
+		    height: 100%;
+		}
+
+		.wind-turbine-3 {
+		    position: absolute;
+		    display: block;
+		    width: 7%;
+		    right: 46%;
+		    top: 30%;
+		    height: 100%;
+		}
+	}
+
+	&.year5 {
+		background-image: url('../img/year5/bg.svg');
+
+		.woman {
+			display: block;
+		    position: absolute;
+		    height: 32%;
+		    z-index: 2;
+		    left: 9%;
+		    top: 60%;
+
+		    -webkit-animation: skater_moves 2s infinite ;
+			   -moz-animation: skater_moves 2s infinite ;
+		         -o-animation: skater_moves 2s infinite ;
+		            animation: skater_moves 2s infinite ;
+		}
+
+		.house {
+			position: absolute;
+		    display: block;
+		    width: 38%;
+		    right: 19%;
+		    top: 30%;
+		}
+
+		.light-saber1 {
+			position: absolute;
+		    display: block;
+		    width: 6%;
+		    top: 49%;
+		    left: 5%;
+		}
+
+		.light-saber2 {
+			position: absolute;
+		    display: block;
+		    width: 10%;
+		    top: 61%;
+		    left: 22%;
+		}
+
+		.light-saber3 {
+			position: absolute;
+		    display: block;
+		    width: 10%;
+		    top: 61%;
+		    left: 76%;
+		}
+
+		.light-saber4 {
+			position: absolute;
+		    display: block;
+		    width: 6%;
+		    top: 49%;
+		    left: 85%;
+		}
+
+		.wind-turbine-1 {
+			position: absolute;
+		    display: block;
+		    width: 7%;
+		    right: 71%;
+		    top: 29%;
+		    height: 100%;
+		}
+
+		.wind-turbine-2 {
+			position: absolute;
+		    display: block;
+		    width: 7%;
+		    right: 63%;
+		    top: 33%;
+		    height: 100%;
+		}
+
+		.wind-turbine-3 {
+		    position: absolute;
+		    display: block;
+		    width: 7%;
+		    right: 46%;
+		    top: 30%;
+		    height: 100%;
+		}
+
+		.busstop {
+			position: absolute;
+		    display: block;
+		    width: 11%;
+		    top: 60%;
+		    right: 49%;
+			width: 10%;
+
+			.busstop-legs {
+				position: absolute;
+			    display: block;
+			    width: 61%;
+			    top: 69%;
+			    right: 29%;
+			}
+		}
+	}
+
+	&.year6 {
+		background-image: url('../img/year6/bg_jaar3_2.svg');
+
+		.huis_links {
+			position: absolute;
+		    display: block;
+		    width: 18%;
+		    right: 30%;
+		    top: 26.6%;
+		}
+
+		.huis_rechts {
+			position: absolute;
+		    display: block;
+		    width: 18%;
+		    right: 4%;
+		    top: 21%;
+		}
+
+		.car {
+			position: absolute;
+		    display: block;
+		    width: 35%;
+		    right: 62%;
+		    top: 62%;
+		}
+
+		.zon {
+			position: absolute;
+		    display: block;
+		    width: 13%;
+		    right: 80%;
+		    top: 18%;
+		}
+
+		.fietser {
+			position: absolute;
+		    display: block;
+		    width: 14%;
+		    right: 11%;
+		    top: 63%;
+		}
+
+		.fietser_2 {
+			position: absolute;
+		    display: block;
+		    width: 14%;
+		    right: 5%;
+		    top: 70%;
+		}
+		   
+
+
+
 	}
 }
