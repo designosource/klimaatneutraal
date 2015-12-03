@@ -250,4 +250,60 @@
 			}
 		}
 	}
+
+	&.year6 {
+		background-image: url('../img/year6/bg_jaar3_2.svg');
+
+		.huis_links {
+			position: absolute;
+		    display: block;
+		    width: 18%;
+		    right: 30%;
+		    top: 26.6%;
+		}
+
+		.huis_rechts {
+			position: absolute;
+		    display: block;
+		    width: 18%;
+		    right: 4%;
+		    top: 21%;
+		}
+
+		.car {
+			position: absolute;
+		    display: block;
+		    width: 35%;
+		    right: 62%;
+		    top: 62%;
+		}
+
+		.zon {
+			position: absolute;
+		    display: block;
+		    width: 13%;
+		    right: 80%;
+		    top: 18%;
+		}
+
+		.fietser {
+			position: absolute;
+		    display: block;
+		    width: 14%;
+		    right: 11%;
+		    top: 63%;
+		}
+
+		.fietser_2 {
+			position: absolute;
+		    display: block;
+		    width: 14%;
+		    right: 5%;
+		    top: 70%;
+		}
+		   
+
+
+
+	}
 }
