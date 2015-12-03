@@ -56,6 +56,10 @@
 		    text-transform: uppercase;
 		}
 
+		.selected {
+			box-shadow: 0px 1px 3px rgba(21, 166, 251, 0.36) inset, 0px 0px 8px rgb(0, 184, 255)
+		}
+
 		.sex {
 			background-color: #e5e5e4;
 			height: 19%;

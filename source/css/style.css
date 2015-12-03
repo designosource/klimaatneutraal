@@ -889,13 +889,18 @@ body {
 }
 
 /* line 59, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_character.scss */
+.character .character-param .selected {
+  box-shadow: 0px 1px 3px rgba(21, 166, 251, 0.36) inset, 0px 0px 8px #00b8ff;
+}
+
+/* line 63, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_character.scss */
 .character .character-param .sex {
   background-color: #e5e5e4;
   height: 19%;
   width: 100%;
 }
 
-/* line 64, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_character.scss */
+/* line 68, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_character.scss */
 .character .character-param .sex img {
   display: block;
   height: 60%;
@@ -905,24 +910,24 @@ body {
   position: relative;
 }
 
-/* line 73, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_character.scss */
+/* line 77, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_character.scss */
 .character .character-param .sex .male {
   margin-left: 25%;
 }
 
-/* line 77, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_character.scss */
+/* line 81, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_character.scss */
 .character .character-param .sex .female {
   margin-left: 5%;
 }
 
-/* line 82, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_character.scss */
+/* line 86, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_character.scss */
 .character .character-param .skin {
   background-color: #e5e5e4;
   height: 19%;
   width: 100%;
 }
 
-/* line 87, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_character.scss */
+/* line 91, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_character.scss */
 .character .character-param .skin .skin1 {
   margin-left: 33%;
   background-color: #ae7248;
@@ -934,7 +939,7 @@ body {
   border-radius: 50%;
 }
 
-/* line 97, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_character.scss */
+/* line 101, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_character.scss */
 .character .character-param .skin .skin2 {
   margin-left: 12%;
   background-color: #fbbe8e;
@@ -946,13 +951,13 @@ body {
   border-radius: 50%;
 }
 
-/* line 108, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_character.scss */
+/* line 112, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_character.scss */
 .character .character-param .age {
   background-color: #e5e5e4;
   height: 24%;
 }
 
-/* line 112, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_character.scss */
+/* line 116, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_character.scss */
 .character .character-param .age img {
   display: block;
   float: left;
@@ -960,28 +965,28 @@ body {
   margin-top: 3%;
 }
 
-/* line 119, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_character.scss */
+/* line 123, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_character.scss */
 .character .character-param .age .age_1 {
   margin-left: 27%;
 }
 
-/* line 123, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_character.scss */
+/* line 127, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_character.scss */
 .character .character-param .age .age_2 {
   margin-left: 10%;
 }
 
-/* line 127, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_character.scss */
+/* line 131, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_character.scss */
 .character .character-param .age .age_3 {
   margin-left: 10%;
 }
 
-/* line 132, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_character.scss */
+/* line 136, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_character.scss */
 .character .character-param .character-bottom {
   height: 20%;
   background-color: #bbbdc0;
 }
 
-/* line 136, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_character.scss */
+/* line 140, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_character.scss */
 .character .character-param .character-bottom a {
   display: block;
   width: 30%;
@@ -994,13 +999,13 @@ body {
   color: white;
 }
 
-/* line 150, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_character.scss */
+/* line 154, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_character.scss */
 .character .character-param .character-bottom .char-back {
   margin: 5% 13.33%;
   background-color: #8C8C8C;
 }
 
-/* line 155, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_character.scss */
+/* line 159, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_character.scss */
 .character .character-param .character-bottom .char-continue {
   margin-top: 5%;
   background-color: #007a51;
