@@ -1,4 +1,36 @@
+html {
+    font-size:62.5%;
+}
+
 body {
-	background-color: red;
+	background-color: #767676;
 	color: #FFF;
+    font-size: 14px;
+    font-size: 1.4rem;
+}
+
+.ratio-wrapper {
+	width: 100vw; 
+    height: 56.25vw; /* height:width ratio = 9/16 = .5625  */
+    background-color: white;
+    max-height: 100vh;
+    max-width: 177.78vh; /* 16/9 = 1.778 */
+    margin: auto;
+    overflow: hidden;
+
+    position: absolute;
+    top:0;bottom:0; /* vertical center */
+    left:0;right:0; /* horizontal center */
+    -webkit-box-shadow: 0px 0px 83px 3px rgba(0,0,0,0.48);
+	-moz-box-shadow: 0px 0px 83px 3px rgba(0,0,0,0.48);
+	box-shadow: 0px 0px 83px 3px rgba(0,0,0,0.48);
+	background-image: url('../img/ui/bg_canvas_default.svg');
+
+	.content {
+		height: 83%;
+	}
+}
+
+.clickable {
+    cursor: pointer;
 }

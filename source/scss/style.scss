@@ -1,3 +1,16 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
 
 @import "components/_main.scss"; 
+@import "components/_header.scss"; 
+@import "components/_game.scss"; 
+@import "components/_startScreen.scss"; 
+@import "components/_animations.scss"; 
+@import "components/_modals.scss"; 

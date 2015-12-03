@@ -16,6 +16,8 @@ angular.module('klimaatneutraal.controllers', ['klimaatneutraal.services']);
 //Define your app module. This is where it all starts.
 angular.module('klimaatneutraal', [
     'ui.router',
+    'ui.bootstrap',
+    'angular-loading-bar',  
 
     'klimaatneutraal.filters',
     'klimaatneutraal.directives',

@@ -1,0 +1,57 @@
+<div class="mission">
+	<div class="modal-body">
+		<h2 ng-hide="option">{{mission.title}}</h2>
+
+		<ul class="options" ng-hide="option">
+			<li ng-repeat="option in mission.options">
+				<h4>{{option.title}}</h4>
+				<p>
+					{{option.description}}
+				</p>
+				<button ng-click="selectOption(option)" class="btn btn-success">Selecteer</button>
+			</li>
+		</ul>
+	
+		<div class="option" ng-show="option">
+			<h2>{{option.title}}</h2>
+			<p>
+				{{option.description}}
+			</p>
+			<hr>
+			<ul class="row">
+				<li class="col-md-4">
+					<h5>Budget:</h5>
+					<ul>
+						<li ng-repeat="n in [] | range:option.money">
+							<img src="img/ui/money.svg" alt="" ng-if="option.money > 0">
+							<img src="img/ui/money-negative.svg" alt="" ng-if="option.money < 0">
+						</li>
+					</ul>
+				</li>
+				<li class="col-md-4">
+					<h5>Tevredenheid:</h5>
+					<ul>
+						<li ng-repeat="n in [] | range:option.public">
+						  	<img class="icon" src="img/ui/public.svg" alt="" ng-if="option.public > 0">
+						  	<img class="icon" src="img/ui/public-negative.svg" alt="" ng-if="option.public < 0">
+						</li>
+					</ul>
+				</li>
+				<li class="col-md-4">
+					<h5>Milieu: </h5>
+					<ul>
+						<li ng-repeat="n in [] | range:option.eco">
+						  	<img class="icon" src="img/ui/leaf.svg" alt="">
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<hr/>
+			<div class="action-wrapper">
+				<button ng-click="publishOption(option)" class="btn btn-success">Publiceer</button>
+				<button ng-click="deSelectOption()" class="btn">Annuleer</button>
+			</div>
+		</div>
+	</div>
+</div>
+

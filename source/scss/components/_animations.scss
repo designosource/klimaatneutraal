@@ -1,0 +1,195 @@
+#huis_links_wb{
+	display: block; 
+	position: absolute;
+	top: 38%;
+	width: 25%;
+}
+
+.wind-turbine-bottom {
+	position: absolute;
+	display: block;
+	top: 6%;
+	right: 9%;
+}
+
+.wind-turbine-top {
+	position: absolute;
+	display: block;
+	-webkit-animation: wiek 10s linear infinite ;
+		-moz-animation:    wiek 10s linear infinite ;
+		-o-animation:      wiek 10s linear infinite ;
+		animation:         wiek 10s linear infinite ;
+}
+
+
+.interact:hover, #molenpaal:hover {
+	opacity: 0.8;
+}
+#skater{
+	display: block;
+	position: absolute;
+	height: 30%;
+	z-index: 2;
+	left: 5%;
+	right: 90%;
+	top: 66%;
+	-webkit-animation: skater_moves 2s infinite ;
+		-moz-animation:    skater_moves 2s infinite ;
+		-o-animation:      skater_moves 2s infinite ;
+		animation:         skater_moves 2s infinite ;
+}
+@-webkit-keyframes skater_moves {
+  	0%   { left: 5%; }
+  	50%   { left: 30%; }
+  	100% { left: 5%; }
+  	0%		{ -webkit-transform: scaleX(1); }  	
+  	50%		{ -webkit-transform: scaleX(1); }
+  	60%		{ -webkit-transform: scaleX(-1); }
+  	100%	{ -webkit-transform: scaleX(-1); }
+}
+#benen{
+	position: absolute; display: block;
+	width: 7%;
+	left: 41%;
+	top: 72%;
+}
+#molenpaal{
+	position: absolute;display: block;
+	width: 10%;left:50%;top:30%;
+}
+#molenpaal_l{
+	z-index: 1;
+	position: absolute;display: block;
+	width: 8%;left:57.3%;top:30%;
+}
+#wiek{
+	position: absolute;display: block;
+	width: 10%;left:50.8%;top:20.2%;
+	-webkit-animation: wiek 10s linear infinite ;
+		-moz-animation:    wiek 10s linear infinite ;
+		-o-animation:      wiek 10s linear infinite ;
+		animation:         wiek 10s linear infinite ;
+}
+@-webkit-keyframes wiek {
+  	0%		{ -webkit-transform: rotate(0deg); }  	
+  	100%	{ -webkit-transform: rotate(360deg); }
+}
+#wiek_l{
+	position: absolute;display: block;
+	width: 8%;left:58%;top:20.2%;
+	-webkit-animation: wiek_l 10s linear infinite ;
+		-moz-animation:    wiek_l 10s linear infinite ;
+		-o-animation:      wiek_l 10s linear infinite ;
+		animation:         wiek_l 10s linear infinite ;
+}
+@-webkit-keyframes wiek_l {
+  	0%		{ -webkit-transform: rotate(40deg); }  	
+  	100%	{ -webkit-transform: rotate(380deg); }
+}
+#huis_rechts{
+	position: absolute;display: block;
+	width: 30%;right: 1%;top: 31%;
+}
+
+/////
+
+
+.interact:hover, #molenpaal:hover {
+	opacity: 0.8;
+}
+
+#skater{
+	display: block;
+	position: absolute;
+	height: 30%;
+	z-index: 2;
+	left: 5%;
+	right: 90%;
+	top: 66%;
+	-webkit-animation: skater_moves 2s infinite ;
+		-moz-animation:    skater_moves 2s infinite ;
+		-o-animation:      skater_moves 2s infinite ;
+		animation:         skater_moves 2s infinite ;
+}
+
+@-webkit-keyframes skater_moves {
+  	0%   { left: 5%; }
+  	50%   { left: 30%; }
+  	100% { left: 5%; }
+  	0%		{ -webkit-transform: scaleX(1); }  	
+  	50%		{ -webkit-transform: scaleX(1); }
+  	60%		{ -webkit-transform: scaleX(-1); }
+  	100%	{ -webkit-transform: scaleX(-1); }
+}
+
+#benen{
+	position: absolute; display: block;
+	width: 7%;
+	left: 41%;
+	top: 72%;
+}
+
+#molenpaal{
+	position: absolute;display: block;
+	width: 10%;left:50%;top:30%;
+}
+
+#molenpaal_l{
+	z-index: 1;
+	position: absolute;display: block;
+	width: 8%;left:57.3%;top:30%;
+}
+
+#wiek{
+	position: absolute;display: block;
+	width: 10%;left:50.8%;top:20.2%;
+	-webkit-animation: wiek 10s linear infinite ;
+		-moz-animation:    wiek 10s linear infinite ;
+		-o-animation:      wiek 10s linear infinite ;
+		animation:         wiek 10s linear infinite ;
+}
+
+@-webkit-keyframes wiek {
+  	0%		{ -webkit-transform: rotate(0deg); }  	
+  	100%	{ -webkit-transform: rotate(360deg); }
+}
+
+#wiek_l{
+	position: absolute;display: block;
+	width: 8%;left:58%;top:20.2%;
+	-webkit-animation: wiek_l 10s linear infinite ;
+		-moz-animation:    wiek_l 10s linear infinite ;
+		-o-animation:      wiek_l 10s linear infinite ;
+		animation:         wiek_l 10s linear infinite ;
+}
+
+@-webkit-keyframes wiek_l {
+  	0%		{ -webkit-transform: rotate(40deg); }  	
+  	100%	{ -webkit-transform: rotate(380deg); }
+}
+
+#huis_rechts{
+	position: absolute;display: block;
+	width: 30%;right: 1%;top: 31%;
+}
+
+#huis_links_wb{
+	display: block; position: absolute;
+	top: 38%;
+	width: 25%;
+}
+
+#buskotje{
+	position: absolute;
+	display: block;
+	width: 12%;
+	top: 55%;
+	left: 40%;
+}
+#buskotje:before{
+	position: absolute;
+	display: block;
+	width: 12%;
+	top: 55%;
+	left: 40%;
+}

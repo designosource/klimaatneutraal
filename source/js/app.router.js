@@ -45,12 +45,40 @@ angular.module('klimaatneutraal')
                     }
                 }
             })
-            .state('year1', {
-                url: '/year/1',
+
+            .state('game', {
+                url: '/game', 
                 views: {
                     '': {
-                        templateUrl: 'js/components/game/year1.html',
-                        controller: 'year1Controller'
+                        templateUrl: 'js/components/game/game.html',
+                        controller: 'gameController'
+                    }
+                }
+            })
+
+            .state("game.menu", {
+                url: "/menu",
+                onEnter: ['$stateParams', '$state', '$modal', function($stateParams, $state, $modal) {
+                    $modal.open({
+                        templateUrl: "js/components/modals/menuModal.html",
+                        resolve: {
+                            item: function() {
+                                return ['test', '1234'];
+                            }
+                        },
+                        controller: 'menuController'
+                    }).result.finally(function() {
+                        $state.go('^');
+                    });
+                }]
+            })
+
+            .state('game.year', {
+                url: '/year/{year}',
+                views: {
+                    '': {
+                        templateUrl: 'js/components/game/year.html',
+                        controller: 'yearController'
                     }
                 }
             });

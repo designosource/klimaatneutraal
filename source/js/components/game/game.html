@@ -1,0 +1,51 @@
+<!-- HEADER -->
+<section class="game-header">
+	<div class="money col-xs-3 col-md-3">
+		<ul>
+			<li>
+				<img class="ui_money_1" src="img/ui/money_no.svg" alt="">
+			</li>
+			<li>
+				<img class="ui_money_2" src="img/ui/money_no.svg" alt="">
+			</li>
+			<li>
+				<img class="ui_money_3" src="img/ui/money_no.svg" alt="">
+			</li>
+			<li>
+				<img class="ui_money_4" src="img/ui/money_no.svg" alt="">
+			</li>
+			<li>
+				<img class="ui_money_4" src="img/ui/money_no.svg" alt="">
+			</li>
+		</ul>
+	</div>
+	<div class="score col-xs-7 col-md-8">
+		
+		<div class="score-eco score-wrapper">
+			<div class="icon-wrapper">
+				<img class="icon" src="img/ui/leaf.svg" alt="">
+			</div>
+			<div class="score-bar">
+				<div class="score-inner" ng-style="{width: game.score.eco + '%'}"></div>
+			</div>
+		</div>
+		<div class="score-public score-wrapper">
+			<div class="icon-wrapper">
+				<img class="icon" src="img/ui/public.svg" alt="">
+			</div>
+			<div class="score-bar">
+				<div class="score-inner" ng-style="{width: game.score.public + '%'}"></div>
+			</div>
+		</div>
+		
+	</div>
+	<div class="menu-wrapper col-xs-2 col-md-1">
+		<div ng-click="openMenu()" class="clickable menu text-hide">Menu</div>
+	</div>
+</section>
+
+<!-- CONTENT -->
+<div class="content">
+	<!-- MAGIC -->
+	<ui-view></ui-view>
+</div>

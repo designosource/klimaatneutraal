@@ -1,0 +1,32 @@
+.start-game {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+
+	background-image: url('../img/start-game-bg.svg');
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	.content-wrapper {
+		margin: 0 auto;
+		margin-top: 20%;
+		width: 50%;
+		padding: 25px;
+		box-sizing: border-box;
+
+		background-color: rgba(0, 0, 0, 0.46);
+		text-align: center;
+
+		h1 {
+			margin: 0 0 25px 0;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 57px;
+			font-size: 5.7rem;
+		}
+
+		.btn {
+			width: 25%; 
+		}
+	}
+}
