@@ -4,6 +4,7 @@
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: bottom;
+	background-size: cover;
 
 	&.year1 {
 		background-image: url('../img/jaar1_1/bg_jaar1_1.svg');
@@ -137,6 +138,108 @@
 		    right: 46%;
 		    top: 30%;
 		    height: 100%;
+		}
+	}
+
+	&.year5 {
+		background-image: url('../img/year5/bg.svg');
+
+		.woman {
+			display: block;
+		    position: absolute;
+		    height: 32%;
+		    z-index: 2;
+		    left: 9%;
+		    top: 60%;
+
+		    -webkit-animation: skater_moves 2s infinite ;
+			   -moz-animation: skater_moves 2s infinite ;
+		         -o-animation: skater_moves 2s infinite ;
+		            animation: skater_moves 2s infinite ;
+		}
+
+		.house {
+			position: absolute;
+		    display: block;
+		    width: 38%;
+		    right: 19%;
+		    top: 30%;
+		}
+
+		.light-saber1 {
+			position: absolute;
+		    display: block;
+		    width: 6%;
+		    top: 49%;
+		    left: 5%;
+		}
+
+		.light-saber2 {
+			position: absolute;
+		    display: block;
+		    width: 10%;
+		    top: 61%;
+		    left: 22%;
+		}
+
+		.light-saber3 {
+			position: absolute;
+		    display: block;
+		    width: 10%;
+		    top: 61%;
+		    left: 76%;
+		}
+
+		.light-saber4 {
+			position: absolute;
+		    display: block;
+		    width: 6%;
+		    top: 49%;
+		    left: 85%;
+		}
+
+		.wind-turbine-1 {
+			position: absolute;
+		    display: block;
+		    width: 7%;
+		    right: 71%;
+		    top: 29%;
+		    height: 100%;
+		}
+
+		.wind-turbine-2 {
+			position: absolute;
+		    display: block;
+		    width: 7%;
+		    right: 63%;
+		    top: 33%;
+		    height: 100%;
+		}
+
+		.wind-turbine-3 {
+		    position: absolute;
+		    display: block;
+		    width: 7%;
+		    right: 46%;
+		    top: 30%;
+		    height: 100%;
+		}
+
+		.busstop {
+			position: absolute;
+		    display: block;
+		    width: 11%;
+		    top: 60%;
+		    right: 49%;
+			width: 10%;
+
+			.busstop-legs {
+				position: absolute;
+			    display: block;
+			    width: 61%;
+			    top: 69%;
+			    right: 29%;
+			}
 		}
 	}
 }
