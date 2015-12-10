@@ -32,9 +32,9 @@ angular.module('klimaatneutraal.services').service("mailService",[
 
 
       var sendMailchimp = function(name, firstName, email){
-/*	      	$http.post('https://us12.api.mailchimp.com/2.0/lists/subscribe.json?apikey='+mailchimpKey+'&id=cb553f7b01&email[email]='+email+'&merge_vars[FNAME]='+firstName+'&merge_vars[LNAME]='+name+'&double_optin=false&send_welcome=false');
-*/
-	      	$http.post('https://us12.api.mailchimp.com/3.0/lists/cb553f7b01/members', {
+	      	$http.post('https://us12.api.mailchimp.com/2.0/lists/subscribe.json?apikey='+mailchimpKey+'&id=cb553f7b01&email[email]='+email+'&merge_vars[FNAME]='+firstName+'&merge_vars[LNAME]='+name+'&double_optin=false&send_welcome=false');
+
+/*	      	$http.post('https://us12.api.mailchimp.com/3.0/lists/cb553f7b01/members', {
 	      		"key": mailchimpKey,
 			    "email_address": email,
 			    "status": "subscribed",
@@ -42,7 +42,7 @@ angular.module('klimaatneutraal.services').service("mailService",[
 			        "FNAME": "firstName",
 			        "LNAME": "name"
 			    }
-	        });
+	        });*/
       };
 
       return {

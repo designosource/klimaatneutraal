@@ -12,9 +12,11 @@ angular.module('klimaatneutraal.controllers')
             
             $scope.sendTheMail = function() {
                 var emailUser = $("#userEmail").val();
+                var firstName = $("#firstName").val();
+                var lastName = $("#lastName").val();
                 
-/*                mailService.sendMandrill('name', 'firstName', emailUser);
-*/                mailService.sendMailchimp('name', 'firstName', emailUser);
+                mailService.sendMandrill(lastName, firstName, emailUser);
+                mailService.sendMailchimp(lastName, firstName, emailUser);
 
                     };
                 }
