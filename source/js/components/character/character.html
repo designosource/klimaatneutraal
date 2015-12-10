@@ -1,0 +1,39 @@
+<section class="character">
+	<div class="header">
+		<h1>Ontwerp jouw karakter</h1>
+	</div>
+
+	<div class="character-preview">
+		<img class="current-character" ng-src="img/characters/{{image}}" alt="">
+	</div>
+
+	<div class="character-param">
+		<h2>Geslacht</h2>
+
+		<div class="sex">
+			<img ng-click="changeSex('1')" src="img/character_selection/male.svg" alt="" class="male" ng-class="character.sex === '1' ? 'selected' : ''">
+			<img ng-click="changeSex('2')" src="img/character_selection/female.svg" alt="" class="female"  ng-class="character.sex === '2' ? 'selected' : ''">
+		</div>
+
+		<h2>Leeftijdsgroep</h2>
+		<div class="age">
+			<img ng-click="changeAge('1')" src="img/character_selection/1.svg" alt="" class="age_1" ng-class="character.age === '1' ? 'selected' : ''">
+			<img ng-click="changeAge('2')" src="img/character_selection/2.svg" alt="" class="age_2" ng-class="character.age === '2' ? 'selected' : ''">
+			<img ng-click="changeAge('3')" src="img/character_selection/3.svg" alt="" class="age_3" ng-class="character.age === '3' ? 'selected' : ''">
+			
+		</div>
+
+		<h2>Extra</h2>
+		<div class="skin">
+			<div ng-click="changeSkin('1')" class="skin1" ng-class="character.skin === '1' ? 'selected' : ''"></div>
+			<div ng-click="changeSkin('2')" class="skin2" ng-class="character.skin === '2' ? 'selected' : ''"></div>
+		</div>	
+		
+		<div class="character-bottom"> 
+			<a href ui-sref="startGame" class="char-back">Terug</a>
+			<a href ui-sref="startTutorial" class="char-continue">Ga Verder</a>
+		</div>
+	</div>
+
+</section>
+
