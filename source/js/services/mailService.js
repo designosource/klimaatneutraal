@@ -10,8 +10,8 @@ angular.module('klimaatneutraal.services').service("mailService",[
 	      	$http.post('https://mandrillapp.com/api/1.0//messages/send.json', {
 	            'key': mandrillKey,
 	            'message': {
-	              'html': 'je hebt goed gescoord',
-	              'text': 'resp',
+	              'html': ' '+firstName+' u heeft goed gescoord',
+	              'text': ' '+firstName+' u heeft goed gescoord',
 	              'subject': 'Resultaat klimaatneutraal',
 	              'from_email': emailNeutraal,
 	              'from_name': 'klimaatneutraal',

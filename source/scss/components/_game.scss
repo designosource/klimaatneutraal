@@ -186,12 +186,12 @@
 			position: absolute;
 			height: 20%;
 			z-index: 2;
-			right: 6%;
+			right: -50%;
 			top: 75%;
-			-webkit-animation: biker_moves_right 5s infinite ;
-			   -moz-animation: biker_moves_right 5s infinite ;
-		         -o-animation: biker_moves_right 5s infinite ;
-		            animation: biker_moves_right 5s infinite ;
+			-webkit-animation: biker_moves_right 15s infinite ;
+			   -moz-animation: biker_moves_right 15s infinite ;
+		         -o-animation: biker_moves_right 15s infinite ;
+		            animation: biker_moves_right 15s infinite ;
 		}
 
 		.house {
@@ -407,9 +407,9 @@
 		.fietser {
 			position: absolute;
 		    display: block;
-		    width: 14%;
+		    width: 10%;
 		    right: 11%;
-		    top: 63%;
+		    top: 58%;
 		    -webkit-animation: biker_moves_right 11s infinite ;
 			   -moz-animation: biker_moves_right 11s infinite ;
 		         -o-animation: biker_moves_right 11s infinite ;
@@ -419,9 +419,9 @@
 		.fietser_2 {
 			position: absolute;
 		    display: block;
-		    width: 14%;
+		    width: 10%;
 		    right: 5%;
-		    top: 70%;
+		    top: 63%;
 		    -webkit-animation: biker_moves_right 11s infinite ;
 			   -moz-animation: biker_moves_right 11s infinite ;
 		         -o-animation: biker_moves_right 11s infinite ;

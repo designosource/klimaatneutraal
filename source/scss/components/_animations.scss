@@ -30,9 +30,9 @@
 }
 
 @-webkit-keyframes biker_moves_right {
-  	0%   { right: 5%; }
+  	0%   { right: -20%; }
   	50%   { right: 110%; }
-  	100% { right: 5%; }
+  	100% { right: -20%; }
   	0%		{ -webkit-transform: scaleX(1); }  	
   	50%		{ -webkit-transform: scaleX(1); }
   	60%		{ -webkit-transform: scaleX(-1); }
