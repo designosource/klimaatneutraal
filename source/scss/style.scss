@@ -9,6 +9,16 @@
   }
 }
 
+.a{
+	&Third{
+		float:left;
+		box-sizing: border-box;
+		min-width: 33%;
+		width: 33%;
+		max-width: 33%;
+	}
+}
+
 $col1: #79B63E;
 $text-black: #333;
 
