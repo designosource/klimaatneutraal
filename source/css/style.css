@@ -477,9 +477,15 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: white;
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
-    text-align: center; }
+    text-align: center;
+    opacity: 0.2;
+    transition: all .5s ease; }
+    .start-game .content-wrapper:hover {
+      opacity: 1; }
+    .start-game .content-wrapper:focus {
+      opacity: 1; }
     .start-game .content-wrapper h1 {
       font-family: 'Montserrat', sans-serif;
       font-weight: 800;
