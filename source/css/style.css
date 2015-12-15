@@ -1024,6 +1024,11 @@ body {
   text-align: center;
 }
 
+/* line 57, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_modals.scss */
+.year-report {
+  color: black;
+}
+
 /* line 1, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_character.scss */
 .character {
   height: 100%;

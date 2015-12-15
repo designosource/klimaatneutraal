@@ -47,6 +47,32 @@ angular.module('klimaatneutraal.controllers')
 
             };
 
+            var showReport = function() {
+
+                console.log('test');
+
+                var menuModal = $uibModal.open({
+                    animation: true,
+                    templateUrl: 'js/components/modals/reportModal.html',
+                    controller: 'reportController',
+                    size: 'lm',
+                    resolve: {
+                        currentYear: function() {
+                            return parseInt($scope.year) + 1;
+                        }
+                    }
+                });
+
+                menuModal.result.then(function() {
+
+                    goToNextYear();
+
+                }, function () {
+                    console.log('dismiss');
+                });
+
+            };
+
             var removePolicy = function(key) {
                 if($scope.activePolicies[key]) {
                     $scope.activePolicies.splice(key,1);
@@ -61,6 +87,7 @@ angular.module('klimaatneutraal.controllers')
             $scope.openCategory = openCategory;
             $scope.goToNextYear = goToNextYear;
             $scope.removePolicy = removePolicy;
+            $scope.showReport = showReport;
 
             init();
         }
