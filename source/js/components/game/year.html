@@ -2,8 +2,8 @@
 <section class="year year1" ng-if="year == 1">
 	
 	<!-- ACTIONS -->
-	<div ng-click="openComponent('house')" class="huis_links_wb" class="clickable interact" ><img src="img/jaar1_1/huis_links_wb.svg" alt=""></div>
-	<div ng-click="openComponent('busstop')" class="buskotje" class="clickable"><img src="img/jaar1_1/buskotje_zonder_benen.svg" alt=""></div>
+	<div ng-click="openCategory('warmtebehoud')" class="huis_links_wb" class="clickable interact" ><img src="img/jaar1_1/huis_links_wb.svg" alt=""></div>
+	<div ng-click="openCategory('busstop')" class="buskotje" class="clickable"><img src="img/jaar1_1/buskotje_zonder_benen.svg" alt=""></div>
 
 	<!-- DECORATION -->
 	<img class="skater" src="img/jaar1_1/skater.svg" alt="">
@@ -13,7 +13,22 @@
 	<img class="molenpaal_l" src="img/jaar1_1/molenpaal_l.svg" alt="">
 	<img class="wiek_l" src="img/jaar1_1/wiek_l.svg" alt="">
 	<img class="house2" src="img/jaar1_1/huis_rechts.svg" alt="">
-	
+
+	<!-- <ul class="active-policies">
+		<li ng-repeat="policy in activePolicies">
+			<img ng-src="{{policy.image}}" alt="{policy.name}}">
+		</li>
+	</ul> -->
+
+	<ul class="active-policies">
+		<li class="policy" ng-click="removePolicy(1)">
+			<img ng-src="{{activePolicies[1].image}}" alt="{activePolicies[1].name}}" ng-if="activePolicies[1]">
+		</li>
+		<li class="policy" ng-click="removePolicy(0)">
+			<img ng-src="{{activePolicies[0].image}}" alt="{activePolicies[0].name}}" ng-if="activePolicies[0]">
+		</li>
+	</ul>
+
 </section>
 
 <!-- YEAR 2 -->

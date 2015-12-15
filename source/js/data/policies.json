@@ -4,12 +4,12 @@
 			"title":"Subsidies voor isolatie aanbieden.",
 			"description": "Subsidies voor isolatie aanbieden aan de burgers.",
 			"category": "Warmtebehoud",
-			"image": "subsiedieIsolatie.svg",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/rogie/128.jpg",
 			"results": {
 				"year1": {
-					"money": -2,
+					"money": -5,
 					"public": 4,
-					"eco": 4
+					"eco": 5
 				},
 				"yearN": {
 					"money": -2,
@@ -22,7 +22,7 @@
 			"title":"Subsidies voor het aanleggen van groendaken.",
 			"description": "Subsidies voor isolatie aanbieden aan de burgers.",
 			"category": "Warmtebehoud",
-			"image": "subsiedieGroendaken.svg",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/mghoz/128.jpg",
 			"results": {
 				"year1": {
 					"money": -1,

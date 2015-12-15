@@ -1,18 +1,21 @@
 angular.module('klimaatneutraal.controllers')
-    .controller('missionController', [
+    .controller('policyController', [
         '$scope',
         '$state',
         '$uibModalInstance',
-        'mission',
+        'policies',
 
-        function($scope, $state, $uibModalInstance, mission) {
-                        
+        function($scope, $state, $uibModalInstance, policies) {
+
             var init = function() {
-                console.log('missionController loaded');
-                $scope.mission = mission;
+                console.log('policiesController loaded');
+
+                $scope.policies = policies;
+        
             };
 
             var selectOption = function(option) {
+                console.log(option);
                 $scope.option = option;
             }
 

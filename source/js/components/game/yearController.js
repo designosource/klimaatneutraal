@@ -6,66 +6,32 @@ angular.module('klimaatneutraal.controllers')
         '$stateParams',
         '$uibModal',
         'mailService',
+        'policies',
 
-        function($rootScope, $scope, $state, $stateParams, $uibModal, mailService) {
-            
+        function($rootScope, $scope, $state, $stateParams, $uibModal, mailService, policies) {
+
             var init = function() {
                 console.log('year1Controller loaded');
-                console.log(mailService);
-
                 $scope.year = $stateParams.year;
             };
 
-            var openComponent = function(component) {
-
-                var missions = {
-                    'house': {
-                        'title': 'Warmte behoud',
-                        'options': [
-                            {
-                                'title': 'DakIsolatiepremie',
-                                'description': 'Ik ben Alain Vandam, een groepsmens. En als ik zo rond mij kijk, zie ik een groep toffe mensen en ik zal proberen mijn plaatske daarin te vinden maar dat zal wel lukken, dus wa mij betreft alles geven he!',
-                                'money': 2,
-                                'public': -3,
-                                'eco': 3
-                            },
-                            {
-                                'title': 'Groententuinpremie',
-                                'description': 'Ik ben Alain Vandam, een groepsmens. En als ik zo rond mij kijk, zie ik een groep toffe mensen en ik zal proberen mijn plaatske daarin te vinden maar dat zal wel lukken, dus wa mij betreft alles geven he!',
-                                'money': 2,
-                                'public': 1,
-                                'eco': 3
-                            },
-                            {
-                                'title': 'Belastingen op uitstoost',
-                                'description': 'Ik ben Alain Vandam, een groepsmens. En als ik zo rond mij kijk, zie ik een groep toffe mensen en ik zal proberen mijn plaatske daarin te vinden maar dat zal wel lukken, dus wa mij betreft alles geven he!',
-                                'money': 2,
-                                'public': 1,
-                                'eco': 3
-                            }
-                           
-                        ]
-                    },
-                    'busstop': [
-                        'busstop Missie 1',
-                        'busstop Missie 2',
-                        'busstop Missie 3',
-                    ]
-                }
+            var openCategory = function(category) {
 
                 var menuModal = $uibModal.open({
                     animation: true,
-                    templateUrl: 'js/components/modals/missionModal.html',
-                    controller: 'missionController',
+                    templateUrl: 'js/components/modals/policyModal.html',
+                    controller: 'policyController',
                     size: 'lm',
                     resolve: {
-                        mission: function () {
-                          return missions[component];
+                        policies: function () {
+                            return policies.data[category];
                         }
                     }
                 });
 
                 menuModal.result.then(function(option) {
+
+                    $scope.activePolicies.push(option);
 
                     var factor = 2;
 
@@ -73,7 +39,7 @@ angular.module('klimaatneutraal.controllers')
                     $rootScope.game.score.public += (option.public * factor);
                     $rootScope.game.money += (option.money * factor);
 
-                    $state.go('game.year', {'year': parseInt($scope.year) + 1})
+                    console.log($scope.activePolicies);
 
                 }, function () {
                     console.log('dismiss');
@@ -81,14 +47,21 @@ angular.module('klimaatneutraal.controllers')
 
             };
 
-            $scope.openComponent = openComponent;
+            var removePolicy = function(key) {
+                if($scope.activePolicies[key]) {
+                    $scope.activePolicies.splice(key,1);
+                }
+            };
+
+            var goToNextYear = function() {
+                $state.go('game.year', {'year': parseInt($scope.year) + 1})
+            };
+
+            $scope.activePolicies = [];
+            $scope.openCategory = openCategory;
+            $scope.goToNextYear = goToNextYear;
+            $scope.removePolicy = removePolicy;
 
             init();
-            
-            $scope.sendEmail = function() {
-                console.log("clicked");
-                mailService.sendRapport(/*send*/);
-
-            };
         }
     ]);

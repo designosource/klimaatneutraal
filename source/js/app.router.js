@@ -64,6 +64,11 @@ angular.module('klimaatneutraal')
                         templateUrl: 'js/components/game/game.html',
                         controller: 'gameController'
                     }
+                },
+                resolve: {
+                    policies: ['policyService', function(policyService) {
+                        return policyService.getAllPolicies();
+                    }]
                 }
             })
 

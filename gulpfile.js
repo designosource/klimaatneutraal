@@ -265,7 +265,7 @@ gulp.task('watch', function(){
     gulp.watch(sourceDir + 'scss/**/*.scss', ['sass']);
 
     // Watch for js changes
-    gulp.watch(sourceDir + 'js/**/*.js', ['jshint']);
+    // gulp.watch(sourceDir + 'js/**/*.js', ['jshint']);
 });
 
 
