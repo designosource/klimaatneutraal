@@ -1,5 +1,22 @@
 <div class="modal-body year-report">
     <h1>Rapport jaar 1</h1>
+    <hr>
+	
+    <ul class="report-policies">
+    	<li class="clearfix" ng-repeat="policy in activePolicies">
+            <div class="image-wrapper">
+                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/abinav_t/128.jpg" alt="Alternate Text" />
+            </div>
+            <div class="info">
+                <div class="name">
+                    {{policy.title}}
+                </div>
+                <div class="social">
+                    <a href="#">Campus kruidtuin</a>
+                </div>
+            </div>
+        </li>
+    </ul>
 
     <button ng-click="goToNextYear()">Next</button>
 </div>

@@ -3,15 +3,23 @@ angular.module('klimaatneutraal.controllers')
         '$scope',
         '$state',
         '$uibModalInstance',
+        'activePolicies',
 
-        function($scope, $state, $uibModalInstance) {
+        function($scope, $state, $uibModalInstance, activePolicies) {
 
-            console.log('reportController');
+            var init = function() {
+
+            };
 
             var goToNextYear = function() {
                 $uibModalInstance.close();
             };
 
+            console.log(activePolicies);
+
+            $scope.activePolicies = activePolicies;
             $scope.goToNextYear = goToNextYear;
+
+            init();
         }
     ]);

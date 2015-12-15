@@ -49,16 +49,14 @@ angular.module('klimaatneutraal.controllers')
 
             var showReport = function() {
 
-                console.log('test');
-
                 var menuModal = $uibModal.open({
                     animation: true,
                     templateUrl: 'js/components/modals/reportModal.html',
                     controller: 'reportController',
                     size: 'lm',
                     resolve: {
-                        currentYear: function() {
-                            return parseInt($scope.year) + 1;
+                        activePolicies: function() {
+                            return $scope.activePolicies;
                         }
                     }
                 });

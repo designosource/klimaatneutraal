@@ -7,20 +7,27 @@
 	position: absolute;
 	bottom:25px;
 	right: 25px;
-
-	.policy {
+	
+	li {
 		margin-left: 25px;
 		float: left;
-
 		width: 100px;
 		height: 100px;
-		border-radius: 50%;
 
-		background-color: rgba(0, 0, 0, 0.50);;
-		overflow: hidden;
+		&.next {
+			line-height: 100px;
+    		font-size: 40px;
+    		text-align: center;
+		}
 
-		img {
-			max-width: 100%;
+		&.policy {
+			border-radius: 50%;
+			background-color: rgba(0, 0, 0, 0.50);;
+			overflow: hidden;
+
+			img {
+				max-width: 100%;
+			}
 		}
 	}
 }
