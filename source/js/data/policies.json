@@ -4,6 +4,7 @@
 			"title":"Subsidies voor isolatie aanbieden.",
 			"description": "Subsidies voor isolatie aanbieden aan de burgers.",
 			"category": "Warmtebehoud",
+			"image": "subsiedieIsolatie.svg",
 			"results": {
 				"year1": {
 					"money": -2,
@@ -21,6 +22,7 @@
 			"title":"Subsidies voor het aanleggen van groendaken.",
 			"description": "Subsidies voor isolatie aanbieden aan de burgers.",
 			"category": "Warmtebehoud",
+			"image": "subsiedieGroendaken.svg",
 			"results": {
 				"year1": {
 					"money": -1,
@@ -33,12 +35,461 @@
 					"eco": 1
 				}
 			}
+		},
+		"subsiedieWarmtepompen": {
+			"title":"Subsidies voor warmtepompen",
+			"description": "Subsidies voor warmtepompen aanbieden aan de burgers.",
+			"category": "Warmtebehoud",
+			"image": "subsiedieWarmtepompen.svg",
+			"results": {
+				"year1": {
+					"money": -1,
+					"public": 3,
+					"eco": 4
+				},
+				"yearN": {
+					"money": -1,
+					"public": 3,
+					"eco": 4
+				}
+			}
+		},
+		"passiefBouw": {
+			"title":"Passiefbouw",
+			"description": "Passiefbouw (info avond, wedstrijd, ...)",
+			"category": "Warmtebehoud",
+			"image": "passiefBouw.svg",
+			"results": {
+				"year1": {
+					"money": -2,
+					"public": 4,
+					"eco": 5
+				},
+				"yearN": {
+					"money": -2,
+					"public": 4,
+					"eco": 5
+				}
+			}
+		},
+		"duurzameMaterialen": {
+			"title":"Duurzame materialen",
+			"description": "Duurzame materialen gebruiken (geëxploiteerd hout, duurzaam kantoormateriaal,..)",
+			"category": "Warmtebehoud",
+			"image": "duurzameMaterialen.svg",
+			"results": {
+				"year1": {
+					"money": -1,
+					"public": 0,
+					"eco": 2
+				},
+				"yearN": {
+					"money": -1,
+					"public": 0,
+					"eco": 2
+				}
+			}
+		},
+		"thermografischeKaart": {
+			"title":"Thermografische kaart",
+			"description": "Thermografische kaart (vliegtuig scannen over Mechelen voor gebruik per inwoner op kaart te zetten)",
+			"category": "Warmtebehoud",
+			"image": "thermografischeKaart.svg",
+			"results": {
+				"year1": {
+					"money": -2,
+					"public": 1,
+					"eco": 1
+				},
+				"yearN": {
+					"money": 0,
+					"public": 1,
+					"eco": 1
+				}
+			}
+		},
+		"energiescan": {
+			"title":"Energiescan",
+			"description": "Info (avond) elektriciteit - energie scan",
+			"category": "Warmtebehoud",
+			"image": "Energiescan.svg",
+			"results": {
+				"year1": {
+					"money": -2,
+					"public": 1,
+					"eco": 1
+				},
+				"yearN": {
+					"money": -2,
+					"public": 1,
+					"eco": 1
+				}
+			}
 		}
 	},
 	"mobiliteit": {
-
+		"parkeerBeleid": {
+					"title":"Parkeerbeleid",
+					"description": "Parkeerbeleid en parkeergeleidingssysteem aanpassen [Betalend parkeren- blauwe zone-randparking]",
+					"category": "Mobiliteit",
+					"image": "parkeerBeleid.svg",
+					"results": {
+						"year1": {
+							"money": -1,
+							"public": -2,
+							"eco": 1
+						},
+						"yearN": {
+							"money": 1,
+							"public": 0,
+							"eco": 1
+						}
+					}
+		},
+		"verbeteringFietsinfrastructuur": {
+					"title":"Verbetering fietsinfrastructuur",
+					"description": "Parkeerbeleid en parkeergeleidingssysteem aanpassen [Betalend parkeren- blauwe zone-randparking]",
+					"category": "Mobiliteit",
+					"image": "verbeteringFietsinfrastructuur.svg",
+					"results": {
+						"year1": {
+							"money": -4,
+							"public": 3,
+							"eco": 3
+						},
+						"yearN": {
+							"money": 0,
+							"public": 3,
+							"eco": 3
+						}
+					}
+		},	
+		"autovrijeZondag": {
+					"title":"Autovrije zondag.",
+					"description": "Autovrije zondag invoeren.",
+					"category": "Mobiliteit",
+					"image": "autovrijeZondag.svg",
+					"results": {
+						"year1": {
+							"money": -1,
+							"public": 0,
+							"eco": 1
+						},
+						"yearN": {
+							"money": -1,
+							"public": 0,
+							"eco": 1
+						}
+					}
+		},	
+		"hybrideBussystemen": {
+					"title":"Hybride bussystemen..",
+					"description": "Hybride bussystemen invoeren.",
+					"category": "Mobiliteit",
+					"image": "hybrideBussystemen.svg",
+					"results": {
+						"year1": {
+							"money": 0,
+							"public": 1,
+							"eco": 2
+						},
+						"yearN": {
+							"money": 0,
+							"public": 1,
+							"eco": 2
+						}
+					}
+		},
+		"fietsdiefstalPrevententie": {
+					"title":"Fietsdiefstal prevententie",
+					"description": "Een plan voor Fietsdiefstal prevententie invoeren. ",
+					"category": "Mobiliteit",
+					"image": "fietsdiefstalPrevententie.svg",
+					"results": {
+						"year1": {
+							"money": -1,
+							"public": 3,
+							"eco": 1
+						},
+						"yearN": {
+							"money": -1,
+							"public": 3,
+							"eco": 1
+						}
+					}
+		},
+		"bikeToWork": {
+					"title":"Bike to work.",
+					"description": "Bike to work dag in de week invoeren ",
+					"category": "Mobiliteit",
+					"image": "bikeToWork.svg",
+					"results": {
+						"year1": {
+							"money": -2,
+							"public": -2,
+							"eco": 2
+						},
+						"yearN": {
+							"money": -2,
+							"public": 3,
+							"eco": 2
+						}
+					}
+		},
+		"fietsVergoeding": {
+					"title":"Fietsvergoeding.",
+					"description": "Fietsvergoeding (stadspersoneel+ infomoment voor bedrijven)",
+					"category": "Mobiliteit",
+					"image": "bikeToWork.svg",
+					"results": {
+						"year1": {
+							"money": 1,
+							"public": 1,
+							"eco": 2
+						},
+						"yearN": {
+							"money": 1,
+							"public": 0,
+							"eco": 2
+						}
+					}
+		},
+		"openbaarVervoerVergoeding": {
+					"title":"Openbaar vervoer vergoeding.",
+					"description": "Terugbetaling openbaar vervoer (stadspersoneel+ infomoment voor bedrijven)",
+					"category": "Mobiliteit",
+					"image": "openbaarVervoerVergoeding.svg",
+					"results": {
+						"year1": {
+							"money": 1,
+							"public": 1,
+							"eco": 1
+						},
+						"yearN": {
+							"money": 1,
+							"public": 0,
+							"eco": 1
+						}
+					}
+		},
+		"autovrijeBinnenstad": {
+					"title":"Autovrije binnenstad",
+					"description": "Autovrije binnenstad",
+					"category": "Mobiliteit",
+					"image": "autovrijeBinnenstad.svg",
+					"results": {
+						"year1": {
+							"money": -2,
+							"public": -3,
+							"eco": 3
+						},
+						"yearN": {
+							"money": -1,
+							"public": -1,
+							"eco": 3
+						}
+					}
+		},
+		"schoolstratenAutovrij": {
+					"title":"Schoolstraten autovrij maken",
+					"description": "Schoolstraten autovrij maken",
+					"category": "Mobiliteit",
+					"image": "schoolstratenAutovrij.svg",
+					"results": {
+						"year1": {
+							"money": -1,
+							"public": 2,
+							"eco": 1
+						},
+						"yearN": {
+							"money": 0,
+							"public": 0,
+							"eco": 1
+						}
+					}
+		},	
+		"bewaakteFietsenstallingen": {
+					"title":"Bewaakte fietsenstallingen uitbreiden",
+					"description": "Bewaakte fietsenstallingen uitbreiden",
+					"category": "Mobiliteit",
+					"image": "schoolstratenAutovrij.svg",
+					"results": {
+						"year1": {
+							"money": -2,
+							"public": 2,
+							"eco": 1
+						},
+						"yearN": {
+							"money": 0,
+							"public": 0,
+							"eco": 1
+						}
+					}
+		},
+		"wegenWerwaarderen": {
+					"title":"Trage wegen herwaarderen",
+					"description": "Trage wegen herwaarderen",
+					"category": "Mobiliteit",
+					"image": "wegenWerwaarderen.svg",
+					"results": {
+						"year1": {
+							"money": -2,
+							"public": 2,
+							"eco": 1
+						},
+						"yearN": {
+							"money": 0,
+							"public": 3,
+							"eco": 1
+						}
+					}
+		},
+		"voetgangersvoorsteken": {
+					"title":"Aanleg voetgangersdoorsteken",
+					"description": "Aanleg voetgangersdoorsteken",
+					"category": "Mobiliteit",
+					"image": "voetgangersvoorsteken.svg",
+					"results": {
+						"year1": {
+							"money": -1,
+							"public": 1,
+							"eco": 1
+						},
+						"yearN": {
+							"money": 0,
+							"public": 2,
+							"eco": 1
+						}
+					}
+		},
+		"fietsatelier": {
+					"title":"Fietsatelier",
+					"description": "Fietsatelier (het verhuren van fietsen)",
+					"category": "Mobiliteit",
+					"image": "fietsatelier.svg",
+					"results": {
+						"year1": {
+							"money": -1,
+							"public": 1,
+							"eco": 1
+						},
+						"yearN": {
+							"money": 0,
+							"public": 1,
+							"eco": 1
+						}
+					}
+		},
+		"pakjesDienst": {
+					"title":"Pakjes dienst voor inwoners",
+					"description": "Pakjes dienst voor inwoners",
+					"category": "Mobiliteit",
+					"image": "pakjesDienst.svg",
+					"results": {
+						"year1": {
+							"money": -1,
+							"public": 1,
+							"eco": 1
+						},
+						"yearN": {
+							"money": 0,
+							"public": 1,
+							"eco": 1
+						}
+					}
+		},			
 	},
 	"energie": {
+		"verlichtingsplan": {
+					"title":"Nieuw verlichtingsplan voor stedelijke gebouwen.",
+					"description": "Nieuw verlichtingsplan voor stedelijke gebouwen.",
+					"category": "energie",
+					"image": "verlichtingsplan.svg",
+					"results": {
+						"year1": {
+							"money": 1,
+							"public": 1,
+							"eco": 1
+						},
+						"yearN": {
+							"money": 1,
+							"public": 1,
+							"eco": 1
+						}
+					}
+		},
+		"windturbines": {
+					"title":"Windturbines plaatsen.",
+					"description": "10 windturbines plaatsen (toelaten, ademruimte)",
+					"category": "energie",
+					"image": "windturbines.svg",
+					"results": {
+						"year1": {
+							"money": 0,
+							"public": -1,
+							"eco": 4
+						},
+						"yearN": {
+							"money": 0,
+							"public": -1,
+							"eco": 4
+						}
+					}
+		},
+		"samenaankoopZonnepanelen": {
+					"title":"Samenaankoop zonnepanelen.",
+					"description": "Samenaankoop zonnepanelen.",
+					"category": "energie",
+					"image": "samenaankoopZonnepanelen.svg",
+					"results": {
+						"year1": {
+							"money": 0,
+							"public": -1,
+							"eco": 4
+						},
+						"yearN": {
+							"money": 0,
+							"public": -1,
+							"eco": 4
+						}
+					}
+		},
+		"samenaankoopGroeneStroom": {
+					"title":"Samenaankoop groene stroom. ",
+					"description": "Samenaankoop groene stroom gezinnen.",
+					"category": "energie",
+					"image": "samenaankoopGroeneStroom.svg",
+					"results": {
+						"year1": {
+							"money": 0,
+							"public": 2,
+							"eco": 2
+						},
+						"yearN": {
+							"money": 1,
+							"public": 2,
+							"eco": 2
+						}
+					}
+		},
+		"groeneStroomAuto": {
+					"title":"Groene stroom aanbieden voor elektrische wagens.",
+					"description": "Groene stroom aanbieden voor elektrische wagens.",
+					"category": "energie",
+					"image": "groeneStroomAuto.svg",
+					"results": {
+						"year1": {
+							"money": -1,
+							"public": 1,
+							"eco": 3
+						},
+						"yearN": {
+							"money": -1,
+							"public": 3,
+							"eco": 3
+						}
+					}
+		},
 		
 	}
 }
