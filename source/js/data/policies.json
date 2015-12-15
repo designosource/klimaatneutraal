@@ -1,0 +1,44 @@
+{
+	"warmtebehoud": {
+		"subsiedieIsolatie": {
+			"title":"Subsidies voor isolatie aanbieden.",
+			"description": "Subsidies voor isolatie aanbieden aan de burgers.",
+			"category": "Warmtebehoud",
+			"results": {
+				"year1": {
+					"money": -2,
+					"public": 4,
+					"eco": 4
+				},
+				"yearN": {
+					"money": -2,
+					"public": 4,
+					"eco": 4
+				}
+			}
+		},
+		"subsiedieGroendaken": {
+			"title":"Subsidies voor het aanleggen van groendaken.",
+			"description": "Subsidies voor isolatie aanbieden aan de burgers.",
+			"category": "Warmtebehoud",
+			"results": {
+				"year1": {
+					"money": -1,
+					"public": 2,
+					"eco": 1
+				},
+				"yearN": {
+					"money": -1,
+					"public": 2,
+					"eco": 1
+				}
+			}
+		}
+	},
+	"mobiliteit": {
+
+	},
+	"energie": {
+		
+	}
+}
