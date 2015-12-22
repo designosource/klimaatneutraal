@@ -397,7 +397,7 @@
 							"eco": 1
 						}
 					}
-		},			
+		}			
 	},
 	"energie": {
 		"verlichtingsplan": {
@@ -489,7 +489,7 @@
 							"eco": 3
 						}
 					}
-		},
+		}
 		
 	}
 }
