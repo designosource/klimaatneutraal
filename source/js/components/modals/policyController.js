@@ -11,7 +11,6 @@ angular.module('klimaatneutraal.controllers')
                 console.log('policiesController loaded');
 
                 $scope.policies = policies;
-                console.log(policies);
         
             };
 

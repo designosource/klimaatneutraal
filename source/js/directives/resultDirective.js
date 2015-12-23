@@ -10,7 +10,6 @@ angular.module('klimaatneutraal.directives').directive('resultDirective', [
                 policy: "=",
             },
             link: function ($scope, element, attr) {
-                console.log($scope.policy);
             }
         };
     }]);
