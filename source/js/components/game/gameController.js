@@ -3,19 +3,28 @@ angular.module('klimaatneutraal.controllers')
         '$rootScope',
         '$scope',
         '$uibModal',
+        '$state',
 
-        function($rootScope, $scope, $uibModal) {
+        function($rootScope, $scope, $uibModal, $state) {
 
             var init = function() {
                 console.log('gameController');
 
                 $rootScope.game = {
-                	'money': 50,
                 	'score': {
-                		'public': 50,
-                		'eco': 50
+                		'public': 20,
+                		'eco': 20,
+                        'money': 20,
                 	}
-                }
+                };
+
+                $rootScope.activePolicies = {
+                    '1': [],
+                    '2': [],
+                    '3': [],
+                };
+
+                $rootScope.year = 1; // inital on 1
 
             };
 
@@ -37,7 +46,47 @@ angular.module('klimaatneutraal.controllers')
 
 			};
 
+            var goToNextYear = function() {
+                $state.go('game.year', {'year': parseInt($rootScope.year) + 1})
+            };
+
+            var showReport = function() {
+
+                var menuModal = $uibModal.open({
+                    animation: true,
+                    templateUrl: 'js/components/modals/reportModal.html',
+                    controller: 'reportController',
+                    size: 'lg',
+                    resolve: {
+                        activePolicies: function() {
+                            return $rootScope.activePolicies[$rootScope.year];
+                        }
+                    }
+                });
+
+                menuModal.result.then(function() {
+
+                    goToNextYear();
+
+                }, function () {
+                    console.log('dismiss');
+                });
+
+            };
+
+            var removePolicy = function(key) {
+                if($rootScope.activePolicies[$rootScope.year][key]) {
+
+                    updateScore(-2, $rootScope.activePolicies[$rootScope.year][key]);
+
+                    $rootScope.activePolicies[$rootScope.year].splice(key,1);
+                }
+            };
+
 			$scope.openMenu = openMenu;
+            $scope.goToNextYear = goToNextYear;
+            $scope.removePolicy = removePolicy;
+            $scope.showReport = showReport;
 
             init();
         }

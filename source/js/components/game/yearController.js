@@ -14,16 +14,26 @@ angular.module('klimaatneutraal.controllers')
             var chunkPolicies = {};
 
             var init = function() {
-                console.log('year1Controller loaded');
-                $scope.year = $stateParams.year;
+                $rootScope.year = $stateParams.year;
+
+                console.log('year ' + $rootScope.year + ' is loaded');
 
                 policiesData = policies.data;
+
+                console.log('Active perks: ');
+                console.log($rootScope.activePolicies);
             };
+
+            var updateScore = function(factor, option) {
+                $rootScope.game.score.eco += (option.results.year1.eco * factor);
+                $rootScope.game.score.public += (option.results.year1.public * factor);
+                $rootScope.game.score.money += (option.results.year1.money * factor);
+            }
 
             var openCategory = function(category) {
 
                 // Kijk of er al niet twee opties gekozen zijn.
-                if($scope.activePolicies.length >= 2) {
+                if($rootScope.activePolicies[$rootScope.year].length >= 2) {
                     console.error('Er mogen maximum twee opties gekozen worden!'); // Zorg dat dit ook nog in de ui komt!
                 }
                 else {
@@ -39,7 +49,7 @@ angular.module('klimaatneutraal.controllers')
                         size: 'lm',
                         resolve: {
                             policies: function () {
-                                return chunkPolicies[category][$scope.year - 1];
+                                return chunkPolicies[category][$rootScope.year - 1];
                             }
                         }
                     });
@@ -51,13 +61,11 @@ angular.module('klimaatneutraal.controllers')
                         policiesData[category][option.id].disabled = true;
 
                         // Voeg de optie toe aan de actieve policies
-                        $scope.activePolicies.push(policiesData[category][option.id]);
+                        $rootScope.activePolicies[$rootScope.year].push(policiesData[category][option.id]);
 
                         // Bereken de stijging / daling van de gekozen maatregel
-                        var factor = 2;
-                        $rootScope.game.score.eco += (option.eco * factor);
-                        $rootScope.game.score.public += (option.public * factor);
-                        $rootScope.game.money += (option.money * factor);
+
+                        updateScore(2, option);
 
                     }, function () {
                         console.log('dismiss');
@@ -65,45 +73,7 @@ angular.module('klimaatneutraal.controllers')
                 }
             };
 
-            var showReport = function() {
-
-                var menuModal = $uibModal.open({
-                    animation: true,
-                    templateUrl: 'js/components/modals/reportModal.html',
-                    controller: 'reportController',
-                    size: 'lg',
-                    resolve: {
-                        activePolicies: function() {
-                            return $scope.activePolicies;
-                        }
-                    }
-                });
-
-                menuModal.result.then(function() {
-
-                    goToNextYear();
-
-                }, function () {
-                    console.log('dismiss');
-                });
-
-            };
-
-            var removePolicy = function(key) {
-                if($scope.activePolicies[key]) {
-                    $scope.activePolicies.splice(key,1);
-                }
-            };
-
-            var goToNextYear = function() {
-                $state.go('game.year', {'year': parseInt($scope.year) + 1})
-            };
-
-            $scope.activePolicies = [];
             $scope.openCategory = openCategory;
-            $scope.goToNextYear = goToNextYear;
-            $scope.removePolicy = removePolicy;
-            $scope.showReport = showReport;
 
             init();
         }
