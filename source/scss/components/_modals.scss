@@ -28,31 +28,35 @@
 	}
 
 	.option {
-		ul {
-			list-style-type: none;
-			padding: 0;
-
-			li {
-				text-align: center;
-				ul {
-					li {
-						display: inline-block;
-						padding: 0 5px;
-						line-height: 35px;
-
-						img {
-							height: 22px;
-						}
-					}
-				}
-			}
-		}
-
 		.action-wrapper {
 			text-align: center;
 		}
 	}
 }
+
+
+.results {
+	list-style-type: none;
+	padding: 0;
+
+	li {
+		text-align: center;
+		ul {
+			padding: 0;
+			li {
+				display: inline-block;
+				padding: 0 5px;
+				line-height: 35px;
+
+				img {
+					height: 22px;
+				}
+			}
+		}
+	}
+}
+
+	
 
 .year-report {
 	color: black;
@@ -62,15 +66,17 @@
 		padding: 0;
 		margin: 0;
 
-		li {
-			margin: 10px;
-			padding: 10px;
+		.policy {
+			margin: 15px 10px;
+		    padding: 15px 10px;
+		    border-bottom: 1px solid #eee;
 
 			.image-wrapper {
-				float: left;
-				margin-right: 15px;
+				//float: left;
+				//margin-right: 15px;
 				
 				img {
+					margin: 0 auto;
 					max-height: 75px;
 				}
 			}
@@ -80,6 +86,12 @@
 
 				.name {
 					font-size: 21px;
+				}
+
+				.results {
+					li {
+						text-align: left;
+					}
 				}
 			}
 		}

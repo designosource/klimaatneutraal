@@ -10,41 +10,59 @@ angular.module('klimaatneutraal.controllers')
 
         function($rootScope, $scope, $state, $stateParams, $uibModal, mailService, policies) {
 
+            var policiesData = {};
+            var chunkPolicies = {};
+
             var init = function() {
                 console.log('year1Controller loaded');
                 $scope.year = $stateParams.year;
+
+                policiesData = policies.data;
             };
 
             var openCategory = function(category) {
 
-                var menuModal = $uibModal.open({
-                    animation: true,
-                    templateUrl: 'js/components/modals/policyModal.html',
-                    controller: 'policyController',
-                    size: 'lm',
-                    resolve: {
-                        policies: function () {
-                            return policies.data[category];
+                // Kijk of er al niet twee opties gekozen zijn.
+                if($scope.activePolicies.length >= 2) {
+                    console.error('Er mogen maximum twee opties gekozen worden!'); // Zorg dat dit ook nog in de ui komt!
+                }
+                else {
+
+                    // We verdelen de opties voor de gekozen categorie in groepjes van 3
+                    chunkPolicies[category] = _.chunk(_.values(policiesData[category]), 3);
+
+                    // Open de policy modal
+                    var menuModal = $uibModal.open({
+                        animation: true,
+                        templateUrl: 'js/components/modals/policyModal.html',
+                        controller: 'policyController',
+                        size: 'lm',
+                        resolve: {
+                            policies: function () {
+                                return chunkPolicies[category][$scope.year - 1];
+                            }
                         }
-                    }
-                });
+                    });
 
-                menuModal.result.then(function(option) {
+                    // Er is een result van de modal
+                    menuModal.result.then(function(option) {
 
-                    $scope.activePolicies.push(option);
+                        // We disablen de gekozen optie
+                        policiesData[category][option.id].disabled = true;
 
-                    var factor = 2;
+                        // Voeg de optie toe aan de actieve policies
+                        $scope.activePolicies.push(policiesData[category][option.id]);
 
-                    $rootScope.game.score.eco += (option.eco * factor);
-                    $rootScope.game.score.public += (option.public * factor);
-                    $rootScope.game.money += (option.money * factor);
+                        // Bereken de stijging / daling van de gekozen maatregel
+                        var factor = 2;
+                        $rootScope.game.score.eco += (option.eco * factor);
+                        $rootScope.game.score.public += (option.public * factor);
+                        $rootScope.game.money += (option.money * factor);
 
-                    console.log($scope.activePolicies);
-
-                }, function () {
-                    console.log('dismiss');
-                });
-
+                    }, function () {
+                        console.log('dismiss');
+                    });
+                }
             };
 
             var showReport = function() {
@@ -53,7 +71,7 @@ angular.module('klimaatneutraal.controllers')
                     animation: true,
                     templateUrl: 'js/components/modals/reportModal.html',
                     controller: 'reportController',
-                    size: 'lm',
+                    size: 'lg',
                     resolve: {
                         activePolicies: function() {
                             return $scope.activePolicies;

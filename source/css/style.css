@@ -1008,70 +1008,76 @@ body {
 }
 
 /* line 31, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_modals.scss */
-.mission .option ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-/* line 35, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_modals.scss */
-.mission .option ul li {
+.mission .option .action-wrapper {
   text-align: center;
 }
 
 /* line 38, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_modals.scss */
-.mission .option ul li ul li {
+.results {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* line 42, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_modals.scss */
+.results li {
+  text-align: center;
+}
+
+/* line 44, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_modals.scss */
+.results li ul {
+  padding: 0;
+}
+
+/* line 46, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_modals.scss */
+.results li ul li {
   display: inline-block;
   padding: 0 5px;
   line-height: 35px;
 }
 
-/* line 43, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_modals.scss */
-.mission .option ul li ul li img {
+/* line 51, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_modals.scss */
+.results li ul li img {
   height: 22px;
 }
 
-/* line 51, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_modals.scss */
-.mission .option .action-wrapper {
-  text-align: center;
-}
-
-/* line 57, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_modals.scss */
+/* line 61, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_modals.scss */
 .year-report {
   color: black;
 }
 
-/* line 60, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_modals.scss */
+/* line 64, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_modals.scss */
 .year-report .report-policies {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-/* line 65, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_modals.scss */
-.year-report .report-policies li {
-  margin: 10px;
-  padding: 10px;
-}
-
 /* line 69, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_modals.scss */
-.year-report .report-policies li .image-wrapper {
-  float: left;
-  margin-right: 15px;
-}
-
-/* line 73, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_modals.scss */
-.year-report .report-policies li .image-wrapper img {
-  max-height: 75px;
+.year-report .report-policies .policy {
+  margin: 15px 10px;
+  padding: 15px 10px;
+  border-bottom: 1px solid #eee;
 }
 
 /* line 78, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_modals.scss */
-.year-report .report-policies li .info {
+.year-report .report-policies .policy .image-wrapper img {
+  margin: 0 auto;
+  max-height: 75px;
+}
+
+/* line 84, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_modals.scss */
+.year-report .report-policies .policy .info {
   float: left;
 }
 
-/* line 81, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_modals.scss */
-.year-report .report-policies li .info .name {
+/* line 87, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_modals.scss */
+.year-report .report-policies .policy .info .name {
   font-size: 21px;
+}
+
+/* line 92, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_modals.scss */
+.year-report .report-policies .policy .info .results li {
+  text-align: left;
 }
 
 /* line 1, C:/Users/jaspd/projects/designo/klimaatneutraal/source/scss/components/_character.scss */

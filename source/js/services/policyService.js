@@ -4,7 +4,6 @@ angular.module('klimaatneutraal.services').service("policyService",[
 	function($http) {
 		
 		var getAllPolicies = function() {
-			console.log('test');
 			return $http.get('js/data/policies.json');
 		};
     	

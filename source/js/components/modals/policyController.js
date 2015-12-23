@@ -11,11 +11,11 @@ angular.module('klimaatneutraal.controllers')
                 console.log('policiesController loaded');
 
                 $scope.policies = policies;
+                console.log(policies);
         
             };
 
             var selectOption = function(option) {
-                console.log(option);
                 $scope.option = option;
             }
 
@@ -24,6 +24,7 @@ angular.module('klimaatneutraal.controllers')
             }
 
             var publishOption = function(option) {
+                option.disabled = true;
                 $uibModalInstance.close(option);
             }
 

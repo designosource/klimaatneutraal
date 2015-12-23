@@ -4,8 +4,9 @@
 	
 		<!-- OVERVIEW -->
 		<ul class="options clearfix clickable" ng-hide="option">
-			<li class="col-md-3" ng-repeat="policy in policies" ng-click="selectOption(policy)">
-				<img src="{{policy.image}}" alt="{{policy.title}}" title="{{policy.title}}">
+			<li class="col-md-4" ng-repeat="(key, policy) in policies" ng-click="selectOption(policy)" ng-class="{disabled: policy.disabled == true}">
+				<img ng-src="{{policy.image}}" alt="{{policy.title}}" title="{{policy.title}}">
+				<span ng-if="policy.disabled">Deze optie heb je al gekozen</span>
 				<h4>{{policy.title}}</h4>
 			</li>
 		</ul>
@@ -17,38 +18,10 @@
 				{{option.description}}
 			</p>
 			<hr>
-			<ul class="row">
-				<li class="col-md-4">
-					<h5>Budget:</h5>
-					<ul>
-						<li ng-repeat="n in [] | range:option.results.year1.money">
-							<img src="img/ui/money.svg" alt="" ng-if="option.results.year1.money > 0">
-							<img src="img/ui/money-negative.svg" alt="" ng-if="option.results.year1.money < 0">
-						</li>
-					</ul>
-				</li>
-				<li class="col-md-4">
-					<h5>Tevredenheid:</h5>
-					<ul>
-						<li ng-repeat="n in [] | range:option.results.year1.public">
-						  	<img class="icon" src="img/ui/public.svg" alt="" ng-if="option.results.year1.public > 0">
-						  	<img class="icon" src="img/ui/public-negative.svg" alt="" ng-if="option.results.year1.public < 0">
-						</li>
-					</ul>
-				</li>
-				<li class="col-md-4">
-					<h5>Milieu: </h5>
-					<ul>
-						<li ng-repeat="n in [] | range:option.results.year1.eco">
-						  	<img class="icon" src="img/ui/leaf.svg" alt="" ng-if="option.results.year1.eco > 0">
-						  	<img class="icon" src="img/ui/leaf-negative.svg" alt="" ng-if="option.results.year1.eco < 0">
-						</li>
-					</ul>
-				</li>
-			</ul>
+			<result-directive policy="option"></result-directive>
 			<hr/>
 			<div class="action-wrapper">
-				<button ng-click="publishOption(option)" class="btn btn-success">Publiceer</button>
+				<button ng-click="publishOption(option)" class="btn btn-success" ng-if="option.disabled != true">Publiceer</button>
 				<button ng-click="deSelectOption()" class="btn">Annuleer</button>
 			</div>
 		</div>

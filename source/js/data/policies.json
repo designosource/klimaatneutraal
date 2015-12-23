@@ -1,9 +1,10 @@
 {
 	"warmtebehoud": {
 		"subsiedieIsolatie": {
+			"id": "subsiedieIsolatie",
 			"title":"Subsidies voor isolatie aanbieden.",
 			"description": "Subsidies voor isolatie aanbieden aan de burgers.",
-			"category": "Warmtebehoud",
+			"category": "warmtebehoud",
 			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/rogie/128.jpg",
 			"results": {
 				"year1": {
@@ -19,9 +20,10 @@
 			}
 		},
 		"subsiedieGroendaken": {
+			"id": "subsiedieGroendaken",
 			"title":"Subsidies voor het aanleggen van groendaken.",
 			"description": "Subsidies voor isolatie aanbieden aan de burgers.",
-			"category": "Warmtebehoud",
+			"category": "warmtebehoud",
 			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/mghoz/128.jpg",
 			"results": {
 				"year1": {
@@ -37,9 +39,10 @@
 			}
 		},
 		"subsiedieWarmtepompen": {
+			"id": "subsiedieWarmtepompen",
 			"title":"Subsidies voor warmtepompen",
 			"description": "Subsidies voor warmtepompen aanbieden aan de burgers.",
-			"category": "Warmtebehoud",
+			"category": "warmtebehoud",
 			"image": "subsiedieWarmtepompen.svg",
 			"results": {
 				"year1": {
@@ -55,9 +58,10 @@
 			}
 		},
 		"passiefBouw": {
+			"id": "passiefBouw",
 			"title":"Passiefbouw",
 			"description": "Passiefbouw (info avond, wedstrijd, ...)",
-			"category": "Warmtebehoud",
+			"category": "warmtebehoud",
 			"image": "passiefBouw.svg",
 			"results": {
 				"year1": {
@@ -73,9 +77,10 @@
 			}
 		},
 		"duurzameMaterialen": {
+			"id": "duurzameMaterialen",
 			"title":"Duurzame materialen",
 			"description": "Duurzame materialen gebruiken (geëxploiteerd hout, duurzaam kantoormateriaal,..)",
-			"category": "Warmtebehoud",
+			"category": "warmtebehoud",
 			"image": "duurzameMaterialen.svg",
 			"results": {
 				"year1": {
@@ -91,9 +96,10 @@
 			}
 		},
 		"thermografischeKaart": {
+			"id": "thermografischeKaart",
 			"title":"Thermografische kaart",
 			"description": "Thermografische kaart (vliegtuig scannen over Mechelen voor gebruik per inwoner op kaart te zetten)",
-			"category": "Warmtebehoud",
+			"category": "warmtebehoud",
 			"image": "thermografischeKaart.svg",
 			"results": {
 				"year1": {
@@ -109,9 +115,10 @@
 			}
 		},
 		"energiescan": {
+			"id": "energiescan",
 			"title":"Energiescan",
 			"description": "Info (avond) elektriciteit - energie scan",
-			"category": "Warmtebehoud",
+			"category": "warmtebehoud",
 			"image": "Energiescan.svg",
 			"results": {
 				"year1": {
@@ -131,7 +138,7 @@
 		"parkeerBeleid": {
 					"title":"Parkeerbeleid",
 					"description": "Parkeerbeleid en parkeergeleidingssysteem aanpassen [Betalend parkeren- blauwe zone-randparking]",
-					"category": "Mobiliteit",
+					"category": "mobiliteit",
 					"image": "parkeerBeleid.svg",
 					"results": {
 						"year1": {
@@ -149,7 +156,7 @@
 		"verbeteringFietsinfrastructuur": {
 					"title":"Verbetering fietsinfrastructuur",
 					"description": "Parkeerbeleid en parkeergeleidingssysteem aanpassen [Betalend parkeren- blauwe zone-randparking]",
-					"category": "Mobiliteit",
+					"category": "mobiliteit",
 					"image": "verbeteringFietsinfrastructuur.svg",
 					"results": {
 						"year1": {
@@ -167,7 +174,7 @@
 		"autovrijeZondag": {
 					"title":"Autovrije zondag.",
 					"description": "Autovrije zondag invoeren.",
-					"category": "Mobiliteit",
+					"category": "mobiliteit",
 					"image": "autovrijeZondag.svg",
 					"results": {
 						"year1": {
@@ -185,7 +192,7 @@
 		"hybrideBussystemen": {
 					"title":"Hybride bussystemen..",
 					"description": "Hybride bussystemen invoeren.",
-					"category": "Mobiliteit",
+					"category": "mobiliteit",
 					"image": "hybrideBussystemen.svg",
 					"results": {
 						"year1": {
@@ -203,7 +210,7 @@
 		"fietsdiefstalPrevententie": {
 					"title":"Fietsdiefstal prevententie",
 					"description": "Een plan voor Fietsdiefstal prevententie invoeren. ",
-					"category": "Mobiliteit",
+					"category": "mobiliteit",
 					"image": "fietsdiefstalPrevententie.svg",
 					"results": {
 						"year1": {
@@ -221,7 +228,7 @@
 		"bikeToWork": {
 					"title":"Bike to work.",
 					"description": "Bike to work dag in de week invoeren ",
-					"category": "Mobiliteit",
+					"category": "mobiliteit",
 					"image": "bikeToWork.svg",
 					"results": {
 						"year1": {
@@ -239,7 +246,7 @@
 		"fietsVergoeding": {
 					"title":"Fietsvergoeding.",
 					"description": "Fietsvergoeding (stadspersoneel+ infomoment voor bedrijven)",
-					"category": "Mobiliteit",
+					"category": "mobiliteit",
 					"image": "bikeToWork.svg",
 					"results": {
 						"year1": {
@@ -257,7 +264,7 @@
 		"openbaarVervoerVergoeding": {
 					"title":"Openbaar vervoer vergoeding.",
 					"description": "Terugbetaling openbaar vervoer (stadspersoneel+ infomoment voor bedrijven)",
-					"category": "Mobiliteit",
+					"category": "mobiliteit",
 					"image": "openbaarVervoerVergoeding.svg",
 					"results": {
 						"year1": {
@@ -275,7 +282,7 @@
 		"autovrijeBinnenstad": {
 					"title":"Autovrije binnenstad",
 					"description": "Autovrije binnenstad",
-					"category": "Mobiliteit",
+					"category": "mobiliteit",
 					"image": "autovrijeBinnenstad.svg",
 					"results": {
 						"year1": {
@@ -293,7 +300,7 @@
 		"schoolstratenAutovrij": {
 					"title":"Schoolstraten autovrij maken",
 					"description": "Schoolstraten autovrij maken",
-					"category": "Mobiliteit",
+					"category": "mobiliteit",
 					"image": "schoolstratenAutovrij.svg",
 					"results": {
 						"year1": {
@@ -311,7 +318,7 @@
 		"bewaakteFietsenstallingen": {
 					"title":"Bewaakte fietsenstallingen uitbreiden",
 					"description": "Bewaakte fietsenstallingen uitbreiden",
-					"category": "Mobiliteit",
+					"category": "mobiliteit",
 					"image": "schoolstratenAutovrij.svg",
 					"results": {
 						"year1": {
@@ -329,7 +336,7 @@
 		"wegenWerwaarderen": {
 					"title":"Trage wegen herwaarderen",
 					"description": "Trage wegen herwaarderen",
-					"category": "Mobiliteit",
+					"category": "mobiliteit",
 					"image": "wegenWerwaarderen.svg",
 					"results": {
 						"year1": {
@@ -347,7 +354,7 @@
 		"voetgangersvoorsteken": {
 					"title":"Aanleg voetgangersdoorsteken",
 					"description": "Aanleg voetgangersdoorsteken",
-					"category": "Mobiliteit",
+					"category": "mobiliteit",
 					"image": "voetgangersvoorsteken.svg",
 					"results": {
 						"year1": {
@@ -365,7 +372,7 @@
 		"fietsatelier": {
 					"title":"Fietsatelier",
 					"description": "Fietsatelier (het verhuren van fietsen)",
-					"category": "Mobiliteit",
+					"category": "mobiliteit",
 					"image": "fietsatelier.svg",
 					"results": {
 						"year1": {
@@ -383,7 +390,7 @@
 		"pakjesDienst": {
 					"title":"Pakjes dienst voor inwoners",
 					"description": "Pakjes dienst voor inwoners",
-					"category": "Mobiliteit",
+					"category": "mobiliteit",
 					"image": "pakjesDienst.svg",
 					"results": {
 						"year1": {
