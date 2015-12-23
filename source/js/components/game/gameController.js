@@ -14,7 +14,7 @@ angular.module('klimaatneutraal.controllers')
                 	'score': {
                 		'public': 20,
                 		'eco': 20,
-                        'money': 20,
+                        'money': 60,
                 	}
                 };
 

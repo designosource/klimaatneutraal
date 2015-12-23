@@ -3,19 +3,24 @@
 	<div class="money col-xs-3 col-md-3">
 		<ul>
 			<li>
-				<img class="ui_money_1" src="img/ui/money_no.svg" alt="">
+				<img class="ui_money_1" src="img/ui/money.svg" alt="" 		ng-if="game.score.money >= 10">
+				<img class="ui_money_1" src="img/ui/money_no.svg" alt="" 	ng-if="game.score.money < 10">
 			</li>
 			<li>
-				<img class="ui_money_2" src="img/ui/money_no.svg" alt="">
+				<img class="ui_money_2" src="img/ui/money.svg" alt=""		ng-if="game.score.money >= 40">
+				<img class="ui_money_2" src="img/ui/money_no.svg" alt=""	ng-if="game.score.money < 40">
 			</li>
 			<li>
-				<img class="ui_money_3" src="img/ui/money_no.svg" alt="">
+				<img class="ui_money_3" src="img/ui/money.svg" alt="" 		ng-if="game.score.money >= 60">
+				<img class="ui_money_3" src="img/ui/money_no.svg" alt="" 	ng-if="game.score.money < 60">
 			</li>
 			<li>
-				<img class="ui_money_4" src="img/ui/money_no.svg" alt="">
+				<img class="ui_money_4" src="img/ui/money.svg" alt="" 		ng-if="game.score.money >= 80">
+				<img class="ui_money_4" src="img/ui/money_no.svg" alt="" 	ng-if="game.score.money < 80">
 			</li>
 			<li>
-				<img class="ui_money_4" src="img/ui/money_no.svg" alt="">
+				<img class="ui_money_5" src="img/ui/money.svg" alt="" 		ng-if="game.score.money >= 90">
+				<img class="ui_money_5" src="img/ui/money_no.svg" alt="" 	ng-if="game.score.money < 90">
 			</li>
 		</ul>
 	</div>
