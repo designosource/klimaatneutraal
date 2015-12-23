@@ -4,8 +4,9 @@ angular.module('klimaatneutraal.controllers')
         '$state',
         '$uibModalInstance',
         'activePolicies',
+        'year',
 
-        function($scope, $state, $uibModalInstance, activePolicies) {
+        function($scope, $state, $uibModalInstance, activePolicies, year) {
 
             var init = function() {
 
@@ -18,6 +19,7 @@ angular.module('klimaatneutraal.controllers')
             console.log(activePolicies);
 
             $scope.activePolicies = activePolicies;
+            $scope.year = year;
             $scope.goToNextYear = goToNextYear;
 
             init();

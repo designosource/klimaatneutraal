@@ -60,6 +60,9 @@ angular.module('klimaatneutraal.controllers')
                     resolve: {
                         activePolicies: function() {
                             return $rootScope.activePolicies[$rootScope.year];
+                        },
+                        year: function() {
+                            return $rootScope.year;
                         }
                     }
                 });
