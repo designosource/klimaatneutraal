@@ -5,7 +5,7 @@
 			"title":"Subsidies voor isolatie aanbieden.",
 			"description": "Subsidies voor isolatie aanbieden aan de burgers.",
 			"category": "warmtebehoud",
-			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/rogie/128.jpg",
+			"image": "subsiedieIsolatie.svg",
 			"results": {
 				"year1": {
 					"money": -5,
@@ -24,7 +24,7 @@
 			"title":"Subsidies voor het aanleggen van groendaken.",
 			"description": "Subsidies voor isolatie aanbieden aan de burgers.",
 			"category": "warmtebehoud",
-			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/mghoz/128.jpg",
+			"image": "subsiedieGroendaken.svg",
 			"results": {
 				"year1": {
 					"money": -1,
@@ -254,7 +254,7 @@
 			"title":"Fietsvergoeding.",
 			"description": "Fietsvergoeding (stadspersoneel+ infomoment voor bedrijven)",
 			"category": "mobiliteit",
-			"image": "bikeToWork.svg",
+			"image": "fietsVergoeding.svg",
 			"results": {
 				"year1": {
 					"money": 1,
