@@ -14,7 +14,7 @@ angular.module('klimaatneutraal.controllers')
             var chunkPolicies = {};
 
             var init = function() {
-                $rootScope.year = $stateParams.year -3;
+                $rootScope.year = $stateParams.year;
 
                 console.log('year ' + $rootScope.year + ' is loaded');
 
@@ -25,7 +25,7 @@ angular.module('klimaatneutraal.controllers')
 
                 $rootScope.screenOptions = _.shuffle($rootScope.screenOptions);
                 $scope.renderScreen =  $rootScope.screenOptions[0];
-                $scope.renderScreen =  $stateParams.year; // for testing
+                //$scope.renderScreen =  $stateParams.year; // for testing
                 $rootScope.screenOptions.splice(0,1); // remove option from array
             };
 

@@ -54,29 +54,33 @@ angular.module('klimaatneutraal.controllers')
 
             var showReport = function() {
 
-                var menuModal = $uibModal.open({
-                    animation: true,
-                    templateUrl: 'js/components/modals/reportModal.html',
-                    controller: 'reportController',
-                    size: 'lg',
-                    resolve: {
-                        activePolicies: function() {
-                            return $rootScope.activePolicies[$rootScope.year];
-                        },
-                        year: function() {
-                            return $rootScope.year;
+                if($rootScope.year < 3) {
+                    var menuModal = $uibModal.open({
+                        animation: true,
+                        templateUrl: 'js/components/modals/reportModal.html',
+                        controller: 'reportController',
+                        size: 'lg',
+                        resolve: {
+                            activePolicies: function() {
+                                return $rootScope.activePolicies[$rootScope.year];
+                            },
+                            year: function() {
+                                return $rootScope.year;
+                            }
                         }
-                    }
-                });
+                    });
 
-                menuModal.result.then(function() {
+                    menuModal.result.then(function() {
 
-                    goToNextYear();
+                        goToNextYear();
 
-                }, function () {
-                    console.log('dismiss');
-                });
-
+                    }, function () {
+                        console.log('dismiss');
+                    });
+                }
+                else {
+                    console.info('het spel is gedaan!');
+                }
             };
 
             var removePolicy = function(key) {
