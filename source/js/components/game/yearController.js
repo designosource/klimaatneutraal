@@ -22,6 +22,10 @@ angular.module('klimaatneutraal.controllers')
 
                 console.log('Active perks: ');
                 console.log($rootScope.activePolicies);
+
+                $rootScope.screenOptions = _.shuffle($rootScope.screenOptions);
+                $scope.renderScreen =  $rootScope.screenOptions[0];
+                $rootScope.screenOptions.splice(0,1); // remove option from array
             };
 
             var updateScore = function(factor, option) {
@@ -46,7 +50,7 @@ angular.module('klimaatneutraal.controllers')
                         animation: true,
                         templateUrl: 'js/components/modals/policyModal.html',
                         controller: 'policyController',
-                        size: 'lm',
+                        size: 'md',
                         resolve: {
                             policies: function () {
                                 return chunkPolicies[category][$rootScope.year - 1];

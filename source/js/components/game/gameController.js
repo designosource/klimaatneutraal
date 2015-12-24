@@ -26,6 +26,8 @@ angular.module('klimaatneutraal.controllers')
 
                 $rootScope.year = 1; // inital on 1
 
+                $rootScope.screenOptions = [1,2,3,4,5,6];
+
             };
 
             var openMenu = function (size) {
