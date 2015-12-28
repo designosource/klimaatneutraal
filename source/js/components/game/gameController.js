@@ -19,6 +19,7 @@ angular.module('klimaatneutraal.controllers')
                 };
 
                 $rootScope.activePolicies = {
+                    '0': [],
                     '1': [],
                     '2': [],
                     '3': [],

@@ -16,6 +16,10 @@ angular.module('klimaatneutraal.controllers')
             var init = function() {
                 $rootScope.year = $stateParams.year;
 
+                if($stateParams.year == 0) {
+                    $scope.tutorial = true;
+                }
+
                 console.log('year ' + $rootScope.year + ' is loaded');
 
                 policiesData = policies.data;
@@ -54,7 +58,13 @@ angular.module('klimaatneutraal.controllers')
                         size: 'md',
                         resolve: {
                             policies: function () {
-                                return chunkPolicies[category][$rootScope.year - 1];
+                                if($scope.tutorial) {
+                                    return chunkPolicies[category][$rootScope.year];
+                                }
+                                else {
+                                    return chunkPolicies[category][$rootScope.year - 1];
+                                }
+                                
                             }
                         }
                     });
@@ -79,6 +89,7 @@ angular.module('klimaatneutraal.controllers')
             };
 
             $scope.openCategory = openCategory;
+            $scope.tutorial = false;
 
             init();
         }

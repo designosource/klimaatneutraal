@@ -1,5 +1,23 @@
+<!-- YEAR 0 === TUTORIAL -->
+<section class="year year1" ng-if="tutorial" ng-controller="TutorialController">
+	
+	<!-- ACTIONS -->
+	<div ng-click="openCategory('warmtebehoud')" class="huis_links_wb" class="clickable interact" ><img src="img/jaar1_1/huis_links_wb.svg" alt=""></div>
+	<div ng-click="openCategory('mobiliteit')" class="buskotje" class="clickable"><img src="img/jaar1_1/buskotje_zonder_benen.svg" alt=""></div>
+
+	<!-- DECORATION -->
+	<img class="skater" src="img/jaar1_1/skater.svg" alt="">
+	<img class="benen" src="img/jaar1_1/legs.gif" alt=""></a>
+	<img class="molenpaal" src="img/jaar1_1/molenpaal.svg" alt="">
+	<img class="wiek" src="img/jaar1_1/wiek.svg" alt="">
+	<img class="molenpaal_l" src="img/jaar1_1/molenpaal_l.svg" alt="">
+	<img class="wiek_l" src="img/jaar1_1/wiek_l.svg" alt="">
+	<img class="house2" src="img/jaar1_1/huis_rechts.svg" alt="">
+
+</section>
+
 <!-- YEAR 1 -->
-<section class="year year1" ng-if="renderScreen == 1">
+<section class="year year1" ng-if="renderScreen == 1 && !tutorial">
 	
 	<!-- ACTIONS -->
 	<div ng-click="openCategory('warmtebehoud')" class="huis_links_wb" class="clickable interact" ><img src="img/jaar1_1/huis_links_wb.svg" alt=""></div>
@@ -17,7 +35,7 @@
 </section>
 
 <!-- YEAR 2 -->
-<section class="year year2" ng-if="renderScreen == 2">
+<section class="year year2" ng-if="renderScreen == 2 && !tutorial">
 	
 	<!-- ACTIONS -->
 	<div ng-click="openCategory('warmtebehoud')" class="huis_links_wb" class="clickable interact" ><img src="img/year2/house.svg" alt=""></div>
@@ -35,7 +53,7 @@
 </section>
 
 <!-- YEAR 3 -->
-<section class="year year3" ng-if="renderScreen == 3">
+<section class="year year3" ng-if="renderScreen == 3 && !tutorial">
 	
 	<!-- ACTIONS -->
 	<img ng-click="openCategory('warmtebehoud')" class="house" src="img/year3/big-house.svg" alt="">
@@ -50,7 +68,7 @@
 
 
 <!-- YEAR 4 -->
-<section class="year year4" ng-if="renderScreen == 4">
+<section class="year year4" ng-if="renderScreen == 4 && !tutorial">
 	
 	<!-- ACTIONS -->
 	<img class="house" ng-click="openCategory('warmtebehoud')" src="img/year4/house.svg" alt="">
@@ -77,7 +95,7 @@
 
 
 <!-- YEAR 5 -->
-<section class="year year5" ng-if="renderScreen == 5">
+<section class="year year5" ng-if="renderScreen == 5 && !tutorial">
 	
 	<!-- ACTIONS -->
 	<img ng-click="openCategory('warmtebehoud')" class="house" src="img/year5/house.svg" alt="">
@@ -99,7 +117,7 @@
 
 
 <!-- YEAR 6 -->
-<section class="year year6" ng-if="renderScreen == 6">
+<section class="year year6" ng-if="renderScreen == 6 && !tutorial">
 	
 	<!-- ACTIONS -->
 	<img ng-click="openCategory('mobiliteit')" class="car" src="img/year6/autos.svg" alt="">
