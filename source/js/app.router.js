@@ -27,16 +27,6 @@ angular.module('klimaatneutraal')
                 }
             })
 
-            .state('startTutorial', {
-                url: '/tutorial',
-                views: {
-                    '': {
-                        templateUrl: 'js/components/tutorial/start.html',
-                        controller: 'startTutorialController'
-                    }
-                }
-            })
-
             .state('character', {
                 url: '/character',
                 views: {
@@ -95,6 +85,16 @@ angular.module('klimaatneutraal')
                     '': {
                         templateUrl: 'js/components/game/year.html',
                         controller: 'yearController'
+                    }
+                }
+            })
+
+            .state('game.year.tutorial', {
+                url: '/tutorial',
+                views: {
+                    '': {
+                        templateUrl: 'js/components/game/year.html',
+                        controller: 'startTutorialController'
                     }
                 }
             });
