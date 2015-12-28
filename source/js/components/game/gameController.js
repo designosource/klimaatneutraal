@@ -79,6 +79,7 @@ angular.module('klimaatneutraal.controllers')
                     });
                 }
                 else {
+                    $state.go('endGame');
                     console.info('het spel is gedaan!');
                 }
             };
