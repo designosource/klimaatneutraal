@@ -9,3 +9,9 @@ angular.module('klimaatneutraal.controllers').filter('range', function() {
 		return input;
 	};
 });
+
+angular.module('klimaatneutraal.controllers').filter('num', function() {
+    return function(input) {
+      return parseInt(input, 10);
+    };
+});

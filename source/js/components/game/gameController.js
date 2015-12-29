@@ -99,10 +99,15 @@ angular.module('klimaatneutraal.controllers')
                 }
             };
 
+            var goBack = function() {
+                $state.go('game.year', {year: $rootScope.year - 1});
+            };
+
 			$scope.openMenu = openMenu;
             $scope.goToNextYear = goToNextYear;
             $scope.removePolicy = removePolicy;
             $scope.showReport = showReport;
+            $scope.goBack = goBack;
 
             init();
         }
