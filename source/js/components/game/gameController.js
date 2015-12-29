@@ -84,6 +84,12 @@ angular.module('klimaatneutraal.controllers')
                 }
             };
 
+            var updateScore = function(factor, option) {
+                $rootScope.game.score.eco += (option.results.year1.eco * factor);
+                $rootScope.game.score.public += (option.results.year1.public * factor);
+                $rootScope.game.score.money += (option.results.year1.money * factor);
+            }
+
             var removePolicy = function(key) {
                 if($rootScope.activePolicies[$rootScope.year][key]) {
 
