@@ -89,15 +89,5 @@ angular.module('klimaatneutraal')
                 }
             })
 
-            .state('game.year.tutorial', {
-                url: '/tutorial',
-                views: {
-                    '': {
-                        templateUrl: 'js/components/game/year.html',
-                        controller: 'startTutorialController'
-                    }
-                }
-            });
-
         }
     ]);

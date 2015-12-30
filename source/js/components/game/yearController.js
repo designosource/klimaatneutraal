@@ -18,7 +18,18 @@ angular.module('klimaatneutraal.controllers')
 
                 if($stateParams.year == 0) {
                     $scope.tutorial = true;
+                    $rootScope.year = 0;
                 }
+
+                if($rootScope.initialYear === undefined){
+                    // define the initial year to determine amount of repeats till game is over
+                    // 0 or 1 = tutorial or play
+                    // used in gameController.showReport()
+                    $rootScope.initialYear = $stateParams.year;
+                }
+
+                // DEBUG
+                console.log('initialYear is: ' + $rootScope.initialYear);
 
                 console.log('year ' + $rootScope.year + ' is loaded');
 

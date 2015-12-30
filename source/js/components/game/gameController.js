@@ -4,8 +4,9 @@ angular.module('klimaatneutraal.controllers')
         '$scope',
         '$uibModal',
         '$state',
+        '$stateParams',
 
-        function($rootScope, $scope, $uibModal, $state) {
+        function($rootScope, $scope, $uibModal, $state, $stateParams) {
 
             var init = function() {
                 console.log('gameController');
@@ -25,7 +26,7 @@ angular.module('klimaatneutraal.controllers')
                     '3': [],
                 };
 
-                $rootScope.year = 1; // inital on 1
+                $rootScope.year = $stateParams.year; // inital on 1
 
                 $rootScope.screenOptions = [1,2,3,4,5,6];
 
@@ -55,7 +56,9 @@ angular.module('klimaatneutraal.controllers')
 
             var showReport = function() {
 
-                if($rootScope.year < 3) {
+                console.log($rootScope.year, parseInt($rootScope.initialYear) + 2)
+
+                if($rootScope.year < parseInt($rootScope.initialYear) + 2) {
                     var menuModal = $uibModal.open({
                         animation: true,
                         templateUrl: 'js/components/modals/reportModal.html',
@@ -73,7 +76,7 @@ angular.module('klimaatneutraal.controllers')
 
                     menuModal.result.then(function() {
 
-                        goToNextYear();
+                    goToNextYear();
 
                     }, function () {
                         console.log('dismiss');
