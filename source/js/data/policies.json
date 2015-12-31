@@ -2,15 +2,16 @@
 	"warmtebehoud": {
 		"subsiedieIsolatie": {
 			"id": "subsiedieIsolatie",
-			"title":"Subsidies voor isolatie aanbieden.",
-			"description": "Subsidies voor isolatie aanbieden aan de burgers.",
+			"title":"Subsidie voor isolatie aanbieden.",
+			"description": "Je geeft een premie aan inwoners die hun huis isoleren.",
 			"category": "warmtebehoud",
 			"image": "subsiedieIsolatie.svg",
+			"consequence": "Pas op! Je hebt vorig jaar subsidies aangeboden voor isolatie; dit was erg duur. Zorg ervoor dat je dit jaar meer inkomsten hebt.",
 			"results": {
 				"year1": {
-					"money": -5,
+					"money": -2,
 					"public": 4,
-					"eco": 5
+					"eco": 4
 				},
 				"yearN": {
 					"money": -2,
@@ -21,10 +22,11 @@
 		},
 		"subsiedieGroendaken": {
 			"id": "subsiedieGroendaken",
-			"title":"Subsidies voor het aanleggen van groendaken.",
+			"title":"Subsidie voor groendaken aanbieden.",
 			"description": "Subsidies voor isolatie aanbieden aan de burgers.",
 			"category": "warmtebehoud",
 			"image": "subsiedieGroendaken.svg",
+			"consequence": "Pas op! Je hebt vorig jaar subsidies aangeboden voor isolatie; dit was erg duur. Zorg ervoor dat je dit jaar meer inkomsten hebt.",
 			"results": {
 				"year1": {
 					"money": -1,
@@ -41,9 +43,10 @@
 		"subsiedieWarmtepompen": {
 			"id": "subsiedieWarmtepompen",
 			"title":"Subsidies voor warmtepompen",
-			"description": "Subsidies voor warmtepompen aanbieden aan de burgers.",
+			"description": "Je geeft een kleine subsidie aan inwoners die een warmtepomp plaatsen.",
 			"category": "warmtebehoud",
 			"image": "subsiedieWarmtepompen.svg",
+			"consequence": "",
 			"results": {
 				"year1": {
 					"money": -1,
@@ -59,10 +62,11 @@
 		},
 		"passiefBouw": {
 			"id": "passiefBouw",
-			"title":"Passiefbouw",
-			"description": "Passiefbouw (info avond, wedstrijd, ...)",
+			"title":"Stimuleren van passiefbouw",
+			"description": "Je organiseert activiteiten om passiefbouw te stimuleren: informatieavonden, wedstrijden, plaatsbezoeken,…",
 			"category": "warmtebehoud",
 			"image": "passiefBouw.svg",
+			"consequence": "",
 			"results": {
 				"year1": {
 					"money": -2,
@@ -78,10 +82,11 @@
 		},
 		"duurzameMaterialen": {
 			"id": "duurzameMaterialen",
-			"title":"Duurzame materialen",
-			"description": "Duurzame materialen gebruiken (geëxploiteerd hout, duurzaam kantoormateriaal,..)",
+			"title":"Je geeft het goede voorbeeld met een klimaatneutraal aankoopbeleid.",
+			"description": "Je koopt als stad bij voorkeur ‘klimaatneutrale’ producten. Zo hergebruik je kantoormeubilair en gebruik je duurzame materialen in stadsprojecten.",
 			"category": "warmtebehoud",
 			"image": "duurzameMaterialen.svg",
+			"consequence": "",
 			"results": {
 				"year1": {
 					"money": -1,
@@ -98,9 +103,10 @@
 		"thermografischeKaart": {
 			"id": "thermografischeKaart",
 			"title":"Thermografische kaart",
-			"description": "Thermografische kaart (vliegtuig scannen over Mechelen voor gebruik per inwoner op kaart te zetten)",
+			"description": "Je maakt een thermografische kaart en stelt deze gratis ter beschikking van inwoners. Inwoners kunnen hier zijn of hun huis voldoende geïsoleerd is.",
 			"category": "warmtebehoud",
 			"image": "thermografischeKaart.svg",
+			"consequence": "",
 			"results": {
 				"year1": {
 					"money": -2,
@@ -116,10 +122,11 @@
 		},
 		"energiescan": {
 			"id": "energiescan",
-			"title":"Energiescan",
-			"description": "Info (avond) elektriciteit - energie scan",
+			"title":"Informatiemomenten en energiescans.",
+			"description": " Je organiseert een informatiemoment rond energie. Je biedt een persoonlijke energiescan aan aan inwoners. Met kleine ingrepen kunnen ze heel wat energie besparen (radiatorfolie, tochtstrips,…) ",
 			"category": "warmtebehoud",
 			"image": "Energiescan.svg",
+			"consequence": "",
 			"results": {
 				"year1": {
 					"money": -2,
@@ -137,10 +144,11 @@
 	"mobiliteit": {
 		"parkeerBeleid": {
 			"id": "parkeerBeleid",
-			"title":"Parkeerbeleid",
-			"description": "Parkeerbeleid en parkeergeleidingssysteem aanpassen [Betalend parkeren- blauwe zone-randparking]",
+			"title":" Invoering betalend parkeren en parkeergeleidingssysteem.",
+			"description": "Je voert betalend parkeren in in een aantal zones, aangevuld door een parkeergeleidingssysteem.",
 			"category": "mobiliteit",
 			"image": "parkeerBeleid.svg",
+			"consequence": "Pas op! Je koost vorig jaar voor betalend parkeren. Dit had een negatieve invloed op de tevredenheid van inwoners. Neem maatregelen om de tevredenheid weer te verhogen.",
 			"results": {
 				"year1": {
 					"money": -1,
@@ -156,10 +164,11 @@
 		},
 		"verbeteringFietsinfrastructuur": {
 			"id": "verbeteringFietsinfrastructuur",
-			"title":"Verbetering fietsinfrastructuur",
-			"description": "Parkeerbeleid en parkeergeleidingssysteem aanpassen [Betalend parkeren- blauwe zone-randparking]",
+			"title":"Investering in fietsinfrastructuur.",
+			"description": "Je investeert in een betere fietsinfrastructuur. Je plaatst meer fietsenstallingen en openbare fietspompen. Je investeert in fietspaden en de fiets-ostrade.",
 			"category": "mobiliteit",
 			"image": "verbeteringFietsinfrastructuur.svg",
+			"consequence": "",
 			"results": {
 				"year1": {
 					"money": -4,
@@ -175,10 +184,11 @@
 		},	
 		"autovrijeZondag": {
 			"id": "autovrijeZondag",
-			"title":"Autovrije zondag.",
-			"description": "Autovrije zondag invoeren.",
+			"title":"Organisatie Uit zonder Uitlaat!",
+			"description": "Je organiseert een autovrije zondag om inwoners te stimuleren meer te stappen, trappen en het openbaar vervoer te gebruiken.",
 			"category": "mobiliteit",
 			"image": "autovrijeZondag.svg",
+			"consequence": "Pas op! Je voerde Uit zonder Uitlaat! In, misschien kan je dit jaar investeren in openbaar vervoer.",
 			"results": {
 				"year1": {
 					"money": -1,
@@ -194,10 +204,11 @@
 		},	
 		"hybrideBussystemen": {
 			"id": "hybrideBussystemen",
-			"title":"Hybride bussystemen..",
-			"description": "Hybride bussystemen invoeren.",
+			"title":"Stimuleren van het gebruik van hybride bussen.",
+			"description": "Je maakt afspraken met de busmaatschappij dat er nog enkel hybride bussen op het grondgebied mogen rijden.",
 			"category": "mobiliteit",
 			"image": "hybrideBussystemen.svg",
+			"consequence": "Pas op! Je voerde vorig jaar hybride bussen in, je kan dit extra onder de aandacht brengen op Uit zonder Uitlaat! (autoloze zondag) opdat meer mensen de bus nemen",
 			"results": {
 				"year1": {
 					"money": 0,
@@ -213,10 +224,11 @@
 		},
 		"fietsdiefstalPrevententie": {
 			"id": "fietsdiefstalPrevententie",
-			"title":"Fietsdiefstal prevententie",
-			"description": "Een plan voor Fietsdiefstal prevententie invoeren. ",
+			"title":"Fietsdiefstallen voorkomen.",
+			"description": "Je voert een plan in om fietsdiefstallen op het grondgebied te voorkomen: betere stallingen, sensibilisatie en verhoogde controle.",
 			"category": "mobiliteit",
 			"image": "fietsdiefstalPrevententie.svg",
+			"consequence":"",
 			"results": {
 				"year1": {
 					"money": -1,
@@ -233,9 +245,10 @@
 		"bikeToWork": {
 			"id": "bikeToWork",
 			"title":"Bike to work.",
-			"description": "Bike to work dag in de week invoeren ",
+			"description": "Je organiseert een campagne om inwoners en stadspersoneel één dag met de fiets naar het werk te laten gaan. Dit omvat een wedstrijd, sensibilisatie, gratis pechverhelping,…",
 			"category": "mobiliteit",
 			"image": "bikeToWork.svg",
+			"consequence": "Pas op! Je voerde vorig jaar een bike to work dag in, Je kan dit jaar misschien werken rond de fietsvergoeding.",
 			"results": {
 				"year1": {
 					"money": -2,
@@ -252,9 +265,10 @@
 		"fietsVergoeding": {
 			"id": "fietsVergoeding",
 			"title":"Fietsvergoeding.",
-			"description": "Fietsvergoeding (stadspersoneel+ infomoment voor bedrijven)",
+			"description": "Je organiseert een informatiemoment rond de fietsvergoeding en je maakt een charter voor bedrijven die zich engageren de maximale fietsvergoeding uit te reiken. Als stad geef je het goede voorbeeld.",
 			"category": "mobiliteit",
 			"image": "fietsVergoeding.svg",
+			"consequence": "",
 			"results": {
 				"year1": {
 					"money": 1,
@@ -271,9 +285,10 @@
 		"openbaarVervoerVergoeding": {
 			"id": "openbaarVervoerVergoeding",
 			"title":"Openbaar vervoer vergoeding.",
-			"description": "Terugbetaling openbaar vervoer (stadspersoneel+ infomoment voor bedrijven)",
+			"description": "Je organiseert een informatiemoment rond de terugbetaling van het openbaar vervoer en je maakt een charter voor bedrijven die zich engageren openbaar vervoer terug te betalen. Als stad geef je het goede voorbeeld.",
 			"category": "mobiliteit",
 			"image": "openbaarVervoerVergoeding.svg",
+			"consequence": "",
 			"results": {
 				"year1": {
 					"money": 1,
@@ -290,9 +305,10 @@
 		"autovrijeBinnenstad": {
 			"id": "autovrijeBinnenstad",
 			"title":"Autovrije binnenstad",
-			"description": "Autovrije binnenstad",
+			"description": "Je treft maatregelen (bv. camera) om de binnenstad maximaal autovrij te maken.",
 			"category": "mobiliteit",
 			"image": "autovrijeBinnenstad.svg",
+			"consequence": "",
 			"results": {
 				"year1": {
 					"money": -2,
@@ -309,9 +325,10 @@
 		"schoolstratenAutovrij": {
 			"id": "schoolstratenAutovrij",
 			"title":"Schoolstraten autovrij maken",
-			"description": "Schoolstraten autovrij maken",
+			"description": "Je voert schoolstraten in. Dit betekent dat de straten van scholen in de ochtend en ’s avonds autovrij worden gemaakt. Enkel fietsers en voetgangers mogen dan nog door.",
 			"category": "mobiliteit",
 			"image": "schoolstratenAutovrij.svg",
+			"consequence": "Pas op! Je hebt vorig jaar de schoolstraten autovrij gemaakt. Je kan er dit jaar voor zorgen dat kinderen het openbaar vervoer nemen naar school.",
 			"results": {
 				"year1": {
 					"money": -1,
@@ -328,9 +345,10 @@
 		"bewaakteFietsenstallingen": {
 			"id": "bewaakteFietsenstallingen",
 			"title":"Bewaakte fietsenstallingen uitbreiden",
-			"description": "Bewaakte fietsenstallingen uitbreiden",
+			"description": "Je verhoogt het aantal fietsenstallingen op het openbaar domein.",
 			"category": "mobiliteit",
 			"image": "schoolstratenAutovrij.svg",
+			"consequence": "",
 			"results": {
 				"year1": {
 					"money": -2,
@@ -347,9 +365,10 @@
 		"wegenWerwaarderen": {
 			"id": "wegenWerwaarderen",
 			"title":"Trage wegen herwaarderen",
-			"description": "Trage wegen herwaarderen",
+			"description": "Je inventariseert een aantal trage wegen en investeert in deze wegen. Zo blijven ze bereikbaar, toegankelijk en gekend. Je realiseert ook een aantal doorsteken voor voetgangers opdat ze niet rond moeten gaan. Bijvoorbeeld over privaat domein.",
 			"category": "mobiliteit",
 			"image": "wegenWerwaarderen.svg",
+			"consequence": "",
 			"results": {
 				"year1": {
 					"money": -2,
@@ -369,6 +388,7 @@
 			"description": "Aanleg voetgangersdoorsteken",
 			"category": "mobiliteit",
 			"image": "voetgangersvoorsteken.svg",
+			"consequence": "",
 			"results": {
 				"year1": {
 					"money": -1,
@@ -384,10 +404,11 @@
 		},
 		"fietsatelier": {
 			"id": "fietsatelier",
-			"title":"Fietsatelier",
-			"description": "Fietsatelier (het verhuren van fietsen)",
+			"title":"Fietsverhuur Blue-bike",
+			"description": "Je investeert in Blue-bike. Mensen kunnen nu voor 1 euro een fiets ontlenen voor een hele dag.",
 			"category": "mobiliteit",
 			"image": "fietsatelier.svg",
+			"consequence": "",
 			"results": {
 				"year1": {
 					"money": -1,
@@ -403,10 +424,11 @@
 		},
 		"pakjesDienst": {
 			"id": "pakjesDienst",
-			"title":"Pakjes dienst voor inwoners",
-			"description": "Pakjes dienst voor inwoners",
+			"title":"Fietskoeriers.",
+			"description": "Je geeft ondersteuning aan bedrijven die pakjes met de fiets leveren. Je voorkomt vervuilend verkeer in de binnenstad.",
 			"category": "mobiliteit",
 			"image": "pakjesDienst.svg",
+			"consequence": "",
 			"results": {
 				"year1": {
 					"money": -1,
@@ -425,9 +447,29 @@
 		"verlichtingsplan": {
 			"id": "verlichtingsplan",
 			"title":"Nieuw verlichtingsplan voor stedelijke gebouwen.",
-			"description": "Nieuw verlichtingsplan voor stedelijke gebouwen.",
+			"description": "Je voert een nieuw verlichtingsplan in voor de stedelijke gebouwen. ",
 			"category": "energie",
 			"image": "verlichtingsplan.svg",
+			"consequence": "Je hebt vorig jaar een verlichtingsplan opgemaakt voor stedelijke gebouwen, misschien kan je dit jaar de openbare verlichting vernieuwen.",
+			"results": {
+				"year1": {
+					"money": 1,
+					"public": 1,
+					"eco": 1
+				},
+				"yearN": {
+					"money": 1,
+					"public": 1,
+					"eco": 1
+				}
+			}
+		},
+		"uitschakelenopenbareverlichting": {
+			"id": "uitschakelenopenbareverlichting",
+			"title":"Uitschakelen openbare verlichting",
+			"description": "Je schakelt de openbare verlichting uit tussen 23u en 6u.",
+			"category": "energie",
+			"image": "uitschakelenopenbareverlichting.svg",
 			"results": {
 				"year1": {
 					"money": 1,
@@ -443,10 +485,31 @@
 		},
 		"windturbines": {
 			"id": "windturbines",
-			"title":"Windturbines plaatsen.",
-			"description": "10 windturbines plaatsen (toelaten, ademruimte)",
+			"title":"Vergunning voor de plaatsing van 1 windturbines.",
+			"description": "Je vergunt de installatie van 1 windturbine door een private partner.",
 			"category": "energie",
 			"image": "windturbines.svg",
+			"consequence": "Je hebt vorig jaar 1 windturbines vergund, misschien kan je dit jaar investeren in zonnepanelen en zonneboilers.",
+			"results": {
+				"year1": {
+					"money": 0,
+					"public": -1,
+					"eco": 4
+				},
+				"yearN": {
+					"money": 0,
+					"public": -1,
+					"eco": 4
+				}
+			}
+		},
+		"ZonnepanelenStad": {
+			"id": "ZonnepanelenStad",
+			"title":"Plaatsen van zonneboilers en zonnepanelen op stedelijke gebouwen.",
+			"description": "Je plaatste zonneboilers en zonnepanelen op de daken van stedelijke gebouwen.",
+			"category": "energie",
+			"image": "ZonnepanelenStad.svg",
+			"consequence": "",
 			"results": {
 				"year1": {
 					"money": 0,
@@ -462,10 +525,11 @@
 		},
 		"samenaankoopZonnepanelen": {
 			"id": "samenaankoopZonnepanelen",
-			"title":"Samenaankoop zonnepanelen.",
-			"description": "Samenaankoop zonnepanelen.",
+			"title":"Je organiseert een samenaankoop zonnepanelen voor inwoners. Inwoners kunnen voordelig zonnepanelen plaatsen op hun dak. De leverancier voorziet professionele begeleiding.",
+			"description": "Je plaatste zonneboilers en zonnepanelen op de daken van stedelijke gebouwen.",
 			"category": "energie",
 			"image": "samenaankoopZonnepanelen.svg",
+			"consequence": "",
 			"results": {
 				"year1": {
 					"money": 0,
@@ -481,10 +545,11 @@
 		},
 		"samenaankoopGroeneStroom": {
 			"id": "samenaankoopGroeneStroom",
-			"title":"Samenaankoop groene stroom. ",
-			"description": "Samenaankoop groene stroom gezinnen.",
+			"title":" Samenaankoop groene stroom.",
+			"description": "Je organiseert een samenaankoop groen stroom voor de inwoners. Inwoners schakelen om naar groene stroom en besparen op hun energie-factuur.",
 			"category": "energie",
 			"image": "samenaankoopGroeneStroom.svg",
+			"consequence": "",
 			"results": {
 				"year1": {
 					"money": 0,
@@ -492,7 +557,27 @@
 					"eco": 2
 				},
 				"yearN": {
-					"money": 1,
+					"money": 0,
+					"public": 2,
+					"eco": 2
+				}
+			}
+		},
+		"SubsidieElektrischeWagens": {
+			"id": "SubsidieElektrischeWagens",
+			"title":" Subsidie en laadinfrastructuur voor elektrische wagens.",
+			"description": "Je geeft inwoners die een elektrische wagen komen een subsidie, een gereserveerde parkeerplaats en laadinfrastructuur op de openbare weg.",
+			"category": "energie",
+			"image": "SubsidieElektrischeWagens.svg",
+			"consequence": "",
+			"results": {
+				"year1": {
+					"money": 0,
+					"public": 2,
+					"eco": 2
+				},
+				"yearN": {
+					"money": 0,
 					"public": 2,
 					"eco": 2
 				}
@@ -500,10 +585,11 @@
 		},
 		"groeneStroomAuto": {
 			"id": "groeneStroomAuto",
-			"title":"Groene stroom aanbieden voor elektrische wagens.",
-			"description": "Groene stroom aanbieden voor elektrische wagens.",
+			"title":"Subsidie en laadinfrastructuur voor elektrische wagens.",
+			"description": "Je geeft inwoners die een elektrische wagen komen een subsidie, een gereserveerde parkeerplaats en laadinfrastructuur op de openbare weg.",
 			"category": "energie",
 			"image": "groeneStroomAuto.svg",
+			"consequence": "",
 			"results": {
 				"year1": {
 					"money": -1,
