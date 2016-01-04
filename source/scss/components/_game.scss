@@ -598,28 +598,57 @@
 
     }
 
-    &.auto-zondag {
-    	background-image: url('../img/action_animations/autovrije_zondag.jpg');
+    &.subsiedieWarmtepompen {
+    	background-image: url('../img/action_animations/warmtepompten.jpg');
     	background-size: cover;
     	display: block;
 
-    	.img-auto-zondag {
+    	.img-subsiedieWarmtepomp {
+		    position: absolute;
+		    bottom: 2%;
+		    left: 2%;
+		    width: 80%;
+		    display: block;
+    	}
+
+    } 
+
+    &.parkeerBeleid {
+    	background-image: url('../img/action_animations/parkeerbeleid_aanpassen.jpg');
+    	background-size: cover;
+    	display: block;
+
+    	.img-parkeerBeleid {
+		    position: absolute;
+		    bottom: 2%;
+		    left: 11%;
+		    display: block;
+    	}
+
+    }
+
+    &.verbeteringFietsinfrastructuur {
+    	background-image: url('../img/action_animations/betere_fietsinfrastructuur.jpg');
+    	background-size: cover;
+    	display: block;
+
+    	.img-verbeteringFietsinfrastructuur {
     		position: absolute;
-    		bottom: 25px;
+    		bottom: 0px;
+    		width: 100%;
     		display: block;
     	}
 
     }
 
-    &.fiets-infrastructuur {
-    	background-image: url('../img/action_animations/betere_fietsinfrastructuur.jpg');
+    &.autovrijeZondag {
+    	background-image: url('../img/action_animations/autovrije_zondag.jpg');
     	background-size: cover;
     	display: block;
 
-    	.img-fiets-infrastructuur {
+    	.img-autovrijeZondag {
     		position: absolute;
-    		bottom: 0px;
-    		width: 100%;
+    		bottom: 25px;
     		display: block;
     	}
 

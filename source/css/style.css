@@ -815,42 +815,73 @@ body {
 }
 
 /* line 601, C:/Users/jaspd/projects/Designo/klimaatneutraal/source/scss/components/_game.scss */
-.action-animation.auto-zondag {
-  background-image: url("../img/action_animations/autovrije_zondag.jpg");
+.action-animation.subsiedieWarmtepompen {
+  background-image: url("../img/action_animations/warmtepompten.jpg");
   background-size: cover;
   display: block;
 }
 
 /* line 606, C:/Users/jaspd/projects/Designo/klimaatneutraal/source/scss/components/_game.scss */
-.action-animation.auto-zondag .img-auto-zondag {
+.action-animation.subsiedieWarmtepompen .img-subsiedieWarmtepomp {
   position: absolute;
-  bottom: 25px;
+  bottom: 2%;
+  left: 2%;
+  width: 80%;
   display: block;
 }
 
-/* line 614, C:/Users/jaspd/projects/Designo/klimaatneutraal/source/scss/components/_game.scss */
-.action-animation.fiets-infrastructuur {
+/* line 616, C:/Users/jaspd/projects/Designo/klimaatneutraal/source/scss/components/_game.scss */
+.action-animation.parkeerBeleid {
+  background-image: url("../img/action_animations/parkeerbeleid_aanpassen.jpg");
+  background-size: cover;
+  display: block;
+}
+
+/* line 621, C:/Users/jaspd/projects/Designo/klimaatneutraal/source/scss/components/_game.scss */
+.action-animation.parkeerBeleid .img-parkeerBeleid {
+  position: absolute;
+  bottom: 2%;
+  left: 11%;
+  display: block;
+}
+
+/* line 630, C:/Users/jaspd/projects/Designo/klimaatneutraal/source/scss/components/_game.scss */
+.action-animation.verbeteringFietsinfrastructuur {
   background-image: url("../img/action_animations/betere_fietsinfrastructuur.jpg");
   background-size: cover;
   display: block;
 }
 
-/* line 619, C:/Users/jaspd/projects/Designo/klimaatneutraal/source/scss/components/_game.scss */
-.action-animation.fiets-infrastructuur .img-fiets-infrastructuur {
+/* line 635, C:/Users/jaspd/projects/Designo/klimaatneutraal/source/scss/components/_game.scss */
+.action-animation.verbeteringFietsinfrastructuur .img-verbeteringFietsinfrastructuur {
   position: absolute;
   bottom: 0px;
   width: 100%;
   display: block;
 }
 
-/* line 628, C:/Users/jaspd/projects/Designo/klimaatneutraal/source/scss/components/_game.scss */
+/* line 644, C:/Users/jaspd/projects/Designo/klimaatneutraal/source/scss/components/_game.scss */
+.action-animation.autovrijeZondag {
+  background-image: url("../img/action_animations/autovrije_zondag.jpg");
+  background-size: cover;
+  display: block;
+}
+
+/* line 649, C:/Users/jaspd/projects/Designo/klimaatneutraal/source/scss/components/_game.scss */
+.action-animation.autovrijeZondag .img-autovrijeZondag {
+  position: absolute;
+  bottom: 25px;
+  display: block;
+}
+
+/* line 657, C:/Users/jaspd/projects/Designo/klimaatneutraal/source/scss/components/_game.scss */
 .action-animation.fiets-bewaking {
   background-image: url("../img/action_animations/bewaking_fietsenstalling_uitbreiden.jpg");
   background-size: cover;
   display: block;
 }
 
-/* line 633, C:/Users/jaspd/projects/Designo/klimaatneutraal/source/scss/components/_game.scss */
+/* line 662, C:/Users/jaspd/projects/Designo/klimaatneutraal/source/scss/components/_game.scss */
 .action-animation.fiets-bewaking .img-fiets-bewaking {
   position: absolute;
   top: 117px;
