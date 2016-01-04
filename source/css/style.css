@@ -912,13 +912,29 @@ body {
 }
 
 /* line 681, C:/Users/jaspd/projects/Designo/klimaatneutraal/source/scss/components/_game.scss */
+.action-animation.fietsatelier {
+  background-image: url("../img/action_animations/fietesatelier.jpg");
+  background-size: cover;
+  display: block;
+}
+
+/* line 686, C:/Users/jaspd/projects/Designo/klimaatneutraal/source/scss/components/_game.scss */
+.action-animation.fietsatelier .img-fietsatelier {
+  position: absolute;
+  bottom: 19%;
+  display: block;
+  left: 19.5%;
+  width: 25%;
+}
+
+/* line 696, C:/Users/jaspd/projects/Designo/klimaatneutraal/source/scss/components/_game.scss */
 .action-animation.fiets-bewaking {
   background-image: url("../img/action_animations/bewaking_fietsenstalling_uitbreiden.jpg");
   background-size: cover;
   display: block;
 }
 
-/* line 686, C:/Users/jaspd/projects/Designo/klimaatneutraal/source/scss/components/_game.scss */
+/* line 701, C:/Users/jaspd/projects/Designo/klimaatneutraal/source/scss/components/_game.scss */
 .action-animation.fiets-bewaking .img-fiets-bewaking {
   position: absolute;
   top: 117px;

@@ -678,6 +678,21 @@
 
     }
 
+    &.fietsatelier {
+    	background-image: url('../img/action_animations/fietesatelier.jpg');
+    	background-size: cover;
+    	display: block;
+
+    	.img-fietsatelier {
+    		position: absolute;
+		    bottom: 19%;
+		    display: block;
+		    left: 19.5%;
+		    width: 25%;
+    	}
+
+    }
+
     &.fiets-bewaking {
     	background-image: url('../img/action_animations/bewaking_fietsenstalling_uitbreiden.jpg');
     	background-size: cover;
