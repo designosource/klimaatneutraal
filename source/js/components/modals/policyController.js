@@ -23,7 +23,6 @@ angular.module('klimaatneutraal.controllers')
             }
 
             var publishOption = function(option) {
-                option.disabled = true;
                 $uibModalInstance.close(option);
             }
 

@@ -4,11 +4,12 @@ angular.module('klimaatneutraal.controllers')
         '$scope',
         '$state',
         '$stateParams',
+        '$timeout',
         '$uibModal',
         'mailService',
         'policies',
 
-        function($rootScope, $scope, $state, $stateParams, $uibModal, mailService, policies) {
+        function($rootScope, $scope, $state, $stateParams, $timeout, $uibModal, mailService, policies) {
 
             var policiesData = {};
             var chunkPolicies = {};
@@ -25,6 +26,7 @@ angular.module('klimaatneutraal.controllers')
 
                 $rootScope.screenOptions = _.shuffle($rootScope.screenOptions);
                 $scope.renderScreen =  $rootScope.screenOptions[0];
+                $scope.renderScreen =  1;
                 //$scope.renderScreen =  $stateParams.year; // for testing
                 $rootScope.screenOptions.splice(0,1); // remove option from array
             };
@@ -54,7 +56,28 @@ angular.module('klimaatneutraal.controllers')
                         size: 'md',
                         resolve: {
                             policies: function () {
-                                return chunkPolicies[category][$rootScope.year - 1];
+                                var pols = chunkPolicies[category][$rootScope.year - 1];
+                                var active = $rootScope.activePolicies[$rootScope.year];
+                                var index = -1;
+
+
+                                for(var i = 0; i < pols.length; i += 1) {
+                                    index = _.findIndex(active, function(a) {
+                                        return a.id == pols[i].id;
+                                    });
+
+                                    if(index >= 0) {
+                                        console.log('true');
+                                        pols[i].disabled = true;
+                                    }
+                                    else {
+                                        console.log('false');
+                                        pols[i].disabled = false;
+                                    }
+                                    
+                                }
+
+                                return pols;
                             }
                         }
                     });
@@ -62,8 +85,16 @@ angular.module('klimaatneutraal.controllers')
                     // Er is een result van de modal
                     menuModal.result.then(function(option) {
 
+                        // Show animation
+                        $scope.actionAnimation = option.id;
+
+                        // Disable na 4 seconden
+                        $timeout(function() {
+                            $scope.actionAnimation = "";
+                        },4000);
+
                         // We disablen de gekozen optie
-                        policiesData[category][option.id].disabled = true;
+                        //policiesData[category][option.id].disabled = true;
 
                         // Voeg de optie toe aan de actieve policies
                         $rootScope.activePolicies[$rootScope.year].push(policiesData[category][option.id]);
