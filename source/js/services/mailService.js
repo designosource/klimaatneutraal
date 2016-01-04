@@ -51,6 +51,6 @@ angular.module('klimaatneutraal.services').service("mailService",[
       }
 
         
-      return 
+       
     
 }]);
