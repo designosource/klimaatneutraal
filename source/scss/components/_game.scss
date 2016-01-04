@@ -92,6 +92,25 @@
 	}
 }
 
+
+@keyframes shake-opacity {
+    2%, 22% {
+    	opacity: 0.9;
+  	}
+  
+  	5%, 20% {
+    	opacity: 0.7;
+  	}
+
+  	7%, 12%, 17% {
+    	opacity: 0.5;
+  	}
+
+  	10%, 15% {
+     	opacity: 1;
+  	}
+}
+
 .year {
 	height: 100%;
 	width: 100%;
@@ -99,6 +118,11 @@
 	background-repeat: no-repeat;
 	background-position: bottom;
 	background-size: cover;
+
+	.clickable {
+	    opacity: 1;
+	    animation: shake-opacity 4s cubic-bezier(.36,.07,.19,.97) both infinite;
+	}
 
 	.wind-turbine-bottom {
 			position: absolute;
