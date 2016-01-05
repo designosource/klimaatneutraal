@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.0" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 250 250" style="enable-background:new 0 0 250 250;" xml:space="preserve">
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 218 219.4" style="enable-background:new 0 0 218 219.4;" xml:space="preserve">
 <style type="text/css">
-	.st0{clip-path:url(#SVGID_2_);fill:#FAFAFA;}
+	.st0{clip-path:url(#SVGID_2_);fill:#FFFFFF;}
 	.st1{clip-path:url(#SVGID_2_);}
 	.st2{fill:url(#SVGID_3_);}
 	.st3{fill:#5A5957;}
@@ -12,45 +12,87 @@
 	.st6{fill:#FFFFFF;}
 	.st7{fill:#519DBD;}
 	.st8{font-family:'MyriadPro-Regular';}
-	.st9{font-size:14.7162px;}
+	.st9{font-size:12.936px;}
+	.st10{clip-path:url(#SVGID_5_);fill:#FFFFFF;}
+	.st11{clip-path:url(#SVGID_5_);}
+	.st12{fill:url(#SVGID_6_);}
 </style>
 <g>
 	<defs>
-		<circle id="SVGID_1_" cx="125" cy="125" r="124"/>
+		<path id="SVGID_1_" d="M109,218L109,218C48.8,218,0,169.2,0,109v0C0,48.8,48.8,0,109,0h0c60.2,0,109,48.8,109,109v0
+			C218,169.2,169.2,218,109,218z"/>
 	</defs>
 	<clipPath id="SVGID_2_">
 		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
 	</clipPath>
-	<circle class="st0" cx="125" cy="125" r="124"/>
+	<path class="st0" d="M109,218.7L109,218.7c-60.2,0-109-48.8-109-109v0c0-60.2,48.8-109,109-109h0c60.2,0,109,48.8,109,109v0
+		C218,169.9,169.2,218.7,109,218.7z"/>
+	<g class="st1">
+		
+			<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="-3591.4185" y1="3099.3093" x2="-3373.4185" y2="3099.3093" gradientTransform="matrix(-1.346900e-010 -1 1 -1.346900e-010 -2990.3096 -3373.4185)">
+			<stop  offset="0" style="stop-color:#B7E2FA;stop-opacity:0.3"/>
+			<stop  offset="1" style="stop-color:#78CADE;stop-opacity:0.7"/>
+		</linearGradient>
+		<path class="st2" d="M218,109L218,109c0,60.2-48.8,109-109,109h0C48.8,218,0,169.2,0,109v0C0,48.8,48.8,0,109,0h0
+			C169.2,0,218,48.8,218,109z"/>
+		<g>
+			<path class="st3" d="M109.2,219.4L109.2,219.4c53.9,0,98.6-39.1,107.4-90.4H1.8C10.6,180.4,55.4,219.4,109.2,219.4z"/>
+			<path class="st3" d="M109.2,219.4L109.2,219.4c53.9,0,98.6-39.1,107.4-90.4H1.8C10.6,180.4,55.4,219.4,109.2,219.4z"/>
+		</g>
+	</g>
 	<g class="st1">
 		<g>
-			
-				<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="-3590.9854" y1="3115.3589" x2="-3342.9854" y2="3115.3589" gradientTransform="matrix(-1.346900e-10 -1 1 -1.346900e-10 -2990.3594 -3341.9578)">
-				<stop  offset="0" style="stop-color:#B7E2FA;stop-opacity:0.3"/>
-				<stop  offset="1" style="stop-color:#78CADE;stop-opacity:0.7"/>
-			</linearGradient>
-			<path class="st2" d="M249,110v30c0,60.2-48.8,109-109,109h-30C49.8,249,1,200.2,1,140v-30C1,49.8,49.8,1,110,1h30
-				C200.2,1,249,49.8,249,110z"/>
+			<rect x="106" y="85.2" class="st4" width="6" height="118.2"/>
+			<path class="st5" d="M138.8,63.6c0,17.1-13.8,30.9-30.9,30.9S77,80.6,77,63.6c0-17.1,13.8-30.9,30.9-30.9S138.8,46.5,138.8,63.6z
+				"/>
 			<g>
-				<path class="st3" d="M125.4,249L125.4,249c61.3,0,112.2-44.5,122.2-102.9H3.2C13.2,204.6,64.1,249,125.4,249z"/>
-				<path class="st3" d="M125.4,249L125.4,249c61.3,0,112.2-44.5,122.2-102.9H3.2C13.2,204.6,64.1,249,125.4,249z"/>
+				<path class="st6" d="M99.2,48.1c2-0.3,4.6-0.6,7.9-0.6c4.1,0,7,0.9,8.9,2.6c1.7,1.5,2.8,3.8,2.8,6.7c0,2.9-0.8,5.1-2.5,6.8
+					c-2.2,2.3-5.7,3.5-9.7,3.5c-1.2,0-2.4,0-3.3-0.3v12.7h-4.1V48.1z M103.3,63.5c0.9,0.2,2,0.3,3.4,0.3c5,0,8-2.4,8-6.8
+					c0-4.2-3-6.2-7.5-6.2c-1.8,0-3.2,0.1-3.9,0.3V63.5z"/>
 			</g>
 		</g>
+		<path class="st7" d="M144.4,115.8H73.6c-3.1,0-5.6-2.5-5.6-5.6v-6.9c0-3.1,2.5-5.6,5.6-5.6h70.8c3.1,0,5.6,2.5,5.6,5.6v6.9
+			C150.1,113.3,147.5,115.8,144.4,115.8z"/>
+		<text transform="matrix(1 0 0 1 86.369 111.0167)" class="st6 st8 st9">Betalend</text>
+	</g>
+</g>
+<g>
+	<defs>
+		<path id="SVGID_4_" d="M108.7,218.8L108.7,218.8c-60.2,0-109-48.8-109-109v0c0-60.2,48.8-109,109-109h0c60.2,0,109,48.8,109,109v0
+			C217.7,170,168.9,218.8,108.7,218.8z"/>
+	</defs>
+	<clipPath id="SVGID_5_">
+		<use xlink:href="#SVGID_4_"  style="overflow:visible;"/>
+	</clipPath>
+	<path class="st10" d="M108.7,219.5L108.7,219.5c-60.2,0-109-48.8-109-109v0c0-60.2,48.8-109,109-109h0c60.2,0,109,48.8,109,109v0
+		C217.7,170.7,168.9,219.5,108.7,219.5z"/>
+	<g class="st11">
+		
+			<linearGradient id="SVGID_6_" gradientUnits="userSpaceOnUse" x1="-3592.1736" y1="3099.0149" x2="-3374.1736" y2="3099.0149" gradientTransform="matrix(-1.346900e-010 -1 1 -1.346900e-010 -2990.3096 -3373.4185)">
+			<stop  offset="0" style="stop-color:#B7E2FA;stop-opacity:0.3"/>
+			<stop  offset="1" style="stop-color:#78CADE;stop-opacity:0.7"/>
+		</linearGradient>
+		<path class="st12" d="M217.7,109.8L217.7,109.8c0,60.2-48.8,109-109,109h0c-60.2,0-109-48.8-109-109v0c0-60.2,48.8-109,109-109h0
+			C168.9,0.8,217.7,49.6,217.7,109.8z"/>
 		<g>
-			<g>
-				<rect x="120" y="90.2" class="st4" width="6.8" height="134.4"/>
-				<path class="st5" d="M157.3,65.6c0,19.4-15.7,35.2-35.2,35.2S87,85,87,65.6c0-19.4,15.7-35.2,35.2-35.2S157.3,46.2,157.3,65.6z"
-					/>
-				<g>
-					<path class="st6" d="M112.3,48.1c2.3-0.4,5.2-0.7,9-0.7c4.6,0,8,1.1,10.2,3c2,1.7,3.2,4.4,3.2,7.6c0,3.3-1,5.9-2.8,7.7
-						c-2.5,2.6-6.5,4-11.1,4c-1.4,0-2.7-0.1-3.8-0.3v14.5h-4.7V48.1z M116.9,65.5c1,0.3,2.3,0.4,3.9,0.4c5.6,0,9.1-2.7,9.1-7.7
-						c0-4.8-3.4-7.1-8.5-7.1c-2,0-3.6,0.2-4.4,0.4V65.5z"/>
-				</g>
-			</g>
-			<path class="st7" d="M164.5,125H82.4c-3.1,0-5.6-2.5-5.6-5.6V110c0-3.1,2.5-5.6,5.6-5.6h82.2c3.1,0,5.6,2.5,5.6,5.6v9.4
-				C170.1,122.5,167.6,125,164.5,125z"/>
-			<text transform="matrix(1 0 0 1 97.6875 119.585)" class="st6 st8 st9">Betalend</text>
+			<path class="st3" d="M108.9,220.2L108.9,220.2c53.9,0,98.6-39.1,107.4-90.4H1.5C10.3,181.1,55.1,220.2,108.9,220.2z"/>
+			<path class="st3" d="M108.9,220.2L108.9,220.2c53.9,0,98.6-39.1,107.4-90.4H1.5C10.3,181.1,55.1,220.2,108.9,220.2z"/>
 		</g>
+	</g>
+	<g class="st11">
+		<g>
+			<rect x="105.7" y="85.9" class="st4" width="6" height="118.2"/>
+			<path class="st5" d="M138.5,64.3c0,17.1-13.8,30.9-30.9,30.9S76.7,81.4,76.7,64.3c0-17.1,13.8-30.9,30.9-30.9
+				S138.5,47.2,138.5,64.3z"/>
+			<g>
+				<path class="st6" d="M98.9,48.9c2-0.3,4.6-0.6,7.9-0.6c4.1,0,7,0.9,8.9,2.6c1.7,1.5,2.8,3.8,2.8,6.7c0,2.9-0.8,5.1-2.5,6.8
+					c-2.2,2.3-5.7,3.5-9.7,3.5c-1.2,0-2.4,0-3.3-0.3v12.7h-4.1V48.9z M103,64.2c0.9,0.2,2,0.3,3.4,0.3c5,0,8-2.4,8-6.8
+					c0-4.2-3-6.2-7.5-6.2c-1.8,0-3.2,0.1-3.9,0.3V64.2z"/>
+			</g>
+		</g>
+		<path class="st7" d="M144.1,116.6H73.3c-3.1,0-5.6-2.5-5.6-5.6V104c0-3.1,2.5-5.6,5.6-5.6h70.8c3.1,0,5.6,2.5,5.6,5.6v6.9
+			C149.8,114,147.2,116.6,144.1,116.6z"/>
+		<text transform="matrix(1 0 0 1 86.0746 111.772)" class="st6 st8 st9">Betalend</text>
 	</g>
 </g>
 </svg>
