@@ -26,7 +26,7 @@ angular.module('klimaatneutraal.controllers')
 
                 $rootScope.screenOptions = _.shuffle($rootScope.screenOptions);
                 $scope.renderScreen =  $rootScope.screenOptions[0];
-                $scope.renderScreen =  1;
+                //$scope.renderScreen =  1; // for testing
                 //$scope.renderScreen =  $stateParams.year; // for testing
                 $rootScope.screenOptions.splice(0,1); // remove option from array
             };
@@ -88,10 +88,10 @@ angular.module('klimaatneutraal.controllers')
                         // Show animation
                         $scope.actionAnimation = option.id;
 
-                        // Disable na 4 seconden
+                        // Disable na 2 seconden
                         $timeout(function() {
                             $scope.actionAnimation = "";
-                        },4000);
+                        },2000);
 
                         // We disablen de gekozen optie
                         //policiesData[category][option.id].disabled = true;

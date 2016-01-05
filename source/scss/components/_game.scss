@@ -25,8 +25,8 @@
 
 			&.index {
 				line-height: 50px;
-			    text-align: center;
-			    font-size: 38px;
+				text-align: center;
+				font-size: 38px;
 			}
 
 			&.next {
@@ -67,8 +67,8 @@
 
 		&.next {
 			line-height: 100px;
-    		font-size: 40px;
-    		text-align: center;
+			font-size: 40px;
+			text-align: center;
 		}
 
 		&.policy {
@@ -83,32 +83,32 @@
 	}
 
 	.delete-icon {
-        color: #E6E7E8;
-	    font-size: 14px;
-	    position: absolute;
-	    top: 0;
-	    right: 0;
-        z-index: 5;
+		color: #E6E7E8;
+		font-size: 14px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 5;
 	}
 }
 
 
 @keyframes shake-opacity {
-    2%, 22% {
-    	opacity: 0.9;
-  	}
+	2%, 22% {
+		opacity: 0.9;
+	}
   
-  	5%, 20% {
-    	opacity: 0.7;
-  	}
+	5%, 20% {
+		opacity: 0.7;
+	}
 
-  	7%, 12%, 17% {
-    	opacity: 0.5;
-  	}
+	7%, 12%, 17% {
+		opacity: 0.5;
+	}
 
-  	10%, 15% {
-     	opacity: 1;
-  	}
+	10%, 15% {
+		opacity: 1;
+	}
 }
 
 .year {
@@ -120,8 +120,8 @@
 	background-size: cover;
 
 	.clickable {
-	    opacity: 1;
-	    animation: shake-opacity 4s cubic-bezier(.36,.07,.19,.97) both infinite;
+		opacity: 1;
+		animation: shake-opacity 4s cubic-bezier(.36,.07,.19,.97) both infinite;
 	}
 
 	.wind-turbine-bottom {
@@ -166,10 +166,10 @@
 
 		.house2 {
 			position: absolute;
-		    display: block;
-		    width: 24%;
-		    right: 1%;
-		    top: 25%;
+			display: block;
+			width: 24%;
+			right: 1%;
+			top: 25%;
 		}
 		.huis_links_wb{
 			display: block; 
@@ -259,8 +259,8 @@
 			top: 75%;
 			-webkit-animation: biker_moves 5s infinite ;
 			   -moz-animation: biker_moves 5s infinite ;
-		         -o-animation: biker_moves 5s infinite ;
-		            animation: biker_moves 5s infinite ;
+				 -o-animation: biker_moves 5s infinite ;
+					animation: biker_moves 5s infinite ;
 		}
 
 		.house1 {
@@ -308,8 +308,8 @@
 			top: 75%;
 			-webkit-animation: biker_moves_right 15s infinite ;
 			   -moz-animation: biker_moves_right 15s infinite ;
-		         -o-animation: biker_moves_right 15s infinite ;
-		            animation: biker_moves_right 15s infinite ;
+				 -o-animation: biker_moves_right 15s infinite ;
+					animation: biker_moves_right 15s infinite ;
 		}
 
 		.house {
@@ -323,9 +323,9 @@
 		.doublecars {
 			display: block;
 			position: absolute;
-		    top: 68%;
-		    width: 16%;
-		    left: 11%;;	
+			top: 68%;
+			width: 16%;
+			left: 11%;;	
 		}
 
 		.light-saber {
@@ -349,8 +349,8 @@
 			top: 78%;
 			-webkit-animation: bus_moves 25s infinite ;
 			   -moz-animation: bus_moves 25s infinite ;
-		         -o-animation: bus_moves 25s infinite ;
-		            animation: bus_moves 25s infinite ;
+				 -o-animation: bus_moves 25s infinite ;
+					animation: bus_moves 25s infinite ;
 		}
 
 		.house {
@@ -372,29 +372,29 @@
 
 		.wind-turbine-1 {
 			position: absolute;
-		    display: block;
-		    width: 7%;
-		    right: 71%;
-		    top: 29%;
-		    height: 100%;
+			display: block;
+			width: 7%;
+			right: 71%;
+			top: 29%;
+			height: 100%;
 		}
 
 		.wind-turbine-2 {
 			position: absolute;
-		    display: block;
-		    width: 7%;
-		    right: 63%;
-		    top: 33%;
-		    height: 100%;
+			display: block;
+			width: 7%;
+			right: 63%;
+			top: 33%;
+			height: 100%;
 		}
 
 		.wind-turbine-3 {
-		    position: absolute;
-		    display: block;
-		    width: 7%;
-		    right: 46%;
-		    top: 30%;
-		    height: 100%;
+			position: absolute;
+			display: block;
+			width: 7%;
+			right: 46%;
+			top: 30%;
+			height: 100%;
 		}
 	}
 
@@ -403,99 +403,99 @@
 
 		.woman {
 			display: block;
-		    position: absolute;
-		    height: 32%;
-		    z-index: 2;
-		    left: 9%;
-		    top: 60%;
+			position: absolute;
+			height: 32%;
+			z-index: 2;
+			left: 9%;
+			top: 60%;
 
-		    -webkit-animation: skater_moves 2s infinite ;
+			-webkit-animation: skater_moves 2s infinite ;
 			   -moz-animation: skater_moves 2s infinite ;
-		         -o-animation: skater_moves 2s infinite ;
-		            animation: skater_moves 2s infinite ;
+				 -o-animation: skater_moves 2s infinite ;
+					animation: skater_moves 2s infinite ;
 		}
 
 		.house {
 			position: absolute;
-		    display: block;
-		    width: 38%;
-		    right: 19%;
-		    top: 30%;
+			display: block;
+			width: 38%;
+			right: 19%;
+			top: 30%;
 		}
 
 		.light-saber1 {
 			position: absolute;
-		    display: block;
-		    width: 6%;
-		    top: 49%;
-		    left: 5%;
+			display: block;
+			width: 6%;
+			top: 49%;
+			left: 5%;
 		}
 
 		.light-saber2 {
 			position: absolute;
-		    display: block;
-		    width: 10%;
-		    top: 61%;
-		    left: 22%;
+			display: block;
+			width: 10%;
+			top: 61%;
+			left: 22%;
 		}
 
 		.light-saber3 {
 			position: absolute;
-		    display: block;
-		    width: 10%;
-		    top: 61%;
-		    left: 76%;
+			display: block;
+			width: 10%;
+			top: 61%;
+			left: 76%;
 		}
 
 		.light-saber4 {
 			position: absolute;
-		    display: block;
-		    width: 6%;
-		    top: 49%;
-		    left: 85%;
+			display: block;
+			width: 6%;
+			top: 49%;
+			left: 85%;
 		}
 
 		.wind-turbine-1 {
 			position: absolute;
-		    display: block;
-		    width: 7%;
-		    right: 71%;
-		    top: 29%;
-		    height: 100%;
+			display: block;
+			width: 7%;
+			right: 71%;
+			top: 29%;
+			height: 100%;
 		}
 
 		.wind-turbine-2 {
 			position: absolute;
-		    display: block;
-		    width: 7%;
-		    right: 63%;
-		    top: 33%;
-		    height: 100%;
+			display: block;
+			width: 7%;
+			right: 63%;
+			top: 33%;
+			height: 100%;
 		}
 
 		.wind-turbine-3 {
-		    position: absolute;
-		    display: block;
-		    width: 7%;
-		    right: 46%;
-		    top: 30%;
-		    height: 100%;
+			position: absolute;
+			display: block;
+			width: 7%;
+			right: 46%;
+			top: 30%;
+			height: 100%;
 		}
 
 		.busstop {
 			position: absolute;
-		    display: block;
-		    width: 11%;
-		    top: 60%;
-		    right: 49%;
+			display: block;
+			width: 11%;
+			top: 60%;
+			right: 49%;
 			width: 10%;
 
 			.busstop-legs {
 				position: absolute;
-			    display: block;
-			    width: 61%;
-			    top: 69%;
-			    right: 29%;
+				display: block;
+				width: 61%;
+				top: 69%;
+				right: 29%;
 			}
 		}
 	}
@@ -505,58 +505,58 @@
 
 		.huis_links {
 			position: absolute;
-		    display: block;
-		    width: 18%;
-		    right: 30%;
-		    top: 26.6%;
+			display: block;
+			width: 18%;
+			right: 30%;
+			top: 26.6%;
 		}
 
 		.huis_rechts {
 			position: absolute;
-		    display: block;
-		    width: 18%;
-		    right: 4%;
-		    top: 21%;
+			display: block;
+			width: 18%;
+			right: 4%;
+			top: 21%;
 		}
 
 		.car {
 			position: absolute;
-		    display: block;
-		    width: 35%;
-		    right: 62%;
-		    top: 62%;
+			display: block;
+			width: 35%;
+			right: 62%;
+			top: 62%;
 		}
 
 		.zon {
 			position: absolute;
-		    display: block;
-		    width: 13%;
-		    right: 80%;
-		    top: 18%;
+			display: block;
+			width: 13%;
+			right: 80%;
+			top: 18%;
 		}
 
 		.fietser {
 			position: absolute;
-		    display: block;
-		    width: 10%;
-		    right: 11%;
-		    top: 58%;
-		    -webkit-animation: biker_moves_right 11s infinite ;
+			display: block;
+			width: 10%;
+			right: 11%;
+			top: 58%;
+			-webkit-animation: biker_moves_right 11s infinite ;
 			   -moz-animation: biker_moves_right 11s infinite ;
-		         -o-animation: biker_moves_right 11s infinite ;
-		            animation: biker_moves_right 11s infinite ;
+				 -o-animation: biker_moves_right 11s infinite ;
+					animation: biker_moves_right 11s infinite ;
 		}
 
 		.fietser_2 {
 			position: absolute;
-		    display: block;
-		    width: 10%;
-		    right: 5%;
-		    top: 63%;
-		    -webkit-animation: biker_moves_right 11s infinite ;
+			display: block;
+			width: 10%;
+			right: 5%;
+			top: 63%;
+			-webkit-animation: biker_moves_right 11s infinite ;
 			   -moz-animation: biker_moves_right 11s infinite ;
-		         -o-animation: biker_moves_right 11s infinite ;
-		            animation: biker_moves_right 11s infinite ;
+				 -o-animation: biker_moves_right 11s infinite ;
+					animation: biker_moves_right 11s infinite ;
 		}
 
 		.skater{
@@ -580,130 +580,256 @@
 }
 
 .action-animation {
-    width: 100%;
-    position: absolute;
-    height: 100%;
-    background-color: white;
-    top: 0;
-    z-index: 2;
-    display: none;
+	width: 100%;
+	position: absolute;
+	height: 100%;
+	background-color: white;
+	top: 0;
+	z-index: 20;
+	display: none;
 	
 	img {
 		display: none;
 	}
 
 	&.subsiedieIsolatie {
-    	background-image: url('../img/action_animations/dakisolatie.jpg');
-    	background-size: cover;
-    	display: block;
+		background-image: url('../img/action_animations/dakisolatie.jpg');
+		background-size: cover;
+		display: block;
 
-    	.img-dak-isolatie {
-		    position: absolute;
-		    top: 28%;
-    		left: 42%;
-    		max-width: 15%;
-    		display: block;
-    	}
+		.img-dak-isolatie {
+			position: absolute;
+			top: 28%;
+			left: 42%;
+			max-width: 15%;
+			display: block;
+		}
 
-    }
+	}
 
-    &.subsiedieGroendaken {
-    	background-image: url('../img/action_animations/groendaken.jpg');
-    	background-size: cover;
-    	display: block;
+	&.subsiedieGroendaken {
+		background-image: url('../img/action_animations/groendaken.jpg');
+		background-size: cover;
+		display: block;
 
-    	.img-subsiedieGroendaken {
-		    position: absolute;
-		    top: 28%;
-    		left: 42%;
-    		max-width: 15%;
-    		display: block;
-    	}
+		.img-subsiedieGroendaken {
+			position: absolute;
+			top: 22%;
+			left: 18%;
+			width: 66%;
+			display: block;
+		}
 
-    }
+	}
 
-    &.subsiedieWarmtepompen {
-    	background-image: url('../img/action_animations/warmtepompten.jpg');
-    	background-size: cover;
-    	display: block;
+	&.subsiedieWarmtepompen {
+		background-image: url('../img/action_animations/warmtepompten.jpg');
+		background-size: cover;
+		display: block;
 
-    	.img-subsiedieWarmtepomp {
-		    position: absolute;
-		    bottom: 2%;
-		    left: 2%;
-		    width: 80%;
-		    display: block;
-    	}
+		.img-subsiedieWarmtepomp {
+			position: absolute;
+			bottom: 2%;
+			left: 2%;
+			width: 80%;
+			display: block;
+		}
 
-    } 
+	} 
 
-    &.parkeerBeleid {
-    	background-image: url('../img/action_animations/parkeerbeleid_aanpassen.jpg');
-    	background-size: cover;
-    	display: block;
+	&.parkeerBeleid {
+		background-image: url('../img/action_animations/parkeerbeleid_aanpassen.jpg');
+		background-size: cover;
+		display: block;
 
-    	.img-parkeerBeleid {
-		    position: absolute;
-		    bottom: 2%;
-		    left: 11%;
-		    display: block;
-    	}
+		.img-parkeerBeleid {
+			position: absolute;
+			bottom: 2%;
+			left: 11%;
+			display: block;
+		}
 
-    }
+	}
 
-    &.verbeteringFietsinfrastructuur {
-    	background-image: url('../img/action_animations/betere_fietsinfrastructuur.jpg');
-    	background-size: cover;
-    	display: block;
+	&.verbeteringFietsinfrastructuur {
+		background-image: url('../img/action_animations/betere_fietsinfrastructuur.jpg');
+		background-size: cover;
+		display: block;
 
-    	.img-verbeteringFietsinfrastructuur {
-    		position: absolute;
-    		bottom: 0px;
-    		width: 100%;
-    		display: block;
-    	}
+		.img-verbeteringFietsinfrastructuur {
+			position: absolute;
+			bottom: 0px;
+			width: 100%;
+			display: block;
+		}
 
-    }
+	}
 
-    &.autovrijeZondag {
-    	background-image: url('../img/action_animations/autovrije_zondag.jpg');
-    	background-size: cover;
-    	display: block;
+	&.autovrijeZondag {
+		background-image: url('../img/action_animations/autovrije_zondag.jpg');
+		background-size: cover;
+		display: block;
 
-    	.img-autovrijeZondag {
-    		position: absolute;
-    		bottom: 25px;
-    		display: block;
-    	}
+		.img-autovrijeZondag {
+			position: absolute;
+			bottom: 25px;
+			display: block;
+		}
 
-    }
+	}
 
-    &.fietsatelier {
-    	background-image: url('../img/action_animations/fietesatelier.jpg');
-    	background-size: cover;
-    	display: block;
+	&.fietsatelier {
+		background-image: url('../img/action_animations/fietesatelier.jpg');
+		background-size: cover;
+		display: block;
 
-    	.img-fietsatelier {
-    		position: absolute;
-		    bottom: 19%;
-		    display: block;
-		    left: 19.5%;
-		    width: 25%;
-    	}
+		.img-fietsatelier {
+			position: absolute;
+			bottom: 19%;
+			display: block;
+			left: 19.5%;
+			width: 25%;
+		}
 
-    }
+	}
 
-    &.fiets-bewaking {
-    	background-image: url('../img/action_animations/bewaking_fietsenstalling_uitbreiden.jpg');
-    	background-size: cover;
-    	display: block;
+	&.bewaakteFietsenstallingen, &.fietsdiefstalPrevententie {
+		background-image: url('../img/action_animations/bewaking_fietsenstalling_uitbreiden.jpg');
+		background-size: cover;
+		display: block;
 
-    	.img-fiets-bewaking {
-		    position: absolute;
-		    top: 117px;
-		    max-width: 30%;
-		    display: block;
-    	}
+		.img-fiets-bewaking {
+			position: absolute;
+			top: 117px;
+			max-width: 30%;
+			display: block;
+		}
 
-    }
+	}
+
+	&.bikeToWork {
+		background-image: url('../img/action_animations/bike_to_work_dag.jpg');
+		background-size: cover;
+		display: block;
+
+		.img-bikeToWork {
+			position: absolute;
+			bottom: 5%;
+			width: 100%;
+			right: 0;
+			display: block;
+		}
+	}
+
+	&.hybrideBussystemen {
+		background-image: url('../img/action_animations/hybride_bussystemen.jpg');
+		background-size: cover;
+		display: block;
+
+		.img-hybrideBussystemen {
+			position: absolute;
+			bottom: 29%;
+			width: 11%;
+			left: 11%;
+			display: block;
+		}
+	}
+
+	&.fietsVergoeding {
+		background-image: url('../img/action_animations/bike_to_work_dag.jpg');
+		background-size: cover;
+		display: block;
+
+		.img-fietsVergoeding {
+		 position: absolute;
+			bottom: 5%;
+			width: 100%;
+			right: 0;
+			display: block;
+		}
+	}
+
+	&.openbaarVervoerVergoeding {
+		background-image: url('../img/action_animations/terugbetaling_openbaar_vervoer.jpg');
+		background-size: cover;
+		display: block;
+
+		.img-openbaarVervoerVergoeding {
+			position: absolute;
+			bottom: 25%;
+			width: 100%;
+			right: 0;
+			display: block;
+		}
+	}
+
+	&.autovrijeBinnenstad {
+		background-image: url('../img/action_animations/autovrije_binnenstad.jpg');
+		background-size: cover;
+		display: block;
+
+		.img-autovrijeBinnenstad {
+			position: absolute;
+			bottom: 5%;
+			width: 33%;
+			left: 39%;
+			display: block;
+		}
+	}
+
+	&.thermografischeKaart {
+		background-image: url('../img/action_animations/thermografische_kaart.jpg');
+		background-size: cover;
+		display: block;
+
+		.img-thermografischeKaart {
+			position: absolute;
+			bottom: 17%;
+			height: 65%;
+			left: 30%;
+			display: block;
+		}
+	}
+
+	&.duurzameMaterialen {
+		background-image: url('../img/action_animations/duurzame_materialen_gebruiken.jpg');
+		background-size: cover;
+		display: block;
+
+		.img-duurzameMaterialen {
+			position: absolute;
+			bottom: 17%;
+			height: 65%;
+			left: 30%;
+			display: block;
+		}
+	}
+
+	&.passiefBouw {
+		background-image: url('../img/action_animations/passiefbouw.jpg');
+		background-size: cover;
+		display: block;
+
+		.img-passiefBouw {
+			position: absolute;
+			bottom: 15%;
+			height: 48%;
+			left: 33%;
+			display: block;
+		}
+	}
+	
+	&.energiescan {
+		background-image: url('../img/action_animations/info_electriciteit_energie_scan.jpg');
+		background-size: cover;
+		display: block;
+
+		.img-energiescan {
+			position: absolute;
+			bottom: 15%;
+			right: 20%;
+			left: 20%;
+			display: block;
+		}
+	}
 }
