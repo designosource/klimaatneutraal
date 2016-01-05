@@ -88,10 +88,10 @@ angular.module('klimaatneutraal.controllers')
                         // Show animation
                         $scope.actionAnimation = option.id;
 
-                        // Disable na 2 seconden
+                        // Disable na 3 seconden
                         $timeout(function() {
                             $scope.actionAnimation = "";
-                        },2000);
+                        },3000);
 
                         // We disablen de gekozen optie
                         //policiesData[category][option.id].disabled = true;
