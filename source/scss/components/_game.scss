@@ -123,6 +123,7 @@
 	.clickable {
 		opacity: 1;
 		animation: shake-opacity 4s cubic-bezier(.36,.07,.19,.97) both infinite;
+		z-index: 2;
 	}
 
 	.wind-turbine-bottom {
