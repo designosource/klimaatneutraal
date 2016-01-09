@@ -17,6 +17,21 @@ angular.module('klimaatneutraal.controllers')
             var init = function() {
                 $rootScope.year = $stateParams.year;
 
+                if($stateParams.year == 0) {
+                    $scope.tutorial = true;
+                    $rootScope.year = 0;
+                }
+
+                if($rootScope.initialYear === undefined){
+                    // define the initial year to determine amount of repeats till game is over
+                    // 0 or 1 = tutorial or play
+                    // used in gameController.showReport()
+                    $rootScope.initialYear = $stateParams.year;
+                }
+
+                // DEBUG
+                console.log('initialYear is: ' + $rootScope.initialYear);
+
                 console.log('year ' + $rootScope.year + ' is loaded');
 
                 policiesData = policies.data;
@@ -56,11 +71,22 @@ angular.module('klimaatneutraal.controllers')
                         size: 'md',
                         resolve: {
                             policies: function () {
-                                var pols = chunkPolicies[category][$rootScope.year - 1];
+
+                                if($scope.tutorial){
+                                    var pols = chunkPolicies[category][$rootScope.year];
+                                }else{
+                                    var pols = chunkPolicies[category][$rootScope.year - 1];
+                                }
+                                
                                 var active = $rootScope.activePolicies[$rootScope.year];
                                 var index = -1;
 
+                                // tutorial merge note
+                                /* De if zonder de form gaf een merge conflict, ik heb de for in de
+                                non-tutorial condition gestoken. Redelijk educated guess ma toch, could be
+                                errors */
 
+                                // deze for ipv return chunkPolicies[category][$rootScope.year-1];
                                 for(var i = 0; i < pols.length; i += 1) {
                                     index = _.findIndex(active, function(a) {
                                         return a.id == pols[i].id;
@@ -78,6 +104,7 @@ angular.module('klimaatneutraal.controllers')
                                 }
 
                                 return pols;
+
                             }
                         }
                     });
@@ -93,11 +120,23 @@ angular.module('klimaatneutraal.controllers')
                             $scope.actionAnimation = "";
                         },3000);
 
-                        // We disablen de gekozen optie
+                        // We disablen de gekozen optie - OLD
                         //policiesData[category][option.id].disabled = true;
 
                         // Voeg de optie toe aan de actieve policies
                         $rootScope.activePolicies[$rootScope.year].push(policiesData[category][option.id]);
+
+                        console.log($rootScope.activePolicies[$rootScope.year]);
+
+                        // triggers for tutorial
+                        // assumption: this code will not be reached more than twice
+                        $timeout(function(){
+                            if($scope.tutorial && $rootScope.activePolicies[$rootScope.year].length === 1){
+                                $rootScope.openTutorialModal(6);
+                            }else if($scope.tutorial){
+                                $rootScope.openTutorialModal(7);
+                            }
+                        },3000);
 
                         // Bereken de stijging / daling van de gekozen maatregel
 
@@ -110,6 +149,7 @@ angular.module('klimaatneutraal.controllers')
             };
 
             $scope.openCategory = openCategory;
+            $scope.tutorial = false;
 
             init();
         }

@@ -1,0 +1,115 @@
+.modal{
+
+	&_0{ // Welkom
+		+ .modal{
+			& .modal-dialog{
+				margin: 0;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+			}
+		}
+	}
+
+	&_1{ // Budget
+		+ .modal{
+			& .modal-dialog{
+				margin: 0;
+				top: 18%;
+				left: 2%;
+				@include arrow-top-left();
+			}
+		}
+	}
+
+	&_2{ // Tevredenheid & Milieu
+		+ .modal{
+			& .modal-dialog{
+				margin: 0;
+				top: 18%;
+				left: 26%;
+				@include arrow-top-left();
+			}
+		}
+	}
+
+	&_3{ // Menu
+		+ .modal{
+			& .modal-dialog{
+				margin: 0;
+				top: 18%;
+				right: 1.5%;
+				float:right;
+				@include arrow-top-right();
+			}
+		}
+	}
+
+	&_4{ // Jaar
+		+ .modal{
+			& .modal-dialog{
+				margin: 0;
+				top: 25%;
+				left: 50%;
+				transform: translateX(-50%);
+				@include arrow-top-center();
+			}
+		}
+	}
+
+	&_5{ // Beleidskeuzes
+		+ .modal{
+			& .modal-dialog{
+				margin: 0;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+			}
+		}
+	}
+	&_6{ // Beleidskeuze 1 - Trigger: kies 1 beleid
+		+ .modal{
+			& .modal-dialog{
+				margin: 0;
+				bottom: calc(-100% + 400px);
+				right: 1.5%;
+				float:right;
+				@include arrow-bottom-right();
+			}
+		}
+	}
+	&_7{ // Beleidskeuze 2 - Trigger: kies een tweede beleid
+		+ .modal{
+			& .modal-dialog{
+				margin: 0;
+				bottom: calc(-100% + 400px);
+				right: 1.5%;
+				float:right;
+				@include arrow-bottom-right();
+			}
+		}
+	}
+}
+
+.modal.fade.ng-isolate-scope{
+	width: 100vw; 
+    height: 56.25vw; /* height:width ratio = 9/16 = .5625  */
+    max-height: 100vh;
+    max-width: 177.78vh; /* 16/9 = 1.778 */
+    margin: auto;
+    overflow: hidden;
+}
+
+.tutorial-modal{
+	h2{
+		color: black;
+		margin-bottom: 2%;
+	}
+	p{
+		margin: 2% 0;
+		color: black;
+	}
+	img{
+		max-height: 100px;
+	}
+}
