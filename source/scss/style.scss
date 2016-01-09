@@ -19,6 +19,51 @@
 	}
 }
 
+@mixin arrow-top(){
+		width: 0;
+		height: 0;
+		border-left: 25px solid transparent;
+		border-right: 25px solid transparent;
+		border-bottom: 30px solid white;
+}
+
+@mixin arrow-top-left() {
+	&::after{
+		content: " ";
+
+		top: -28px;
+		left: 29px;
+		position: absolute;
+
+		@include arrow-top();
+	}
+}
+
+@mixin arrow-top-right() {
+	&::after{
+		content: " ";
+
+		top: -28px;
+		right: 29px;
+		position: absolute;
+
+		@include arrow-top();
+	}
+}
+
+@mixin arrow-top-center() {
+	&::after{
+		content: " ";
+
+		top: -28px;
+		left: 50%;
+		transform: translateX(-50%);
+		position: absolute;
+
+		@include arrow-top();
+	}
+}
+
 $col1: #79B63E;
 $text-black: #333;
 
@@ -26,7 +71,8 @@ $text-black: #333;
 @import "components/_header.scss"; 
 @import "components/_game.scss"; 
 @import "components/_startScreen.scss"; 
-@import "components/_endScreen.scss"; 
+@import "components/_endScreen.scss";
+@import "components/_tutorial.scss"; 
 @import "components/_animations.scss"; 
 @import "components/_modals.scss"; 
-@import "components/_character.scss"; 
+@import "components/_character.scss";

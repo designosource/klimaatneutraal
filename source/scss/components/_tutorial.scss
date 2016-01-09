@@ -1,0 +1,82 @@
+.modal{
+
+	&_0{ // Welkom
+		+ .modal{
+			& .modal-dialog{
+				margin: 0;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+			}
+		}
+	}
+
+	&_1{ // Budget
+		+ .modal{
+			& .modal-dialog{
+				margin: 0;
+				top: 17.5%;
+				left: 2%;
+				@include arrow-top-left();
+			}
+		}
+	}
+
+	&_2{ // Tevredenheid & Milieu
+		+ .modal{
+			& .modal-dialog{
+				margin: 0;
+				top: 17.5%;
+				left: 26%;
+				@include arrow-top-left();
+			}
+		}
+	}
+
+	&_3{ // Menu
+		+ .modal{
+			& .modal-dialog{
+				margin: 0;
+				top: 17.5%;
+				right: -73%;
+				@include arrow-top-right();
+			}
+		}
+	}
+
+	&_4{ // Jaar
+		+ .modal{
+			& .modal-dialog{
+				margin: 0;
+				top: 25%;
+				left: 50%;
+				transform: translateX(-50%);
+				@include arrow-top-center();
+			}
+		}
+	}
+
+	&_5{ // Beleidskeuzes
+		+ .modal{
+			& .modal-dialog{
+				margin: 0;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+			}
+		}
+	}
+}
+
+.ng-isolate-scope{
+	width: 100vw; 
+    height: 56.25vw; /* height:width ratio = 9/16 = .5625  */
+    max-height: 100vh;
+    max-width: 177.78vh; /* 16/9 = 1.778 */
+    margin: auto;
+    overflow: hidden;
+
+    position: absolute;
+    top:0;bottom:0; /* vertical center */
+    left:0;right:0; /* horizontal center */
+}

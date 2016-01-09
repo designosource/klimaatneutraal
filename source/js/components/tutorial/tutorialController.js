@@ -1,33 +1,30 @@
 angular.module('klimaatneutraal.controllers')
-    .controller('TutorialController', [
+    .controller('tutorialController', [
         '$rootScope',
         '$scope',
         '$uibModal',
         '$state',
-        '$controller',
-        '$http',
+        '$stateParams',
 
-        function($rootScope, $scope, $uibModal, $state, $controller, $http) {
+        function($rootScope, $scope, $uibModal, $state) {
 
             var init = function() {
 
-                console.log('TutorialController loaded');
+                console.log('tutorialController loaded');
 
                 var menuModal = $uibModal.open({
                     animation: true,
-                    templateUrl: 'js/components/modals/tutorial/tutorialModal.html',
-                    controller: 'tutorialModalController',
+                    templateUrl: 'js/components/modals/tutorial/modal_0.html',
+                    controller: 'startTutorialController',
+                    backdropClass: 'modal_0',
+                    // windowClass: 'ratio-wrapper',
                     size: 200,
                     resolve: {}
                 });
 
             };
 
-            var nextTutorial = function nextTutorial(){
-                console.log('nextTutorial');
-            }
-
-            $scope.nextTutorial = nextTutorial;
+            $rootScope.tutorialCounter = 0;
 
             init();
         }
