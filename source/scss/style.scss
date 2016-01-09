@@ -27,6 +27,14 @@
 		border-bottom: 30px solid white;
 }
 
+@mixin arrow-bottom(){
+		width: 0;
+		height: 0;
+		border-left: 25px solid transparent;
+		border-right: 25px solid transparent;
+		border-top: 30px solid white;
+}
+
 @mixin arrow-top-left() {
 	&::after{
 		content: " ";
@@ -61,6 +69,18 @@
 		position: absolute;
 
 		@include arrow-top();
+	}
+}
+
+@mixin arrow-bottom-right() {
+	&::after{
+		content: " ";
+
+		bottom: -28px;
+		right: 29px;
+		position: absolute;
+
+		@include arrow-bottom();
 	}
 }
 

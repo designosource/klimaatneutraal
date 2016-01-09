@@ -17,7 +17,6 @@ angular.module('klimaatneutraal.controllers')
 
             var init = function() {
                 console.log('startTutorialController loaded');
-                
             };
 
             var open = function(x){
@@ -42,25 +41,26 @@ angular.module('klimaatneutraal.controllers')
 
                 // raise counter
                 i++;
-                // call generic opener & raise counter
+                // call generic opener
                 open(i);
                 
             }
 
             $scope.previous = function(){
 
-                // raise counter
+                // lower counter
                 i--;
-                // call generic opener & raise counter
+                // call generic opener
                 open(i);
                 
             }
 
             $scope.choose = function(){
+                // container function for non-linear modals (5,6,7)
                 $uibModalInstance.close();
             }
 
-
+            $rootScope.openTutorialModal = open;
             init();
         }
     ]);

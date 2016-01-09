@@ -89,6 +89,17 @@ angular.module('klimaatneutraal.controllers')
                         // Voeg de optie toe aan de actieve policies
                         $rootScope.activePolicies[$rootScope.year].push(policiesData[category][option.id]);
 
+                        console.log($rootScope.activePolicies[$rootScope.year]);
+
+                        // triggers for tutorial
+                        // assumption: this code will not be reached more than twice
+                        if($scope.tutorial && $rootScope.activePolicies[$rootScope.year].length === 1){
+                            $rootScope.openTutorialModal(6);
+                        }else if($scope.tutorial){
+                            $rootScope.openTutorialModal(7);
+                        }
+                        
+
                         // Bereken de stijging / daling van de gekozen maatregel
 
                         updateScore(2, option);

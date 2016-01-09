@@ -871,7 +871,7 @@ body {
   left: 2%;
 }
 
-/* line 31, stdin */
+/* line 39, stdin */
 .modal_1 + .modal .modal-dialog::after {
   content: " ";
   top: -28px;
@@ -891,7 +891,7 @@ body {
   left: 26%;
 }
 
-/* line 31, stdin */
+/* line 39, stdin */
 .modal_2 + .modal .modal-dialog::after {
   content: " ";
   top: -28px;
@@ -912,7 +912,7 @@ body {
   float: right;
 }
 
-/* line 43, stdin */
+/* line 51, stdin */
 .modal_3 + .modal .modal-dialog::after {
   content: " ";
   top: -28px;
@@ -935,7 +935,7 @@ body {
           transform: translateX(-50%);
 }
 
-/* line 55, stdin */
+/* line 63, stdin */
 .modal_4 + .modal .modal-dialog::after {
   content: " ";
   top: -28px;
@@ -962,7 +962,49 @@ body {
 }
 
 /* line 72, D:/wamp/www/klimaat/source/scss/components/_tutorial.scss */
-.ng-isolate-scope {
+.modal_6 + .modal .modal-dialog {
+  margin: 0;
+  bottom: calc(-100% + 400px);
+  right: 1.5%;
+  float: right;
+}
+
+/* line 76, stdin */
+.modal_6 + .modal .modal-dialog::after {
+  content: " ";
+  bottom: -28px;
+  right: 29px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 30px solid white;
+}
+
+/* line 83, D:/wamp/www/klimaat/source/scss/components/_tutorial.scss */
+.modal_7 + .modal .modal-dialog {
+  margin: 0;
+  bottom: calc(-100% + 400px);
+  right: 1.5%;
+  float: right;
+}
+
+/* line 76, stdin */
+.modal_7 + .modal .modal-dialog::after {
+  content: " ";
+  bottom: -28px;
+  right: 29px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 30px solid white;
+}
+
+/* line 94, D:/wamp/www/klimaat/source/scss/components/_tutorial.scss */
+.modal.fade.ng-isolate-scope {
   width: 100vw;
   height: 56.25vw;
   /* height:width ratio = 9/16 = .5625  */
@@ -971,13 +1013,23 @@ body {
   /* 16/9 = 1.778 */
   margin: auto;
   overflow: hidden;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  /* vertical center */
-  left: 0;
-  right: 0;
-  /* horizontal center */
+}
+
+/* line 104, D:/wamp/www/klimaat/source/scss/components/_tutorial.scss */
+.tutorial-modal h2 {
+  color: black;
+  margin-bottom: 2%;
+}
+
+/* line 108, D:/wamp/www/klimaat/source/scss/components/_tutorial.scss */
+.tutorial-modal p {
+  margin: 2% 0;
+  color: black;
+}
+
+/* line 112, D:/wamp/www/klimaat/source/scss/components/_tutorial.scss */
+.tutorial-modal img {
+  max-height: 100px;
 }
 
 @-webkit-keyframes skater_moves {

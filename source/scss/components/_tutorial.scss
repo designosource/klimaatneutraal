@@ -67,17 +67,49 @@
 			}
 		}
 	}
+	&_6{ // Beleidskeuze 1 - Trigger: kies 1 beleid
+		+ .modal{
+			& .modal-dialog{
+				margin: 0;
+				bottom: calc(-100% + 400px);
+				right: 1.5%;
+				float:right;
+				@include arrow-bottom-right();
+			}
+		}
+	}
+	&_7{ // Beleidskeuze 2 - Trigger: kies een tweede beleid
+		+ .modal{
+			& .modal-dialog{
+				margin: 0;
+				bottom: calc(-100% + 400px);
+				right: 1.5%;
+				float:right;
+				@include arrow-bottom-right();
+			}
+		}
+	}
 }
 
-.ng-isolate-scope{
+.modal.fade.ng-isolate-scope{
 	width: 100vw; 
     height: 56.25vw; /* height:width ratio = 9/16 = .5625  */
     max-height: 100vh;
     max-width: 177.78vh; /* 16/9 = 1.778 */
     margin: auto;
     overflow: hidden;
+}
 
-    position: absolute;
-    top:0;bottom:0; /* vertical center */
-    left:0;right:0; /* horizontal center */
+.tutorial-modal{
+	h2{
+		color: black;
+		margin-bottom: 2%;
+	}
+	p{
+		margin: 2% 0;
+		color: black;
+	}
+	img{
+		max-height: 100px;
+	}
 }
