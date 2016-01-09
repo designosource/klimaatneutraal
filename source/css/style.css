@@ -867,7 +867,7 @@ body {
 /* line 16, D:/wamp/www/klimaat/source/scss/components/_tutorial.scss */
 .modal_1 + .modal .modal-dialog {
   margin: 0;
-  top: 17.5%;
+  top: 18%;
   left: 2%;
 }
 
@@ -887,7 +887,7 @@ body {
 /* line 27, D:/wamp/www/klimaat/source/scss/components/_tutorial.scss */
 .modal_2 + .modal .modal-dialog {
   margin: 0;
-  top: 17.5%;
+  top: 18%;
   left: 26%;
 }
 
@@ -907,8 +907,9 @@ body {
 /* line 38, D:/wamp/www/klimaat/source/scss/components/_tutorial.scss */
 .modal_3 + .modal .modal-dialog {
   margin: 0;
-  top: 17.5%;
-  right: -73%;
+  top: 18%;
+  right: 1.5%;
+  float: right;
 }
 
 /* line 43, stdin */
@@ -924,7 +925,7 @@ body {
   border-bottom: 30px solid white;
 }
 
-/* line 49, D:/wamp/www/klimaat/source/scss/components/_tutorial.scss */
+/* line 50, D:/wamp/www/klimaat/source/scss/components/_tutorial.scss */
 .modal_4 + .modal .modal-dialog {
   margin: 0;
   top: 25%;
@@ -950,7 +951,7 @@ body {
   border-bottom: 30px solid white;
 }
 
-/* line 61, D:/wamp/www/klimaat/source/scss/components/_tutorial.scss */
+/* line 62, D:/wamp/www/klimaat/source/scss/components/_tutorial.scss */
 .modal_5 + .modal .modal-dialog {
   margin: 0;
   top: 50%;
@@ -960,7 +961,7 @@ body {
           transform: translate(-50%, -50%);
 }
 
-/* line 71, D:/wamp/www/klimaat/source/scss/components/_tutorial.scss */
+/* line 72, D:/wamp/www/klimaat/source/scss/components/_tutorial.scss */
 .ng-isolate-scope {
   width: 100vw;
   height: 56.25vw;
