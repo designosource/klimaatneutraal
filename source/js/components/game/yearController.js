@@ -73,7 +73,7 @@ angular.module('klimaatneutraal.controllers')
                             policies: function () {
 
                                 if($scope.tutorial){
-                                    var pols = chunkPolicies[category][$rootScope.year];
+                                    var pols = chunkPolicies[category][$rootScope.initialYear];
                                 }else{
                                     var pols = chunkPolicies[category][$rootScope.year - 1];
                                 }
