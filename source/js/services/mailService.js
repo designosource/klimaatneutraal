@@ -7,10 +7,16 @@ angular.module('klimaatneutraal.services').service("mailService",[
 	 	var mandrillKey='NJR9rKU89OzZDcAKt7izMw';
 
 	    var sendMandrill = function(name, firstName, email){
-	      	$http.post('https://mandrillapp.com/api/1.0//messages/send.json', {
+	      	$http.post('https://mandrillapp.com/api/1.0//messages/sendTemplate.json', {
 	            'key': mandrillKey,
+	            "template_name": "EndRapport",
+   				"template_content": [
+       				 {
+				            "name": "example name",
+				            "content": "example content"
+				     }
+				],
 	            'message': {
-	              'html': ' '+firstName+' u heeft goed gescoord',
 	              'text': ' '+firstName+' u heeft goed gescoord',
 	              'subject': 'Resultaat klimaatneutraal',
 	              'from_email': emailNeutraal,
