@@ -12,8 +12,8 @@ angular.module('klimaatneutraal.services').service("mailService",[
 	            "template_name": "EndRapport",
    				"template_content": [
        				 {
-				            "name": "example name",
-				            "content": "example content"
+				            "name": "username",
+				            "content": firstName
 				     }
 				],
 	            'message': {
@@ -28,6 +28,10 @@ angular.module('klimaatneutraal.services').service("mailService",[
 	                'type': 'to'
 	              }
 	              ],
+	               "metadata": {
+			            "username": firstName,
+			            "location_id": "111"
+			        },
 	              'headers': {
 	                'Reply-To': emailNeutraal
 	              }
