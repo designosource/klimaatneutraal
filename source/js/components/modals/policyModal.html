@@ -21,7 +21,7 @@
 			<hr>
 			<result-directive policy="option"></result-directive>
 			<hr/>
-			<p class="text-center col-sm-4" ng-repeat="(key, tip) in option.tips">{{tip}}</p>
+			<p ng-repeat="(key, hint) in option.hints">{{hint}}</p>
 			<div class="action-wrapper">
 				<button ng-click="publishOption(option)" class="btn btn-success" ng-if="option.disabled != true">Kies</button>
 				<button ng-click="deSelectOption()" class="btn">Annuleer</button>
