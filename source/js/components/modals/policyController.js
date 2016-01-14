@@ -3,9 +3,10 @@ angular.module('klimaatneutraal.controllers')
         '$scope',
         '$state',
         '$uibModalInstance',
+        'soundService',
         'policies',
 
-        function($scope, $state, $uibModalInstance, policies) {
+        function($scope, $state, $uibModalInstance, soundService, policies) {
 
             var init = function() {
                 console.log('policiesController loaded');
@@ -15,14 +16,17 @@ angular.module('klimaatneutraal.controllers')
             };
 
             var selectOption = function(option) {
+                soundService.defaultClick.play();
                 $scope.option = option;
             }
 
             var deSelectOption = function() {
+                soundService.cancelBack.play();
                 $scope.option = null;
             }
 
             var publishOption = function(option) {
+                soundService.confirm.play();
                 $uibModalInstance.close(option);
             }
 

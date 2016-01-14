@@ -6,11 +6,11 @@ angular.module('klimaatneutraal.controllers')
         '$stateParams',
         '$timeout',
         '$uibModal',
-        'ngAudio',
+        'soundService',
         'mailService',
         'policies',
 
-        function($rootScope, $scope, $state, $stateParams, $timeout, $uibModal, ngAudio, mailService, policies) {
+        function($rootScope, $scope, $state, $stateParams, $timeout, $uibModal, soundService, mailService, policies) {
 
             var policiesData = {};
             var chunkPolicies = {};
@@ -47,7 +47,6 @@ angular.module('klimaatneutraal.controllers')
                 //$scope.renderScreen =  $stateParams.year; // for testing
                 $rootScope.screenOptions.splice(0,1); // remove option from array
 
-                sounds.click = ngAudio.load("sounds/click.ogg");
 
                 inactivityTime();
             };
@@ -85,7 +84,7 @@ angular.module('klimaatneutraal.controllers')
                 }
                 else {
 
-                    sounds.click.play();
+                    soundService.defaultClick.play();
 
                     // We verdelen de opties voor de gekozen categorie in groepjes van 3
                     chunkPolicies[category] = _.chunk(_.values(policiesData[category]), 3);

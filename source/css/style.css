@@ -61,6 +61,11 @@ body {
   cursor: pointer;
 }
 
+/* line 38, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_main.scss */
+.modal-title {
+  color: #333;
+}
+
 /* line 1, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_header.scss */
 .game-header {
   height: 17%;
