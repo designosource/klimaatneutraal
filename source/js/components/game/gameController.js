@@ -85,7 +85,8 @@ angular.module('klimaatneutraal.controllers')
                     });
                 }
                 else {
-                    $state.go('endGame');
+                    var endScore = $rootScope.game.score;
+                    $state.go('endGame', {score: endScore});
                     console.info('het spel is gedaan!');
                 }
             };

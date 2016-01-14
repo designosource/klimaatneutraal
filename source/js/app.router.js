@@ -39,6 +39,9 @@ angular.module('klimaatneutraal')
 
             .state('endGame', {
                 url: '/end',
+                params: {
+                 score: null
+               },
                 views: {
                     '': {
                         templateUrl: 'js/components/end/end.html',

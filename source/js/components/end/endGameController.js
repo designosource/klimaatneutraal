@@ -9,8 +9,9 @@ angular.module('klimaatneutraal.controllers')
 
         function($rootScope, $scope, $state, $controller, $http, mailService) {
 
-            var ecoscore = $state;
+            var ecoscore = $state.params.score;
             console.log(ecoscore);
+            
             $scope.sendTheMail = function() {
                 var emailUser = $("#userEmail").val();
                 var firstName = $("#firstName").val();
