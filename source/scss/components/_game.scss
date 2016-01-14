@@ -123,25 +123,52 @@
 	.clickable {
 		&::after{
 			content:"!";
+			color: red;
 			display: block;
 			position: absolute;
 			z-index: 500;
-			opacity: 0.8;;
+			opacity: 0.9;;
 
-			background-color: $col1;
+			background-color: #F5F5F5;
 			border-radius: 50%;
-			line-height: 50px;
+			line-height: 65px;
 			text-align:center;
 			font-size: 32px;
 			font-weight: bold;
 
-			width: 50px;
-			height: 50px;
+			width: 65px;
+			height: 65px;
 
 			top:50%;
 			left:50%;
 			transform: translate(-50%,-50%);
+
+			-webkit-box-shadow: 0px 4px 39px 0px rgba(0,0,0,0.75);
+			-moz-box-shadow: 0px 4px 39px 0px rgba(0,0,0,0.75);
+			box-shadow: 0px 4px 39px 0px rgba(0,0,0,0.75);
+			
+			-webkit-animation: pulse 2s infinite;
+    		animation: pulse 2s infinite;
+
 		}
+
+		@-webkit-keyframes pulse {
+		    0% { -webkit-transform: scale(1); }
+		    60% { -webkit-transform: scale(1); }
+		    70% { -webkit-transform: scale(1.5); }
+		    80% { -webkit-transform: scale(1); }
+		    90% { -webkit-transform: scale(1.5); }
+		    100% { -webkit-transform: scale(1); }
+		}
+		@keyframes pulse {
+		    0% { -webkit-transform: scale(1); }
+		    65% { -webkit-transform: scale(1); }
+		    75% { -webkit-transform: scale(1.5); }
+		    85% { -webkit-transform: scale(1); }
+		    95% { -webkit-transform: scale(1.5); }
+		    100% { -webkit-transform: scale(1); }
+		}
+
 	}
 
 	.wind-turbine-bottom {
