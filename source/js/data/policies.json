@@ -3,7 +3,7 @@
 		"subsiedieGroendaken": {
 			"id": "subsiedieGroendaken",
 			"title":"Subsidie voor groendaken.",
-			"description": "Subsidies voor isolatie aanbieden aan de burgers.",
+			"description": "Je behoudt de bestaande premie voor inwoners die een groendak willen aanleggen.",
 			"category": "warmtebehoud",
 			"image": "subsiedieGroendaken.svg",
 			"consequence": "Pas op! Je hebt vorig jaar subsidies aangeboden voor isolatie; dit was erg duur. Zorg ervoor dat je dit jaar meer inkomsten hebt.",
@@ -128,7 +128,7 @@
 		"energiescan": {
 			"id": "energiescan",
 			"title":"Informatie en energiescans.",
-			"description": " Je organiseert een informatiemoment rond energie. Je biedt een persoonlijke energiescan aan aan inwoners. Met kleine ingrepen kunnen ze heel wat energie besparen (radiatorfolie, tochtstrips,…) ",
+			"description": "Energiepunt Mechelen organiseert opnieuw een informatiemoment rond energie. Je biedt een persoonlijke energiescan aan aan inwoners. Met kleine ingrepen kunnen ze heel wat energie besparen (radiatorfolie, tochtstrips, …)",
 			"category": "warmtebehoud",
 			"image": "Energiescan.svg",
 			"consequence": "",
@@ -153,7 +153,7 @@
 		"subsiedieIsolatie": {
 			"id": "subsiedieIsolatie",
 			"title":"Subsidies voor isolatie.",
-			"description": "Je geeft een premie aan inwoners die hun huis isoleren.",
+			"description": "Je geeft een nieuwe premie aan inwoners die hun huis isoleren.",
 			"category": "warmtebehoud",
 			"image": "subsiedieIsolatie.svg",
 			"consequence": "Pas op! Je hebt vorig jaar subsidies aangeboden voor isolatie; dit was erg duur. Zorg ervoor dat je dit jaar meer inkomsten hebt.",
@@ -180,7 +180,7 @@
 		"parkeerBeleid": {
 			"id": "parkeerBeleid",
 			"title":" Betalend Parkeergeleidings-systeem.",
-			"description": "Je voert betalend parkeren in in een aantal zones, aangevuld door een parkeergeleidingssysteem.",
+			"description": "Je behoudt betalend parkeren in een aantal zones, aangevuld met het parkeergeleidingssysteem.",
 			"category": "mobiliteit",
 			"image": "parkeerBeleid.svg",
 			"consequence": "Pas op! Je koost vorig jaar voor betalend parkeren. Dit had een negatieve invloed op de tevredenheid van inwoners. Neem maatregelen om de tevredenheid weer te verhogen.",
@@ -205,7 +205,7 @@
 		"verbeteringFietsinfrastructuur": {
 			"id": "verbeteringFietsinfrastructuur",
 			"title":"Investering in fietsinfrastructuur.",
-			"description": "Je investeert in een betere fietsinfrastructuur. Je plaatst meer fietsenstallingen en openbare fietspompen. Je investeert in fietspaden en de fiets-ostrade.",
+			"description": "Je investeert verder in een betere fietsinfrastructuur. Je investeert in betere fietspaden en de fiets-o-strade.",
 			"category": "mobiliteit",
 			"image": "verbeteringFietsinfrastructuur.svg",
 			"consequence": "",
@@ -230,7 +230,7 @@
 		"autovrijeZondag": {
 			"id": "autovrijeZondag",
 			"title":"Organisatie Uit zonder Uitlaat!",
-			"description": "Je organiseert een autovrije zondag om inwoners te stimuleren meer te stappen, trappen en het openbaar vervoer te gebruiken.",
+			"description": "Je organiseert opnieuw een autovrije zondag om inwoners te stimuleren meer te stappen, trappen en het openbaar vervoer te gebruiken.",
 			"category": "mobiliteit",
 			"image": "autovrijeZondag.svg",
 			"consequence": "Pas op! Je voerde Uit zonder Uitlaat! In, misschien kan je dit jaar investeren in openbaar vervoer.",
@@ -380,7 +380,7 @@
 		"autovrijeBinnenstad": {
 			"id": "autovrijeBinnenstad",
 			"title":"Autovrije binnenstad",
-			"description": "Je treft maatregelen (bv. camera) om de binnenstad maximaal autovrij te maken.",
+			"description": "Je treft maatregelen aan de hand van camera's en frequentere controle om de binnenstad maximaal autovrij te maken.",
 			"category": "mobiliteit",
 			"image": "autovrijeBinnenstad.svg",
 			"consequence": "",
@@ -405,7 +405,7 @@
 		"schoolstratenAutovrij": {
 			"id": "schoolstratenAutovrij",
 			"title":"Schoolstraten autovrij maken",
-			"description": "Je voert schoolstraten in. Dit betekent dat de straten van scholen in de ochtend en ’s avonds autovrij worden gemaakt. Enkel fietsers en voetgangers mogen dan nog door.",
+			"description": "Je voert bijkomende schoolstraten in. Dit betekent dat straten bij scholen ’s ochtends en ’s avonds autovrij worden gemaakt. Enkel fietsers en voetgangers mogen dan nog door.",
 			"category": "mobiliteit",
 			"image": "schoolstratenAutovrij.svg",
 			"consequence": "Pas op! Je hebt vorig jaar de schoolstraten autovrij gemaakt. Je kan er dit jaar voor zorgen dat kinderen het openbaar vervoer nemen naar school.",
@@ -505,7 +505,7 @@
 		"fietsatelier": {
 			"id": "fietsatelier",
 			"title":"Fietsverhuur Blue-bike",
-			"description": "Je investeert in Blue-bike. Mensen kunnen nu voor 1 euro een fiets ontlenen voor een hele dag.",
+			"description": "Je investeert verder in Blue-bike. Mensen kunnen nog steeds voor 1 euro een fiets ontlenen voor een hele dag.",
 			"category": "mobiliteit",
 			"image": "fietsatelier.svg",
 			"consequence": "",
@@ -557,7 +557,7 @@
 		"verlichtingsplan": {
 			"id": "verlichtingsplan",
 			"title":"Nieuw verlichtingsplan voor stedelijke gebouwen.",
-			"description": "Je voert een nieuw verlichtingsplan in voor de stedelijke gebouwen. ",
+			"description": "Je zet het vernieuwen van de verlichting in stedelijke gebouwen voort.",
 			"category": "energie",
 			"image": "verlichtingsplan.svg",
 			"consequence": "Je hebt vorig jaar een verlichtingsplan opgemaakt voor stedelijke gebouwen, misschien kan je dit jaar de openbare verlichting vernieuwen.",
@@ -631,7 +631,7 @@
 		"ZonnepanelenStad": {
 			"id": "ZonnepanelenStad",
 			"title":"Zonne-energie.",
-			"description": "Je plaatst zonneboilers en zonnepanelen op de daken van stedelijke gebouwen.",
+			"description": "Je plaatst meer zonneboilers en zonnepanelen op de daken van stedelijke gebouwen.",
 			"category": "energie",
 			"image": "ZonnepanelenStad.svg",
 			"consequence": "",
@@ -681,7 +681,7 @@
 		"samenaankoopZonnepanelen": {
 			"id": "samenaankoopZonnepanelen",
 			"title":"Samenaankoop zonnepanelen.",
-			"description": "Je organiseert een samenaankoop zonnepanelen voor inwoners. Inwoners kunnen voordelig zonnepanelen plaatsen op hun dak. De leverancier voorziet professionele begeleiding.",
+			"description": "JJe doet opnieuw mee aan de samenaankoop zonnepanelen voor inwoners. Inwoners kunnen voordelig zonnepanelen plaatsen op hun dak. De leverancier voorziet professionele begeleiding.",
 			"category": "energie",
 			"image": "samenaankoopZonnepanelen.svg",
 			"consequence": "",
@@ -706,7 +706,7 @@
 		"samenaankoopGroeneStroom": {
 			"id": "samenaankoopGroeneStroom",
 			"title":" Samenaankoop groene stroom.",
-			"description": "Je organiseert een samenaankoop groen stroom voor de inwoners. Inwoners schakelen om naar groene stroom en besparen op hun energie-factuur.",
+			"description": "Je doet opnieuw mee aan de samenaankoop groene stroom voor inwoners. Inwoners schakelen om naar groene stroom en besparen op hun energie-factuur.",
 			"category": "energie",
 			"image": "samenaankoopGroeneStroom.svg",
 			"consequence": "",
