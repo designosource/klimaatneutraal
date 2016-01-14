@@ -1290,7 +1290,129 @@ body {
   transition: all .2s ease;
 }
 
+<<<<<<< HEAD
 /* line 1, D:/School/designosource/klimaatneutraal/source/scss/components/_endScreen.scss */
+=======
+/* line 128, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_startScreen.scss */
+.mevrouw_l {
+  top: 65%;
+  left: 3%;
+  position: absolute;
+  background-size: 100%;
+  height: 25%;
+  width: 12%;
+  background-image: url("../img/start/mevrouw_l.gif");
+  -webkit-animation: mevrouw_l 18s linear infinite;
+  animation: mevrouw_l 18s linear infinite;
+}
+
+@-webkit-keyframes mevrouw_l {
+  0% {
+    left: 65%;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  50% {
+    left: 100%;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  51% {
+    left: 101%;
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+  }
+  100% {
+    left: 65%;
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+  }
+}
+
+@keyframes mevrouw_l {
+  0% {
+    left: 65%;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  50% {
+    left: 100%;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  51% {
+    left: 101%;
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+  }
+  100% {
+    left: 65%;
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+  }
+}
+
+/* line 149, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_startScreen.scss */
+.mevrouw_r {
+  top: 67%;
+  left: 80%;
+  position: absolute;
+  background-size: 100%;
+  height: 29%;
+  width: 18%;
+  background-image: url("../img/start/mevrouw_r.gif");
+  -webkit-animation: mevrouw_r 14s linear infinite;
+  animation: mevrouw_r 14s linear infinite;
+}
+
+@-webkit-keyframes mevrouw_r {
+  0% {
+    left: -20%;
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+  }
+  50% {
+    left: 25%;
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+  }
+  51% {
+    left: 25%;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  100% {
+    left: -10%;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+@keyframes mevrouw_r {
+  0% {
+    left: -20%;
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+  }
+  50% {
+    left: 25%;
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+  }
+  51% {
+    left: 25%;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  100% {
+    left: -10%;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+/* line 1, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_endScreen.scss */
+
 .end-game {
   width: 100%;
   height: 100%;
@@ -1792,9 +1914,37 @@ body {
   height: 80%;
   margin: 10% auto;
   display: block;
+  -webkit-animation: jump 3s infinite;
+  animation: jump 3s infinite;
 }
 
-/* line 41, D:/School/designosource/klimaatneutraal/source/scss/components/_character.scss */
+@-webkit-keyframes jump {
+  0% {
+    -webkit-transform: translate(0);
+  }
+  5% {
+    -webkit-transform: translate(0, -10%);
+  }
+  10% {
+    -webkit-transform: translate(0);
+  }
+}
+
+@keyframes jump {
+  0% {
+    -webkit-transform: translate(0);
+  }
+  5% {
+    -webkit-transform: translate(0, -10%);
+  }
+  10% {
+    -webkit-transform: translate(0);
+  }
+}
+
+
+/* line 53, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_character.scss */
+
 .character .character-param {
   width: 50%;
   float: left;
@@ -1802,7 +1952,9 @@ body {
   background-color: #bbbdc0;
 }
 
-/* line 47, D:/School/designosource/klimaatneutraal/source/scss/components/_character.scss */
+
+/* line 59, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_character.scss */
+
 .character .character-param h2 {
   margin: 0;
   background-color: #8cc63e;
@@ -1815,19 +1967,25 @@ body {
   text-transform: uppercase;
 }
 
-/* line 59, D:/School/designosource/klimaatneutraal/source/scss/components/_character.scss */
+
+/* line 71, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_character.scss */
+
 .character .character-param .selected {
   box-shadow: 0px 1px 3px rgba(21, 166, 251, 0.36) inset, 0px 0px 8px #00b8ff;
 }
 
-/* line 63, D:/School/designosource/klimaatneutraal/source/scss/components/_character.scss */
+
+/* line 75, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_character.scss */
+
 .character .character-param .sex {
   background-color: #e5e5e4;
   height: 19%;
   width: 100%;
 }
 
-/* line 68, D:/School/designosource/klimaatneutraal/source/scss/components/_character.scss */
+
+/* line 80, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_character.scss */
+
 .character .character-param .sex img {
   display: block;
   height: 60%;
@@ -1837,24 +1995,29 @@ body {
   position: relative;
 }
 
-/* line 77, D:/School/designosource/klimaatneutraal/source/scss/components/_character.scss */
+/* line 89, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_character.scss */
+
 .character .character-param .sex .male {
   margin-left: 25%;
 }
 
-/* line 81, D:/School/designosource/klimaatneutraal/source/scss/components/_character.scss */
+/* line 93, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_character.scss */
+
 .character .character-param .sex .female {
   margin-left: 5%;
 }
 
-/* line 86, D:/School/designosource/klimaatneutraal/source/scss/components/_character.scss */
+/* line 98, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_character.scss */
+
 .character .character-param .skin {
   background-color: #e5e5e4;
   height: 19%;
   width: 100%;
 }
 
-/* line 91, D:/School/designosource/klimaatneutraal/source/scss/components/_character.scss */
+
+/* line 103, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_character.scss */
+
 .character .character-param .skin .skin1 {
   margin-left: 33%;
   background-color: #ae7248;
@@ -1866,7 +2029,9 @@ body {
   border-radius: 50%;
 }
 
-/* line 101, D:/School/designosource/klimaatneutraal/source/scss/components/_character.scss */
+
+/* line 113, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_character.scss */
+
 .character .character-param .skin .skin2 {
   margin-left: 12%;
   background-color: #fbbe8e;
@@ -1878,13 +2043,17 @@ body {
   border-radius: 50%;
 }
 
-/* line 112, D:/School/designosource/klimaatneutraal/source/scss/components/_character.scss */
+
+/* line 124, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_character.scss */
+
 .character .character-param .age {
   background-color: #e5e5e4;
   height: 24%;
 }
 
-/* line 116, D:/School/designosource/klimaatneutraal/source/scss/components/_character.scss */
+
+/* line 128, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_character.scss */
+
 .character .character-param .age img {
   display: block;
   float: left;
@@ -1892,29 +2061,38 @@ body {
   margin-top: 3%;
 }
 
-/* line 123, D:/School/designosource/klimaatneutraal/source/scss/components/_character.scss */
+
+/* line 135, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_character.scss */
+
 .character .character-param .age .age_1 {
   margin-left: 27%;
 }
 
-/* line 127, D:/School/designosource/klimaatneutraal/source/scss/components/_character.scss */
+/* line 139, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_character.scss */
+
 .character .character-param .age .age_2 {
   margin-left: 10%;
 }
 
-/* line 131, D:/School/designosource/klimaatneutraal/source/scss/components/_character.scss */
+
+/* line 143, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_character.scss */
+
 .character .character-param .age .age_3 {
   margin-left: 10%;
 }
 
-/* line 136, D:/School/designosource/klimaatneutraal/source/scss/components/_character.scss */
+
+/* line 148, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_character.scss */
+
 .character .character-param .character-bottom {
   height: 20%;
   background-color: #bbbdc0;
   position: relative;
 }
 
-/* line 140, D:/School/designosource/klimaatneutraal/source/scss/components/_character.scss */
+
+/* line 152, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_character.scss */
+
 .character .character-param .character-bottom .actions {
   width: 100%;
   position: absolute;
@@ -1925,7 +2103,9 @@ body {
           transform: translate(-50%, -50%);
 }
 
-/* line 147, D:/School/designosource/klimaatneutraal/source/scss/components/_character.scss */
+
+/* line 159, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_character.scss */
+
 .character .character-param .character-bottom .actions .btn {
   margin: 0 1.5vw;
   font-family: roboto;
@@ -1938,17 +2118,23 @@ body {
   transition: all .2s ease;
 }
 
-/* line 163, D:/School/designosource/klimaatneutraal/source/scss/components/_character.scss */
+
+/* line 175, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_character.scss */
+
 .character .character-param .character-bottom .actions .btn-primary {
   background-color: #79B63E;
 }
 
-/* line 165, D:/School/designosource/klimaatneutraal/source/scss/components/_character.scss */
+
+/* line 177, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_character.scss */
+
 .character .character-param .character-bottom .actions .btn-primary:hover {
   background-color: #6ca338;
 }
 
-/* line 169, D:/School/designosource/klimaatneutraal/source/scss/components/_character.scss */
+
+/* line 181, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_character.scss */
+
 .character .character-param .character-bottom .actions .btn-link {
   color: white;
 }
