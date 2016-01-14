@@ -1290,6 +1290,124 @@ body {
   transition: all .2s ease;
 }
 
+/* line 128, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_startScreen.scss */
+.mevrouw_l {
+  top: 65%;
+  left: 3%;
+  position: absolute;
+  background-size: 100%;
+  height: 25%;
+  width: 12%;
+  background-image: url("../img/start/mevrouw_l.gif");
+  -webkit-animation: mevrouw_l 18s linear infinite;
+  animation: mevrouw_l 18s linear infinite;
+}
+
+@-webkit-keyframes mevrouw_l {
+  0% {
+    left: 65%;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  50% {
+    left: 100%;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  51% {
+    left: 101%;
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+  }
+  100% {
+    left: 65%;
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+  }
+}
+
+@keyframes mevrouw_l {
+  0% {
+    left: 65%;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  50% {
+    left: 100%;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  51% {
+    left: 101%;
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+  }
+  100% {
+    left: 65%;
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+  }
+}
+
+/* line 149, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_startScreen.scss */
+.mevrouw_r {
+  top: 67%;
+  left: 80%;
+  position: absolute;
+  background-size: 100%;
+  height: 29%;
+  width: 18%;
+  background-image: url("../img/start/mevrouw_r.gif");
+  -webkit-animation: mevrouw_r 14s linear infinite;
+  animation: mevrouw_r 14s linear infinite;
+}
+
+@-webkit-keyframes mevrouw_r {
+  0% {
+    left: -20%;
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+  }
+  50% {
+    left: 25%;
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+  }
+  51% {
+    left: 25%;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  100% {
+    left: -10%;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+@keyframes mevrouw_r {
+  0% {
+    left: -20%;
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+  }
+  50% {
+    left: 25%;
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+  }
+  51% {
+    left: 25%;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  100% {
+    left: -10%;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
 /* line 1, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_endScreen.scss */
 .end-game {
   width: 100%;
