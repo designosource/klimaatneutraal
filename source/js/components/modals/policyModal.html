@@ -5,9 +5,10 @@
 		<!-- OVERVIEW -->
 		<ul class="options clearfix clickable" ng-hide="option">
 			<li class="col-sm-4" ng-repeat="(key, policy) in policies" ng-click="selectOption(policy)" ng-class="{disabled: policy.disabled == true}">
-				<img ng-src="img/icons/{{policy.image}}" alt="{{policy.title}}" title="{{policy.title}}">
-				<span ng-if="policy.disabled">Deze optie heb je al gekozen</span>
+				<img class="img-responsive" ng-src="img/icons/{{policy.image}}" alt="{{policy.title}}" title="{{policy.title}}">
+				<span class="text-center center-block text-muted" ng-if="policy.disabled">Deze optie heb je al gekozen</span>
 				<h4 class="text-center">{{policy.title}}</h4>
+				<p>{{policy.description}}</p>
 			</li>
 		</ul>
 		
@@ -20,6 +21,7 @@
 			<hr>
 			<result-directive policy="option"></result-directive>
 			<hr/>
+			<p class="text-center col-sm-4" ng-repeat="(key, tip) in option.tips">{{tip}}</p>
 			<div class="action-wrapper">
 				<button ng-click="publishOption(option)" class="btn btn-success" ng-if="option.disabled != true">Publiceer</button>
 				<button ng-click="deSelectOption()" class="btn">Annuleer</button>

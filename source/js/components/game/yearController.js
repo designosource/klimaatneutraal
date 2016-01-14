@@ -68,7 +68,7 @@ angular.module('klimaatneutraal.controllers')
                         animation: true,
                         templateUrl: 'js/components/modals/policyModal.html',
                         controller: 'policyController',
-                        size: 'md',
+                        size: 'lg',
                         resolve: {
                             policies: function () {
 
