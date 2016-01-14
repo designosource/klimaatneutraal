@@ -18,6 +18,7 @@ angular.module('klimaatneutraal', [
     'ui.router',
     'ui.bootstrap',
     'angular-loading-bar',  
+    'ngAudio',  
 
     'klimaatneutraal.filters',
     'klimaatneutraal.directives',

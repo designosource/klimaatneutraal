@@ -22,7 +22,8 @@
     "bootstrap": "~3.3.6",
     "angular-bootstrap": "~0.14.3",
     "angular-loading-bar": "~0.8.0",
-    "lodash": "~3.10.1"
+    "lodash": "~3.10.1",
+    "angular-audio": "~1.7.1"
   },
   "overrides": {
     "bootstrap": {

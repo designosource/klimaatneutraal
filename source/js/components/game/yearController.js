@@ -6,13 +6,15 @@ angular.module('klimaatneutraal.controllers')
         '$stateParams',
         '$timeout',
         '$uibModal',
+        'ngAudio',
         'mailService',
         'policies',
 
-        function($rootScope, $scope, $state, $stateParams, $timeout, $uibModal, mailService, policies) {
+        function($rootScope, $scope, $state, $stateParams, $timeout, $uibModal, ngAudio, mailService, policies) {
 
             var policiesData = {};
             var chunkPolicies = {};
+            var sounds = {};
 
             var init = function() {
                 $rootScope.year = $stateParams.year;
@@ -44,6 +46,8 @@ angular.module('klimaatneutraal.controllers')
                 //$scope.renderScreen =  1; // for testing
                 //$scope.renderScreen =  $stateParams.year; // for testing
                 $rootScope.screenOptions.splice(0,1); // remove option from array
+
+                sounds.click = ngAudio.load("sounds/click.ogg");
 
                 inactivityTime();
             };
@@ -80,6 +84,8 @@ angular.module('klimaatneutraal.controllers')
                     console.error('Er mogen maximum twee opties gekozen worden!'); // Zorg dat dit ook nog in de ui komt!
                 }
                 else {
+
+                    sounds.click.play();
 
                     // We verdelen de opties voor de gekozen categorie in groepjes van 3
                     chunkPolicies[category] = _.chunk(_.values(policiesData[category]), 3);
