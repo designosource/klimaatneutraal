@@ -40,8 +40,8 @@
 <section class="year year2" ng-if="renderScreen == 2 && !tutorial">
 	
 	<!-- ACTIONS -->
-	<div ng-click="openCategory('warmtebehoud')" class="huis_links_wb clickable" class="clickable interact" ><img src="img/year2/house.svg" alt=""></div>
-	<img ng-click="openCategory('mobiliteit')" class="cars clickable" src="img/year2/car.svg" alt="">
+	<div ng-click="openCategory('warmtebehoud')" class="huis_links_wb clickable interact"><img src="img/year2/house.svg" alt=""></div>
+	<div ng-click="openCategory('mobiliteit')" class="clickable cars"><img src="img/year2/car.svg" alt=""></div> 
 
 	<!-- DECORATION -->
 	<img class="biker" src="img/year2/biker.gif" alt="">
@@ -58,8 +58,8 @@
 <section class="year year3" ng-if="renderScreen == 3 && !tutorial">
 	
 	<!-- ACTIONS -->
-	<img ng-click="openCategory('warmtebehoud')" class="house clickable" src="img/year3/big-house.svg" alt="">
-	<img class="doublecars clickable" ng-click="openCategory('mobiliteit')"  src="img/year3/cars.svg" alt="">
+	<div ng-click="openCategory('warmtebehoud')" class="house clickable" ><img src="img/year3/big-house.svg" alt=""></div>
+	<div ng-click="openCategory('mobiliteit')" class="doublecars clickable"><img src="img/year3/cars.svg" alt=""></div>
 
 	<!-- DECORATION -->
 	<img class="biker" src="img/year3/biker.svg" alt="">
@@ -73,9 +73,9 @@
 <section class="year year4" ng-if="renderScreen == 4 && !tutorial">
 	
 	<!-- ACTIONS -->
-	<img class="house clickable" ng-click="openCategory('warmtebehoud')" src="img/year4/house.svg" alt="">
-	<div class="move-bus">
-		<img ng-click="openCategory('mobiliteit')" class="bus clickable" src="img/year4/bus.svg" alt="">
+	<div class="house clickable" ng-click="openCategory('warmtebehoud')"><img  src="img/year4/house.svg" alt=""></div>
+	<div ng-click="openCategory('mobiliteit')" class="clickable move-bus">
+		<img class="bus" src="img/year4/bus.svg" alt="">
 	</div>
 
 	<!-- DECORATION -->
@@ -101,12 +101,12 @@
 <section class="year year5" ng-if="renderScreen == 5 && !tutorial">
 	
 	<!-- ACTIONS -->
-	<img ng-click="openCategory('warmtebehoud')" class="house clickable" src="img/year5/house.svg" alt="">
+	<div ng-click="openCategory('warmtebehoud')" class="house clickable"><img src="img/year5/house.svg" alt=""></div>
 	<div ng-click="openCategory('mobiliteit')" class="busstop clickable">
 		<img class="busstop-building" src="img/jaar1_1/buskotje_zonder_benen.svg" alt="">
 		<img class="busstop-legs" src="img/jaar1_1/legs.gif" alt="">
 	</div>
-	<img ng-click="openCategory('energie')" class="light-saber2 clickable" src="img/year5/lightsaber.svg" alt="">
+	<div ng-click="openCategory('energie')" class="light-saber2 clickable"><img src="img/year5/lightsaber.svg" alt=""></div>
 
 	<!-- DECORATION -->
 	<img class="woman" src="img/year5/woman.svg" alt="">
@@ -123,9 +123,8 @@
 <section class="year year6" ng-if="renderScreen == 6 && !tutorial">
 	
 	<!-- ACTIONS -->
-	<img ng-click="openCategory('mobiliteit')" class="car clickable" src="img/year6/autos.svg" alt="">
-	<img ng-click="openCategory('warmtebehoud')" class="huis_links clickable" src="img/year6/huis_1.svg" alt="">
-
+	<div ng-click="openCategory('mobiliteit')" class="car clickable"><img src="img/year6/autos.svg" alt=""></div>
+	<div ng-click="openCategory('warmtebehoud')" class="huis_links clickable"><img src="img/year6/huis_1.svg" alt=""></div>
 
 	<!-- DECORATION -->
 	<img class="skater" src="img/year6/skater.svg" alt="">
