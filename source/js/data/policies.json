@@ -179,7 +179,7 @@
 	"mobiliteit": {
 		"parkeerBeleid": {
 			"id": "parkeerBeleid",
-			"title":" Betalend Parkeergeleidingssysteem.",
+			"title":" Betalend Parkeergeleidings-systeem.",
 			"description": "Je voert betalend parkeren in in een aantal zones, aangevuld door een parkeergeleidingssysteem.",
 			"category": "mobiliteit",
 			"image": "parkeerBeleid.svg",

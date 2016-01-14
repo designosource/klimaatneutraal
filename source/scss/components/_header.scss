@@ -37,6 +37,7 @@
 		.icon-wrapper{
 			width: 7%;
 			float: left;
+			margin-top: 1.5px;
 			.icon {
 				max-width: 50%;
 				display: block;
@@ -60,6 +61,9 @@
 		}
 
 		.score-eco {
+			.icon-wrapper{
+				margin-top: 8px;
+			}
 			.score-bar {
 				margin-top: 6px;
 			}
