@@ -136,28 +136,39 @@
 		.character-bottom {
 			height: 20%;
 			background-color: #bbbdc0;
+			position: relative;
+			& .actions{
+				width: 100%;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
 
-			a {
-				display: block;
-				width: 30%; 
-				float: left;
+				& .btn {
+					margin: 0 1.5vw;
 
-				font-weight: bold; 
-				text-align: center; 
-				font-size: 1.8vw; 
+					font-family: roboto;
+					font-weight: 300;
+					text-transform: uppercase;
 
-				padding: 3% 0; 
-				text-decoration: none; 
-				color: white;
-			}
+					letter-spacing: 0.05em;
 
-			.char-back {
-				margin: 5% 13.33%;  
-				background-color: #8C8C8C;
-			}
+					border: none;
+					border-radius: 0px;
 
-			.char-continue{
-				margin-top: 5%; background-color: #007a51;
+					font-size: 2vw;
+
+					transition: all .2s ease;
+				}
+				& .btn-primary{
+					background-color: $col1;
+					&:hover{
+						background-color: darken($col1,5%);
+					}
+				}
+				& .btn-link{
+					color: white;
+				}
 			}
 		}	
 	}

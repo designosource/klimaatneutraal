@@ -94,6 +94,15 @@
 
 		.actions{
 			text-align: center;
+			& .btn-primary{
+				background-color: $col1;
+				&:hover{
+					background-color: darken($col1,5%);
+				}
+			}
+			& .btn-link{
+				color: $col1;
+			}
 		}
 
 		.btn {
@@ -105,8 +114,6 @@
 
 			letter-spacing: 0.05em;
 
-			background-color: $col1;
-
 			border: none;
 			border-radius: 0px;
 
@@ -114,10 +121,6 @@
 			width: 35%;
 
 			transition: all .2s ease;
-
-			&:hover{
-				background-color: darken($col1,5%);
-			}
 		}
 	}
 }
