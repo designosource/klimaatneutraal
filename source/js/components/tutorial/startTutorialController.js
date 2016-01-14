@@ -7,8 +7,9 @@ angular.module('klimaatneutraal.controllers')
         '$http',
         '$uibModal',
         '$uibModalInstance',
+        'soundService',
 
-        function($rootScope, $scope, $state, $controller, $http, $uibModal, $uibModalInstance) {
+        function($rootScope, $scope, $state, $controller, $http, $uibModal, $uibModalInstance, soundService) {
 
             // initialize counter
             var i = $rootScope.tutorialCounter;
@@ -38,7 +39,7 @@ angular.module('klimaatneutraal.controllers')
             }
 
             $scope.next = function(){
-
+                soundService.confirm.play();
                 // raise counter
                 i++;
                 // call generic opener
@@ -47,7 +48,7 @@ angular.module('klimaatneutraal.controllers')
             }
 
             $scope.previous = function(){
-
+                soundService.cancelBack.play();
                 // lower counter
                 i--;
                 // call generic opener
@@ -57,6 +58,7 @@ angular.module('klimaatneutraal.controllers')
 
             $scope.choose = function(){
                 // container function for non-linear modals (5,6,7)
+                soundService.confirm.play();
                 $uibModalInstance.close();
             }
 

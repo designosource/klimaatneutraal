@@ -5,8 +5,9 @@ angular.module('klimaatneutraal.controllers')
         '$uibModal',
         '$state',
         '$stateParams',
+        'soundService',
 
-        function($rootScope, $scope, $uibModal, $state, $stateParams) {
+        function($rootScope, $scope, $uibModal, $state, $stateParams, soundService) {
 
             var init = function() {
                 console.log('gameController');
@@ -33,12 +34,12 @@ angular.module('klimaatneutraal.controllers')
             };
 
             var openMenu = function (size) {
-
+                soundService.defaultClick.play();
 			    var menuModal = $uibModal.open({
 			      	animation: true,
 			      	templateUrl: 'js/components/modals/menuModal.html',
 			      	controller: 'menuController',
-			      	size: size,
+			      	size: "sm",
 			      	resolve: {}
 			    });
 
@@ -51,11 +52,12 @@ angular.module('klimaatneutraal.controllers')
 			};
 
             var goToNextYear = function() {
+                soundService.confirm.play();
                 $state.go('game.year', {'year': parseInt($rootScope.year) + 1})
             };
 
             var showReport = function() {
-
+                soundService.confirm.play();
                 console.log($rootScope.year, parseInt($rootScope.initialYear) + 2)
 
                 if($rootScope.year < parseInt($rootScope.initialYear) + 2) {
@@ -95,6 +97,7 @@ angular.module('klimaatneutraal.controllers')
             }
 
             var removePolicy = function(key) {
+                soundService.cancelBack.play();
                 if($rootScope.activePolicies[$rootScope.year][key]) {
 
                     updateScore(-2, $rootScope.activePolicies[$rootScope.year][key]);
