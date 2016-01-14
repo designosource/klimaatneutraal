@@ -34,12 +34,12 @@ angular.module('klimaatneutraal.controllers')
             };
 
             var openMenu = function (size) {
-
+                soundService.defaultClick.play();
 			    var menuModal = $uibModal.open({
 			      	animation: true,
 			      	templateUrl: 'js/components/modals/menuModal.html',
 			      	controller: 'menuController',
-			      	size: size,
+			      	size: "sm",
 			      	resolve: {}
 			    });
 

@@ -2,13 +2,16 @@ angular.module('klimaatneutraal.controllers')
     .controller('menuController', [
         '$scope',
         '$uibModalInstance',
+        'soundService',
 
-        function($scope, $uibModalInstance) {
+        function($scope, $uibModalInstance, soundService) {
                         
     
 
-            $scope.ok = function () {
-                $uibModalInstance.close($scope.selected.item);
+            $scope.close = function () {
+                console.log('close');
+                soundService.defaultClick.play();
+                $uibModalInstance.close();
             };
 
             $scope.cancel = function () {
