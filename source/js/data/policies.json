@@ -477,31 +477,6 @@
 				}
 			}
 		},
-		"voetgangersvoorsteken": {
-			"id": "voetgangersvoorsteken",
-			"title":"Aanleg voetgangersdoorsteken",
-			"description": "Aanleg voetgangersdoorsteken",
-			"category": "mobiliteit",
-			"image": "voetgangersvoorsteken.svg",
-			"consequence": "",
-			"hints": {
-				"Geld": "FATAL",
-				"Tevredenheid": "FATAL",
-				"Milieu": "FATAL"
-			},
-			"results": {
-				"year1": {
-					"money": -1,
-					"public": 1,
-					"eco": 1
-				},
-				"yearN": {
-					"money": 0,
-					"public": 2,
-					"eco": 1
-				}
-			}
-		},
 		"fietsatelier": {
 			"id": "fietsatelier",
 			"title":"Fietsverhuur Blue-bike",
