@@ -75,7 +75,8 @@ body {
     padding-top: 1%; }
     .game-header .score .icon-wrapper {
       width: 7%;
-      float: left; }
+      float: left;
+      margin-top: 1.5px; }
       .game-header .score .icon-wrapper .icon {
         max-width: 50%;
         display: block;
@@ -90,6 +91,8 @@ body {
         height: 100%;
         background-color: #03573b;
         transition: width 1s ease-out; }
+    .game-header .score .score-eco .icon-wrapper {
+      margin-top: 8px; }
     .game-header .score .score-eco .score-bar {
       margin-top: 6px; }
     .game-header .score .score-wrapper {
@@ -1019,7 +1022,7 @@ body {
 .modal-content {
   border-radius: 0; }
   .modal-content .modal-body {
-    padding: 25px; }
+    padding: 2vw; }
 
 .menu {
   color: #000; }

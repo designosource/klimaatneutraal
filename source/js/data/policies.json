@@ -1,32 +1,17 @@
 {
 	"warmtebehoud": {
-		"subsiedieIsolatie": {
-			"id": "subsiedieIsolatie",
-			"title":"Subsidie voor isolatie aanbieden.",
-			"description": "Je geeft een premie aan inwoners die hun huis isoleren.",
-			"category": "warmtebehoud",
-			"image": "subsiedieIsolatie.svg",
-			"consequence": "Pas op! Je hebt vorig jaar subsidies aangeboden voor isolatie; dit was erg duur. Zorg ervoor dat je dit jaar meer inkomsten hebt.",
-			"results": {
-				"year1": {
-					"money": -2,
-					"public": 4,
-					"eco": 4
-				},
-				"yearN": {
-					"money": -2,
-					"public": 4,
-					"eco": 4
-				}
-			}
-		},
 		"subsiedieGroendaken": {
 			"id": "subsiedieGroendaken",
-			"title":"Subsidie voor groendaken aanbieden.",
+			"title":"Subsidie voor groendaken.",
 			"description": "Subsidies voor isolatie aanbieden aan de burgers.",
 			"category": "warmtebehoud",
 			"image": "subsiedieGroendaken.svg",
 			"consequence": "Pas op! Je hebt vorig jaar subsidies aangeboden voor isolatie; dit was erg duur. Zorg ervoor dat je dit jaar meer inkomsten hebt.",
+			"tips": {
+				"Geld": "Deze maatregel kost veel indien veel inwoners een premie aanvragen.",
+				"Tevredenheid": "Inwoners zijn erg tevreden met deze maatregelen. Ze kunnen goedkoop isoleren en besparen op hun energiefactuur.",
+				"Milieu": "Een groendak zorgt voor de isolatie van je dak, voor de opslag van hemelwater en helpt biodiversiteit in de stad. Een goed geïsoleerd huis verbruikt minder energie. Elke kWh die je bespaart moet niet opgewekt worden door vervuilende gas- of steenkoolcentrales."
+			},
 			"results": {
 				"year1": {
 					"money": -1,
@@ -37,36 +22,21 @@
 					"money": -1,
 					"public": 2,
 					"eco": 1
-				}
-			}
-		},
-		"subsiedieWarmtepompen": {
-			"id": "subsiedieWarmtepompen",
-			"title":"Subsidies voor warmtepompen",
-			"description": "Je geeft een kleine subsidie aan inwoners die een warmtepomp plaatsen.",
-			"category": "warmtebehoud",
-			"image": "subsiedieWarmtepompen.svg",
-			"consequence": "",
-			"results": {
-				"year1": {
-					"money": -1,
-					"public": 3,
-					"eco": 4
-				},
-				"yearN": {
-					"money": -1,
-					"public": 3,
-					"eco": 4
 				}
 			}
 		},
 		"passiefBouw": {
 			"id": "passiefBouw",
-			"title":"Stimuleren van passiefbouw",
+			"title":"Stimuleren van passiefbouw.",
 			"description": "Je organiseert activiteiten om passiefbouw te stimuleren: informatieavonden, wedstrijden, plaatsbezoeken,…",
 			"category": "warmtebehoud",
 			"image": "passiefBouw.svg",
 			"consequence": "",
+			"tips": {
+				"Geld": "De organisatie van deze activiteiten kost geld.",
+				"Tevredenheid": "Inwoners krijgen informatie en besparen geld op lange termijn.",
+				"Milieu": "Vanaf 2021 is ‘Bijna Energieneutraal’ de norm voor nieuwbouw in Vlaanderen. Een passiefhuis gaat nog verder. De huizen verbruiken minder energie voor de verwarming en elke kWh die je bespaart moet niet opgewekt worden door vervuilende gas- of steenkoolcentrales."
+			},
 			"results": {
 				"year1": {
 					"money": -2,
@@ -82,11 +52,16 @@
 		},
 		"duurzameMaterialen": {
 			"id": "duurzameMaterialen",
-			"title":"Je geeft het goede voorbeeld met een klimaatneutraal aankoopbeleid.",
+			"title":"Klimaatneutraal aankoopbeleid.",
 			"description": "Je koopt als stad bij voorkeur ‘klimaatneutrale’ producten. Zo hergebruik je kantoormeubilair en gebruik je duurzame materialen in stadsprojecten.",
 			"category": "warmtebehoud",
 			"image": "duurzameMaterialen.svg",
 			"consequence": "",
+			"tips": {
+				"Geld": "Duurzame producten zijn vaak duurder.",
+				"Tevredenheid": "Inwoners voelen de gevolgen van het aankoopbeleid van de stad niet.",
+				"Milieu": "Indirecte emissies zijn emissies die verbonden zijn aan een product dat je koopt. Zo is er geen emissie op ons grondgebied bij de productie van een zitbank. Deze emissies zijn er wel in de stad waar de zitbank is geproduceerd."
+			},
 			"results": {
 				"year1": {
 					"money": -1,
@@ -100,13 +75,43 @@
 				}
 			}
 		},
+		"subsiedieWarmtepompen": {
+			"id": "subsiedieWarmtepompen",
+			"title":"Subsidies voor warmtepompen.",
+			"description": "Je geeft een kleine subsidie aan inwoners die een warmtepomp plaatsen.",
+			"category": "warmtebehoud",
+			"image": "subsiedieWarmtepompen.svg",
+			"consequence": "",
+			"tips": {
+				"Geld": "Deze maatregel kost veel als veel inwoners een premie aanvragen.",
+				"Tevredenheid": "Inwoners zijn erg tevreden met deze maatregelen. Ze kunnen goedkoop een warmtepomp plaatsen en besparen op hun energiefactuur.",
+				"Milieu": "Een warmtepomp verlaagt het energieverbruik van een woning. Elke kWh die je zelf opwekt moet niet opgewekt worden door vervuilende gas- of steenkoolcentrales."
+			},
+			"results": {
+				"year1": {
+					"money": -1,
+					"public": 3,
+					"eco": 4
+				},
+				"yearN": {
+					"money": -1,
+					"public": 3,
+					"eco": 4
+				}
+			}
+		},
 		"thermografischeKaart": {
 			"id": "thermografischeKaart",
-			"title":"Thermografische kaart",
+			"title":"Thermografische kaart.",
 			"description": "Je maakt een thermografische kaart en stelt deze gratis ter beschikking van inwoners. Inwoners kunnen hier zijn of hun huis voldoende geïsoleerd is.",
 			"category": "warmtebehoud",
 			"image": "thermografischeKaart.svg",
 			"consequence": "",
+			"tips": {
+				"Geld": "Een thermografische kaart wordt gemaakt met een vliegtuig. Dit is erg duur.",
+				"Tevredenheid": "Inwoners vinden de kaart erg interessant en zoeken graag hun eigen woning op.",
+				"Milieu": "Inwoners ontdekken op basis van de kaart of hun huis goed geïsoleerd is. Dit zet hen aan tot maatregelen. Een goed geïsoleerd huis verbruikt minder energie. Elke kWh die je bespaart moet niet opgewekt worden door vervuilende gas- of steenkoolcentrales."
+			},
 			"results": {
 				"year1": {
 					"money": -2,
@@ -122,11 +127,16 @@
 		},
 		"energiescan": {
 			"id": "energiescan",
-			"title":"Informatiemomenten en energiescans.",
+			"title":"Informatie en energiescans.",
 			"description": " Je organiseert een informatiemoment rond energie. Je biedt een persoonlijke energiescan aan aan inwoners. Met kleine ingrepen kunnen ze heel wat energie besparen (radiatorfolie, tochtstrips,…) ",
 			"category": "warmtebehoud",
 			"image": "Energiescan.svg",
 			"consequence": "",
+			"tips": {
+				"Geld": "Het organiseren van deze activiteiten kost geld.",
+				"Tevredenheid": "Inwoners zijn tevreden over de gekregen tips omdat ze er geld mee uitsparen.",
+				"Milieu": "Inwoners gebruiken de informatie om hun energieverbruik te verlagen."
+			},
 			"results": {
 				"year1": {
 					"money": -2,
@@ -139,16 +149,46 @@
 					"eco": 1
 				}
 			}
+		},
+		"subsiedieIsolatie": {
+			"id": "subsiedieIsolatie",
+			"title":"Subsidies voor isolatie.",
+			"description": "Je geeft een premie aan inwoners die hun huis isoleren.",
+			"category": "warmtebehoud",
+			"image": "subsiedieIsolatie.svg",
+			"consequence": "Pas op! Je hebt vorig jaar subsidies aangeboden voor isolatie; dit was erg duur. Zorg ervoor dat je dit jaar meer inkomsten hebt.",
+			"tips": {
+				"Geld": "Deze maatregel kost veel als veel inwoners een premie aanvragen.",
+				"Tevredenheid": "Inwoners zijn erg tevreden met deze maatregel. Ze kunnen goedkoop isoleren en besparen op hun energiefactuur.",
+				"Milieu": "Isoleren is de eerste stap op weg naar een klimaatneutraler huis. Een goed geïsoleerd huis verbruikt minder energie. Elke kWh die je bespaart moet niet opgewekt worden door vervuilende gas- of steenkoolcentrales."
+			},
+			"results": {
+				"year1": {
+					"money": -2,
+					"public": 4,
+					"eco": 4
+				},
+				"yearN": {
+					"money": -2,
+					"public": 4,
+					"eco": 4
+				}
+			}
 		}
 	},
 	"mobiliteit": {
 		"parkeerBeleid": {
 			"id": "parkeerBeleid",
-			"title":" Invoering betalend parkeren en parkeergeleidingssysteem.",
+			"title":" Betalend Parkeergeleidings-systeem.",
 			"description": "Je voert betalend parkeren in in een aantal zones, aangevuld door een parkeergeleidingssysteem.",
 			"category": "mobiliteit",
 			"image": "parkeerBeleid.svg",
 			"consequence": "Pas op! Je koost vorig jaar voor betalend parkeren. Dit had een negatieve invloed op de tevredenheid van inwoners. Neem maatregelen om de tevredenheid weer te verhogen.",
+			"tips": {
+				"Geld": "Betalend parkeren levert de stad Mechelen geld op.",
+				"Tevredenheid": "Inwoners vinden het belangrijk om overal gratis te kunnen parkeren. Deze maatregel maakt hen niet gelukkig.",
+				"Milieu": "Betalend parkeren zorgt ervoor dat mensen vaker stappen, trappen of het openbaar vervoer gebruiken. Het parkeergeleidingssysteem vermindert zoekverkeer. Hoe minder autokilometers op het grondgebied, hoe minder CO2 er wordt uitgestoten."
+			},
 			"results": {
 				"year1": {
 					"money": -1,
@@ -169,6 +209,11 @@
 			"category": "mobiliteit",
 			"image": "verbeteringFietsinfrastructuur.svg",
 			"consequence": "",
+			"tips": {
+				"Geld": "Fietsinfrastructuur is zeer duur, omdat er vaak ingrijpende wegenwerken moeten gebeuren.",
+				"Tevredenheid": "Inwoners zijn zeer tevreden dat de fietsinfrastructuur verbetert. Dit heeft een rechtstreekse impact op hun dagelijkse leven.",
+				"Milieu": "Fietsinfrastructuur zorgt ervoor dat meer inwoners de fiets gebruiken. Hierdoor vermindert het aantal autokilometers en de CO2 uitstoot op het grondgebied."
+			},
 			"results": {
 				"year1": {
 					"money": -4,
@@ -189,6 +234,11 @@
 			"category": "mobiliteit",
 			"image": "autovrijeZondag.svg",
 			"consequence": "Pas op! Je voerde Uit zonder Uitlaat! In, misschien kan je dit jaar investeren in openbaar vervoer.",
+			"tips": {
+				"Geld": "De organisatie van de autoloze zondag vraagt een jaarlijkse investering.",
+				"Tevredenheid": "De meeste inwoners vinden dit een leuk initiatief.",
+				"Milieu": "Inwoners ontdekken op de autovrije zondag dat ze zich anders dan met de wagen kunnen verplaatsen. Ze (her)ontdekken stappen, fietsen en het openbaar vervoer. Mogelijks veranderen ze ook hun dagelijkse verplaatsingen."
+			},
 			"results": {
 				"year1": {
 					"money": -1,
@@ -204,11 +254,16 @@
 		},	
 		"hybrideBussystemen": {
 			"id": "hybrideBussystemen",
-			"title":"Stimuleren van het gebruik van hybride bussen.",
+			"title":"Gebruik van hybride bussen stimuleren.",
 			"description": "Je maakt afspraken met de busmaatschappij dat er nog enkel hybride bussen op het grondgebied mogen rijden.",
 			"category": "mobiliteit",
 			"image": "hybrideBussystemen.svg",
 			"consequence": "Pas op! Je voerde vorig jaar hybride bussen in, je kan dit extra onder de aandacht brengen op Uit zonder Uitlaat! (autoloze zondag) opdat meer mensen de bus nemen",
+			"tips": {
+				"Geld": "De investering en opbrengsten zijn voor de rekening van de busmaatschappijen.",
+				"Tevredenheid": "De inwoners waarderen deze bussen omdat ze stiller zijn.",
+				"Milieu": "Hybride bussen stoten 20% minder CO2 uit dan standaardbussen."
+			},
 			"results": {
 				"year1": {
 					"money": 0,
@@ -229,6 +284,11 @@
 			"category": "mobiliteit",
 			"image": "fietsdiefstalPrevententie.svg",
 			"consequence":"",
+			"tips": {
+				"Geld": "Deze maatregel vraagt een kleine eenmalige investering.",
+				"Tevredenheid": "Inwoners vinden het erg belangrijk dat ze hun fiets veilig kunnen stallen.",
+				"Milieu": "Het risico op diefstal schrikt een aantal fietsers af om de fiets dagelijks te gebruiken."
+			},
 			"results": {
 				"year1": {
 					"money": -1,
@@ -249,6 +309,11 @@
 			"category": "mobiliteit",
 			"image": "bikeToWork.svg",
 			"consequence": "Pas op! Je voerde vorig jaar een bike to work dag in, Je kan dit jaar misschien werken rond de fietsvergoeding.",
+			"tips": {
+				"Geld": "De organisatie van Bike to work kost geld.",
+				"Tevredenheid": "Inwoners zijn tevreden want ze kunnen mooie prijzen winnen.",
+				"Milieu": "De stad Mechelen organiseert al jaren Bike to work voor het eigen personeel. Fietsers worden in de bloemetjes gezet en houden hun inzet voor het klimaat vol."
+			},
 			"results": {
 				"year1": {
 					"money": -2,
@@ -264,11 +329,16 @@
 		},
 		"fietsVergoeding": {
 			"id": "fietsVergoeding",
-			"title":"Fietsvergoeding.",
+			"title":"Fietsvergoeding aanbieden.",
 			"description": "Je organiseert een informatiemoment rond de fietsvergoeding en je maakt een charter voor bedrijven die zich engageren de maximale fietsvergoeding uit te reiken. Als stad geef je het goede voorbeeld.",
 			"category": "mobiliteit",
 			"image": "fietsVergoeding.svg",
 			"consequence": "",
+			"tips": {
+				"Geld": "Werknemers die met de wagen komen schakelen over op de fiets. Deze vergoeding is lager dan die voor de wagen. Deze maatregel is dus budgetneutraal.",
+				"Tevredenheid": "Fietsende inwoners zijn erg tevreden, want ze krijgen een financiële beloning voor hun klimaatvriendelijk gedrag.",
+				"Milieu": "Het aantal werknemers dat met de fiets komt neemt toe. Het aantal autokilometers vermindert bijgevolg."
+			},
 			"results": {
 				"year1": {
 					"money": 1,
@@ -289,6 +359,11 @@
 			"category": "mobiliteit",
 			"image": "openbaarVervoerVergoeding.svg",
 			"consequence": "",
+			"tips": {
+				"Geld": "Werknemers die met de wagen komen schakelen over op het openbaar vervoer. De vergoeding is lager dan die voor de wagen. Deze maatregel is dus budgetneutraal.",
+				"Tevredenheid": "Inwoners die het openbaar vervoer gebruiken zijn erg tevreden want ze krijgen een financiële beloning voor hun klimaatvriendelijk gedrag.",
+				"Milieu": "Het aantal werknemers dat met het openbaar vervoer komt neemt toe. Het aantal autokilometers vermindert bijgevolg."
+			},
 			"results": {
 				"year1": {
 					"money": 1,
@@ -309,6 +384,11 @@
 			"category": "mobiliteit",
 			"image": "autovrijeBinnenstad.svg",
 			"consequence": "",
+			"tips": {
+				"Geld": "Het invoeren van de nodige infrastructuur voor deze maatregel is erg duur.",
+				"Tevredenheid": "Heel wat inwoners en bezoekers , die gewoon zijn om de wagen te gebruiken, zijn erg ontevreden. Ze willen overal met de wagen raken.",
+				"Milieu": "Inwoners kunnen de binnenstad niet meer met de wagen bereiken. Ze nemen vaker de fiets of het openbaar vervoer. Er wordt dus minder CO2 uitgestoten."
+			},
 			"results": {
 				"year1": {
 					"money": -2,
@@ -329,6 +409,11 @@
 			"category": "mobiliteit",
 			"image": "schoolstratenAutovrij.svg",
 			"consequence": "Pas op! Je hebt vorig jaar de schoolstraten autovrij gemaakt. Je kan er dit jaar voor zorgen dat kinderen het openbaar vervoer nemen naar school.",
+			"tips": {
+				"Geld": "Het invoeren van deze maatregel is niet duur en vereist weinig bijkomende infrastructuur.",
+				"Tevredenheid": "Sommige inwoners zijn ontevreden. Ze willen overal met de wagen raken. Ouders zijn tevreden door de hogere veiligheid voor hun kinderen.",
+				"Milieu": "Inwoners kunnen de schoolpoort niet meer met de wagen bereiken. Ze nemen vaker de fiets of het openbaar vervoer. Er wordt dus minder CO2 uitgestoten. "
+			},
 			"results": {
 				"year1": {
 					"money": -1,
@@ -349,6 +434,11 @@
 			"category": "mobiliteit",
 			"image": "bewaakteFietsenstallingen.svg",
 			"consequence": "",
+			"tips": {
+				"Geld": "Fietsenstallingen kosten geld, omdat er vaak bijkomende werken moeten gebeuren.",
+				"Tevredenheid": "Inwoners zijn zeer tevreden dat de fietsenstallingen verbeteren. Dit heeft een rechtstreekse impact op hun dagelijkse leven.",
+				"Milieu": "Fietsenstallingen zorgen ervoor dat meer inwoners de fiets gebruiken. Hierdoor vermindert het aantal autokilometers en de CO2 uitstoot op het grondgebied."
+			},
 			"results": {
 				"year1": {
 					"money": -2,
@@ -369,6 +459,11 @@
 			"category": "mobiliteit",
 			"image": "wegenWerwaarderen.svg",
 			"consequence": "",
+			"tips": {
+				"Geld": "De toegankelijkheid van trage wegen vergroten is erg duur.",
+				"Tevredenheid": "Inwoners zijn zeer tevreden dat de trage wegen worden geherwaardeerd. Deze wegen maken kwaliteitsvolle en veilige verplaatsingen mogelijk.",
+				"Milieu": "Trage wegen zorgen ervoor dat meer inwoners te voet gaan en de fiets gebruiken. Hierdoor vermindert het aantal autokilometers en de CO2 uitstoot op het grondgebied."
+			},
 			"results": {
 				"year1": {
 					"money": -2,
@@ -389,6 +484,11 @@
 			"category": "mobiliteit",
 			"image": "voetgangersvoorsteken.svg",
 			"consequence": "",
+			"tips": {
+				"Geld": "FATAL",
+				"Tevredenheid": "FATAL",
+				"Milieu": "FATAL"
+			},
 			"results": {
 				"year1": {
 					"money": -1,
@@ -409,6 +509,11 @@
 			"category": "mobiliteit",
 			"image": "fietsatelier.svg",
 			"consequence": "",
+			"tips": {
+				"Geld": "Het aanbieden van Blue-bike vraagt om een blijvende investering.",
+				"Tevredenheid": "Inwoners zijn tevreden dat Blue-bike beschikbaar is, al genieten vooral bezoekers van het systeem.",
+				"Milieu": "Meer bezoekers aan Mechelen gebruiken Blue-bike, eventueel in combinatie met het openbaar vervoer. Het aantal autokilometers op het grondgebied daalt."
+			},
 			"results": {
 				"year1": {
 					"money": -1,
@@ -429,6 +534,11 @@
 			"category": "mobiliteit",
 			"image": "pakjesDienst.svg",
 			"consequence": "",
+			"tips": {
+				"Geld": "Er is een initiële investering om de fietskoeriers op te starten. Na deze investering is het bedrijf rendabel.",
+				"Tevredenheid": "Inwoners vinden het erg makkelijk dat de fietskoeriers beschikbaar zijn. Daarenboven vermindert het aantal wagens, wat de beleving van de stad verbetert.",
+				"Milieu": "De laatste kilometer is meestal erg vervuilend. De leverancier moet immers het adres zoeken, een parkeerplaats zoeken,… Fietskoeriers kunnen deze laatste kilometer makkelijker doen. Zo worden heel wat autokilometers en CO2 uitgespaard. "
+			},
 			"results": {
 				"year1": {
 					"money": -1,
@@ -451,6 +561,11 @@
 			"category": "energie",
 			"image": "verlichtingsplan.svg",
 			"consequence": "Je hebt vorig jaar een verlichtingsplan opgemaakt voor stedelijke gebouwen, misschien kan je dit jaar de openbare verlichting vernieuwen.",
+			"tips": {
+				"Geld": "Een nieuw verlichtingsplan heeft een erg korte terugverdientijd.",
+				"Tevredenheid": "Inwoners voelen deze maatregel niet in hun dagelijks leven.",
+				"Milieu": "Nieuwe lampen zijn veel efficiënter dan oude lampen. Ze verbruiken minder en elke kWh die je bespaart moet niet opgewekt worden door vervuilende gas- of steenkoolcentrales."
+			},
 			"results": {
 				"year1": {
 					"money": 1,
@@ -470,6 +585,11 @@
 			"description": "Je schakelt de openbare verlichting uit tussen 23u en 6u.",
 			"category": "energie",
 			"image": "uitschakelenopenbareverlichting.svg",
+			"tips": {
+				"Geld": "Deze maatregel brengt onmiddellijk geld op.",
+				"Tevredenheid": "Inwoners vinden het erg belangrijk dat er verlichting is op het grondgebied. Dit draagt veel bij aan het veiligheidsgevoel.",
+				"Milieu": "De openbare verlichting verbruikt veel elektriciteit. Uitschakelen zorgt ervoor dat je elektriciteit bespaart.  Elke KWh die je bespaart moet niet opgewekt worden door vervuilende gas of steenkoolcentrales."
+			},
 			"results": {
 				"year1": {
 					"money": 1,
@@ -485,11 +605,16 @@
 		},
 		"windturbines": {
 			"id": "windturbines",
-			"title":"Vergunning voor de plaatsing van 1 windturbines.",
+			"title":"Vergunning voor de plaatsing van 1 windturbine.",
 			"description": "Je vergunt de installatie van 1 windturbine door een private partner.",
 			"category": "energie",
 			"image": "windturbines.svg",
 			"consequence": "Je hebt vorig jaar 1 windturbines vergund, misschien kan je dit jaar investeren in zonnepanelen en zonneboilers.",
+			"tips": {
+				"Geld": "Een private partner draagt de investering en krijgt de opbrengsten.",
+				"Tevredenheid": "Inwoners hebben niet graag een windmolen op het grondgebied. Ze vrezen voor lawaaihinder, slagschaduw en visuele hinder.",
+				"Milieu": "Een windturbine wekt hernieuwbare energie op voor 1500 gezinnen. Dit vervangt energie geproduceerd door nucleaire, gas- of kolencentrales."
+			},
 			"results": {
 				"year1": {
 					"money": 0,
@@ -505,11 +630,16 @@
 		},
 		"ZonnepanelenStad": {
 			"id": "ZonnepanelenStad",
-			"title":"Plaatsen van zonneboilers en zonnepanelen op stedelijke gebouwen.",
-			"description": "Je plaatste zonneboilers en zonnepanelen op de daken van stedelijke gebouwen.",
+			"title":"Zonne-energie.",
+			"description": "Je plaatst zonneboilers en zonnepanelen op de daken van stedelijke gebouwen.",
 			"category": "energie",
 			"image": "ZonnepanelenStad.svg",
 			"consequence": "",
+			"tips": {
+				"Geld": "Het plaatsen van deze installaties kost geld. ",
+				"Tevredenheid": "Inwoners voelen de impact van deze maatregel niet in hun dagelijks leven.",
+				"Milieu": "Zonneboilers en zonnepanelen wekken hernieuwbare energie. De stad Mechelen produceert vandaag met zijn zonnepanelen al genoeg om 130 gezinnen van energie te voorzien. Deze energie vervangt energie geproduceerd door nucleaire, gas of kolencentrales."
+			},
 			"results": {
 				"year1": {
 					"money": 0,
@@ -523,13 +653,43 @@
 				}
 			}
 		},
+		"groeneStroomAuto": {
+			"id": "groeneStroomAuto",
+			"title":"Subsidie voor elektrische wagens.",
+			"description": "Je geeft inwoners die een elektrische wagen kopen een subsidie, een gereserveerde parkeerplaats en elektronische voorzieningen aan tankstations op de openbare weg.",
+			"category": "energie",
+			"image": "groeneStroomAuto.svg",
+			"consequence": "",
+			"tips": {
+				"Geld": "De aanleg van de infrastructuur en het aanbieden van een subsidie is duur.",
+				"Tevredenheid": "Inwoners zijn erg tevreden. Ze kunnen nu goedkoper een elektrische wagen aanschaffen en opladen.",
+				"Milieu": "Inwoners investeren nu sneller in een elektrisch voertuig. Deze voertuigen stoten geen CO2 uit."
+			},
+			"results": {
+				"year1": {
+					"money": -1,
+					"public": 1,
+					"eco": 3
+				},
+				"yearN": {
+					"money": -1,
+					"public": 3,
+					"eco": 3
+				}
+			}
+		},
 		"samenaankoopZonnepanelen": {
 			"id": "samenaankoopZonnepanelen",
-			"title":"Je organiseert een samenaankoop zonnepanelen voor inwoners. Inwoners kunnen voordelig zonnepanelen plaatsen op hun dak. De leverancier voorziet professionele begeleiding.",
-			"description": "Je plaatste zonneboilers en zonnepanelen op de daken van stedelijke gebouwen.",
+			"title":"Samenaankoop zonnepanelen.",
+			"description": "Je organiseert een samenaankoop zonnepanelen voor inwoners. Inwoners kunnen voordelig zonnepanelen plaatsen op hun dak. De leverancier voorziet professionele begeleiding.",
 			"category": "energie",
 			"image": "samenaankoopZonnepanelen.svg",
 			"consequence": "",
+			"tips": {
+				"Geld": "De samenaankoop wordt door de provincie georganiseerd. Dit kost je niets.",
+				"Tevredenheid": "Inwoners zijn erg tevreden want ze betalen minder voor hun energie.",
+				"Milieu": "In 2015 kochten 385 Mechelaars zonnepanelen door de provinciale samenaankoop. Ze produceren nu zelf groene stroom en nemen minder energie af van het net."
+			},
 			"results": {
 				"year1": {
 					"money": 0,
@@ -550,6 +710,11 @@
 			"category": "energie",
 			"image": "samenaankoopGroeneStroom.svg",
 			"consequence": "",
+			"tips": {
+				"Geld": "De samenaankoop wordt door de provincie georganiseerd. Dit kost je niets.",
+				"Tevredenheid": "Inwoners zijn erg tevreden want ze betalen minder voor hun energie.",
+				"Milieu": "In 2015 schakelden 2137 Mechelaars over op groene stroom door de provinciale samenaankoop. Groene stroom wordt op een hernieuwbare wijze geproduceerd."
+			},
 			"results": {
 				"year1": {
 					"money": 0,
@@ -560,49 +725,8 @@
 					"money": 0,
 					"public": 2,
 					"eco": 2
-				}
-			}
-		},
-		"SubsidieElektrischeWagens": {
-			"id": "SubsidieElektrischeWagens",
-			"title":" Subsidie en laadinfrastructuur voor elektrische wagens.",
-			"description": "Je geeft inwoners die een elektrische wagen komen een subsidie, een gereserveerde parkeerplaats en laadinfrastructuur op de openbare weg.",
-			"category": "energie",
-			"image": "SubsidieElektrischeWagens.svg",
-			"consequence": "",
-			"results": {
-				"year1": {
-					"money": 0,
-					"public": 2,
-					"eco": 2
-				},
-				"yearN": {
-					"money": 0,
-					"public": 2,
-					"eco": 2
-				}
-			}
-		},
-		"groeneStroomAuto": {
-			"id": "groeneStroomAuto",
-			"title":"Subsidie en laadinfrastructuur voor elektrische wagens.",
-			"description": "Je geeft inwoners die een elektrische wagen komen een subsidie, een gereserveerde parkeerplaats en laadinfrastructuur op de openbare weg.",
-			"category": "energie",
-			"image": "groeneStroomAuto.svg",
-			"consequence": "",
-			"results": {
-				"year1": {
-					"money": -1,
-					"public": 1,
-					"eco": 3
-				},
-				"yearN": {
-					"money": -1,
-					"public": 3,
-					"eco": 3
 				}
 			}
 		}
-		
 	}
 }
