@@ -2,12 +2,12 @@
 ​
 	<div class="content-wrapper">
 		<h1>Proficiat! je 3 jaar zijn afgelopen</h2>
-		<h2>Benieuwd hoe je scoort? Vul hier je e-mail in en bekijk je rapport</h2>
+		<h2>Benieuwd naar je score? Vul hier je e-mail in en ontvang je rapport.</h2>
 		  <form name="contactForm" id="contactForm" ng-submit="contactForm.$valid && sendTheMail()" novalidate>
-		    Voornaam: <input class="input" type="text" id="firstName" required><br>
-		    Achternaam: <input class="input" type="text" id="lastName" required><br>
-		    Email: <input class="input" type="email" id="userEmail" required><br>
-		    </textarea><br>
+		    <input class="input fname" placeholder="Voornaam" type="text" id="firstName" required>
+		    <input class="input lname" placeholder="Achternaam"  type="text" id="lastName" required><br>
+		    <input class="input mmail" type="email" placeholder="Email adres" id="userEmail" required>
+		    </textarea>
 				<h3>De Nieuwsbrief van Mechelen Klimaatneutraal</h3>
 				<p>De stad Mechelen neem
 				verschillende initiatieven om Mechelen Klimaatneutraal te maken:
@@ -18,7 +18,6 @@
 				</p>
 				<p>Wens je de nieuwsbrief van Mechelen Klimaatneutraal te ontvangen?</p>
 					<input class="nieuwsbrief" type="checkbox" name="nieuwsbrief" value="Ja"><p>Ja</p>
-					<br>
 		    <input type="submit" value="Submit" id="SubmitBtn" class="btn btn-success">
 		  </form>
 	</div>

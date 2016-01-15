@@ -1437,45 +1437,91 @@ body {
 .end-game {
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  overflow-y: hidden;
   background-image: url("../img/start-game-bg.svg");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-/* line 9, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_endScreen.scss */
+/* line 10, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_endScreen.scss */
 .end-game .content-wrapper {
   margin: 0 auto;
-  margin-top: 2%;
-  width: 50%;
-  padding: 25px;
+  margin-top: 0;
+  width: 75%;
+  padding: 3vw 5vw;
   box-sizing: border-box;
-  background-color: rgba(0, 0, 0, 0.46);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+  background-color: white;
   text-align: left;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-55%);
+      -ms-transform: translateY(-55%);
+          transform: translateY(-55%);
 }
 
-/* line 17, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_endScreen.scss */
+/* line 22, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_endScreen.scss */
+.end-game .content-wrapper .fname, .end-game .content-wrapper .lname {
+  float: left;
+}
+
+/* line 25, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_endScreen.scss */
+.end-game .content-wrapper .fname {
+  width: 48%;
+  margin-right: 2%;
+}
+
+/* line 29, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_endScreen.scss */
+.end-game .content-wrapper .lname {
+  width: 50%;
+}
+
+/* line 32, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_endScreen.scss */
+.end-game .content-wrapper .mmail {
+  width: 100%;
+  margin: 1vw auto;
+}
+
+/* line 39, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_endScreen.scss */
+.end-game .content-wrapper form {
+  color: black;
+}
+
+/* line 42, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_endScreen.scss */
 .end-game .content-wrapper h1 {
   margin: 0 0 25px 0;
   font-family: 'Montserrat', sans-serif;
   font-size: 57px;
-  font-size: 5.7rem;
+  font-size: 4rem;
+  color: #79B63E;
 }
 
-/* line 23, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_endScreen.scss */
+/* line 50, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_endScreen.scss */
+.end-game .content-wrapper h2 {
+  font-size: 2vw;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* line 56, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_endScreen.scss */
+.end-game .content-wrapper h3 {
+  color: black;
+  font-size: 2vw;
+}
+
+/* line 60, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_endScreen.scss */
+.end-game .content-wrapper p {
+  color: #737070;
+  font-size: 1vw;
+}
+
+/* line 65, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_endScreen.scss */
 .end-game .content-wrapper .btn {
   width: 25%;
 }
 
-/* line 26, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_endScreen.scss */
-.end-game .content-wrapper .input {
-  color: #000000;
-  margin-left: 5px;
-  width: 100%;
-}
-
-/* line 31, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_endScreen.scss */
+/* line 68, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_endScreen.scss */
 .end-game .content-wrapper .nieuwsbrief {
   float: left;
   margin-left: 0px;
@@ -1483,8 +1529,9 @@ body {
   margin-top: 3px;
 }
 
-/* line 37, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_endScreen.scss */
+/* line 74, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_endScreen.scss */
 .end-game .content-wrapper .btn-success {
+  margin-top: 1vw;
   margin-left: 0px;
 }
 
