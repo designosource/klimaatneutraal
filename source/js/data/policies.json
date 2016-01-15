@@ -91,12 +91,12 @@
 				"year1": {
 					"money": -1,
 					"public": 3,
-					"eco": 4
+					"eco": 2
 				},
 				"yearN": {
 					"money": -1,
 					"public": 3,
-					"eco": 4
+					"eco": 2
 				}
 			}
 		},
@@ -139,12 +139,12 @@
 			},
 			"results": {
 				"year1": {
-					"money": -2,
+					"money": -1,
 					"public": 1,
 					"eco": 1
 				},
 				"yearN": {
-					"money": -2,
+					"money": -1,
 					"public": 1,
 					"eco": 1
 				}
@@ -172,6 +172,56 @@
 					"money": -2,
 					"public": 4,
 					"eco": 4
+				}
+			}
+		},
+		"pakjesDienst": {
+			"id": "pakjesDienst",
+			"title":"Fietskoeriers.",
+			"description": "Je geeft ondersteuning aan bedrijven die pakjes met de fiets leveren. Je voorkomt vervuilend verkeer in de binnenstad.",
+			"category": "mobiliteit",
+			"image": "pakjesDienst.svg",
+			"consequence": "",
+			"hints": {
+				"Geld": "Er is een initiële investering om de fietskoeriers op te starten. Na deze investering is het bedrijf rendabel.",
+				"Tevredenheid": "Inwoners vinden het erg makkelijk dat de fietskoeriers beschikbaar zijn. Daarenboven vermindert het aantal wagens, wat de beleving van de stad verbetert.",
+				"Milieu": "De laatste kilometer is meestal erg vervuilend. De leverancier moet immers het adres zoeken, een parkeerplaats zoeken,… Fietskoeriers kunnen deze laatste kilometer makkelijker doen. Zo worden heel wat autokilometers en CO2 uitgespaard. "
+			},
+			"results": {
+				"year1": {
+					"money": -1,
+					"public": 1,
+					"eco": 1
+				},
+				"yearN": {
+					"money": 0,
+					"public": 1,
+					"eco": 1
+				}
+			}
+		},
+		"fietsatelier": {
+			"id": "fietsatelier",
+			"title":"Fietsverhuur Blue-bike",
+			"description": "Je investeert verder in Blue-bike. Mensen kunnen nog steeds voor 1 euro een fiets ontlenen voor een hele dag.",
+			"category": "mobiliteit",
+			"image": "fietsatelier.svg",
+			"consequence": "",
+			"hints": {
+				"Geld": "Het aanbieden van Blue-bike vraagt om een blijvende investering.",
+				"Tevredenheid": "Inwoners zijn tevreden dat Blue-bike beschikbaar is, al genieten vooral bezoekers van het systeem.",
+				"Milieu": "Meer bezoekers aan Mechelen gebruiken Blue-bike, eventueel in combinatie met het openbaar vervoer. Het aantal autokilometers op het grondgebied daalt."
+			},
+			"results": {
+				"year1": {
+					"money": -1,
+					"public": 1,
+					"eco": 1
+				},
+				"yearN": {
+					"money": -1,
+					"public": 1,
+					"eco": 1
 				}
 			}
 		}
@@ -242,7 +292,7 @@
 			"results": {
 				"year1": {
 					"money": -1,
-					"public": 0,
+					"public": 1,
 					"eco": 1
 				},
 				"yearN": {
@@ -341,7 +391,7 @@
 			},
 			"results": {
 				"year1": {
-					"money": 1,
+					"money": 0,
 					"public": 1,
 					"eco": 2
 				},
@@ -366,7 +416,7 @@
 			},
 			"results": {
 				"year1": {
-					"money": 1,
+					"money": 0,
 					"public": 1,
 					"eco": 1
 				},
@@ -417,112 +467,12 @@
 			"results": {
 				"year1": {
 					"money": -1,
-					"public": 2,
+					"public": 1,
 					"eco": 1
 				},
 				"yearN": {
 					"money": 0,
 					"public": 0,
-					"eco": 1
-				}
-			}
-		},	
-		"bewaakteFietsenstallingen": {
-			"id": "bewaakteFietsenstallingen",
-			"title":"Bewaakte fietsenstallingen uitbreiden",
-			"description": "Je verhoogt het aantal fietsenstallingen op het openbaar domein.",
-			"category": "mobiliteit",
-			"image": "bewaakteFietsenstallingen.svg",
-			"consequence": "",
-			"hints": {
-				"Geld": "Fietsenstallingen kosten geld, omdat er vaak bijkomende werken moeten gebeuren.",
-				"Tevredenheid": "Inwoners zijn zeer tevreden dat de fietsenstallingen verbeteren. Dit heeft een rechtstreekse impact op hun dagelijkse leven.",
-				"Milieu": "Fietsenstallingen zorgen ervoor dat meer inwoners de fiets gebruiken. Hierdoor vermindert het aantal autokilometers en de CO2 uitstoot op het grondgebied."
-			},
-			"results": {
-				"year1": {
-					"money": -2,
-					"public": 2,
-					"eco": 1
-				},
-				"yearN": {
-					"money": 0,
-					"public": 0,
-					"eco": 1
-				}
-			}
-		},
-		"wegenWerwaarderen": {
-			"id": "wegenWerwaarderen",
-			"title":"Trage wegen herwaarderen",
-			"description": "Je inventariseert een aantal trage wegen en investeert in deze wegen. Zo blijven ze bereikbaar, toegankelijk en gekend. Je realiseert ook een aantal doorsteken voor voetgangers opdat ze niet rond moeten gaan. Bijvoorbeeld over privaat domein.",
-			"category": "mobiliteit",
-			"image": "wegenWerwaarderen.svg",
-			"consequence": "",
-			"hints": {
-				"Geld": "De toegankelijkheid van trage wegen vergroten is erg duur.",
-				"Tevredenheid": "Inwoners zijn zeer tevreden dat de trage wegen worden geherwaardeerd. Deze wegen maken kwaliteitsvolle en veilige verplaatsingen mogelijk.",
-				"Milieu": "Trage wegen zorgen ervoor dat meer inwoners te voet gaan en de fiets gebruiken. Hierdoor vermindert het aantal autokilometers en de CO2 uitstoot op het grondgebied."
-			},
-			"results": {
-				"year1": {
-					"money": -2,
-					"public": 2,
-					"eco": 1
-				},
-				"yearN": {
-					"money": 0,
-					"public": 3,
-					"eco": 1
-				}
-			}
-		},
-		"fietsatelier": {
-			"id": "fietsatelier",
-			"title":"Fietsverhuur Blue-bike",
-			"description": "Je investeert verder in Blue-bike. Mensen kunnen nog steeds voor 1 euro een fiets ontlenen voor een hele dag.",
-			"category": "mobiliteit",
-			"image": "fietsatelier.svg",
-			"consequence": "",
-			"hints": {
-				"Geld": "Het aanbieden van Blue-bike vraagt om een blijvende investering.",
-				"Tevredenheid": "Inwoners zijn tevreden dat Blue-bike beschikbaar is, al genieten vooral bezoekers van het systeem.",
-				"Milieu": "Meer bezoekers aan Mechelen gebruiken Blue-bike, eventueel in combinatie met het openbaar vervoer. Het aantal autokilometers op het grondgebied daalt."
-			},
-			"results": {
-				"year1": {
-					"money": -1,
-					"public": 1,
-					"eco": 1
-				},
-				"yearN": {
-					"money": 0,
-					"public": 1,
-					"eco": 1
-				}
-			}
-		},
-		"pakjesDienst": {
-			"id": "pakjesDienst",
-			"title":"Fietskoeriers.",
-			"description": "Je geeft ondersteuning aan bedrijven die pakjes met de fiets leveren. Je voorkomt vervuilend verkeer in de binnenstad.",
-			"category": "mobiliteit",
-			"image": "pakjesDienst.svg",
-			"consequence": "",
-			"hints": {
-				"Geld": "Er is een initiële investering om de fietskoeriers op te starten. Na deze investering is het bedrijf rendabel.",
-				"Tevredenheid": "Inwoners vinden het erg makkelijk dat de fietskoeriers beschikbaar zijn. Daarenboven vermindert het aantal wagens, wat de beleving van de stad verbetert.",
-				"Milieu": "De laatste kilometer is meestal erg vervuilend. De leverancier moet immers het adres zoeken, een parkeerplaats zoeken,… Fietskoeriers kunnen deze laatste kilometer makkelijker doen. Zo worden heel wat autokilometers en CO2 uitgespaard. "
-			},
-			"results": {
-				"year1": {
-					"money": -1,
-					"public": 1,
-					"eco": 1
-				},
-				"yearN": {
-					"money": 0,
-					"public": 1,
 					"eco": 1
 				}
 			}
@@ -544,12 +494,12 @@
 			"results": {
 				"year1": {
 					"money": 1,
-					"public": 1,
+					"public": 0,
 					"eco": 1
 				},
 				"yearN": {
 					"money": 1,
-					"public": 1,
+					"public": 0,
 					"eco": 1
 				}
 			}
@@ -593,8 +543,8 @@
 			"results": {
 				"year1": {
 					"money": 0,
-					"public": -1,
-					"eco": 4
+					"public": 0,
+					"eco": 1
 				},
 				"yearN": {
 					"money": 0,
@@ -618,7 +568,7 @@
 			"results": {
 				"year1": {
 					"money": 0,
-					"public": -1,
+					"public": 0,
 					"eco": 4
 				},
 				"yearN": {
@@ -668,7 +618,7 @@
 			"results": {
 				"year1": {
 					"money": 0,
-					"public": -1,
+					"public": 2,
 					"eco": 4
 				},
 				"yearN": {
@@ -700,6 +650,56 @@
 					"money": 0,
 					"public": 2,
 					"eco": 2
+				}
+			}
+		},
+		"wegenWerwaarderen": {
+			"id": "wegenWerwaarderen",
+			"title":"Trage wegen herwaarderen",
+			"description": "Je inventariseert een aantal trage wegen en investeert in deze wegen. Zo blijven ze bereikbaar, toegankelijk en gekend. Je realiseert ook een aantal doorsteken voor voetgangers opdat ze niet rond moeten gaan. Bijvoorbeeld over privaat domein.",
+			"category": "mobiliteit",
+			"image": "wegenWerwaarderen.svg",
+			"consequence": "",
+			"hints": {
+				"Geld": "De toegankelijkheid van trage wegen vergroten is erg duur.",
+				"Tevredenheid": "Inwoners zijn zeer tevreden dat de trage wegen worden geherwaardeerd. Deze wegen maken kwaliteitsvolle en veilige verplaatsingen mogelijk.",
+				"Milieu": "Trage wegen zorgen ervoor dat meer inwoners te voet gaan en de fiets gebruiken. Hierdoor vermindert het aantal autokilometers en de CO2 uitstoot op het grondgebied."
+			},
+			"results": {
+				"year1": {
+					"money": -2,
+					"public": 2,
+					"eco": 1
+				},
+				"yearN": {
+					"money": 0,
+					"public": 3,
+					"eco": 1
+				}
+			}
+		},	
+		"bewaakteFietsenstallingen": {
+			"id": "bewaakteFietsenstallingen",
+			"title":"Bewaakte fietsenstallingen uitbreiden",
+			"description": "Je verhoogt het aantal fietsenstallingen op het openbaar domein.",
+			"category": "mobiliteit",
+			"image": "bewaakteFietsenstallingen.svg",
+			"consequence": "",
+			"hints": {
+				"Geld": "Fietsenstallingen kosten geld, omdat er vaak bijkomende werken moeten gebeuren.",
+				"Tevredenheid": "Inwoners zijn zeer tevreden dat de fietsenstallingen verbeteren. Dit heeft een rechtstreekse impact op hun dagelijkse leven.",
+				"Milieu": "Fietsenstallingen zorgen ervoor dat meer inwoners de fiets gebruiken. Hierdoor vermindert het aantal autokilometers en de CO2 uitstoot op het grondgebied."
+			},
+			"results": {
+				"year1": {
+					"money": -2,
+					"public": 2,
+					"eco": 1
+				},
+				"yearN": {
+					"money": 0,
+					"public": 0,
+					"eco": 1
 				}
 			}
 		}
