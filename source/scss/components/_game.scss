@@ -315,10 +315,10 @@
 			left: 5%;
 			right: 90%;
 			top: 75%;
-			-webkit-animation: biker_moves 5s infinite ;
-			   -moz-animation: biker_moves 5s infinite ;
-				 -o-animation: biker_moves 5s infinite ;
-					animation: biker_moves 5s infinite ;
+			-webkit-animation: biker_moves 10s linear infinite ;
+			   -moz-animation: biker_moves 10s linear infinite ;
+				 -o-animation: biker_moves 10s linear infinite ;
+					animation: biker_moves 10s linear infinite ;
 		}
 
 		.house1 {
@@ -365,10 +365,10 @@
 			z-index: 2;
 			right: -50%;
 			top: 75%;
-			-webkit-animation: biker_moves_right 15s infinite ;
-			   -moz-animation: biker_moves_right 15s infinite ;
-				 -o-animation: biker_moves_right 15s infinite ;
-					animation: biker_moves_right 15s infinite ;
+			-webkit-animation: biker_moves_right 20s linear infinite ;
+			   -moz-animation: biker_moves_right 20s linear infinite ;
+				 -o-animation: biker_moves_right 20s linear infinite ;
+					animation: biker_moves_right 20s linear infinite ;
 		}
 
 		.house {
@@ -407,10 +407,10 @@
 			z-index: 2;
 			left: -5%;
 			top: 76%;
-			-webkit-animation: bus_moves 25s infinite ;
-			   -moz-animation: bus_moves 25s infinite ;
-				 -o-animation: bus_moves 25s infinite ;
-					animation: bus_moves 25s infinite ;
+			-webkit-animation: bus_moves 10s linear infinite ;
+			   -moz-animation: bus_moves 10s linear infinite ;
+				 -o-animation: bus_moves 10s linear infinite ;
+					animation: bus_moves 10s linear infinite ;
 
 			width: 40%;
 
@@ -475,11 +475,12 @@
 			left: 9%;
 			top: 60%;
 
-			-webkit-animation: skater_moves 2s infinite ;
-			   -moz-animation: skater_moves 2s infinite ;
-				 -o-animation: skater_moves 2s infinite ;
-					animation: skater_moves 2s infinite ;
+			-webkit-animation: skater_moves 8s linear infinite ;
+			   -moz-animation: skater_moves 8s linear infinite ;
+				 -o-animation: skater_moves 8s linear infinite ;
+					animation: skater_moves 8s linear infinite ;
 		}
+
 
 		.house {
 			position: absolute;
@@ -607,23 +608,12 @@
 			width: 10%;
 			right: 11%;
 			top: 58%;
-			-webkit-animation: biker_moves_right 11s infinite ;
-			   -moz-animation: biker_moves_right 11s infinite ;
-				 -o-animation: biker_moves_right 11s infinite ;
-					animation: biker_moves_right 11s infinite ;
+			-webkit-animation: biker_moves_right 20s linear infinite ;
+			   -moz-animation: biker_moves_right 20s linear infinite ;
+				 -o-animation: biker_moves_right 20s linear infinite ;
+					animation: biker_moves_right 20s linear infinite ;
 		}
 
-		.fietser_2 {
-			position: absolute;
-			display: block;
-			width: 10%;
-			right: 5%;
-			top: 63%;
-			-webkit-animation: biker_moves_right 11s infinite ;
-			   -moz-animation: biker_moves_right 11s infinite ;
-				 -o-animation: biker_moves_right 11s infinite ;
-					animation: biker_moves_right 11s infinite ;
-		}
 
 		.skater{
 			display: block;
