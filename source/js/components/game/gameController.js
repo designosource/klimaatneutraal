@@ -9,6 +9,41 @@ angular.module('klimaatneutraal.controllers')
 
         function($rootScope, $scope, $uibModal, $state, $stateParams, soundService) {
 
+            var IDLE_TIMEOUT = 120; //seconds
+            var _idleSecondsTimer = null;
+            var _idleSecondsCounter = 0;
+            var menuModal;
+
+            document.onclick = function() {
+                _idleSecondsCounter = 0;
+            };
+
+            document.onmousemove = function() {
+                _idleSecondsCounter = 0;
+            };
+
+            document.onkeypress = function() {
+                _idleSecondsCounter = 0;
+            };
+
+            _idleSecondsTimer = window.setInterval(CheckIdleTime, 1000);
+
+            function CheckIdleTime() {
+                 _idleSecondsCounter++;
+                 
+                 //console.log((IDLE_TIMEOUT - _idleSecondsCounter) + "");
+
+                if (_idleSecondsCounter >= IDLE_TIMEOUT) {
+
+                    if(menuModal){
+                        menuModal.close();
+                    }
+
+                    _idleSecondsCounter = 0;
+                    openMenu();
+                }
+            }
+
             var init = function() {
                 console.log('gameController');
 
@@ -35,7 +70,7 @@ angular.module('klimaatneutraal.controllers')
 
             var openMenu = function (size) {
                 soundService.defaultClick.play();
-			    var menuModal = $uibModal.open({
+			    menuModal = $uibModal.open({
 			      	animation: true,
 			      	templateUrl: 'js/components/modals/menuModal.html',
 			      	controller: 'menuController',

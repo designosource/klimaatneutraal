@@ -46,28 +46,6 @@ angular.module('klimaatneutraal.controllers')
                 //$scope.renderScreen =  1; // for testing
                 //$scope.renderScreen =  $stateParams.year; // for testing
                 $rootScope.screenOptions.splice(0,1); // remove option from array
-
-
-                inactivityTime();
-            };
-
-            var inactivityTime = function () {
-                var t;
-                document.onmousemove = resetTimer;
-                document.onkeypress = resetTimer;
-
-                function goToHome() {
-                    $state.go('startGame');
-                    //location.href = 'goToHome.php'
-                }
-
-                function resetTimer() {
-                    clearTimeout(t);
-                    t = setTimeout(goToHome, 60000)
-                    // 1000 milisec = 1 sec
-                }
-
-                resetTimer();
             };
 
             var updateScore = function(factor, option) {
@@ -81,6 +59,7 @@ angular.module('klimaatneutraal.controllers')
                 // Kijk of er al niet twee opties gekozen zijn.
                 if($rootScope.activePolicies[$rootScope.year].length >= 2) {
                     console.error('Er mogen maximum twee opties gekozen worden!'); // Zorg dat dit ook nog in de ui komt!
+                    soundService.cancelBack.play();
                 }
                 else {
 
