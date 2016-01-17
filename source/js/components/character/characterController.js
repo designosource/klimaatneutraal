@@ -4,8 +4,9 @@ angular.module('klimaatneutraal.controllers')
         '$scope',
         '$uibModal',
         'soundService',
+        'mailService',
 
-        function($rootScope, $scope, $uibModal, soundService) {
+        function($rootScope, $scope, $uibModal, soundService, mailService) {
 
             var init = function() {
                 console.log('characterController');
@@ -17,7 +18,7 @@ angular.module('klimaatneutraal.controllers')
                     mood: '1'
                 };
 
-                updateImage();    
+                updateImage(); 
             };
 
             var changeSex = function(sex) {
@@ -46,11 +47,21 @@ angular.module('klimaatneutraal.controllers')
 
             var updateImage = function() {
                 $scope.image = $scope.character.sex + $scope.character.age + $scope.character.skin + $scope.character.mood + '.svg';
+                getImage($scope.image);
             };
 
+            var getImage = function (test){
+                var ass = test;
+                
+            };
+            $scope.sendCharacter = function() {
+                    var character = $scope.image;
+                    mailService.getCharacter(character);
+                };
             $scope.playConfirmSound = function() {
                 soundService.confirm.play();
             };
+             
 
             $scope.changeSex = changeSex;
             $scope.changeAge = changeAge;

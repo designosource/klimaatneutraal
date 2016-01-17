@@ -8,6 +8,7 @@ angular.module('klimaatneutraal.controllers')
         'mailService',
 
         function($rootScope, $scope, $state, $controller, $http, mailService) {
+            console.log($scope.image);
             //GET - Userscores
             var ecoscore = $state.params.score;
             var moneyScore = ecoscore.money;
@@ -81,6 +82,7 @@ angular.module('klimaatneutraal.controllers')
 
                 var character = '<img  src="" align="none" height="261" src="" style="width: 100px; height: 261px; margin: 0px;" width="100">'
 
+                
                 mailService.sendMandrill(lastName, firstName, emailUser, moneyMandrill, ecoMandrill, publicMandrill);
                 mailService.sendMailchimp(lastName, firstName, emailUser);
 

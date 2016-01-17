@@ -5,8 +5,15 @@ angular.module('klimaatneutraal.services').service("mailService",[
 		var emailNeutraal = 'glennvanhaute@gmail.com';
 	 	var mailchimpKey='33b98fb66515f34a2391ca79edb49851-us12';
 	 	var mandrillKey='NJR9rKU89OzZDcAKt7izMw';
+	 	var MyCharacter = {}; 
+	 	var getCharacter = function(character){
+	 		MyCharacter.character = character;		
+	 	};
+	 	
 
 	    var sendMandrill = function(name, firstName, email, moneyMandrill, ecoMandrill, publicMandrill){
+	    	var characterUser = MyCharacter.character;
+	    	console.log ("svg : "+yellow);
 	      	$http.post('https://mandrillapp.com/api/1.0//messages/sendTemplate.json', {
 	            'key': mandrillKey,
 	            "template_name": "testtemplate",
@@ -22,6 +29,10 @@ angular.module('klimaatneutraal.services').service("mailService",[
 				     {
 				            "name": "pub",
 				            "content": publicMandrill
+				     },
+				     {
+				            "name": "character",
+				            "content": characterUser
 				     }
 				],
 	            'message': {
@@ -65,7 +76,8 @@ angular.module('klimaatneutraal.services').service("mailService",[
 
       return {
       	sendMandrill:sendMandrill,
-      	sendMailchimp:sendMailchimp
+      	sendMailchimp:sendMailchimp,
+      	getCharacter:getCharacter
       }
 
         
