@@ -31,6 +31,21 @@
 		.action-wrapper {
 			text-align: center;
 		}
+		.info{
+			display: none;
+		}
+		.info-container{
+			& .btn{
+				margin-left: -12px !important;
+			}
+			& .btn:hover{
+				text-decoration: none;
+			}
+			& .btn:focus{
+				outline: none !important;
+				text-decoration: none;
+			}
+		}
 	}
 }
 
@@ -97,3 +112,4 @@
 		}
 	}
 }
+

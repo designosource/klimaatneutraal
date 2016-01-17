@@ -21,7 +21,12 @@
 			<hr>
 			<result-directive policy="option"></result-directive>
 			<hr/>
-			<p ng-repeat="(key, hint) in option.hints">{{hint}}</p>
+			<div class="info-container">
+				<div class="info" id="info">
+					<p ng-repeat="(key, hint) in option.hints">{{hint}}</p>
+				</div>
+				<button ng-click="displayInfo()" class="btn btn-link" id="infoButton">Meer Informatie</button>
+			</div>
 			<div class="action-wrapper">
 				<button ng-click="publishOption(option)" class="btn btn-success" ng-if="option.disabled != true">Kies</button>
 				<button ng-click="deSelectOption()" class="btn">Annuleer</button>
