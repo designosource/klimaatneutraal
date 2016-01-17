@@ -13,7 +13,6 @@ angular.module('klimaatneutraal.services').service("mailService",[
 
 	    var sendMandrill = function(name, firstName, email, moneyMandrill, ecoMandrill, publicMandrill){
 	    	var characterUser = MyCharacter.character;
-	    	console.log ("svg : "+yellow);
 	      	$http.post('https://mandrillapp.com/api/1.0//messages/sendTemplate.json', {
 	            'key': mandrillKey,
 	            "template_name": "testtemplate",
