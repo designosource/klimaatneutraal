@@ -4,8 +4,8 @@
 <section class="year year1" ng-if="tutorial" ng-controller="tutorialController">
 	
 	<!-- ACTIONS -->
-	<div ng-click="openCategory('warmtebehoud')" class="huis_links_wb" class="clickable interact" ><img src="img/jaar1_1/huis_links_wb.svg" alt=""></div>
-	<div ng-click="openCategory('mobiliteit')" class="buskotje" class="clickable"><img src="img/jaar1_1/buskotje_zonder_benen.svg" alt=""></div>
+	<div ng-click="openCategory('warmtebehoud')" class="huis_links_wb clickable"><img src="img/jaar1_1/huis_links_wb.svg" alt=""></div>
+	<div ng-click="openCategory('mobiliteit')" class="buskotje clickable"><img src="img/jaar1_1/buskotje_zonder_benen.svg" alt=""></div>
 
 	<!-- DECORATION -->
 	<img class="skater" src="img/jaar1_1/skater.svg" alt="">
@@ -22,8 +22,8 @@
 <section class="year year1" ng-if="renderScreen == 1 && !tutorial">
 	
 	<!-- ACTIONS -->
-	<div ng-click="openCategory('warmtebehoud')" class="huis_links_wb clickable" class="clickable interact" ><img src="img/jaar1_1/huis_links_wb.svg" alt=""></div>
-	<div ng-click="openCategory('mobiliteit')" class="buskotje clickable" class="clickable"><img src="img/jaar1_1/buskotje_zonder_benen.svg" alt=""></div>
+	<div ng-click="openCategory('warmtebehoud')" class="huis_links_wb clickable interact" ><img src="img/jaar1_1/huis_links_wb.svg" alt=""></div>
+	<div ng-click="openCategory('mobiliteit')" class="buskotje clickable"><img src="img/jaar1_1/buskotje_zonder_benen.svg" alt=""></div>
 
 	<!-- DECORATION -->
 	<img class="skater" src="img/jaar1_1/skater.svg" alt="">
@@ -102,7 +102,7 @@
 	
 	<!-- ACTIONS -->
 	<div ng-click="openCategory('warmtebehoud')" class="house clickable"><img src="img/year5/house.svg" alt=""></div>
-	<div ng-click="openCategory('mobiliteit')" class="busstop clickable">
+	<div class="busstop"> <!-- ng-click="openCategory('mobiliteit')" class="clickable" || alles voor de pipelines op de correct plaats terug bij in de div steken om terug interactable te maken -->
 		<img class="busstop-building" src="img/jaar1_1/buskotje_zonder_benen.svg" alt="">
 		<img class="busstop-legs" src="img/jaar1_1/legs.gif" alt="">
 	</div>
