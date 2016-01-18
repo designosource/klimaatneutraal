@@ -8,7 +8,6 @@ angular.module('klimaatneutraal.controllers')
         'mailService',
 
         function($rootScope, $scope, $state, $controller, $http, mailService) {
-            console.log($scope.image);
             //GET - Userscores
             var ecoscore = $state.params.score;
             var moneyScore = ecoscore.money;
@@ -82,10 +81,21 @@ angular.module('klimaatneutraal.controllers')
 
                 var character = '<img  src="" align="none" height="261" src="" style="width: 100px; height: 261px; margin: 0px;" width="100">'
 
-                
-                mailService.sendMandrill(lastName, firstName, emailUser, moneyMandrill, ecoMandrill, publicMandrill);
-                mailService.sendMailchimp(lastName, firstName, emailUser);
+                var endRapportscore = {
+                    eco1: ecoUser,
+                    eco2: ecoTotal,
+                    pub1: pubUser,
+                    pub2: pubTotal,
+                    money1: moneyUser,
+                    money2: moneyTotal,
 
-                    };
+                };
+                mailService.sendMandrill(lastName, firstName, emailUser, moneyMandrill, ecoMandrill, publicMandrill, endRapportscore);
+                mailService.sendMailchimp(lastName, firstName, emailUser);
+                
+                
+                
+
+                };
                 }
     ]);
