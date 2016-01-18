@@ -1849,123 +1849,144 @@ body {
   margin-top: 0;
 }
 
-/* line 21, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_modals.scss */
+/*style modal*/
+/* line 20, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_modals.scss */
+h4.text-center.ng-binding {
+  font-size: 20px;
+  color: #439214;
+  font-weight: bold;
+  padding-top: 1vw;
+}
+
+/* line 28, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_modals.scss */
+p.ng-binding {
+  font-size: 14px;
+  padding-top: 0.5vw;
+  color: #484646;
+}
+
+/* line 33, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_modals.scss */
+li.col-sm-4.ng-scope {
+  padding: 1.5vw;
+}
+
+/* line 37, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_modals.scss */
 .menu {
   color: #000;
 }
 
-/* line 25, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_modals.scss */
+/* line 41, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_modals.scss */
 .mission {
   color: #000;
 }
 
-/* line 28, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_modals.scss */
+/* line 44, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_modals.scss */
 .mission h2 {
   margin: 0;
 }
 
-/* line 32, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_modals.scss */
+/* line 48, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_modals.scss */
 .mission .options {
   list-style-type: none;
   padding: 0;
   margin: 5px 0;
 }
 
-/* line 37, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_modals.scss */
+/* line 53, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_modals.scss */
 .mission .options li {
   padding-bottom: 15px;
 }
 
-/* line 43, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_modals.scss */
+/* line 59, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_modals.scss */
 .mission .option .action-wrapper {
   text-align: center;
 }
 
-/* line 46, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_modals.scss */
+/* line 62, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_modals.scss */
 .mission .option .info {
   display: none;
 }
 
-/* line 50, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_modals.scss */
+/* line 66, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_modals.scss */
 .mission .option .info-container .btn {
   margin-left: -12px !important;
 }
 
-/* line 53, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_modals.scss */
+/* line 69, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_modals.scss */
 .mission .option .info-container .btn:hover {
   text-decoration: none;
 }
 
-/* line 56, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_modals.scss */
+/* line 72, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_modals.scss */
 .mission .option .info-container .btn:focus {
   outline: none !important;
   text-decoration: none;
 }
 
-/* line 65, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_modals.scss */
+/* line 81, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_modals.scss */
 .results {
   list-style-type: none;
   padding: 0;
 }
 
-/* line 69, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_modals.scss */
+/* line 85, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_modals.scss */
 .results li {
   text-align: center;
 }
 
-/* line 71, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_modals.scss */
+/* line 87, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_modals.scss */
 .results li ul {
   padding: 0;
 }
 
-/* line 73, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_modals.scss */
+/* line 89, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_modals.scss */
 .results li ul li {
   display: inline-block;
   padding: 0 5px;
   line-height: 35px;
 }
 
-/* line 78, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_modals.scss */
+/* line 94, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_modals.scss */
 .results li ul li img {
   height: 22px;
 }
 
-/* line 88, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_modals.scss */
+/* line 104, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_modals.scss */
 .year-report {
   color: black;
 }
 
-/* line 91, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_modals.scss */
+/* line 107, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_modals.scss */
 .year-report .report-policies {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-/* line 96, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_modals.scss */
+/* line 112, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_modals.scss */
 .year-report .report-policies .policy {
   margin: 15px 10px;
   padding: 15px 10px;
   border-bottom: 1px solid #eee;
 }
 
-/* line 105, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_modals.scss */
+/* line 121, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_modals.scss */
 .year-report .report-policies .policy .image-wrapper img {
   margin: 0 auto;
   max-height: 75px;
 }
 
-/* line 111, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_modals.scss */
+/* line 127, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_modals.scss */
 .year-report .report-policies .policy .info {
   float: left;
 }
 
-/* line 114, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_modals.scss */
+/* line 130, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_modals.scss */
 .year-report .report-policies .policy .info .name {
   font-size: 21px;
 }
 
-/* line 119, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_modals.scss */
+/* line 135, C:/Users/Twix/Documents/Klimaatneutraal/source/scss/components/_modals.scss */
 .year-report .report-policies .policy .info .results li {
   text-align: left;
 }
