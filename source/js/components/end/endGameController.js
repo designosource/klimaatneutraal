@@ -77,10 +77,10 @@ angular.module('klimaatneutraal.controllers')
                 var widthUserPub = '"width:'+pubUser+'%;height:30px; background-color:#89C73E;float:left;"';
                 var widthMaxPub = '"width:'+pubTotal+'%;height:30px; background-color:#424242; float:left;"';
                 var publicMandrill ="<div style="+widthUserPub+"></div><div style="+widthMaxPub+"></div>"
-                //CHARACTER
+                //MEER MINDER
+                /*var meerMinder = "Als klimaatburgemeester behaal jij een besparing van "+resultMeerMinder+" dan 20%. Ontvang nu tot 5000 euro subsidie om jouw buurt ook echt klimaatneutraal te maken. 
 
-                var character = '<img  src="" align="none" height="261" src="" style="width: 100px; height: 261px; margin: 0px;" width="100">'
-
+                Geen inspiratie? Kijk naar onderstaande tips en bouw mee aan jouw klimaatneutraal Mechelen.";*/
                 var endRapportscore = {
                     eco1: ecoUser,
                     eco2: ecoTotal,
@@ -90,6 +90,7 @@ angular.module('klimaatneutraal.controllers')
                     money2: moneyTotal,
 
                 };
+
                 mailService.sendMandrill(lastName, firstName, emailUser, moneyMandrill, ecoMandrill, publicMandrill, endRapportscore);
                 mailService.sendMailchimp(lastName, firstName, emailUser);
                 
