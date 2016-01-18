@@ -183,41 +183,42 @@
 	}
 
 	.wind-turbine-bottom {
-			position: absolute;
-			display: block;
-			top: 6%;
-			right: 9%;
-		}
+		//position: absolute;
+		display: block;
+		top: 6%;
+		right: 9%;
+	}
 
-		.wind-turbine-top {
-			position: absolute;
-			display: block;
-			-webkit-animation: wiek 10s linear infinite ;
-				-moz-animation:    wiek 10s linear infinite ;
-				-o-animation:      wiek 10s linear infinite ;
-				animation:         wiek 10s linear infinite ;
-		}
-		.huis_rechts{
-			position: absolute;display: block;
-			width: 30%;right: 1%;top: 31%;
-		}
+	.wind-turbine-top {
+		display: block;
+		-webkit-animation: wiek 10s linear infinite ;
+			-moz-animation:    wiek 10s linear infinite ;
+			-o-animation:      wiek 10s linear infinite ;
+			animation:         wiek 10s linear infinite ;
+		padding: 0 9%;
+    	margin-bottom: -52%;
+	}
 
-		.huis_links_wb{
-			display: block; position: absolute;
-			top: 38%;
-			width: 25%;
+	.huis_rechts{
+		position: absolute;display: block;
+		width: 30%;right: 1%;top: 31%;
+	}
 
-		}
-		
-		.wiek_l{
-			position: absolute;display: block;
-			width: 8%;left:58%;top:20.2%;
-			-webkit-animation: wiek_l 10s linear infinite ;
-				-moz-animation:    wiek_l 10s linear infinite ;
-				-o-animation:      wiek_l 10s linear infinite ;
-				animation:         wiek_l 10s linear infinite ;
-		}
+	.huis_links_wb{
+		display: block; position: absolute;
+		top: 38%;
+		width: 25%;
 
+	}
+	
+	.wiek_l{
+		position: absolute;display: block;
+		width: 8%;left:58%;top:20.2%;
+		-webkit-animation: wiek_l 10s linear infinite ;
+			-moz-animation:    wiek_l 10s linear infinite ;
+			-o-animation:      wiek_l 10s linear infinite ;
+			animation:         wiek_l 10s linear infinite ;
+	}
 
 	&.year1 {
 		background-image: url('../img/jaar1_1/bg_jaar1_1.svg');
@@ -351,7 +352,7 @@
 			width: 7%;
 			right: 13%;
 			top: 30%;
-			height: 100%;
+			//height: 100%;
 		}
 	}
 
@@ -458,9 +459,9 @@
 			position: absolute;
 			display: block;
 			width: 7%;
-			right: 46%;
-			top: 30%;
-			height: 100%;
+			right: 39%;
+    		top: 26%;
+			//height: 100%;
 		}
 	}
 

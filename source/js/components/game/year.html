@@ -7,10 +7,13 @@
 	<div ng-click="openCategory('warmtebehoud')" class="huis_links_wb clickable"><img src="img/jaar1_1/huis_links_wb.svg" alt=""></div>
 	<div ng-click="openCategory('mobiliteit')" class="buskotje clickable"><img src="img/jaar1_1/buskotje_zonder_benen.svg" alt=""></div>
 
+
 	<!-- DECORATION -->
 	<img class="skater" src="img/jaar1_1/skater.svg" alt="">
 	<img class="benen" src="img/jaar1_1/legs.gif" alt=""></a>
-	<img class="molenpaal" src="img/jaar1_1/molenpaal.svg" alt="">
+	
+	<div ng-click="openCategory('energie')" class="molenpaal clickable"><img src="img/jaar1_1/molenpaal.svg" alt=""></div>
+
 	<img class="wiek" src="img/jaar1_1/wiek.svg" alt="">
 	<img class="molenpaal_l" src="img/jaar1_1/molenpaal_l.svg" alt="">
 	<img class="wiek_l" src="img/jaar1_1/wiek_l.svg" alt="">
@@ -28,7 +31,9 @@
 	<!-- DECORATION -->
 	<img class="skater" src="img/jaar1_1/skater.svg" alt="">
 	<img class="benen" src="img/jaar1_1/legs.gif" alt=""></a>
-	<img class="molenpaal" src="img/jaar1_1/molenpaal.svg" alt="">
+
+	<div ng-click="openCategory('energie')" class="molenpaal clickable"><img src="img/jaar1_1/molenpaal.svg" alt=""></div>
+	
 	<img class="wiek" src="img/jaar1_1/wiek.svg" alt="">
 	<img class="molenpaal_l" src="img/jaar1_1/molenpaal_l.svg" alt="">
 	<img class="wiek_l" src="img/jaar1_1/wiek_l.svg" alt="">
@@ -47,9 +52,9 @@
 	<img class="biker" src="img/year2/biker.gif" alt="">
 	<img class="house2" src="img/year2/house2.svg" alt="">
 	
-	<div class="wind-turbine">
-		<img class="wind-turbine-bottom" src="img/jaar1_1/molenpaal.svg" alt="">
+	<div ng-click="openCategory('energie')" class="wind-turbine clickable">
 		<img class="wind-turbine-top" src="img/jaar1_1/wiek.svg" alt="">
+		<img class="wind-turbine-bottom" src="img/jaar1_1/molenpaal.svg" alt="">
 	</div>
 	
 </section>
@@ -63,7 +68,7 @@
 
 	<!-- DECORATION -->
 	<img class="biker" src="img/year3/biker.gif" alt="">
-	<img class="light-saber" src="img/year3/lightsaber.svg" alt="">
+	<div class="light-saber clickable" ng-click="openCategory('energie')"><img src="img/year3/lightsaber.svg" alt=""></div>
 
 	
 </section>
@@ -80,16 +85,16 @@
 
 	<!-- DECORATION -->
 	<div class="wind-turbine-1">
-		<img class="wind-turbine-bottom" src="img/jaar1_1/molenpaal.svg" alt="">
 		<img class="wind-turbine-top" src="img/jaar1_1/wiek.svg" alt="">
+		<img class="wind-turbine-bottom" src="img/jaar1_1/molenpaal.svg" alt="">
 	</div>
 	<div class="wind-turbine-2">
-		<img class="wind-turbine-bottom" src="img/jaar1_1/molenpaal.svg" alt="">
 		<img class="wind-turbine-top" src="img/jaar1_1/wiek.svg" alt="">
+		<img class="wind-turbine-bottom" src="img/jaar1_1/molenpaal.svg" alt="">
 	</div>
-	<div class="wind-turbine-3">
-		<img class="wind-turbine-bottom" src="img/jaar1_1/molenpaal.svg" alt="">
+	<div ng-click="openCategory('energie')" class="wind-turbine-3 clickable">
 		<img class="wind-turbine-top" src="img/jaar1_1/wiek.svg" alt="">
+		<img class="wind-turbine-bottom" src="img/jaar1_1/molenpaal.svg" alt="">
 	</div>
 	
 	
@@ -128,7 +133,9 @@
 
 	<!-- DECORATION -->
 	<img class="skater" src="img/year6/skater.svg" alt="">
-	<img class="zon" src="img/year6/zon.svg" alt="">
+	
+	<div class="zon clickable" ng-click="openCategory('energie')"><img src="img/year6/zon.svg" alt=""></div>
+	
 	<img class="huis_rechts" src="img/year6/huis_2.svg" alt="">
 	<img class="fietser" src="img/year6/fietser.gif" alt="">
 	
