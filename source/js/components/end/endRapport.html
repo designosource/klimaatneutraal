@@ -1,0 +1,101 @@
+<section ng-controller="endRapportController as contact" class="end-game">
+​
+	<div class="content-wrapper">
+		<h1>Bedankt voor het spelen.</h2>
+		<h2>Hier krijg je alvast al een voorproefje hoe je gescoord hebt!</h2>
+		  <div class="userscore" style="width:50%;float:left;">
+            <span style="color: #000; padding-left: 10%">Jouw score</span>
+            <div class="eco" style="width:95%;float:left;margin-right: 5%;margin-top:15px;">
+                <div class="icon" style="width:10%;height:30px;float:left;">
+                    <img src="/img/ui/leaf.svg" alt="" style="width:65%">
+                </div>
+
+                <div class="honderd" style="width: 90%; float:left;">
+                    <div class="jouw" ng-style="setEcoUser">
+
+                    </div>
+                    <div class="honderd" ng-style="setEcoTotal">
+                    </div>
+                </div>
+            </div>
+
+            <div class="public" style="width:95%;float:left;margin-right: 5%;margin-top:15px;">
+                <div class="icon" style="width:10%; height:30px;float:left;">
+                    <img src="/img/ui/public.svg" alt="" style="width:65%">
+                </div>
+
+                <div class="honderd" style="width: 90%; float:left;">
+                    <div class="jouw" ng-style="setPubUser">
+                    </div>
+                    <div class="honderd" ng-style="setPubTotal">
+                    </div>
+                </div>
+            </div>
+
+            <div class="money" style="width:95%;float:left;margin-right: 5%;margin-top:15px;">
+                <div class="icon" style="width:10%; height:30px;float:left;">
+                    <img src="/img/ui/money.svg" alt="" style="width:65%">
+                </div>
+
+                <div class="honderd" style="width: 90%; float:left;">
+                    <div class="jouw" ng-style="setMoneyUser">
+                    </div>
+                    <div class="honderd" ng-style="setMoneyTotal">
+                    </div>
+                </div>
+            </div>
+            
+
+
+
+        </div>
+
+        <div class="cityscore" style="width:50%;float:left;">
+            <span style="color: #000; padding-left: 10%">De stad Mechelen 2015</span>
+            <div class="eco" style="width:95%;float:left;margin-right: 5%;margin-top:15px;">
+                <div class="icon" style="width:10%;height:30px;float:left;">
+                    <img src="/img/ui/leaf.svg" alt="" style="width:65%">
+                </div>
+
+                <div class="honderd" style="width: 90%; float:left;">
+                    <div class="jouw" style="width: 66%; height:30px; background-color:#89C73E;float:left;">
+                    </div>
+                    <div class="honderd" style="width: 34%; height:30px; background-color:#424242; float:left;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="public" style="width:95%;float:left;margin-right: 5%;margin-top:15px;">
+                <div class="icon" style="width:10%; height:30px;float:left;">
+                    <img src="/img/ui/public.svg" alt="" style="width:65%">
+                </div>
+
+                <div class="honderd" style="width: 90%; float:left;">
+                    <div class="jouw" style="width: 55%; height:30px; background-color:#89C73E;float:left;">
+                    </div>
+                    <div class="honderd" style="width: 45%; height:30px; background-color:#424242; float:left;">
+                    </div>
+                </div>
+            </div>
+            <div class="money" style="width:95%;float:left;margin-right: 5%;margin-top:15px;">
+                <div class="icon" style="width:10%; height:30px;float:left;">
+                    <img src="/img/ui/money.svg" alt="" style="width:65%">
+                </div>
+
+                <div class="honderd" style="width: 90%; float:left;">
+                    <div class="jouw" style="width: 55%; height:30px; background-color:#89C73E;float:left;">
+                    </div>
+                    <div class="honderd" style="width: 45%; height:30px; background-color:#424242; float:left;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button type="button" class="btn btn-success" style="float:left; margin-right: 15px;">Speel opnieuw</button>
+        <div id="share" style="margin-top:15px; float:left">
+        	<a ng-href="https://twitter.com/intent/tweet?button_hashtag=klimaatneutraal&text=Als%20klimaatburgemeester%20behaalde%20ik%20een%20besparing%20van%20%20{{twitterShare}}%20dan%2020%25%20op%20mileuvlak." class="twitter-hashtag-button" data-size="large" data-related="GlennVanhaute" data-url="http://http://klimaatneutraal.stadmechelen.be/test/">Tweet #klimaatneutraal</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        </div>
+                    
+
+​
+</section>

@@ -50,6 +50,19 @@ angular.module('klimaatneutraal')
                 }
             })
 
+            .state('endRapport', {
+                url: '/endRapport',
+                params: {
+                 userperc: null
+               },
+                views: {
+                    '': {
+                        templateUrl: 'js/components/end/endRapport.html',
+                        controller: 'endRapportController'
+                    }
+                }
+            })
+
             .state('game', {
                 url: '/game', 
                 views: {
