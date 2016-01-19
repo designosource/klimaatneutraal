@@ -1,15 +1,13 @@
-<ul class="row results">
+<ul class="row results clearfix">
 	<li class="col-sm-4">
-		<h5>Budget:</h5>
 		<ul>
 			<li ng-repeat="n in [] | range:policy.results.year1.money">
-				<img src="img/ui/money.svg" alt="" ng-if="policy.results.year1.money > 0">
-				<img src="img/ui/money-negative.svg" alt="" ng-if="policy.results.year1.money < 0">
+				<img class="icon" src="img/ui/money.svg" alt="" ng-if="policy.results.year1.money > 0">
+				<img class="icon" src="img/ui/money-negative.svg" alt="" ng-if="policy.results.year1.money < 0">
 			</li>
 		</ul>
 	</li>
 	<li class="col-sm-4">
-		<h5>Tevredenheid:</h5>
 		<ul>
 			<li ng-repeat="n in [] | range:policy.results.year1.public">
 			  	<img class="icon" src="img/ui/public.svg" alt="" ng-if="policy.results.year1.public > 0">
@@ -18,7 +16,6 @@
 		</ul>
 	</li>
 	<li class="col-sm-4">
-		<h5>Milieu: </h5>
 		<ul>
 			<li ng-repeat="n in [] | range:policy.results.year1.eco">
 			  	<img class="icon" src="img/ui/leaf.svg" alt="" ng-if="policy.results.year1.eco > 0">

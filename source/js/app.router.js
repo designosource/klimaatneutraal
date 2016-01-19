@@ -54,7 +54,7 @@ angular.module('klimaatneutraal')
                 url: '/endRapport',
                 params: {
                  userperc: null
-               },
+                },
                 views: {
                     '': {
                         templateUrl: 'js/components/end/endRapport.html',
@@ -97,6 +97,13 @@ angular.module('klimaatneutraal')
 
             .state('game.year', {
                 url: '/year/{year}',
+                onEnter: ['$stateParams', '$state', function($stateParams, $state) {
+                    if($stateParams.year == 0){
+                        $stateParams.tutorialBoolean = true;
+                    }else{
+                        $stateParams.tutorialBoolean = false;
+                    }
+                }],
                 views: {
                     '': {
                         templateUrl: 'js/components/game/year.html',

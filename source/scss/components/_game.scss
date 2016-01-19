@@ -84,12 +84,17 @@
 	}
 
 	.delete-icon {
-		color: #E6E7E8;
-		font-size: 14px;
-		position: absolute;
-		top: 0;
-		right: 0;
-		z-index: 5;
+		color: red;
+		background-blend-mode: multiply;
+		font-size: 3vw;
+		line-height: 3vw;
+		z-index: 25;
+		i{
+			position: absolute;
+			top:50%;
+			left:50%;
+			transform: translate(-50%,-50%);
+		}
 	}
 }
 
@@ -133,11 +138,11 @@
 
 
 		&::after{
-			content:"!";
-			color: red;
+			content:"+";
+			color: $col1;
 			display: block;
 			position: absolute;
-			z-index: 500;
+			z-index: 19;
 			opacity: 0.9;;
 
 			background-color: #F5F5F5;

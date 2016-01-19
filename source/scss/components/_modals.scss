@@ -48,10 +48,10 @@ li.col-sm-4.ng-scope{
 	.options {
 		list-style-type: none;
 		padding: 0;
-		margin: 5px 0;
+		margin: 0.5vw 0;
 
 		li {
-			padding-bottom: 15px;
+			padding-bottom: 0.5vw;
 		}
 	}
 
@@ -88,13 +88,19 @@ li.col-sm-4.ng-scope{
 			padding: 0;
 			li {
 				display: inline-block;
-				padding: 0 5px;
-				line-height: 35px;
-
-				img {
-					height: 22px;
-				}
+				padding: 0 0.5vw;
 			}
+		}
+	}
+}
+
+.options{
+	.results{
+		& > li{
+			width: 100%;
+			ul{
+				min-height: 1.7vw;
+			} 
 		}
 	}
 }

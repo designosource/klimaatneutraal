@@ -30,25 +30,11 @@ angular.module('klimaatneutraal.controllers')
                 $uibModalInstance.close(option);
             }
 
-            var displayInfo = function(){
-                var target = $('#info');
-                var button = $('#infoButton');
-
-                if(target[0].style.display === "" || target[0].style.display === "none"){ // initial state = "" post-slideUp = "none"
-                    target.slideDown();
-                    button.html("Minder Informatie");
-                }else{
-                    target.slideUp();
-                    button.html("Meer Informatie");
-                }
-            }
-
 
             // Bind scope functions
             $scope.selectOption = selectOption;
             $scope.deSelectOption = deSelectOption;
             $scope.publishOption = publishOption;
-            $scope.displayInfo = displayInfo;
 
             init();
         }

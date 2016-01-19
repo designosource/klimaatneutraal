@@ -66,6 +66,13 @@ angular.module('klimaatneutraal.controllers')
 
                 $rootScope.screenOptions = [1,2,3,4,5,6];
 
+                if($rootScope.initialYear === undefined){
+                    // define the initial year to determine amount of repeats till game is over
+                    // 0 or 1 = tutorial or play
+                    // used in gameController.showReport()
+                    $rootScope.initialYear = $stateParams.year;
+                }
+
             };
 
             var openMenu = function (size) {

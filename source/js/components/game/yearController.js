@@ -18,17 +18,13 @@ angular.module('klimaatneutraal.controllers')
 
             var init = function() {
                 $rootScope.year = $stateParams.year;
+                
+                $scope.tutorial = $stateParams.tutorialBoolean;
 
-                if($stateParams.year == 0) {
-                    $scope.tutorial = true;
-                    $rootScope.year = 0;
-                }
-
-                if($rootScope.initialYear === undefined){
-                    // define the initial year to determine amount of repeats till game is over
-                    // 0 or 1 = tutorial or play
-                    // used in gameController.showReport()
-                    $rootScope.initialYear = $stateParams.year;
+                if($scope.tutorial || $rootScope.didTutorial){
+                    $rootScope.initialYear = 0;
+                }else{
+                    $rootScope.initialYear = 1;
                 }
 
                 // DEBUG
@@ -78,16 +74,21 @@ angular.module('klimaatneutraal.controllers')
                             policies: function () {
 
                                 if($scope.tutorial){
-                                    var pols = chunkPolicies[category][$rootScope.initialYear];
+                                    var pols = chunkPolicies[category][$rootScope.year];
+                                    $rootScope.didTutorial = true;
                                 }else{
-                                    var pols = chunkPolicies[category][$rootScope.year - 1];
+                                    if($rootScope.didTutorial){
+                                        var pols = chunkPolicies[category][$rootScope.year];
+                                    }else{
+                                        var pols = chunkPolicies[category][$rootScope.year - 1];
+                                    }
                                 }
                                 
                                 var active = $rootScope.activePolicies[$rootScope.year];
                                 var index = -1;
 
                                 // tutorial merge note
-                                /* De if zonder de form gaf een merge conflict, ik heb de for in de
+                                /* De if zonder de for gaf een merge conflict, ik heb de for in de
                                 non-tutorial condition gestoken. Redelijk educated guess ma toch, could be
                                 errors */
 
@@ -107,6 +108,8 @@ angular.module('klimaatneutraal.controllers')
                                     }
                                     
                                 }
+
+                                pols.category = category;
 
                                 return pols;
 

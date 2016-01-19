@@ -70,7 +70,7 @@
 	<ul class="active-policies">
 		<li class="policy" ng-click="removePolicy(1)">
 			<img ng-src="img/icons/{{activePolicies[year][1].image}}" alt="{{activePolicies[year][1].title}}" ng-if="activePolicies[year][1]">
-			<div class="delete-icon" ng-if="activePolicies[year][0]"><i class="glyphicon glyphicon-remove"></i></div>
+			<div class="delete-icon" ng-if="activePolicies[year][1]"><i class="glyphicon glyphicon-remove"></i></div>
 		</li>
 		<li class="policy" ng-click="removePolicy(0)">
 			<img ng-src="img/icons/{{activePolicies[year][0].image}}" alt="{{activePolicies[year][0].title}}" ng-if="activePolicies[year][0]">

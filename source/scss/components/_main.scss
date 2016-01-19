@@ -38,3 +38,35 @@ body {
 .modal-title {
     color: #333;
 }
+
+.icon{
+    max-height: 1.2vw;
+}
+
+.infoAfter{
+    height: auto;
+    &::after{
+            content:"Info";
+            color: white;
+            display: block;
+            position: absolute;
+            z-index: 200;
+
+            background-color: #439214;
+            border-radius: 50%;
+            text-align:center;
+            font-size: 1vw;
+            font-weight: bold;
+
+            width: 3vw;
+            height: 3vw;
+            line-height: 3vw;
+
+            left:50%;
+            transform: translate(-50%,-1.5vw);
+            
+            -webkit-animation: pulse 2s infinite;
+            animation: pulse 2s infinite;
+
+    }
+}

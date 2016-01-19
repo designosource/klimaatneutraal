@@ -4,11 +4,15 @@
 	
 		<!-- OVERVIEW -->
 		<ul class="options clearfix clickable" ng-hide="option">
-			<li class="col-sm-4" ng-repeat="(key, policy) in policies" ng-click="selectOption(policy)" ng-class="{disabled: policy.disabled == true}">
-				<img class="img-responsive" ng-src="img/icons/{{policy.image}}" alt="{{policy.title}}" title="{{policy.title}}">
-				<span class="text-center center-block text-muted" ng-if="policy.disabled">Deze optie heb je al gekozen</span>
+			<h2 class="col-sm-12 text-capitalize">{{policies.category}}</h2>
+			<li class="col-sm-4" ng-repeat="(key, policy) in policies" ng-click="selectOption(policy)" ng-class="{disabled: policy.disabled == true}"> 
+				<div class="infoAfter">
+					<img class="img-responsive" ng-src="img/icons/{{policy.image}}" alt="{{policy.title}}" title="{{policy.title}}">
+				</div>
 				<h4 class="text-center">{{policy.title}}</h4>
-				<p>{{policy.description}}</p>
+				<result-directive policy="policy"></result-directive>
+				<button ng-click="publishOption(policy)" class="btn btn-success center-block" ng-if="policy.disabled != true">Kies</button>
+				<p class="text-center text-muted" ng-if="policy.disabled == true">Dit beleid heb je al doorgevoerd!</p>
 			</li>
 		</ul>
 		
@@ -22,14 +26,11 @@
 			<result-directive policy="option"></result-directive>
 			<hr/>
 			<div class="info-container">
-				<div class="info" id="info">
-					<p ng-repeat="(key, hint) in option.hints">{{hint}}</p>
-				</div>
-				<button ng-click="displayInfo()" class="btn btn-link" id="infoButton">Meer Informatie</button>
+				<p ng-repeat="(key, hint) in option.hints">{{hint}}</p>
 			</div>
 			<div class="action-wrapper">
 				<button ng-click="publishOption(option)" class="btn btn-success" ng-if="option.disabled != true">Kies</button>
-				<button ng-click="deSelectOption()" class="btn">Annuleer</button>
+				<button ng-click="deSelectOption()" class="btn">Terug</button>
 			</div>
 		</div>
 	</div>
