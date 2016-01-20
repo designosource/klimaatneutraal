@@ -13,7 +13,7 @@ angular.module('klimaatneutraal.services').service("mailService",[
 	 	};
 	 	
 
-	    var sendMandrill = function(name, firstName, email, moneyMandrill, ecoMandrill, publicMandrill, endRapportscore){
+	    var sendMandrill = function(name, firstName, email, moneyMandrill, ecoMandrill, publicMandrill, endRapportscore, testtable, meerMinder){
 	    	var characterUser = MyCharacter.character;
 	    	var sliced = characterUser.slice(0,-4);
 	    	var mailchimpImages = {
@@ -42,10 +42,21 @@ angular.module('klimaatneutraal.services').service("mailService",[
 	    		2321: "https://gallery.mailchimp.com/d315f5c90383bfabed29d42e8/images/8e3c0e6e-1778-4a0c-96cd-1c2a13443f60.gif",
 	    		2322: "https://gallery.mailchimp.com/d315f5c90383bfabed29d42e8/images/1392453a-ef2c-499b-90c4-a800a4194a4b.gif",
 	    	}
+	    	var ecouserscore = endRapportscore.eco1;
+	    	var scoreUser = meerMinder(ecouserscore);
+	    	function meerMinder(e){
+	    		if (e > 66){
+	    			return "meer";
+	    		}
+	    		else {
+	    			return "minder";
+	    		}
+	    	}
+	    	var widthmechelen = 66;
 	    	var characterMandrill = '<img align="none" height="261" src="'+mailchimpImages[sliced]+'" style="width: 100px; height: 261px; margin: 0px;" width="100">';
 	      	$http.post('https://mandrillapp.com/api/1.0//messages/sendTemplate.json', {
 	            'key': mandrillKey,
-	            "template_name": "testtemplate",
+	            "template_name": "endRapport",
    				"template_content": [
        				 {
 				            "name": "money",
@@ -62,6 +73,11 @@ angular.module('klimaatneutraal.services').service("mailService",[
 				     {
 				            "name": "character",
 				            "content": characterMandrill
+				     }
+				     ,
+				     {
+				            "name": "testtable",
+				            "content": testtable
 				     }
 				     
 				],
@@ -81,6 +97,44 @@ angular.module('klimaatneutraal.services').service("mailService",[
 			            "username": firstName,
 			            "location_id": "111"
 			        },
+			      "global_merge_vars": [
+			                {
+			                    "name": "FNAME",
+			                    "content": firstName
+			                },
+			                {
+			                    "name": "widthmechelen",
+			                    "content": widthmechelen
+			                },
+			                {
+			                    "name": "WIDTHECOUSER",
+			                    "content": endRapportscore.eco3
+			                },
+			                {
+			                    "name": "WIDTHECOTOTALUSER",
+			                    "content": endRapportscore.eco4
+			                },
+			                {
+			                    "name": "WIDTHPUBUSER",
+			                    "content": endRapportscore.pub3
+			                },
+			                {
+			                    "name": "WIDTHPUBTOTALUSER",
+			                    "content": endRapportscore.pub4
+			                },
+			                {
+			                    "name": "WIDTHMONEYUSER",
+			                    "content": endRapportscore.money3
+			                },
+			                {
+			                    "name": "WIDTHMONEYTOTALUSER",
+			                    "content": endRapportscore.money4
+			                },
+			                {
+			                    "name": "MEERMINDER",
+			                    "content": scoreUser
+			                }
+			       ],
 	              'headers': {
 	                'Reply-To': emailNeutraal
 	              }
