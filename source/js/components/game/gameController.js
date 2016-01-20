@@ -6,13 +6,15 @@ angular.module('klimaatneutraal.controllers')
         '$state',
         '$stateParams',
         'soundService',
+        '$controller',
 
-        function($rootScope, $scope, $uibModal, $state, $stateParams, soundService) {
-
+        function($rootScope, $scope, $uibModal, $state, $stateParams, soundService,$controller) {
             var IDLE_TIMEOUT = 120; //seconds
             var _idleSecondsTimer = null;
             var _idleSecondsCounter = 0;
             var menuModal;
+            var policyModal;
+            var reportModal;
 
             document.onclick = function() {
                 _idleSecondsCounter = 0;
@@ -92,6 +94,7 @@ angular.module('klimaatneutraal.controllers')
 			    });
 
 			};
+
 
             var goToNextYear = function() {
                 soundService.confirm.play();

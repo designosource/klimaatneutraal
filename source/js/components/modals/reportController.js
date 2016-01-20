@@ -15,6 +15,12 @@ angular.module('klimaatneutraal.controllers')
             var goToNextYear = function() {
                 $uibModalInstance.close();
             };
+            
+            $scope.close = function () {
+                console.log('close');
+                soundService.defaultClick.play();
+                $uibModalInstance.close();
+            };
 
             console.log(activePolicies);
 

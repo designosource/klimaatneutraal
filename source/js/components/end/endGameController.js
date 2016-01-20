@@ -19,9 +19,6 @@ angular.module('klimaatneutraal.controllers')
             var maxPub = 48;
             var meerMinder ={};
 
-
-
-
             //Calculate the second Div %
             function total(i){
                 var perctageMax = 100 - i;
