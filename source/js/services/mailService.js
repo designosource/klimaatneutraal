@@ -83,9 +83,9 @@ angular.module('klimaatneutraal.services').service("mailService",[
 				],
 	            'message': {
 	              'text': ' '+firstName+' u heeft goed gescoord',
-	              'subject': 'Resultaat klimaatneutraal',
+	              'subject': 'Resultaat Spel Mechelen Klimaatneutraal',
 	              'from_email': emailNeutraal,
-	              'from_name': 'klimaatneutraal',
+	              'from_name': 'Mechelen Klimaatneutraal',
 	              'to': [
 	              {
 	                'email': email,
