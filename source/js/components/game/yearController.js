@@ -18,6 +18,7 @@ angular.module('klimaatneutraal.controllers')
 
             var init = function() {
                 $rootScope.year = $stateParams.year;
+                $rootScope.reps++;
                 
                 $scope.tutorial = $stateParams.tutorialBoolean;
 
@@ -28,6 +29,8 @@ angular.module('klimaatneutraal.controllers')
                 }
 
                 // DEBUG
+                console.log('reps: ' + $rootScope.reps);
+
                 console.log('initialYear is: ' + $rootScope.initialYear);
 
                 console.log('year ' + $rootScope.year + ' is loaded');

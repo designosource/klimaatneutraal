@@ -58,7 +58,15 @@
 
 	<ul class="year-policies">
 		<li class="year" ng-repeat="(key, years) in activePolicies" ng-if="(key | num) < (year | num)">
-			<ul class="clearfix">
+			<ul class="clearfix" ng-if="didTutorial">
+				<li class="policy index" ng-click="goBack()">
+					{{::year}}
+				</li>
+				<li class="policy" ng-repeat="policy in years">
+					<img ng-src="img/icons/{{policy.image}}" alt="{{policy.title}}">
+				</li>
+			</ul>
+			<ul class="clearfix"  ng-if="!didTutorial && key != 0">
 				<li class="policy index" ng-click="goBack()">
 					{{key}}
 				</li>

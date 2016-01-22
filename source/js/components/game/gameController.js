@@ -64,6 +64,8 @@ angular.module('klimaatneutraal.controllers')
                     '3': [],
                 };
 
+                $rootScope.reps = 0;
+                
                 $rootScope.year = $stateParams.year; // inital on 1
 
                 $rootScope.screenOptions = [1,2,3,4,5,6];
