@@ -167,3 +167,26 @@
     51% {left: 25%;transform: scaleX(1);}
     100% {left: -10%;transform: scaleX(1)}
 }
+
+.browsers{
+	float: none;
+	width: 20%;
+	max-height: 20%;
+	margin: auto;
+}
+
+.start-game .content-wrapper .description .browser-info{
+	font-size: 0.8vw;
+	text-transform: uppercase;
+	width: 100%;
+	text-align: center;
+	margin: 6% auto 1% auto;
+	color: #BDBCBC;
+}
+
+.img-chrome, .img-ff, .img-safari {
+	width: 24%;
+}
+.img-ff{
+	margin: 0 8%;
+}
