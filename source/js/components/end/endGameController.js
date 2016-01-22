@@ -15,9 +15,9 @@ angular.module('klimaatneutraal.controllers')
             var publicScore = ecoscore.public;
             var ecoScore = ecoscore.eco;
             //SER - max variables for each subject
-            var maxMoney = 62;
-            var maxEco = 66;
-            var maxPub = 58;
+            var maxMoney = 65;
+            var maxEco = 65;
+            var maxPub = 59;
             var meerMinder ={};
 
             //Calculate the second Div %
