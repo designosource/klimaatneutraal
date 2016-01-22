@@ -10,13 +10,14 @@ angular.module('klimaatneutraal.controllers')
         function($rootScope, $scope, $state, $controller, $http, mailService) {
             //GET - Userscores
             var ecoscore = $state.params.score;
+            console.log (ecoscore);
             var moneyScore = ecoscore.money;
             var publicScore = ecoscore.public;
             var ecoScore = ecoscore.eco;
             //SER - max variables for each subject
             var maxMoney = 62;
             var maxEco = 66;
-            var maxPub = 48;
+            var maxPub = 58;
             var meerMinder ={};
 
             //Calculate the second Div %
@@ -76,6 +77,7 @@ angular.module('klimaatneutraal.controllers')
                 var emailUser = $("#userEmail").val();
                 var firstName = $("#firstName").val();
                 var lastName = $("#lastName").val();
+                var nieuwsbrief = $("#nieuwsbrief").val();
                 //MONEY - calculations
                 var moneyUser = calculateMoney();
                 var moneyTotal =  total(moneyUser);
@@ -126,6 +128,12 @@ angular.module('klimaatneutraal.controllers')
 
                 mailService.sendMandrill(lastName, firstName, emailUser, moneyMandrill, ecoMandrill, publicMandrill, endRapportscore,testtable);
                 mailService.sendMailchimp(lastName, firstName, emailUser);
+               
+               
+                    if ($('#nieuwsbrief').is(":checked"))
+                    {
+                        mailService.sendMailchimpNieuwsbrief(lastName, firstName, emailUser);
+                    };
                 
                 
                 

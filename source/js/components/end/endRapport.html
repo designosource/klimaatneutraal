@@ -11,7 +11,7 @@
 
                 <div class="honderd" style="width: 90%; float:left;">
                     <div class="jouw" ng-style="setEcoUser">
-
+                        {{ecoUserResult}} %
                     </div>
                     <div class="honderd" ng-style="setEcoTotal">
                     </div>
@@ -25,6 +25,7 @@
 
                 <div class="honderd" style="width: 90%; float:left;">
                     <div class="jouw" ng-style="setPubUser">
+                    {{pubUserResult}} %
                     </div>
                     <div class="honderd" ng-style="setPubTotal">
                     </div>
@@ -38,6 +39,7 @@
 
                 <div class="honderd" style="width: 90%; float:left;">
                     <div class="jouw" ng-style="setMoneyUser">
+                    {{moneyUserResult}} %
                     </div>
                     <div class="honderd" ng-style="setMoneyTotal">
                     </div>
@@ -58,6 +60,7 @@
 
                 <div class="honderd" style="width: 90%; float:left;">
                     <div class="jouw" style="width: 66%; height:30px; background-color:#89C73E;float:left;">
+                        66 %
                     </div>
                     <div class="honderd" style="width: 34%; height:30px; background-color:#424242; float:left;">
                     </div>
@@ -71,6 +74,7 @@
 
                 <div class="honderd" style="width: 90%; float:left;">
                     <div class="jouw" style="width: 55%; height:30px; background-color:#89C73E;float:left;">
+                        55 %
                     </div>
                     <div class="honderd" style="width: 45%; height:30px; background-color:#424242; float:left;">
                     </div>
@@ -83,6 +87,7 @@
 
                 <div class="honderd" style="width: 90%; float:left;">
                     <div class="jouw" style="width: 55%; height:30px; background-color:#89C73E;float:left;">
+                        55%
                     </div>
                     <div class="honderd" style="width: 45%; height:30px; background-color:#424242; float:left;">
                     </div>
@@ -90,9 +95,60 @@
             </div>
         </div>
         <button type="button" ui-sref="startGame" class="btn btn-success" style="float:left; margin-right: 15px;">Speel opnieuw</button>
-        <div id="share" style="margin-top:15px; float:left">
-        	<a ng-href="https://twitter.com/intent/tweet?button_hashtag=klimaatneutraal&text=Als%20klimaatburgemeester%20behaalde%20ik%20een%20besparing%20van%20%20{{twitterShare}}%20dan%2020%25%20op%20mileuvlak." class="twitter-hashtag-button" data-size="large" data-related="GlennVanhaute" data-url="http://http://klimaatneutraal.stadmechelen.be/test/">Tweet #klimaatneutraal</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      
+
+        <div class="sharing">
+            <table align="left" border="0" cellpadding="0" cellspacing="0">
+                <tbody><tr>
+                    <td valign="top" style="padding-right:9px; padding-bottom:9px;" class="mcnShareContentItemContainer">
+                         <table border="0" cellpadding="0" cellspacing="0" width="" class="mcnShareContentItem" style="border-collapse: separate; border-radius: 3px;">
+                <tbody><tr>
+                    <td align="left" valign="middle" style="padding-top:5px; padding-right:9px; padding-bottom:5px; padding-left:9px;">
+            <table align="left" border="0" cellpadding="0" cellspacing="0" width="">
+                <tbody><tr>
+                    <td align="center" valign="middle" width="24" class="mcnShareIconContent">
+                        <a href="http://www.facebook.com/sharer/sharer.php?u=http://www.klimaatneutraal.stadmechelen.be/" target="_blank"><img src="https://gallery.mailchimp.com/d315f5c90383bfabed29d42e8/images/7ad6548d-f58d-4421-b9cd-06229e28502b.png" style="display:block;" height="24" width="24" class=""></a>
+                    </td>
+                    <td align="left" valign="middle" class="mcnShareTextContent" style="padding-left:5px;">
+                        <a href="http://www.facebook.com/sharer/sharer.php?u=http://www.klimaatneutraal.stadmechelen.be/" target="_blank" style="color: #202020;font-family: Arial;font-size: 12px;font-weight: normal;line-height: normal;text-align: center;text-decoration: none;">Deel</a>
+                    </td>
+                    </tr>
+                                                                </tbody></table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody></table>
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                        <!--[if mso]>
+                                        </td>
+                                        <![endif]-->
+                                    
+                                        <!--[if mso]>
+                                        <td align="center" valign="top">
+                                        <![endif]-->
+                                        <table align="left" border="0" cellpadding="0" cellspacing="0">
+                                            <tbody><tr>
+                                                <td valign="top" style="padding-right:9px; padding-bottom:9px;" class="mcnShareContentItemContainer">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="" class="mcnShareContentItem" style="border-collapse: separate; border-radius: 3px;">
+                                                        <tbody><tr>
+                                                            <td align="left" valign="middle" style="padding-top:5px; padding-right:9px; padding-bottom:5px; padding-left:9px;">
+                                                                <table align="left" border="0" cellpadding="0" cellspacing="0" width="">
+                                                                    <tbody><tr>
+                                                                        <td align="center" valign="middle" width="24" class="mcnShareIconContent">
+                                                                            <a href="http://twitter.com/intent/tweet?text=Als%20klimaatburgemeester%20behaalde%20ik%20een%20besparing%20van%20{{twitterShare}}%20dan%2020%25%20op%20mileuvlak,%20Scoor%20jij%20beter? http://www.klimaatneutraal.stadmechelen.be/" target="_blank"><img src="https://gallery.mailchimp.com/d315f5c90383bfabed29d42e8/images/ca85093a-f283-4a23-9bdd-392c68403237.png" style="display:block;" height="24" width="24" class=""></a>
+                                                                        </td>
+                                                                        <td align="left" valign="middle" class="mcnShareTextContent" style="padding-left:5px;">
+                                                                            <a href="http://twitter.com/intent/tweet?text=Als%20klimaatburgemeester%20behaalde%20ik%20een%20besparing%20van%20{{twitterShare}}%20dan%2020%25%20op%20mileuvlak,%20Scoor%20jij%20beter? http://www.klimaatneutraal.stadmechelen.be/" target="_blank" style="color: #202020;font-family: Arial;font-size: 12px;font-weight: normal;line-height: normal;text-align: center;text-decoration: none;">Tweet</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody></table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody></table>
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
         </div>
                     
 

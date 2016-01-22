@@ -40,7 +40,7 @@
 			"results": {
 				"year1": {
 					"money": -2,
-					"public": 4,
+					"public": 3,
 					"eco": 5
 				},
 				"yearN": {
@@ -241,7 +241,7 @@
 			},
 			"results": {
 				"year1": {
-					"money": -1,
+					"money": 1,
 					"public": -2,
 					"eco": 1
 				},
@@ -518,7 +518,7 @@
 			"results": {
 				"year1": {
 					"money": 1,
-					"public": 1,
+					"public": -4,
 					"eco": 1
 				},
 				"yearN": {

@@ -4,7 +4,7 @@ angular.module('klimaatneutraal.services').service("mailService",[
 
 
 	function($http, $state){
-		var emailNeutraal = 'glennvanhaute@gmail.com';
+		var emailNeutraal = 'duurzame.ontwikkeling@mechelen.be';
 	 	var mailchimpKey='33b98fb66515f34a2391ca79edb49851-us12';
 	 	var mandrillKey='NJR9rKU89OzZDcAKt7izMw';
 	 	var MyCharacter = {}; 
@@ -133,6 +133,22 @@ angular.module('klimaatneutraal.services').service("mailService",[
 			                {
 			                    "name": "MEERMINDER",
 			                    "content": scoreUser
+			                },
+			                {
+			                	"name": "KARAKTER",
+			                	"content": characterMandrill
+			                },
+			                {
+			                	"name": "ECOTEXT",
+			                	"content": endRapportscore.eco1
+			                },
+			                {
+			                	"name": "PUBTEXT",
+			                	"content": endRapportscore.pub1
+			                },
+			                {
+			                	"name": "MONEYTEXT",
+			                	"content": endRapportscore.money1
 			                }
 			       ],
 	              'headers': {
@@ -162,9 +178,24 @@ angular.module('klimaatneutraal.services').service("mailService",[
 	        });*/
       };
 
+      var sendMailchimpNieuwsbrief = function(name, firstName, email){
+	      	$http.post('https://us12.api.mailchimp.com/2.0/lists/subscribe.json?apikey='+mailchimpKey+'&id=901ee916a2&email[email]='+email+'&merge_vars[FNAME]='+firstName+'&merge_vars[LNAME]='+name+'&double_optin=false&send_welcome=false');
+
+/*	      	$http.post('https://us12.api.mailchimp.com/3.0/lists/cb553f7b01/members', {
+	      		"key": mailchimpKey,
+			    "email_address": email,
+			    "status": "subscribed",
+			    "merge_fields": {
+			        "FNAME": "firstName",
+			        "LNAME": "name"
+			    }
+	        });*/
+      };
+
       return {
       	sendMandrill:sendMandrill,
       	sendMailchimp:sendMailchimp,
+      	sendMailchimpNieuwsbrief:sendMailchimpNieuwsbrief,
       	getCharacter:getCharacter
       }
 

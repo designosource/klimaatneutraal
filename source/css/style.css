@@ -1570,13 +1570,25 @@ body {
   margin-top: 3px;
 }
 
-/* line 74, D:/School/designosource/klimaatneutraal/source/scss/components/_endScreen.scss */
+/* line 75, D:/School/designosource/klimaatneutraal/source/scss/components/_endScreen.scss */
 .end-game .content-wrapper .btn-success {
   margin-top: 1vw;
   margin-left: 0px;
+  float: left;
 }
 
-/* line 78, D:/School/designosource/klimaatneutraal/source/scss/components/_endScreen.scss */
+/* line 81, D:/School/designosource/klimaatneutraal/source/scss/components/_endScreen.scss */
+.end-game .content-wrapper .sharing {
+  margin-top: 1vw;
+  float: left;
+}
+
+/* line 87, D:/School/designosource/klimaatneutraal/source/scss/components/_endScreen.scss */
+.end-game .content-wrapper .jouw {
+  text-align: center;
+}
+
+/* line 91, D:/School/designosource/klimaatneutraal/source/scss/components/_endScreen.scss */
 .end-game .content-wrapper .btn-danger {
   margin-top: 1vw;
   margin-left: 0px;

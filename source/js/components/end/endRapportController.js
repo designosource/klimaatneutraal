@@ -19,6 +19,9 @@ angular.module('klimaatneutraal.controllers')
             var moneytotal = userScore.money2;
             var mechelenEco = 66;
 
+            $scope.ecoUserResult = ecouser;
+            $scope.pubUserResult = pubuser;
+            $scope.moneyUserResult = moneyuser;
             
             if(ecouser > mechelenEco){
                 $scope.twitterShare = "meer";
