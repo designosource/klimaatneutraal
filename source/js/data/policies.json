@@ -543,7 +543,7 @@
 			"results": {
 				"year1": {
 					"money": 0,
-					"public": 0,
+					"public": -1,
 					"eco": 1
 				},
 				"yearN": {
@@ -568,8 +568,8 @@
 			"results": {
 				"year1": {
 					"money": 0,
-					"public": 0,
-					"eco": 4
+					"public": 2,
+					"eco": 5
 				},
 				"yearN": {
 					"money": 0,
