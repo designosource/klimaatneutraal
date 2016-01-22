@@ -147,7 +147,7 @@
 
 			background-color: #F5F5F5;
 			border-radius: 50%;
-			line-height: 50px;
+			line-height: 45px;
 			text-align:center;
 			font-size: 32px;
 			font-weight: bold;
@@ -846,9 +846,10 @@
 
 		.img-thermografischeKaart {
 			position: absolute;
-			bottom: 17%;
-			height: 65%;
-			left: 30%;
+			width: 50%;
+			height: 50%;
+			bottom: 25%;
+			left: 25%;
 			display: block;
 		}
 	}
@@ -888,9 +889,140 @@
 
 		.img-energiescan {
 			position: absolute;
+			width: 60%;
 			bottom: 15%;
 			right: 20%;
 			left: 20%;
+			display: block;
+		}
+	}
+	
+	&.ZonnepanelenStad {
+		background-image: url('../img/action_animations/zonnepanelen_en_zonneboilers.jpg');
+		background-size: cover;
+		display: block;
+
+		.img-ZonnepanelenStad {
+			position: absolute;
+			width: 16%;
+			bottom: 50%;
+			left: 40%;
+			display: block;
+		}
+	}
+
+	&.groeneStroomAuto {
+		background-image: url('../img/action_animations/groene_stroom_elektrische_wagens.jpg');
+		background-size: cover;
+		display: block;
+
+		.img-groeneStroomAuto {
+			position: absolute;
+			bottom: 23%;
+			width: 11%;
+			left: 25%;
+			display: block;
+		}
+	}
+
+	&.samenaankoopZonnepanelen {
+		background-image: url('../img/action_animations/zonnepanelen_en_zonneboilers.jpg');
+		background-size: cover;
+		display: block;
+
+		.img-samenaankoopZonnepanelen {
+			position: absolute;
+			width: 16%;
+			bottom: 50%;
+			left: 40%;
+			display: block;
+		}
+	}	
+
+
+	&.verlichtingsplan {
+		background-image: url('../img/action_animations/verlichtingsplan_stedelijke_gebouwen-01.jpg');
+		background-size: cover;
+		display: block;
+
+		.img-verlichtingsplan {
+			position: absolute;
+			width: 20%;
+			bottom: 15%;
+			right: 20%;
+			left: 40%;
+			display: block;
+		}
+	}
+
+	&.uitschakelenopenbareverlichting {
+		background-image: url('../img/action_animations/snachts_verlichting_uitschakelen.jpg');
+		background-size: cover;
+		display: block;
+
+		.img-uitschakelenopenbareverlichting {
+			position: absolute;
+			width: 40%;
+			bottom: 13%;
+			right: 20%;
+			left: 30%;
+			display: block;
+		}
+	}
+
+	&.windturbines {
+		background-image: url('../img/action_animations/windturbines_bouwen-01.jpg');
+		background-size: cover;
+		display: block;
+
+		.img-windturbines {
+			position: absolute;
+			width: 30%;
+			bottom: 13%;
+			right: 20%;
+			left: 30%;
+			display: block;
+		}
+	}
+
+	&.pakjesDienst {
+		background-image: url('../img/action_animations/pakjesdienst.jpg');
+		background-size: cover;
+		display: block;
+
+		.img-pakjesDienst {
+			position: absolute;
+			width: 100%;
+			bottom: 20%;
+			left: 0%;
+			display: block;
+		}
+	}
+
+	&.samenaankoopGroeneStroom {
+		background-image: url('../img/action_animations/samenaankoop_groenestroom.jpg');
+		background-size: cover;
+		display: block;
+
+		.img-samenaankoopGroeneStroom {
+			position: absolute;
+			width: 32%;
+			bottom: 10%;
+			left: 0%;
+			display: block;
+		}
+	}
+
+	&.wegenWerwaarderen {
+		background-image: url('../img/action_animations/trage_wegen_herwaarderen.jpg');
+		background-size: cover;
+		display: block;
+
+		.img-wegenWerwaarderen {
+			position: absolute;
+			width: 16%;
+			bottom: 50%;
+			left: 38%;
 			display: block;
 		}
 	}

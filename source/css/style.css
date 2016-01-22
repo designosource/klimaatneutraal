@@ -399,7 +399,7 @@ body {
   opacity: 0.9;
   background-color: #F5F5F5;
   border-radius: 50%;
-  line-height: 50px;
+  line-height: 45px;
   text-align: center;
   font-size: 32px;
   font-weight: bold;
@@ -1173,20 +1173,21 @@ body {
 /* line 847, D:/School/designosource/klimaatneutraal/source/scss/components/_game.scss */
 .action-animation.thermografischeKaart .img-thermografischeKaart {
   position: absolute;
-  bottom: 17%;
-  height: 65%;
-  left: 30%;
+  width: 50%;
+  height: 50%;
+  bottom: 25%;
+  left: 25%;
   display: block;
 }
 
-/* line 856, D:/School/designosource/klimaatneutraal/source/scss/components/_game.scss */
+/* line 857, D:/School/designosource/klimaatneutraal/source/scss/components/_game.scss */
 .action-animation.duurzameMaterialen {
   background-image: url("../img/action_animations/duurzame_materialen_gebruiken.jpg");
   background-size: cover;
   display: block;
 }
 
-/* line 861, D:/School/designosource/klimaatneutraal/source/scss/components/_game.scss */
+/* line 862, D:/School/designosource/klimaatneutraal/source/scss/components/_game.scss */
 .action-animation.duurzameMaterialen .img-duurzameMaterialen {
   position: absolute;
   bottom: 17%;
@@ -1195,14 +1196,14 @@ body {
   display: block;
 }
 
-/* line 870, D:/School/designosource/klimaatneutraal/source/scss/components/_game.scss */
+/* line 871, D:/School/designosource/klimaatneutraal/source/scss/components/_game.scss */
 .action-animation.passiefBouw {
   background-image: url("../img/action_animations/passiefbouw.jpg");
   background-size: cover;
   display: block;
 }
 
-/* line 875, D:/School/designosource/klimaatneutraal/source/scss/components/_game.scss */
+/* line 876, D:/School/designosource/klimaatneutraal/source/scss/components/_game.scss */
 .action-animation.passiefBouw .img-passiefBouw {
   position: absolute;
   bottom: 15%;
@@ -1211,19 +1212,167 @@ body {
   display: block;
 }
 
-/* line 884, D:/School/designosource/klimaatneutraal/source/scss/components/_game.scss */
+/* line 885, D:/School/designosource/klimaatneutraal/source/scss/components/_game.scss */
 .action-animation.energiescan {
   background-image: url("../img/action_animations/info_electriciteit_energie_scan.jpg");
   background-size: cover;
   display: block;
 }
 
-/* line 889, D:/School/designosource/klimaatneutraal/source/scss/components/_game.scss */
+/* line 890, D:/School/designosource/klimaatneutraal/source/scss/components/_game.scss */
 .action-animation.energiescan .img-energiescan {
   position: absolute;
+  width: 60%;
   bottom: 15%;
   right: 20%;
   left: 20%;
+  display: block;
+}
+
+/* line 900, D:/School/designosource/klimaatneutraal/source/scss/components/_game.scss */
+.action-animation.ZonnepanelenStad {
+  background-image: url("../img/action_animations/zonnepanelen_en_zonneboilers.jpg");
+  background-size: cover;
+  display: block;
+}
+
+/* line 905, D:/School/designosource/klimaatneutraal/source/scss/components/_game.scss */
+.action-animation.ZonnepanelenStad .img-ZonnepanelenStad {
+  position: absolute;
+  width: 16%;
+  bottom: 50%;
+  left: 40%;
+  display: block;
+}
+
+/* line 914, D:/School/designosource/klimaatneutraal/source/scss/components/_game.scss */
+.action-animation.groeneStroomAuto {
+  background-image: url("../img/action_animations/groene_stroom_elektrische_wagens.jpg");
+  background-size: cover;
+  display: block;
+}
+
+/* line 919, D:/School/designosource/klimaatneutraal/source/scss/components/_game.scss */
+.action-animation.groeneStroomAuto .img-groeneStroomAuto {
+  position: absolute;
+  bottom: 23%;
+  width: 11%;
+  left: 25%;
+  display: block;
+}
+
+/* line 928, D:/School/designosource/klimaatneutraal/source/scss/components/_game.scss */
+.action-animation.samenaankoopZonnepanelen {
+  background-image: url("../img/action_animations/zonnepanelen_en_zonneboilers.jpg");
+  background-size: cover;
+  display: block;
+}
+
+/* line 933, D:/School/designosource/klimaatneutraal/source/scss/components/_game.scss */
+.action-animation.samenaankoopZonnepanelen .img-samenaankoopZonnepanelen {
+  position: absolute;
+  width: 16%;
+  bottom: 50%;
+  left: 40%;
+  display: block;
+}
+
+/* line 943, D:/School/designosource/klimaatneutraal/source/scss/components/_game.scss */
+.action-animation.verlichtingsplan {
+  background-image: url("../img/action_animations/verlichtingsplan_stedelijke_gebouwen-01.jpg");
+  background-size: cover;
+  display: block;
+}
+
+/* line 948, D:/School/designosource/klimaatneutraal/source/scss/components/_game.scss */
+.action-animation.verlichtingsplan .img-verlichtingsplan {
+  position: absolute;
+  width: 20%;
+  bottom: 15%;
+  right: 20%;
+  left: 40%;
+  display: block;
+}
+
+/* line 958, D:/School/designosource/klimaatneutraal/source/scss/components/_game.scss */
+.action-animation.uitschakelenopenbareverlichting {
+  background-image: url("../img/action_animations/snachts_verlichting_uitschakelen.jpg");
+  background-size: cover;
+  display: block;
+}
+
+/* line 963, D:/School/designosource/klimaatneutraal/source/scss/components/_game.scss */
+.action-animation.uitschakelenopenbareverlichting .img-uitschakelenopenbareverlichting {
+  position: absolute;
+  width: 40%;
+  bottom: 13%;
+  right: 20%;
+  left: 30%;
+  display: block;
+}
+
+/* line 973, D:/School/designosource/klimaatneutraal/source/scss/components/_game.scss */
+.action-animation.windturbines {
+  background-image: url("../img/action_animations/windturbines_bouwen-01.jpg");
+  background-size: cover;
+  display: block;
+}
+
+/* line 978, D:/School/designosource/klimaatneutraal/source/scss/components/_game.scss */
+.action-animation.windturbines .img-windturbines {
+  position: absolute;
+  width: 30%;
+  bottom: 13%;
+  right: 20%;
+  left: 30%;
+  display: block;
+}
+
+/* line 988, D:/School/designosource/klimaatneutraal/source/scss/components/_game.scss */
+.action-animation.pakjesDienst {
+  background-image: url("../img/action_animations/pakjesdienst.jpg");
+  background-size: cover;
+  display: block;
+}
+
+/* line 993, D:/School/designosource/klimaatneutraal/source/scss/components/_game.scss */
+.action-animation.pakjesDienst .img-pakjesDienst {
+  position: absolute;
+  width: 100%;
+  bottom: 20%;
+  left: 0%;
+  display: block;
+}
+
+/* line 1002, D:/School/designosource/klimaatneutraal/source/scss/components/_game.scss */
+.action-animation.samenaankoopGroeneStroom {
+  background-image: url("../img/action_animations/samenaankoop_groenestroom.jpg");
+  background-size: cover;
+  display: block;
+}
+
+/* line 1007, D:/School/designosource/klimaatneutraal/source/scss/components/_game.scss */
+.action-animation.samenaankoopGroeneStroom .img-samenaankoopGroeneStroom {
+  position: absolute;
+  width: 32%;
+  bottom: 10%;
+  left: 0%;
+  display: block;
+}
+
+/* line 1016, D:/School/designosource/klimaatneutraal/source/scss/components/_game.scss */
+.action-animation.wegenWerwaarderen {
+  background-image: url("../img/action_animations/trage_wegen_herwaarderen.jpg");
+  background-size: cover;
+  display: block;
+}
+
+/* line 1021, D:/School/designosource/klimaatneutraal/source/scss/components/_game.scss */
+.action-animation.wegenWerwaarderen .img-wegenWerwaarderen {
+  position: absolute;
+  width: 16%;
+  bottom: 50%;
+  left: 38%;
   display: block;
 }
 
