@@ -190,8 +190,8 @@
 			"results": {
 				"year1": {
 					"money": -1,
-					"public": 1,
-					"eco": 1
+					"public": 3,
+					"eco": 2
 				},
 				"yearN": {
 					"money": 0,
@@ -266,7 +266,7 @@
 			},
 			"results": {
 				"year1": {
-					"money": -4,
+					"money": -3,
 					"public": 3,
 					"eco": 3
 				},
@@ -318,7 +318,7 @@
 				"year1": {
 					"money": 0,
 					"public": 1,
-					"eco": 2
+					"eco": 1
 				},
 				"yearN": {
 					"money": 0,
@@ -366,9 +366,9 @@
 			},
 			"results": {
 				"year1": {
-					"money": -2,
-					"public": -2,
-					"eco": 2
+					"money": -1,
+					"public": 1,
+					"eco": 1
 				},
 				"yearN": {
 					"money": -2,
@@ -393,7 +393,7 @@
 				"year1": {
 					"money": 0,
 					"public": 1,
-					"eco": 2
+					"eco": 1
 				},
 				"yearN": {
 					"money": 1,
@@ -567,9 +567,9 @@
 			},
 			"results": {
 				"year1": {
-					"money": 0,
+					"money": -1,
 					"public": 2,
-					"eco": 5
+					"eco": 1
 				},
 				"yearN": {
 					"money": 0,
@@ -588,13 +588,13 @@
 			"hints": {
 				"Geld": "De aanleg van de infrastructuur en het aanbieden van een subsidie is duur.",
 				"Tevredenheid": "Inwoners zijn erg tevreden. Ze kunnen nu goedkoper een elektrische wagen aanschaffen en opladen.",
-				"Milieu": "Inwoners investeren nu sneller in een elektrisch voertuig. Deze voertuigen stoten geen CO2 uit."
+				"Milieu": "Inwoners investeren nu sneller in een elektrisch voertuig. Deze voertuigen stoten geen  CO2 uit."
 			},
 			"results": {
 				"year1": {
 					"money": -1,
 					"public": 1,
-					"eco": 3
+					"eco": 1
 				},
 				"yearN": {
 					"money": -1,
@@ -619,7 +619,7 @@
 				"year1": {
 					"money": 0,
 					"public": 2,
-					"eco": 4
+					"eco": 5
 				},
 				"yearN": {
 					"money": 0,
@@ -692,7 +692,7 @@
 			},
 			"results": {
 				"year1": {
-					"money": -2,
+					"money": -1,
 					"public": 2,
 					"eco": 1
 				},
