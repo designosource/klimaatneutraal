@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 @import url(https://fonts.googleapis.com/css?family=Roboto);
- 
+
 .clearfix {
   &:after {
     content: "";
@@ -84,15 +84,26 @@
 	}
 }
 
+@mixin arrow-bottom-left() {
+	&::after{
+		content: " ";
+
+		bottom: -28px;
+		left: 29px;
+		position: absolute;
+
+		@include arrow-bottom();
+	}
+}
 $col1: #79B63E;
 $text-black: #333;
 
-@import "components/_main.scss"; 
-@import "components/_header.scss"; 
-@import "components/_game.scss"; 
-@import "components/_startScreen.scss"; 
+@import "components/_main.scss";
+@import "components/_header.scss";
+@import "components/_game.scss";
+@import "components/_startScreen.scss";
 @import "components/_endScreen.scss";
-@import "components/_tutorial.scss"; 
-@import "components/_animations.scss"; 
-@import "components/_modals.scss"; 
+@import "components/_tutorial.scss";
+@import "components/_animations.scss";
+@import "components/_modals.scss";
 @import "components/_character.scss";

@@ -49,10 +49,10 @@
 		+ .modal{
 			& .modal-dialog{
 				margin: 0;
-				top: 25%;
-				left: 50%;
+				top: 60%;
+				left: 25%;
 				transform: translateX(-50%);
-				@include arrow-top-center();
+				@include arrow-bottom-left();
 			}
 		}
 	}
@@ -92,7 +92,7 @@
 }
 
 .modal.fade.ng-isolate-scope{
-	width: 100vw; 
+	width: 100vw;
     height: 56.25vw; /* height:width ratio = 9/16 = .5625  */
     max-height: 100vh;
     max-width: 177.78vh; /* 16/9 = 1.778 */

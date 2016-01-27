@@ -10,6 +10,12 @@
 
 	position: relative;
 
+.download{
+	font-size:1.1vw;
+	margin-top:10px;
+		margin-bottom:30px;
+	color: $text-black;
+}
 	.content-wrapper {
 		padding: 3vw 5vw;
 		box-sizing: border-box;
@@ -26,7 +32,7 @@
 
 		h1 {
 			font-family: 'Montserrat', sans-serif;
-			font-weight: 800;	
+			font-weight: 800;
 
 			font-size: 6vw;
 
@@ -127,6 +133,7 @@
 	}
 }
 
+
 .mevrouw_l{
 	top: 65%;
 	left: 3%;
@@ -135,8 +142,8 @@
 	height: 25%;
 	width: 12%;
 	background-image: url("../img/start/mevrouw_l.gif");
-	
-	-webkit-animation: mevrouw_l 18s linear infinite;	
+
+	-webkit-animation: mevrouw_l 18s linear infinite;
 	animation: mevrouw_l 18s linear infinite;
 }
 
