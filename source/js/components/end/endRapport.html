@@ -7,7 +7,8 @@
             <span style="color: #000; padding-left: 10%">Jouw score</span>
             <div class="eco" style="width:95%;float:left;margin-right: 5%;margin-top:15px;">
                 <div class="icon" style="width:10%;height:30px;float:left;">
-<img src="https://gallery.mailchimp.com/d315f5c90383bfabed29d42e8/images/12d15ca1-0328-4bf0-85ce-da2a421415ac.gif" alt="" style="width:50%;">                </div>
+                    <img src="https://gallery.mailchimp.com/d315f5c90383bfabed29d42e8/images/12d15ca1-0328-4bf0-85ce-da2a421415ac.gif" alt="" style="width:50%;">                
+                </div>
 
                 <div class="honderd" style="width: 90%; float:left;">
                     <div class="jouw" ng-style="setEcoUser">
@@ -18,10 +19,10 @@
                 </div>
             </div>
 
-            <div class="public" style="width:95%;float:left;margin-right: 5%;margin-top:15px; margin-bottom:30px;">
+            <div class="public" style="width:95%;float:left;margin-right: 5%;margin-top:15px;">
                 <div class="icon" style="width:10%; height:30px;float:left;">
-        <img src="https://gallery.mailchimp.com/d315f5c90383bfabed29d42e8/images/8883b138-eded-4402-b57e-602ccc9bdcaa.gif" alt="" style="width:65%">
-        </div>
+                    <img src="https://gallery.mailchimp.com/d315f5c90383bfabed29d42e8/images/8883b138-eded-4402-b57e-602ccc9bdcaa.gif" alt="" style="width:65%">
+                </div>
 
                 <div class="honderd" style="width: 90%; float:left;">
                     <div class="jouw" ng-style="setPubUser">
@@ -33,8 +34,8 @@
             </div>
 
             <div class="money" style="width:95%;float:left;margin-right: 5%;margin-top:15px;">
-                <div class="icon" style="width:10%; height:30px;float:left;">
-                    <img src="https://gallery.mailchimp.com/d315f5c90383bfabed29d42e8/images/3bd4745a-9214-4baf-bbad-d76f9721ce0d.gif" alt="" style="width:65%">
+                <div class="icon" style="width:10%; height:30px;float:left;color:red;font-size:2em;">
+                    <img src="https://gallery.mailchimp.com/d315f5c90383bfabed29d42e8/images/3bd4745a-9214-4baf-bbad-d76f9721ce0d.gif" alt="" style="width:65%">*
                 </div>
 
                 <div class="honderd" style="width: 90%; float:left;">
@@ -44,6 +45,7 @@
                     <div class="honderd" ng-style="setMoneyTotal">
                     </div>
                 </div>
+                
             </div>
 
 
@@ -94,10 +96,16 @@
                 </div>
             </div>
         </div>
-				<p class="infoscore" style="color:#000000; font-size:1vw; margin-top:10vw;">Mechelen zat in 2015 op koers om 20% reductie te bekomen. De bevolking
-is tevreden over het beleid en het budget is onder controle. Moest jij
-klimaatburgemeester zijn, dan bespaarde je tegen 2020 X% CO2, Y% van de
-bevolking zou tevreden zijn en je houdt Z% van je budget over!</p>
+	       <p class="infoscore" style="color:#000000; font-size:1vw; margin-top:10vw;">
+           <sup style="font-size:1.3em; color: red;">*</sup>
+                Mechelen zat in 2015 op koers om 20% reductie te bekomen. De bevolking
+                is tevreden over het beleid en het budget is onder controle. Moest jij
+                klimaatburgemeester zijn, dan bespaarde je tegen 2020 <strong style="color: #79B63E;">{{moneyUserResult}}%</strong> 
+                CO<sub>2</sub>, <strong style="color: #79B63E;">{{pubUserResult}}%</strong> van de
+                bevolking zou tevreden zijn en je houdt <strong style="color: #79B63E;">{{moneyUserResultX}}%</strong> van je budget over!
+            </p>
+
+
         <button type="button" ui-sref="startGame" class="btn btn-success" style="float:left; margin-right: 15px;">Speel opnieuw</button>
 
 

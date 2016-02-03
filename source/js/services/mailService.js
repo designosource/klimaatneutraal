@@ -8,12 +8,13 @@ angular.module('klimaatneutraal.services').service("mailService",[
 	 	var mailchimpKey='33b98fb66515f34a2391ca79edb49851-us12';
 	 	var mandrillKey='NJR9rKU89OzZDcAKt7izMw';
 	 	var MyCharacter = {}; 
+	 	//FUNCTION TO 
 	 	var getCharacter = function(character){
 	 		MyCharacter.character = character;		
 	 	};
 	 	
 
-	    var sendMandrill = function(name, firstName, email, moneyMandrill, ecoMandrill, publicMandrill, endRapportscore, testtable, meerMinder){
+	    var sendMandrill = function(name, firstName, email, moneyMandrill, ecoMandrill, publicMandrill, endRapportscore, meerMinder){
 	    	var characterUser = MyCharacter.character;
 	    	var sliced = characterUser.slice(0,-4);
 	    	var mailchimpImages = {
@@ -77,7 +78,7 @@ angular.module('klimaatneutraal.services').service("mailService",[
 				     ,
 				     {
 				            "name": "testtable",
-				            "content": testtable
+				            "content": "testtable"
 				     }
 				     
 				],

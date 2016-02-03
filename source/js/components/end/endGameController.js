@@ -32,7 +32,8 @@ angular.module('klimaatneutraal.controllers')
                 var percentageMoney = (100 / maxMoney) * moneyScore;
                 var end = percentageMoney.toString();
                 var perctageUser = end.substring(0,2);
-                return perctageUser;
+                var newPercentage = (perctageUser/3);
+                return newPercentage;
                 
             }
 
@@ -52,7 +53,7 @@ angular.module('klimaatneutraal.controllers')
                 return perctageUser;
                 
             }
-
+            // CALCULATE FUNCTION FOR WIDTH USED IN MAIL
             function calculateWidth(e){
                 var maxWidth = 360;
                 var width = (360/100) * e;
@@ -62,54 +63,65 @@ angular.module('klimaatneutraal.controllers')
 
                 return naarInt;
             }
-
+            // CALCULATE FUNCTION FOR TOTAL WIDTH USED IN MAIL
             function calculateWidthTotal(e){
                 var widthMax = 360 - e;
 
                 return widthMax;
             }
-            var testtable = 
-                '<style type="text/css">.tg td{font-family:Arial, sans-serif;font-size:14px;padding:5px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:5px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}.tg .tg-yw4l{vertical-align:top}</style><table class="tg" style="border-collapse:collapse;border-spacing:0;width: 960px;"><tr><th class="tg-yw4l" colspan="3">Jouw Score</th><th class="tg-yw4l" colspan="3">Score van Mechelen</th></tr><tr><td class="tg-yw4l" style="width:5%"><img src="https://gallery.mailchimp.com/d315f5c90383bfabed29d42e8/images/12d15ca1-0328-4bf0-85ce-da2a421415ac.gif" alt="" style="width:50%; padding-left:5px;"></td><td class="tg-yw4l" style="width:337px;background-color:#89C73E;"></td><td class="tg-yw4l" style="width:98px; background-color:#424242;"></td><td class="tg-yw4l" style="width:25%;background-color:#89C73E;"></td><td class="tg-yw4l" style="width:25%; background-color:#424242;"></td></tr></table>';
-
-
-
+            // CALULATE WIDTH /3 (changes)
+            function calculateWidthNew(){
+                var percentageMoneyNew = (100 / maxMoney) * moneyScore;
+                var endNew = percentageMoneyNew.toString();
+                var perctageUserNew = endNew.substring(0,2);
+        
+                return perctageUserNew;
+            }
+            // FUNCTION WHEN THEY SUBMIT THE FORM
             $scope.sendTheMail = function() {
+                //GET VALUES FROM THE USER
                 var emailUser = $("#userEmail").val();
                 var firstName = $("#firstName").val();
                 var lastName = $("#lastName").val();
                 var nieuwsbrief = $("#nieuwsbrief").val();
-                //MONEY - calculations
+               
+                //MONEY - calculations for divs
                 var moneyUser = calculateMoney();
                 var moneyTotal =  total(moneyUser);
                 var moneyWidth = calculateWidth(moneyUser);
                 var moneywidthtotal = calculateWidthTotal (moneyWidth);
-                //ECO - calculations
+                var moneyScoreNew = calculateWidthNew ();
+                //ECO - calculations for divs
                 var ecoUser = calculateEco();
                 var ecoTotal =  total(ecoUser);
                 var ecoWidth = calculateWidth(ecoUser);
                 var ecowidthtotal = calculateWidthTotal (ecoWidth);
-                //PUBLIC - Calculations
+                //PUBLIC - Calculations for divs
                 var pubUser = calculatePub();
                 var pubTotal =  total(pubUser);
                 var pubWidth = calculateWidth(pubUser);
                 var pubwidthtotal = calculateWidthTotal (pubWidth);
+               
                 //MONEY - put html in variable
                 var widthUserMoney = '"width:'+moneyUser+'%;height:30px; background-color:#89C73E;float:left;"';
                 var widthMaxMoney = '"width:'+moneyTotal+'%;height:30px; background-color:#424242; float:left;"';
+                //MONEY - Variable to send to Mandrill
                 var moneyMandrill ="<div style="+widthUserMoney+"></div><div style="+widthMaxMoney+"></div>"
+               
                 //ECO - put html in variable
                 var widthUserEco = '"width:'+ecoUser+'%;height:30px; background-color:#89C73E;float:left;"';
                 var widthMaxEco = '"width:'+ecoTotal+'%;height:30px; background-color:#424242; float:left;"';
+                //ECO - Variable to send to Mandrill
                 var ecoMandrill ="<div style="+widthUserEco+"></div><div style="+widthMaxEco+"></div>"
+                
                 //PUBLIC - put html in variable
                 var widthUserPub = '"width:'+pubUser+'%;height:30px; background-color:#89C73E;float:left;"';
                 var widthMaxPub = '"width:'+pubTotal+'%;height:30px; background-color:#424242; float:left;"';
+                //PUBLIC - Variable to send to Mandrill
                 var publicMandrill ="<div style="+widthUserPub+"></div><div style="+widthMaxPub+"></div>";
-                //MEER MINDER
-                /*var meerMinder = "Als klimaatburgemeester behaal jij een besparing van "+resultMeerMinder+" dan 20%. Ontvang nu tot 5000 euro subsidie om jouw buurt ook echt klimaatneutraal te maken. 
                 
-                Geen inspiratie? Kijk naar onderstaande tips en bouw mee aan jouw klimaatneutraal Mechelen.";*/
-                
+
+                // (very important) Variable object of all the scores and widths
                 var endRapportscore = {
                     eco1: ecoUser,
                     eco2: ecoTotal,
@@ -123,10 +135,12 @@ angular.module('klimaatneutraal.controllers')
                     money2: moneyTotal,
                     money3: moneyWidth,
                     money4: moneywidthtotal,
+                    money5: moneyScoreNew,
 
                 };
 
-                mailService.sendMandrill(lastName, firstName, emailUser, moneyMandrill, ecoMandrill, publicMandrill, endRapportscore,testtable);
+                // SEND ALL THE VARIABLE TO THE MAIL SERVICE (location: services/mailService.js)
+                mailService.sendMandrill(lastName, firstName, emailUser, moneyMandrill, ecoMandrill, publicMandrill, endRapportscore, meerMinder);
                 mailService.sendMailchimp(lastName, firstName, emailUser);
                
                

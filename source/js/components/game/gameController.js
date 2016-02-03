@@ -28,7 +28,7 @@ angular.module('klimaatneutraal.controllers')
                 _idleSecondsCounter = 0;
             };
 
-            _idleSecondsTimer = window.setInterval(CheckIdleTime, 1000);
+          /*  _idleSecondsTimer = window.setInterval(CheckIdleTime, 1000);
 
             function CheckIdleTime() {
                  _idleSecondsCounter++;
@@ -44,7 +44,7 @@ angular.module('klimaatneutraal.controllers')
                     _idleSecondsCounter = 0;
                     openMenu();
                 }
-            }
+            }*/
 
             var init = function() {
                 console.log('gameController');

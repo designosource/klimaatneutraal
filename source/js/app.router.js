@@ -53,7 +53,18 @@ angular.module('klimaatneutraal')
             .state('endRapport', {
                 url: '/endRapport',
                 params: {
-                 userperc: null
+                 userperc: {eco1: "50",
+                    eco2: "50",
+                    eco3: "50",
+                    eco4: "50",
+                    pub1: "50",
+                    pub2: "50",
+                    pub3: "50",
+                    pub4: "50",
+                    money1: "50",
+                    money2: "50",
+                    money3: "50",
+                    money4: "50",}
                 },
                 views: {
                     '': {

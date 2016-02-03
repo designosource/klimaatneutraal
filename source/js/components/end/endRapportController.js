@@ -8,21 +8,26 @@ angular.module('klimaatneutraal.controllers')
         'soundService',
 
         function($rootScope, $scope, $state, $controller, $http, soundService) {
+            //GET THE VARIABLES WE NEED + log it
             var userScore = $state.params.userperc;
             console.log(userScore);
-        
+            //PUT THE INFO IN DIFFERENT VARIABLES
             var ecouser = parseInt(userScore.eco1);
             var ecototal = userScore.eco2;
             var pubuser = parseInt(userScore.pub1);
             var pubtotal = userScore.pub2;
             var moneyuser = parseInt(userScore.money1);
+            var moneyuserX = parseInt(userScore.money5);
             var moneytotal = userScore.money2;
             var mechelenEco = 66;
 
+            //PUT VARIABLE IN SCOPE SO WE CAN USE IT IN THE ENDRAPPORT HTML eg: {{ecoUserResult}}
             $scope.ecoUserResult = ecouser;
             $scope.pubUserResult = pubuser;
             $scope.moneyUserResult = moneyuser;
-            
+            $scope.moneyUserResultX = moneyuserX;
+
+            // CHECK IF USER SCORED BETTER OR NOT + same as above
             if(ecouser > mechelenEco){
                 $scope.twitterShare = "meer";
             }
@@ -30,6 +35,7 @@ angular.module('klimaatneutraal.controllers')
                 $scope.twitterShare = "minder";
             }
 
+            // DIFINE A STYLE OF  an ng-style.  eg: ng-style="setMoneyUser"
             $scope.setEcoTotal= {
                 "float" : "left",
                 "background-color" : "#424242",
